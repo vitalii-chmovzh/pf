@@ -1454,6 +1454,29 @@
           "parents": [],
           "type": "css"
         },
+<<<<<<< HEAD
+        "b102ba49": {
+          "id": "b102ba49",
+          "path": "js/select.js",
+          "output": "js/select-dist.js",
+          "name": "select.js",
+          "category": "JS",
+          "autoCompile": false,
+          "uglify": true,
+          "mangle": true,
+          "babel": false,
+          "sourceMaps": false,
+          "customOutput": false,
+          "imported": false,
+          "parents": [],
+          "type": "javascript"
+        },
+        "45dda276": {
+          "id": "45dda276",
+          "path": "less/__select.less",
+          "output": "css/__select.css",
+          "name": "__select.less",
+=======
         "eb905c50": {
           "id": "eb905c50",
           "path": "css/__footer-bottom.css",
@@ -1475,6 +1498,7 @@
           "path": "less/__footer-bottom.less",
           "output": "css/__footer-bottom.css",
           "name": "__footer-bottom.less",
+>>>>>>> 532d78e00b27a31a6b50c29812b28ba9f89f6d9a
           "category": "CSS",
           "autoCompile": false,
           "autoprefixer": false,

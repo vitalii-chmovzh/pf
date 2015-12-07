@@ -69,8 +69,11 @@ select::-ms-expand {
 @import "item.less";
 @import "__catalog-filter.less";
 @import "__js-selectors.less";
+<<<<<<< HEAD
 @import "__select.less";
+=======
 @import "__footer-bottom.less";
+>>>>>>> 532d78e00b27a31a6b50c29812b28ba9f89f6d9a
 
 ::-webkit-input-placeholder {
   color:#000;
