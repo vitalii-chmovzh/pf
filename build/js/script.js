@@ -350,6 +350,32 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
     } 
   });
   
+/* Products quantiry */
+
+var plus = $(".cart-product__quantity .plus-icon"),
+    minus = $(".cart-product__quantity .minus-icon");
+
+plus.on("click", function(){
+  var product = $(this).parent().find("input[name='size-select']"),
+      minus = $(this).parent().find(".minus-icon");
+      product[0].value++;
+      if(product[0].value > 1) {
+          minus.removeClass("minus-icon--disabled");
+      }
+      
+});
+
+minus.on("click", function(){
+   var product = $(this).parent().find("input[name='size-select']");
+       if(product[0].value > 1) {
+          product[0].value--;
+          $(this).removeClass("minus-icon--disabled");
+       } 
+       if(product[0].value == 1) {
+          $(this).addClass("minus-icon--disabled");
+       }
+});
+
 //  (function(){   
   
 //  if (window.matchMedia("(max-width: 992px)").matches) {
