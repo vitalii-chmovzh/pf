@@ -1,29 +1,22 @@
-window.onload = function initMap() {
-    var myLatLng = {lat: 50.3433403, lng: 30.552167199999985};
+function initMap() {
+    var myLatLng = {lat: 55.73708, lng: 37.65420};
 
-    // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
       center: myLatLng,
       scrollwheel: false,
-      zoom: 15
+      zoom: 15,
+      zoomControl: false,
+      mapTypeControl: false,
+      streetViewControl: false
     });
-    var image = {
-      url: '',
-      // This marker is 20 pixels wide by 32 pixels high.
-      size: new google.maps.Size(
-        0, 
-        0      ),
-      // The origin for this image is (0, 0).
-      origin: new google.maps.Point(0, 0),
-      // The anchor for this image is the base of the flagpole at (0, 32).
-      anchor: new google.maps.Point(0, 32)
-    };
-    // Create a marker and set its position.
+
+    var image = 'img/marker.png';
+
     var marker = new google.maps.Marker({
-      map: map,
       position: myLatLng,
-      title: 'Manezh',
-            
+      map: map,
+      icon: image,
+      title: 'Премьер Футбол'     
     });
 }
 
