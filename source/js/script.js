@@ -1,3 +1,4 @@
+// Map
 function initMap() {
     var myLatLng = {lat: 55.73708, lng: 37.65420};
 
@@ -19,6 +20,9 @@ function initMap() {
       title: 'Премьер Футбол'     
     });
 }
+
+
+
 
 $(document).ready(function () {
   var display = false;
@@ -46,7 +50,25 @@ $(document).ready(function () {
     }, 200);
   });
   
-  
+  // Footer carousel
+  var winWidth = $(window).width();
+
+  // if (winWidth <= 992){
+    $('.js-list').bxSlider({
+        slideWidth: 77,
+        slideMargin: 30,
+        minSlides: 7,
+        maxSlides: 8,
+        moveSlides: 1,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        nextSelector: '.arrow-right',
+        prevSelector: '.arrow-left',
+        infiniteLoop: false,
+        hideControlOnEnd: true
+    });
+    // }
  // SIZES TOGGLING
   
 // $('.sizes__product-type-toggler span').on("click, touchstart", function(){
@@ -368,6 +390,9 @@ minus.on("click", function(){
           $(this).addClass("minus-icon--disabled");
        }
 });
+
+
+
 
 //  (function(){   
   
