@@ -189,9 +189,8 @@
         	<div class="delivery-methods__courier">
 						<div class="delivery-methods__description">
 							<div class="delivery-methods__row">
-								<input id="courier" type="radio">
-								<i class="radio-icon"></i>
-								<label class="checkbox" for="post">Курьером</label>
+								<input id="courier" name="delivery" type="radio">
+								<label class="checkbox" for="courier">Курьером</label>
        				</div>
 							<p>Заказ отправляется на следующий рабочий день после подтверждения заказа менеджером.</p>        		
 							<span><b>Срок доставки:</b> 2-3 рабочих дня</span>
@@ -202,9 +201,8 @@
         	<div class="delivery-methods__mail">
 						<div class="delivery-methods__description">
 							<div class="delivery-methods__row">
-								<input id="post" type="radio" checked>
-								<i class="radio-icon radio-icon--active"></i>
-								<label class="checkbox checkbox--active" for="post">Почтой России</label>
+								<input id="post" name="delivery" type="radio" checked>
+								<label class="checkbox" for="post">Почтой России</label>
        				</div>
 							
 							<p>Доставка «Почтой России» осуществляется только при полной оплате заказа.</p>        		
@@ -283,37 +281,28 @@
        	
         	<span class="check-out-form__caption">Способ оплаты</span>
         	<div class="payment-methods__cash">
-						<input id="cash" type="radio">
 						<div class="payment-methods__description">
 							<div class="payment-methods__row">
-								<i class="radio-icon radio-icon--active radio-icon--tab-hidden"></i>
-								<i class="payment-methods__icon payment-methods__icon--cash cash-active"></i>
-								<i class="radio-icon radio-icon--active radio-icon--mob-hidden"></i>
-      					<label class="checkbox checkbox--active" for="cash">Наличные при получении</label>
+						<input name="payment" id="cash" type="radio">
+      					<label class="radio radio-cash" for="cash">Наличные при получении</label>
        				</div>
         		</div>
         	</div>
         	
         	<div class="payment-methods__bank">
-						<input id="bank" type="radio">
 						<div class="payment-methods__description">
 							<div class="payment-methods__row">
-								<i class="radio-icon radio-icon--tab-hidden"></i>
-								<i class="payment-methods__icon payment-methods__icon--bank"></i>
-								<i class="radio-icon radio-icon--mob-hidden"></i>
-								<label class="checkbox" for="bank">Банковским переводом</label>
+						<input name="payment" id="bank" type="radio">
+								<label class="radio radio-bank" for="bank">Банковским переводом</label>
        				</div>
         		</div>
         	</div>
         	
         	<div class="payment-methods__online">
-						<input id="online" type="radio">
 						<div class="payment-methods__description">
 							<div class="payment-methods__row">
-								<i class="radio-icon radio-icon--tab-hidden"></i>
-								<i class="payment-methods__icon payment-methods__icon--online"></i>
-								<i class="radio-icon radio-icon--mob-hidden"></i>
-								<label class="checkbox" for="online">Оплата онлайн</label>
+						<input name="payment" id="online" type="radio">
+								<label class="radio radio-online" for="online">Оплата онлайн</label>
        				</div>
        				<p>Через платёжную систему “Деньги Online”. Доступные способы оплаты: Visa, MasterCard, Maestro, Яндекс.Деньги, WebMoney, QIWI и др.</p>
         		</div>
