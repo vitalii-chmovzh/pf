@@ -21,89 +21,90 @@
     <![endif]-->
 </head>
 <body class="cart-page">
-  <header class="page-header">
-   
-    <section class="tool-bar">
-      <div class="tool-bar__container">
-        <div class="tool-bar__actions tool-bar__actions--left">
+  <div class="wrapper">
+    <header class="page-header">
+     
+      <section class="tool-bar">
+        <div class="tool-bar__container">
+          <div class="tool-bar__actions tool-bar__actions--left">
+            
+            <a href="#" class="tool-bar__config-btn"><i></i></a> 
+            <a href="#" class="tool-bar__signout-btn"><i></i></a>
+            
+          </div>
           
-          <a href="#" class="tool-bar__config-btn"><i></i></a> 
-          <a href="#" class="tool-bar__signout-btn"><i></i></a>
+          <div class="tool-bar__logo">
+            <span>Премьер</span><a href="#"></a><span>Футбол</span>      
+          </div>
           
+          <div class="tool-bar__actions">
+           
+            <a href="#" class="tool-bar__wishlist-btn"><i></i></a>
+            
+            <a href="#" class="tool-bar__cart-btn">
+              <i></i>
+              <i class="tool-bar__counter">2</i>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+      <section class="main-menu">
+        <div class="main-menu__container">
+          <i class="main-menu__open-btn"></i>
+          <i class="main-menu__close-btn"></i>
+          <span class="main-menu__heading">Каталог</span>
+          <nav class="main-menu__nav">
+            <ul>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Размеры</a></li>
+              <li><a href="">Рекомендации</a></li>
+              <li><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <form action="">
+            <input class="search-field" type="search" placeholder="Что ищешь?">
+            <button class="main-menu__search-btn"></button>
+          </form>
+           <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
+           <span class="main-menu__contacts">
+         Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+          <a href="" class="main-menu__tel">+7 (499) 922-44-22</a>
+          <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-desktop">Основной сайт компании</a>
+        </span>
         </div>
         
-        <div class="tool-bar__logo">
-          <span>Премьер</span><a href="#"></a><span>Футбол</span>      
-        </div>
-        
-        <div class="tool-bar__actions">
-         
-          <a href="#" class="tool-bar__wishlist-btn"><i></i></a>
-          
-          <a href="#" class="tool-bar__cart-btn">
-            <i></i>
-            <i class="tool-bar__counter">2</i>
-          </a>
-        </div>
-      </div>
-    </section>
-    
-    <section class="main-menu">
-      <div class="main-menu__container">
-        <i class="main-menu__open-btn"></i>
-        <i class="main-menu__close-btn"></i>
-        <span class="main-menu__heading">Каталог</span>
-        <nav class="main-menu__nav">
+        <nav class="mobile-menu">
+         <div class="mobile-menu__wrapper">
           <ul>
+            <li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
             <li><a href="">Услуги</a></li>
             <li><a href="">Размеры</a></li>
             <li><a href="">Рекомендации</a></li>
+          </ul>
+          <ul>
+            <li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
             <li><a href="">Оплата</a></li>
             <li><a href="">Доставка</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
-        </nav>
-        <form action="">
-          <input class="search-field" type="search" placeholder="Что ищешь?">
-          <button class="main-menu__search-btn"></button>
-        </form>
-         <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
-         <span class="main-menu__contacts">
-       Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
-        <a href="" class="main-menu__tel">+7 (499) 922-44-22</a>
-        <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-desktop">Основной сайт компании</a>
-      </span>
-      </div>
-      
-      <nav class="mobile-menu">
-       <div class="mobile-menu__wrapper">
-        <ul>
-          <li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
-          <li><a href="">Услуги</a></li>
-          <li><a href="">Размеры</a></li>
-          <li><a href="">Рекомендации</a></li>
-        </ul>
-        <ul>
-          <li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
-          <li><a href="">Оплата</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        
-        <span class="mobile-menu__contacts">
-         Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
-        <a href="" class="mobile-menu__tel">+7 (499) 922-44-22</a>
-        
-        <span class="mobile-menu__add-link">  
-          <a class="mobile-menu__main-site-link" href="#">
-          <span class="mobile-menu__logo"></span>Основной сайт компании</a>  
+          
+          <span class="mobile-menu__contacts">
+           Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+          <a href="" class="mobile-menu__tel">+7 (499) 922-44-22</a>
+          
+          <span class="mobile-menu__add-link">  
+            <a class="mobile-menu__main-site-link" href="#">
+            <span class="mobile-menu__logo"></span>Основной сайт компании</a>  
+          </span>
         </span>
-      </span>
-        </div>
-      </nav>
-      
-    </section>
-  </header>
+          </div>
+        </nav>
+        
+      </section>
+    </header>
   
   
    <section class="cart">
@@ -165,7 +166,7 @@
       </div>
       
     <div class="my-cart">
-      <div class="cart__products-row">
+       <div class="cart__products-row">
        
         <div class="cart-product__wrapper">
              <article class="cart-product">
@@ -259,7 +260,7 @@
               </div>
             </div>
          </div>
-      </div>
+      </div> 
       <form action="" class="cart-actions">
        
         <div class="cart-actions-group"><label for="promo-enter">Подарочный сертификат или промокод</label>
@@ -386,7 +387,7 @@
       </div>
       </div>
   </section>  
-    
+</div> 
   <footer class="page-footer">
    
   <div class="page-footer__container">
