@@ -1,29 +1,37 @@
 $(document).ready(function () {
   var shoesBtn = $(".sizes__shoes-show"),
-      allBtns = $(".sizes__product-type-toggler span");
+      clothesBtn = $(".sizes__clothes-show"),
+      socksBtn = $(".sizes__socks-show");
   var shoesTable = $(".sizes__shoes"),
       clothesTable = $(".sizes__clothes"),
-      allTables = $(".sizes__all");
-      socksTable = $(".sizes__socks"); 
-  var wrapper = $(".sizes");   
-
+      socksTable = $(".sizes__socks");
+	var allBtns = $(".sizes__product-type-toggler span");
+  
   clothesTable.hide();
   socksTable.hide();
   shoesBtn.addClass("toggler-active");
   
 	allBtns.on("click touchstart", function(){
-    $this = $(this);
-
-    var data =  $this.data("type"), 
-        currentTable = wrapper.find(".sizes__all[data-type='" + data + "']").show("fast");
-
-    if (!$this.hasClass("toggler-active")){    
-  		allBtns.removeClass("toggler-active");
-  		$this.addClass("toggler-active");
-
-      allTables.hide();
-      currentTable.show("fast");
-    }
+		allBtns.removeClass("toggler-active");
+		$(this).addClass("toggler-active");
 	});
-	 
+	
+  shoesBtn.on("click touchstart", function(){
+    shoesTable.show("fast");
+    clothesTable.hide();
+    socksTable.hide();
+  });
+  
+  clothesBtn.on("click touchstart", function(){
+    clothesTable.show("fast");
+    shoesTable.hide();
+    socksTable.hide();
+  });
+  
+  socksBtn.on("click touchstart", function(){
+    socksTable.show("fast");
+    clothesTable.hide();
+    shoesTable.hide();
+  });
+    
 });

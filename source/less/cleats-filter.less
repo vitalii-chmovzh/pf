@@ -60,6 +60,24 @@
          margin-left: 135px;
         }
 	}
+  
+  
+  .dropcontainer{
+          top: 50px;
+              
+                @media(min-width: @screen-xlg){
+                  width: 240px;
+                  top: 54px;
+                }
+  }
+  
+  .underwear-filter{
+    
+  }
+  
+  .dropcontainer li{
+    display: block;
+  }
 }
 
 .filter-form{
@@ -68,6 +86,10 @@
 	input[type="radio"],input[type="checkbox"]{
 		display: none;
 	}
+  
+  &__row{
+    position: relative;
+  }
 	
 	label{
 		.font(1.2rem;1.2rem;1.2rem;1.4rem;1.6rem;1);
@@ -200,8 +222,10 @@
 			}
 		}
 		
-		select{
+		select, .trigger, .activetrigger{
 			width: 100%;
+          text-decoration: none;
+          color: #000;
 			display: block;
             background: url("../img/dropdown.svg") no-repeat center right 15px !important;
             background-size: 8px 4px !important;    
@@ -215,17 +239,14 @@
   		    border-radius:0 !important;
             transition: .3s;
     
-			&:focus, &:active{
+			&:active{
 		      outline: none;
               background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
             background-size: 8px 4px !important;  
 			}
-              
-            @media(min-width: @screen-md){
-              &:hover{
-              background: url("../img/dropdown--black.svg") no-repeat center right 15px !important;
-            background-size: 8px 4px !important; 
-              }
+
+			&:focus{
+		      outline: none;
             }
               
                 @media(min-width: @screen-xlg){
@@ -667,4 +688,19 @@ border-bottom: 2px solid #000;
 			.font(1.2rem;1.2rem;1.2rem;1.4rem;1.6rem;1);	
 	}
 	
+}
+
+.underwear-filter{
+  .filter-form__sizes--kids{
+    .dropcontainer{
+        top: 60px;
+      
+      @media(min-width: @screen-lg){
+      }
+      
+      @media(min-width: @screen-xlg){
+        top: 64px;
+      }
+    }
+  }
 }

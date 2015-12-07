@@ -1423,7 +1423,8 @@ input[type=search] {
 }
 
 .settings select,
-.settings .trigger {
+.settings .trigger,
+.settings .activetrigger {
 	background: url("../img/dropdown.svg") no-repeat center right 15px !important;
 	background-size: 8px 4px !important;
 }
@@ -1540,7 +1541,9 @@ input[type=search] {
 
 .settings-form input,
 .settings-form select,
-.settings-form .trigger {
+.settings-form .trigger,
+.settings-form .activetrigger {
+	display: block;
 	-moz-appearance: none;
 	appearance: none;
 	-webkit-appearance: none;
@@ -1548,6 +1551,8 @@ input[type=search] {
 	margin-bottom: 30px;
 	background: none;
 	border: none;
+	color: #000;
+	text-decoration: none;
 	border-bottom: 2px solid #000;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.6rem;
@@ -1557,7 +1562,8 @@ input[type=search] {
 
 .settings-form input:focus,
 .settings-form select:focus,
-.settings-form .trigger:focus {
+.settings-form .trigger:focus,
+.settings-form .activetrigger:focus {
 	outline: none;
 }
 
@@ -1574,9 +1580,11 @@ input[type=search] {
 	margin-bottom: 30px;
 }
 
-.adres-info select {
-	margin-top: 1px;
-	margin-bottom: 28px;
+.adres-info select,
+.adres-info .trigger,
+.adres-info .activetrigger {
+	margin-top: 4px;
+	margin-bottom: 25px;
 }
 
 .adres-info__region-select {
@@ -1589,6 +1597,7 @@ input[type=search] {
 
 .adres-info__street-select {
 	margin-top: 2px;
+	position: relative;
 }
 
 .adres-info__street-select input {
@@ -1597,7 +1606,9 @@ input[type=search] {
 	margin-right: 8.344828%;
 }
 
-.adres-info__street-select select {
+.adres-info__street-select select,
+.adres-info__street-select .trigger,
+.adres-info__street-select .activetrigger {
 	width: 44.82758621%;
 	display: inline-block;
 	position: relative;
@@ -6263,48 +6274,41 @@ input[type=search] {
 	cursor: default !important;
 }
 
-.dropcontainer {
-	position: relative;
-	font-size: 16px;
-	color: #777;
+.adres-info__street-select .dropcontainer {
+	width: 44.82758621%;
+	right: 11px;
 }
 
-.trigger:hover {
-	color: #777;
-	background: #f5f5f5 url(../images/select-arrow-open.png) 98% center no-repeat;
+.dropcontainer {
+	position: absolute;
+	top: 44px;
+	z-index: 1000;
+	width: 100%;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.trigger {
+	position: relative;
+	display: block;
 }
 
 .activetrigger {
-	color: #777;
-	padding: 10px;
-	font-size: 16px;
-	width: 50%;
-	background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
-	display: block;
-	border: 1px solid #ccc;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.activetrigger:hover {
-	background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
-	color: #777;
+	position: relative;
 }
 
 .activetrigger:active {
-	background: #f5f5f5 url(../images/select-arrow-close.png) 98% center no-repeat;
-	color: #777;
+	color: #2864c7;
 }
 
 .dropcontainer ul {
 	font-size: 16px;
-	border: 1px solid #ccc;
 	border-top: none;
 	background: #fff;
 	list-style-type: none;
 	padding: 10px;
 	margin: 0;
-	width: 50%;
+	width: 100%;
 	z-index: 100;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -6314,13 +6318,20 @@ input[type=search] {
 	padding: 5px;
 }
 
-.dropcontainer ul li:hover {
-	background: #f5f5f5;
-	outline: none;
+.dropcontainer ul li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1;
+	text-decoration: none;
+	color: #000;
 }
 
-.dropcontainer ul li:first-child {
-	display: none;
+.dropcontainer ul li a:active {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	line-height: 1;
+	text-decoration: none;
+	color: #2864c7;
 }
 
 .dropcontainer ul li:last-child {
@@ -7286,7 +7297,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .settings-form input,
 .settings-form select,
-.settings-form .trigger {
+.settings-form .trigger,
+.settings-form .activetrigger {
 	font-size: 1.6rem;
 	line-height: 1;
 }
@@ -7326,7 +7338,9 @@ input[type=number]::-webkit-outer-spin-button {
 	margin-right: 7.166667%;
 }
 
-.adres-info__street-select select {
+.adres-info__street-select select,
+.adres-info__street-select .trigger,
+.adres-info__street-select .activetrigger {
 	width: 45.50724638%;
 }
 
@@ -9022,6 +9036,21 @@ input[type=number]::-webkit-outer-spin-button {
 	right: 0;
 }
 
+.adres-info__street-select .dropcontainer {
+	width: 45.50724638%;
+	right: 5px;
+}
+
+.dropcontainer ul li a {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.dropcontainer ul li a:active {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
 }
 
 @media (min-width: 768px) and (min-width: 768px) {
@@ -9605,7 +9634,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .settings-form input,
 .settings-form select,
-.settings-form .trigger {
+.settings-form .trigger,
+.settings-form .activetrigger {
 	font-size: 1.6rem;
 	line-height: 1;
 }
@@ -11026,6 +11056,20 @@ input[type=number]::-webkit-outer-spin-button {
 	padding: 0 !important;
 }
 
+.dropcontainer {
+	top: 47px;
+}
+
+.dropcontainer ul li a {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.dropcontainer ul li a:active {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
 }
 
 @media (min-width: 992px) and (min-width: 1600px) {
@@ -11317,7 +11361,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .settings-form input,
 .settings-form select,
-.settings-form .trigger {
+.settings-form .trigger,
+.settings-form .activetrigger {
 	font-size: 1.4rem;
 	line-height: 1;
 }
@@ -12551,6 +12596,24 @@ input[type=number]::-webkit-outer-spin-button {
 	padding: 0 !important;
 }
 
+.adres-info__street-select .dropcontainer {
+	right: 10px;
+}
+
+.dropcontainer {
+	top: 45px;
+}
+
+.dropcontainer ul li a {
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
+.dropcontainer ul li a:active {
+	font-size: 1.4rem;
+	line-height: 1;
+}
+
 }
 
 @media (min-width: 1600px) {
@@ -12821,7 +12884,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .settings-form input,
 .settings-form select,
-.settings-form .trigger {
+.settings-form .trigger,
+.settings-form .activetrigger {
 	font-size: 1.6rem;
 	line-height: 1;
 }
@@ -14148,6 +14212,20 @@ input[type=number]::-webkit-outer-spin-button {
 .catalog-filter__list i {
 	top: 23px;
 	right: 15px;
+}
+
+.dropcontainer {
+	top: 48px;
+}
+
+.dropcontainer ul li a {
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.dropcontainer ul li a:active {
+	font-size: 1.6rem;
+	line-height: 1;
 }
 
 }

@@ -33,7 +33,7 @@
     padding-top: 83px;
   }
   
-  select, .trigger{
+  select, .trigger, .activetrigger{
       background: url("../img/dropdown.svg") no-repeat center right 15px !important;
       background-size: 8px 4px !important;
 //      background-position: calc(100% - 15px) center !important;
@@ -251,6 +251,8 @@
     margin-bottom: 30px;
     background: none;
     border: none;
+    color: #000;
+    text-decoration: none;
 border-bottom: 2px solid #000;
     .font(1.6rem;1.6rem;1.6rem;1.4rem;1.6rem;1);
   border-radius:0 !important;
@@ -302,9 +304,9 @@ border-bottom: 2px solid #000;
 .adres-info{
   margin-bottom: 30px;
 	
-	select{
-      margin-top: 1px;
-		margin-bottom: 28px;
+	select, .trigger, .activetrigger{
+      margin-top: 4px;
+		margin-bottom: 25px;
 	}
 	
 	&__form-group{    
@@ -354,6 +356,7 @@ border-bottom: 2px solid #000;
   
   &__street-select{
     margin-top: 2px;
+    position: relative;
     
       @media(min-width: @screen-sm){
         margin-right: 4.166667%;
@@ -372,7 +375,7 @@ border-bottom: 2px solid #000;
         margin-right: 7.166667%;
       }
     }
-    select{
+    select, .trigger, .activetrigger{
       width: percentage(130/290);
       display: inline-block;
 			position: relative;

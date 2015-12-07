@@ -16,7 +16,10 @@
     font-weight: bold;
   }
   
-  select{
+  select, .trigger, .activetrigger{
+    display: block;
+    text-decoration: none;
+    color: #000;
       background: url("../img/dropdown.svg") no-repeat center right 15px !important;
       background-size: 8px 4px !important;
     appearance: none;
@@ -122,6 +125,7 @@ border-bottom: 2px solid #000;
   }
   
   &__brand-toggler{
+    position: relative;
     width: 290px;
 		margin: 0 auto;
 		

@@ -22,7 +22,7 @@
 </head>
 
 
-<body>
+<body class="check-out-page">
   <header class="page-header">
    
     <section class="tool-bar">
@@ -167,7 +167,7 @@
         
         <div class="adres-info__form-group adres-info__form-group--region">
           <label for="region">Область <span>*</span></label>
-          <select class="adres-info__region-select" name="" id="region">
+          <select class="adres-info__region-select turnintodropdown" name="" id="region">
             <option value="Москва и область">Москва и область</option>
             <option value="Москва и область">Москва и область</option>
             <option value="Москва и область">Москва и область</option>
@@ -176,7 +176,7 @@
         
         <div class="adres-info__form-group adres-info__form-group--city">
           <label for="city">Город <span>*</span></label>
-          <select class="adres-info__city-select" name="" id="city">
+          <select class="adres-info__city-select turnintodropdown" name="" id="city">
             <option value="Москва">Москва</option>
             <option value="Москва">Москва</option>
             <option value="Москва">Москва</option>
@@ -243,7 +243,7 @@
         <div class="adres-info__street-select">
           <label for="street-name">Улица <span>*</span></label>
           <input class="adres-info__street-input" id="street-name" type="text" placeholder="Вспольный" required>
-          <select class="street-type" id="street-type">
+          <select class="street-type turnintodropdown" id="street-type">
             <option value="переулок">переулок</option>
             <option value="улица">улица</option>
           </select> 
@@ -456,6 +456,7 @@
   
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
- <script src="js/script.js"></script> 
+ <script src="js/script.js"></script>  
+ <script src="js/select.js"></script> 
 </body>
 </html>
