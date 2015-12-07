@@ -33,7 +33,7 @@
     padding-top: 83px;
   }
   
-  select{
+  select, .trigger{
       background: url("../img/dropdown.svg") no-repeat center right 15px !important;
       background-size: 8px 4px !important;
 //      background-position: calc(100% - 15px) center !important;
@@ -243,7 +243,8 @@
     }
   }
   
-  input, select{
+  input, select, .trigger, .activetrigger{
+  display: block;
     appearance: none;
     -webkit-appearance: none;
     padding:5px 15px;
