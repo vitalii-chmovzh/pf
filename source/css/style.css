@@ -3142,7 +3142,6 @@ input[type=search] {
   width: 44.82758621%;
   display: inline-block;
   position: relative;
-  top: 2px;
 }
 @media (min-width: 768px) {
   .adres-info__street-select select {
@@ -9849,8 +9848,8 @@ input[type=search] {
 }
 @media (min-width: 1200px) {
   .delivery-info__row {
-    width: 605px;
-    margin-left: 135px;
+    width: 635px;
+    margin-left: 110px;
   }
 }
 .delivery-info__caption {

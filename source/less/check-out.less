@@ -27,7 +27,10 @@
       background-size: 8px 4px !important;
 //      background-position: calc(100% - 15px) center !important;
     }
-  
+  .adres-info__street-select{
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
   
   .catalog-filter{
     &__open-btn{
@@ -612,10 +615,35 @@ border-bottom: 2px solid #000;
 	input[type="radio"]{
 		display: none;
 	}
+          
+            input[type="radio"]:checked + label{
+              color: @blue;
+
+              &:after{
+                background: @blue;
+                border: 1px solid @blue;
+              }
+            }
 	
 	.checkbox{
-		display: inline;
+      cursor: pointer;
+      position: relative;
+		display: inline-block;
 		line-height: 1 !important;
+      margin-left: 30px;
+        transition: .3s;
+      
+      &:after{
+        transition: .3s;
+        position: absolute;
+        content: '';
+        top: -2px;
+        left: -30px;
+		width: 15px;
+		height: 15px;
+		background: @border-color;
+		border-radius: 50%;        
+      }
 		
 		&--active{		
 			color: @blue;
@@ -672,7 +700,15 @@ border-bottom: 2px solid #000;
 	clear: both;
 	border-top: 1px solid @border-color;
 	border-bottom: 1px solid @border-color;
-	
+    
+    .check-out-form__caption{
+      padding-bottom: 5px;
+      
+      @media(min-width: @screen-sm){
+        padding-bottom: 10px;
+      }
+    }
+  
 	@media(min-width: @screen-sm){
 		width: 720px;
 		.clearfix;
@@ -694,16 +730,51 @@ border-bottom: 2px solid #000;
 		display: none;
 	}
   
+            input[type="radio"]:checked + label{
+              color: @blue;
+
+              &:after{
+                background: @blue;
+                border: 1px solid @blue;
+              }
+            }
+  
+            input[type="radio"]:checked + .radio-cash{
+      
+                &:before{          
+                  background: url("../img/cash--active.svg") center no-repeat;
+                }
+            }
+  
+            input[type="radio"]:checked + .radio-bank{
+
+                &:before{          
+                  background: url("../img/transfer--active.svg") center no-repeat;
+                }
+            }
+  
+            input[type="radio"]:checked + .radio-online{
+
+                &:before{          
+                  background: url("../img/card--active.svg") center no-repeat;
+                }
+            }
+  
   &__icon{
 		display: inline-block;
     width: 54px;
     height: 36px;
     margin-right: 15px;
+      margin-left: 30px;
 	
 	@media(min-width: @screen-sm){
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 15px;
+	}
+    
+	@media(min-width: @screen-lg){
+        margin-bottom: 55px;
 	}
     
     &--cash{
@@ -727,9 +798,83 @@ border-bottom: 2px solid #000;
     background-size: cover;
   }
 	
-	.checkbox{
-		display: inline;
+	.radio{
+        cursor: pointer;
+        margin-top: 23px;
+        position: relative;
+		display: inline-block;
 		line-height: 1 !important;
+        margin-left: 92px;
+        transition: .3s;
+      
+      &:after{
+        position: absolute;
+        content: '';
+        top: -2px;
+        left: -30px;
+		width: 15px;
+		height: 15px;
+		background: @border-color;
+		border-radius: 50%;  
+        transition: .3s;   
+      
+	
+		@media(min-width: @screen-sm){
+          position: absolute;
+          content: '';
+          top: -25px;
+          left: 0;
+          right: 0;
+          width: 15px;
+          height: 15px;
+          background: #eaeaea;
+          border-radius: 50%;
+          -webkit-transition: .3s;
+          transition: .3s;
+          margin: auto;
+		}   
+      }
+      
+      &:before{
+        transition: .3s;
+        position: absolute;
+        content: '';
+        top: -12px;
+        left: -95px;
+        width: 54px;
+        height: 36px;
+      
+	
+		@media(min-width: @screen-sm){
+            transition: .3s;
+            position: absolute;
+            content: '';
+            top: -70px;
+            left: 0;
+            right: 0;
+            width: 54px;
+            height: 36px;
+            margin: auto;
+		}
+      }
+      
+      &-cash{
+        &:before{          
+          background: url("../img/cash.svg") center no-repeat;
+        }
+      }
+      
+      &-bank{
+        &:before{          
+          background: url("../img/transfer.svg") center no-repeat;
+        }
+      }
+      
+      &-online{
+        &:before{          
+          background: url("../img/card.svg") center no-repeat;
+        }
+      }
 		
 		&--active{		
 			color: @blue;
@@ -751,32 +896,12 @@ border-bottom: 2px solid #000;
 		height: 15px;
 		background: @border-color;
 		border-radius: 50%;
-		
-		&--mob-hidden{
-			display: none;
-		
-			@media(min-width: @screen-sm){
-				display: block;
-				margin: 0 auto;
-				margin-bottom: 15px;
-			}
-		}
-		
-		&--tab-hidden{	
-			@media(min-width: @screen-sm){
-				display: none;
-			}
-		}
-		
-		&--active{
-			background: @blue;
-		}
 	}
 	
 	p{
-        margin-top: -15px;
+        margin-top: -5px;
 		padding-bottom: 10px;
-        margin-left: 100px;
+        margin-left: 92px;
 	}
 	
 	&__row{
@@ -787,6 +912,7 @@ border-bottom: 2px solid #000;
 		
 		@media(min-width: @screen-sm){
 			display: block;
+            margin-top: 75px;
 		}
 	}
 	
