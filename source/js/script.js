@@ -56,36 +56,36 @@ $(document).ready(function () {
   
  // SIZES TOGGLING
   
-$('.sizes__product-type-toggler span').on("click, touchstart", function(){
-  var shoesBtn = $(".sizes__shoes-show"),
-      clothesBtn = $(".sizes__clothes-show"),
-      socksBtn = $(".sizes__socks-show");
-  var shoesTable = $(".sizes__shoes"),
-      clothesTable = $(".sizes__clothes"),
-      socksTable = $(".sizes__socks");
+// $('.sizes__product-type-toggler span').on("click, touchstart", function(){
+//   var shoesBtn = $(".sizes__shoes-show"),
+//       clothesBtn = $(".sizes__clothes-show"),
+//       socksBtn = $(".sizes__socks-show");
+//   var shoesTable = $(".sizes__shoes"),
+//       clothesTable = $(".sizes__clothes"),
+//       socksTable = $(".sizes__socks");
   
-  clothesTable.hide();
-  socksTable.hide();
+//   clothesTable.hide();
+//   socksTable.hide();
   
-  shoesBtn.on("click touchstart", function(){
-    shoesTable.show("slide", "fast");
-    clothesTable.hide();
-    socksTable.hdie();
-  });
+//   shoesBtn.on("click touchstart", function(){
+//     shoesTable.show("slide", "fast");
+//     clothesTable.hide();
+//     socksTable.hdie();
+//   });
   
-  clothesBtn.on("click touchstart", function(){
-    clothesTable.show("slide", "fast");
-    shoesTable.hide();
-    socksTable.hdie();
-  });
+//   clothesBtn.on("click touchstart", function(){
+//     clothesTable.show("slide", "fast");
+//     shoesTable.hide();
+//     socksTable.hdie();
+//   });
   
-  socksBtn.on("click touchstart", function(){
-    socksTable.show("slide", "fast");
-    clothesTable.hide();
-    socksTable.hdie();
-  });
+//   socksBtn.on("click touchstart", function(){
+//     socksTable.show("slide", "fast");
+//     clothesTable.hide();
+//     socksTable.hdie();
+//   });
     
-});
+// });
   
   
 if (window.matchMedia("(max-width: 1199px)").matches) { 
