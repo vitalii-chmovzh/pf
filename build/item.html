@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Template</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Adding Roboto in indian style-->
+    
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>  
+  <header class="page-header">
+   
+    <section class="tool-bar">
+      <div class="tool-bar__container">
+        <div class="tool-bar__actions tool-bar__actions--left">
+          
+          <a href="#" class="tool-bar__config-btn"><i></i></a> 
+          <a href="#" class="tool-bar__signout-btn"><i></i></a>
+          
+        </div>
+        
+        <div class="tool-bar__logo">
+          <span>Премьер</span><a href="#"></a><span>Футбол</span>      
+        </div>
+        
+        <div class="tool-bar__actions">
+         
+          <a href="#" class="tool-bar__wishlist-btn"><i></i></a>
+          
+          <a href="#" class="tool-bar__cart-btn">
+            <i></i>
+            <i class="tool-bar__counter">1</i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="main-menu">
+      <div class="main-menu__container">
+        <i class="main-menu__open-btn"></i>
+        <i class="main-menu__close-btn"></i>
+        <span class="main-menu__heading">Каталог</span>
+        <nav class="main-menu__nav">
+          <ul>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Размеры</a></li>
+            <li><a href="">Рекомендации</a></li>
+            <li><a href="">Оплата</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <form action="">
+          <input class="search-field" type="search" placeholder="Что ищешь?">
+          <button class="main-menu__search-btn"></button>
+        </form>
+         <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
+         <span class="main-menu__contacts">
+       Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+        <a href="" class="main-menu__tel">+7 (499) 922-44-22</a>
+        <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-desktop">Основной сайт компании</a>
+      </span>
+      </div>
+      
+      <nav class="mobile-menu">
+       <div class="mobile-menu__wrapper">
+        <ul>
+          <li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
+          <li><a href="">Услуги</a></li>
+          <li><a href="">Размеры</a></li>
+          <li><a href="">Рекомендации</a></li>
+        </ul>
+        <ul>
+          <li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
+          <li><a href="">Оплата</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        
+        <span class="mobile-menu__contacts">
+         Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+        <a href="" class="mobile-menu__tel">+7 (499) 922-44-22</a>
+        
+        <span class="mobile-menu__add-link">  
+          <a class="mobile-menu__main-site-link" href="#">
+          <span class="mobile-menu__logo"></span>Основной сайт компании</a>  
+        </span>
+      </span>
+        </div>
+      </nav>
+      
+    </section>
+  </header>
+  
+  <section class="item-page">
+     
+      <aside class="catalog-filter">
+      <ul class="catalog-filter__list">
+        <li><a href="">Подарочные сертификаты</a></li>
+        <li><a href="">Бутсы</a></li>
+        <li><a href="">Обувь для зала</a></li>
+        <li><a href="">Шиповки</a></li>
+        <li><a href="">Клубная продукция</a></li>
+        <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+        <ul class="dropdown-category" dropdown-id="1">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul>
+        </li>
+        <li><a href="">Сланцы</a></li>
+        <li><a href="">Одежда</a></li>
+        <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+        <ul class="dropdown-category" dropdown-id="2">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul>
+        </li>
+        <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+        <ul class="dropdown-category" dropdown-id="3">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul></li>
+        <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+        <ul class="dropdown-category" dropdown-id="4">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul></li>
+        <li><a href="">Медицина</a></li>
+        <li><a href="">Мячи</a></li>
+        <li><a href="">Сумки и рюкзаки</a></li>
+        <li><a href="">Аксессуары</a></li>
+        <li><a href="">Щитки</a></li>
+      </ul>
+          <i class="catalog-filter__open-btn"></i>
+    </aside>     
+        <div class="item-page__container">
+      <a href="#" class="item-page__return-link">Главная / Бутсы</a>
+      <div class="item-page__row item-page__row--main">
+        <span class="item-page__manufacturer">Бутсы Nike</span>
+        <span class="item-page__price">15 490 <i class="ruble-icon">&#8381;</i></span></div>
+      <h1 class="item-page__name">Mercurial Superfly FG</h1>
+       
+     
+      <div class="item-page__wrapper">
+        <div class="item-slider">
+          <div class="item-slider__slide">
+         <div class="item-slider__btn"><span class="item-slider__icon"></span></div>
+          </div>
+            <ul class="pagination">
+              <li class="active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+        </div>
+        <div class="item-page__column">
+          <div class="item-page__hint">
+            <i class="item-page__cart-icon"></i>
+            <p>Выберите размер, чтобы положить товар в корзину.</p>
+          </div>
+
+          <div class="item-page__sizes">
+            <div class="item-page__sizes-row">
+               <select name="" id="">
+                <option value="">Российские</option>
+                <option value="">Французские</option>
+                <option value="">Английские</option>
+              </select>
+              <span>размеры в наличии:</span>
+            </div>
+            <div class="item-page__sizes-list-wrapper">
+              <ul>
+              <li><input id="1" type="checkbox"><label for="1">40</label></li>
+              <li><input id="2" type="checkbox"><label for="2">40.5</label></li>
+              <li><input id="3" type="checkbox"><label for="3">41</label></li>
+              <li><input id="4" type="checkbox"><label for="4">41.5</label></li>
+              <li><input id="5" type="checkbox"><label for="5">42</label></li>   
+              <li><input id="6" type="checkbox"><label for="6">42.5</label></li>
+              <li><input id="7" type="checkbox"><label for="7">43</label></li>
+              <li><input id="7" type="checkbox"><label for="7">43.5</label></li>
+              <li><input id="8" type="checkbox"><label for="8">44</label></li>
+              <li><input id="9" type="checkbox"><label for="9">44.5</label></li>
+              <li><input id="10" type="checkbox"><label for="10">45</label></li>
+              <li><input id="11" type="checkbox"><label for="11">45.5</label></li>
+              <li><input id="11" type="checkbox"><label for="11">46</label></li>
+            </ul>              
+            </div>
+              <span class="arrow-bottom arrow-bottom--gray"></span>
+            <span class="item-page__sizes-btn">Таблица размеров</span>
+
+          </div>
+
+          <div class="item-page__wish">
+            <p>Нет возможности купить товар прямо сейчас? Отложи его в свой собственный wishlist на нашем сайте и вернись к покупке в любой удобный момент! Просто нажми “Хочу!” и товар окажется в твоём списке желаний.</p>
+            <a href="" class="item-page__wish-btn"><i class="item-page__star-icon"></i><span>Хочу!</span></a>
+          </div>
+        </div>
+      </div>
+       <div class="item-page__wrapper">
+        <ul class="item-page__info">
+          <li>Артикул: <b>677927-003</b></li>
+          <li>Модель: <b>Взрослая</b></li>
+          <li>Коллекция: <b>Nike Tiempo</b></li>
+          <li>Материал: <b>Натуральная кожа</b></li>
+          <li>Возможно <b>нанесение</b> и <b>нашивка</b></li>
+        </ul>
+        
+        <article class="item-page__description">
+          <h2 class="item-page__caption">MERCURIAL SUPERFLY FG</h2>
+          <p>Революция скорости и триумф дизайна в бутсах Nike Mercurial Superfly от одного из лучших футболистов мира Криштиану Роналду. Абсолютная новинка от компании Nike из коллекции CR7, появление которой ждали многие, и вот мы представляем Вам новый цвет этих бутс - черный с серебрянной "крошкой". Поверхность модели изготовлена с применением технологии Flyknit, которая обеспечивает превосходное чувство контроля мяча и дарит максимальный контроль в игре на футбольных полях. Модель обладает инновационным воротником Dynamic Fit, который делает посадку удобной и дополнительно фиксирует лодыжку. Специальные нити Brio Cables составляют одно целое с текстурированной поверхностью и значительно влияют на прочность модели. Кроме этого, Brio Cables дополнительно фиксируют стопу. Бутсы имеют анатомическую перфорированную стельку, которая придает комфорт и снижает нагрузку на голеностоп. Подошва бутс Mercurial Superfly изготовлена из углеродного волокна и оснащена клинковыми шипами, что гарантирует взрывную скорость и максимальную маневренность. Данная модель из колеллекции Galaxy, которая сделана специально для Криштиано Роналдо. Бутсы Nike Mercurial Superfly - позволят выиграть доли секунды и добиться новых побед. ВНИМАНИЕ - вышивка на данную модель бутс не осуществляется.</p>
+        </article>
+        
+        <div class="social-media">
+          <span class="social-media__caption">Поделитесь этим товаром</span>
+          <ul>
+            <li><a href="#" class="vk"></a></li>
+            <li><a href="#" class="fb"></a></li>
+            <li><a href="#" class="twi"></a></li>
+            <li><a href="#" class="gp"></a></li>
+            <li><a href="#" class="ok"></a></li>
+          </ul>
+        </div>
+        </div>
+        <article class="same-items">
+          <h2 class="same-items__caption">Похожие товары</h2>
+          
+      <div class="product__section-container">
+        
+       <div class="product__wrapper" data-id="1">
+          <div class="product__container">
+             <article class="product">
+              <a href="#" class="product__image product__image--1">
+                <span class="product__label product__label--new"><span>NEW</span></span>
+              </a>
+              <div class="product__description">
+                <div class="product__row">
+                  <span class="product__manufacturer">Nike</span>
+    
+                </div>
+                <a href="" class="product__name">MERCURIAL SUPERFLY FG</a>
+                <span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
+                
+                <div class="product__more-btn" data-id="1">
+                  <span class="product__more-icon">
+                  </span>
+                </div>
+                
+              </div>
+            </article>
+
+             <div class="product__properties" data-id="1">
+              <p class="product__sizes">
+                <select name="types" class="product__select-size">
+                  <option value="Российские">Российские</option>
+                  <option value="Американские">Американские</option>
+                  <option value="Французские">Французские</option>
+                </select>размеры в наличии:
+              </p>
+              <span class="arrow-left arrow-left--gray"></span>
+              <div class="product__sizes-wrapper">
+                <ul class="product__sizes-list">
+                  <li><a href="">42</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">43.5</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">44.5</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">43.5</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">44.5</a></li>
+                </ul>
+              </div>
+              <span class="arrow-right arrow-right--gray"></span>
+              <span class="arrow-bottom arrow-bottom--gray"></span>
+              <ul class="product__info">
+                <li>Коллекция: <span>Nike Tiempo</span></li>
+                <li>Материал: <span>Натуральная кожа</span></li>
+                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+              </ul>
+              <ul class="product__buttons">
+                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              </ul>
+            </div>
+
+        </div>
+        </div>
+       <div class="product__wrapper" data-id="2">
+          <div class="product__container">
+             <article class="product">
+              <a href="#" class="product__image product__image--2">
+                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <div class="product__description">
+                <div class="product__row">
+                  <span class="product__manufacturer">Nike</span>
+    
+                </div>
+                <a href="" class="product__name">MERCURIAL Vapor X CR FG</a>
+                <span class="product__price">10 990 <i class="ruble-icon">&#8381;</i></span>
+                
+                <div class="product__more-btn" data-id="2">
+                  <span class="product__more-icon">
+                  </span>
+                </div>
+                
+              </div>
+            </article>
+
+             <div class="product__properties" data-id="2">
+              <p class="product__sizes">
+                <select name="types" class="product__select-size">
+                  <option value="Российские">Российские</option>
+                  <option value="Американские">Американские</option>
+                  <option value="Французские">Французские</option>
+                </select>размеры в наличии:
+              </p>
+              <span class="arrow-left arrow-left--gray"></span>
+              <div class="product__sizes-wrapper">
+                <ul class="product__sizes-list">
+                  <li><a href="">42</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">43.5</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">44.5</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">43.5</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">44.5</a></li>
+                </ul>
+              </div>
+              <span class="arrow-right arrow-right--gray"></span>
+              <span class="arrow-bottom arrow-bottom--gray"></span>
+              <ul class="product__info">
+                <li>Коллекция: <span>Nike Tiempo</span></li>
+                <li>Материал: <span>Натуральная кожа</span></li>
+                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+              </ul>
+              <ul class="product__buttons">
+                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              </ul>
+            </div>
+        </div>
+        </div>
+       <div class="product__wrapper" data-id="3">
+          <div class="product__container">
+             <article class="product">
+              <a href="#" class="product__image product__image--3">
+                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <div class="product__description">
+                <div class="product__row">
+                  <span class="product__manufacturer">Nike</span>
+    
+                </div>
+                <a href="" class="product__name">Magista Obra SG-Pro</a>
+                <span class="product__price">14 490 <i class="ruble-icon">&#8381;</i></span>
+                
+                <div class="product__more-btn" data-id="3">
+                  <span class="product__more-icon">
+                  </span>
+                </div>
+                
+              </div>
+            </article>
+
+             <div class="product__properties" data-id="3">
+              <p class="product__sizes">
+                <select name="types" class="product__select-size">
+                  <option value="Российские">Российские</option>
+                  <option value="Американские">Американские</option>
+                  <option value="Французские">Французские</option>
+                </select>размеры в наличии:
+              </p>
+              <span class="arrow-left arrow-left--gray"></span>
+              <div class="product__sizes-wrapper">
+                <ul class="product__sizes-list">
+                  <li><a href="">42</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">43.5</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">44.5</a></li>
+                  <li><a href="">43</a></li>
+                  <li><a href="">43.5</a></li>
+                  <li><a href="">44</a></li>
+                  <li><a href="">44.5</a></li>
+                </ul>
+              </div>
+              <span class="arrow-right arrow-right--gray"></span>
+              <span class="arrow-bottom arrow-bottom--gray"></span>
+              <ul class="product__info">
+                <li>Коллекция: <span>Nike Tiempo</span></li>
+                <li>Материал: <span>Натуральная кожа</span></li>
+                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+              </ul>
+              <ul class="product__buttons">
+                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              </ul>
+            </div>
+
+        </div>
+        </div>
+      </div>
+        
+           <div class="catalog-page__button-wrapper">
+            <a href="#" class="catalog__more-btn">Больше товаров</a>
+           </div>
+        </article>
+    </div>
+  </section>
+ 
+  <footer class="page-footer" style="clear:both;">
+   
+  <div class="page-footer__container">
+     
+     
+    <div class="page-footer__contacts">	
+			<ul>
+				<li><a href="" class="page-footer__vk-link"></a></li>
+				<li class="page-footer__adres">Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+					<a href="" class="page-footer__tel">+7 (499) 922-44-22</a>
+				</li>
+			</ul>
+    </div> 
+    
+    <div class="page-footer__links page-footer__links--mobile">
+			<ul>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+    </div>
+    
+    <div class="page-footer__payment-methods">
+      <span>Мы принимаем к оплате:</span>
+      <ul>
+        <li><a class="method method--visa" href="#"></a></li>
+        <li><a class="method method--mastercard" href="#"></a></li>
+        <li><a class="method method--maestro" href="#"></a></li>
+        <li><a class="method method--qiwi" href="#"></a></li>
+      </ul>
+    </div>
+    
+    <div class="page-footer__links">
+			<ul>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+    </div>
+        
+    <div class="page-footer__partners">      
+      <i class="arrow-left arrow-left--disabled"></i><span>Наши партнёры</span><i class="arrow-right"></i>
+      <ul class="js-list">
+        <li><a class="partner partner--rpfl" href="#"></a></li>
+        <li><a class="partner partner--puma" href="#"></a></li>
+        <li><a class="partner partner--nike" href="#"></a></li>
+        <li><a class="partner partner--reusch" href="#"></a></li>
+        <li><a class="partner partner--onedivision" href="#"></a></li>
+        <li><a class="partner partner--diadora" href="#"></a></li>
+        <li><a class="partner partner--mueler" href="#"></a></li>
+        <li><a class="partner partner--rfl" href="#"></a></li>
+      </ul>
+    </div>    
+    
+    <div class="page-footer__info">
+      <a class="page-footer__main-site-link" href="#">
+        <div class="page-footer__logo"></div>Основной сайт компании</a>
+      <p>
+        <span class="page-footer__copyright">© ООО "Премьер Футбол Групп" 2010 - 2015</span>
+        Использование материалов сайта допускается только с обязательной ссылкой на 
+        <a href="">premier-football.ru</a>
+        <a href="">Договор оферты</a>
+      </p>
+    </div>
+    
+    <a href="#" class="page-footer__stamp"></a>     
+      
+  </div>
+</footer>
+  
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>  
+ <script src="js/script.js"></script> 
+</body>
+</html>

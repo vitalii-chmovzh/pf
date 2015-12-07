@@ -1,0 +1,195 @@
+.mobile-menu{
+  position: fixed;
+  top: 99px;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  z-index: 10000;
+  left: 0;
+  background: #fff;
+  transition: .33s ease-in-out;
+  
+  &__wrapper{
+    max-width: 220px;
+    margin: 0 auto;
+      height:345px;
+    
+    @media (min-width: @screen-sm) {
+      margin: 0;
+    }
+  }
+  
+  @media (min-width: @screen-sm) {
+    width: 250px;
+  }
+  
+  @media (min-width: @screen-md) {
+    display: none;
+  }
+  
+  ul{
+    float: left;
+    
+    &:first-of-type{
+      margin-right: 70px;
+    }
+  
+  @media (min-width: @screen-sm) {
+   float: none;
+    margin-right: 0;
+  }
+    
+    li{
+        
+    @media (min-width: @screen-sm) {
+      &:first-of-type{
+        display: none;
+      }
+    }
+    }
+  a{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    .heading(1.2rem;1.2rem;1.2rem;1.2rem;1.2rem;1);
+    color: @gray;
+    margin-bottom: 35px;
+    transition: .3s;
+    
+    &:active{
+      color: @blue;
+    }
+    
+    &:first-of-type{
+      display: flex;
+      align-items: center; 
+    }
+  }
+  }
+  i{
+    margin-right: 8px;
+    display: inline-block;
+  }
+  
+  &__config-btn{
+    width: 16px;
+    height: 16px;
+    background: url("../img/settings--black.svg");
+    background-size: cover;
+    transition: .3s;
+    
+    &:active {
+      background: url("../img/settings--blue.svg");
+      background-size: cover;
+    }
+    
+  }
+  
+  &__signout-btn{
+    width: 16px;
+    height: 16px;
+    background: url("../img/exit--black.svg");
+    background-size: cover;
+    transition: .3s;
+    
+    &:active{
+      background: url("../img/exit--blue.svg");
+      background-size: cover;
+    }
+  }
+  
+  &__btn{
+    &--config{
+      &:active{
+        color: @blue;
+        
+        .mobile-menu__config-btn{
+          background: url("../img/settings--blue.svg");
+          background-size: cover;
+        }
+
+      }
+      
+    } 
+    
+    &--signout{
+      &:active{
+        color: @blue;
+        
+        .mobile-menu__signout-btn{
+          background: url("../img/exit--blue.svg");
+          background-size: cover;
+        }
+      }
+    }     
+  }
+  
+  
+  &__contacts{
+      vertical-align: top;
+      display: inline-block;
+      .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
+      font-weight: 300;
+      color: #000;
+    }
+  
+  &__tel{
+    display: block;
+    color: @gray;
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: bold;
+      transition: .3s;
+      
+      &:active{
+        color: @blue;
+      }
+  }
+  
+  &__logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+    height: 30px;
+    margin-right: 15px;
+    background: url("../img/logo-30-w.svg") center no-repeat;
+    background-size: cover;
+    transition: .3s ease;
+  }
+  
+  &__add-link{
+    margin-top: 78px; 
+    display: block;
+    
+    @media (min-width: @screen-sm) {
+      margin-top: 23px;
+    }
+
+    &:active{
+      color: @blue;
+      
+      .mobile-menu__logo{
+        background: url("../img/logo-30-color.svg");
+        background-size: cover;
+      }
+    }
+  }
+  
+  &__main-site-link{
+    margin-top: 7px;
+    display: inline-block;
+    vertical-align: top;
+    color: @gray;
+    font-weight: bold;
+    text-decoration: none;
+    .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
+      transition: .3s;
+    &:active{
+      color: @blue;
+    }
+      
+//      &:hover, &:active, &:focus{
+//        color: @blue;
+//      }
+  }
+}

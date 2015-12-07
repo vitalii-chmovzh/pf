@@ -1,0 +1,39 @@
+.page-header{
+  transition: .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200000;
+}
+input[type=search]{
+  appearance:none !important;  
+}
+
+.search-field{
+  border-radius:0 !important;
+  display: none;
+  z-index: 10000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 60px;
+  padding:5px;
+  width: 215px;
+  text-align: center;
+  background: @light-bg;
+  border:none;
+  border-bottom: 2px solid @gray;
+    .font(1.6rem;1.6rem;1.6rem;1.2rem;1.4rem;);
+  
+  @media(min-width: @screen-md){
+    top: 85px;
+  }
+  
+  
+  &:focus{
+    outline:none;
+  }
+  
+}

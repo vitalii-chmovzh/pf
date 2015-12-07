@@ -1,0 +1,166 @@
+// Creates a wrapper for a series of columns
+.ib-row(@gutter: @grid-gutter-width) {
+  margin-left: ceil((@gutter / -2));
+  margin-right: floor((@gutter / -2));
+  font-size: 0;
+  &:extend(.clearfix all);
+}
+
+// Generate the extra small columns
+.xs-ib-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2); 
+  @media (min-width: @screen-sm) {
+    display: inline-block;
+  width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+  margin-right: @spacing;
+  }
+}
+
+.xs-col-offset(@columns) {
+  margin-left: percentage((@columns / @grid-columns));
+}
+
+.xs-col-push(@columns) {
+  left: percentage((@columns / @grid-columns));
+}
+
+.xs-col-pull(@columns) {
+  right: percentage((@columns / @grid-columns));
+}
+
+// Generate the small columns
+.sm-ib-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-sm) {
+    display: inline-block;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.sm-col-offset(@columns) {
+  @media (min-width: @screen-sm) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.sm-col-push(@columns) {
+  @media (min-width: @screen-sm) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.sm-col-pull(@columns) {
+  @media (min-width: @screen-sm) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.md-ib-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-md) {
+    display: inline-block;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.md-col-offset(@columns) {
+  @media (min-width: @screen-md) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.md-col-push(@columns) {
+  @media (min-width: @screen-md) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.md-col-pull(@columns) {
+  @media (min-width: @screen-md) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.lg-ib-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-lg) {
+    display: inline-block;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.lg-col-offset(@columns) {
+  @media (min-width: @screen-lg) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.lg-col-push(@columns) {
+  @media (min-width: @screen-lg) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.lg-col-pull(@columns) {
+  @media (min-width: @screen-lg) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate VERY large columns
+.xlg-ib-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-lg) {
+    display: inline-block;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.xlg-col-offset(@columns) {
+  @media (min-width: @screen-lg) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.xlg-col-push(@columns) {
+  @media (min-width: @screen-lg) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.xlg-col-pull(@columns) {
+  @media (min-width: @screen-lg) {
+    right: percentage((@columns / @grid-columns));
+  }
+}

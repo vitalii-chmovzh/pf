@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Template</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Adding Roboto in indian style-->
+    
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+  <header class="page-header">
+   
+    <section class="tool-bar">
+      <div class="tool-bar__container">
+        <div class="tool-bar__actions tool-bar__actions--left">
+          
+          <a href="#" class="tool-bar__config-btn"><i></i></a> 
+          <a href="#" class="tool-bar__signout-btn"><i></i></a>
+          
+        </div>
+        
+        <div class="tool-bar__logo">
+          <span>Премьер</span><a href="#"></a><span>Футбол</span>      
+        </div>
+        
+        <div class="tool-bar__actions">
+         
+          <a href="#" class="tool-bar__wishlist-btn"><i></i></a>
+          
+          <a href="#" class="tool-bar__cart-btn">
+            <i></i>
+            <i class="tool-bar__counter">1</i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="main-menu">
+      <div class="main-menu__container">
+        <i class="main-menu__open-btn"></i>
+        <i class="main-menu__close-btn"></i>
+        <span class="main-menu__heading">Каталог</span>
+        <nav class="main-menu__nav">
+          <ul>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Размеры</a></li>
+            <li><a href="">Рекомендации</a></li>
+            <li><a href="">Оплата</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <form action="">
+          <input class="search-field" type="search" placeholder="Что ищешь?">
+          <button class="main-menu__search-btn"></button>
+        </form>
+         <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
+         <span class="main-menu__contacts">
+       Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+        <a href="" class="main-menu__tel">+7 (499) 922-44-22</a>
+        <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-desktop">Основной сайт компании</a>
+      </span>
+      </div>
+      
+      <nav class="mobile-menu">
+       <div class="mobile-menu__wrapper">
+        <ul>
+          <li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
+          <li><a href="">Услуги</a></li>
+          <li><a href="">Размеры</a></li>
+          <li><a href="">Рекомендации</a></li>
+        </ul>
+        <ul>
+          <li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
+          <li><a href="">Оплата</a></li>
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+        
+        <span class="mobile-menu__contacts">
+         Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+        <a href="" class="mobile-menu__tel">+7 (499) 922-44-22</a>
+        
+        <span class="mobile-menu__add-link">  
+          <a class="mobile-menu__main-site-link" href="#">
+          <span class="mobile-menu__logo"></span>Основной сайт компании</a>  
+        </span>
+      </span>
+        </div>
+      </nav>
+      
+    </section>
+  </header>
+   <section class="check-out">
+    <div class="check-out__container">
+      <aside class="catalog-filter">
+      <ul class="catalog-filter__list">
+        <li><a href="">Подарочные сертификаты</a></li>
+        <li><a href="">Бутсы</a></li>
+        <li><a href="">Обувь для зала</a></li>
+        <li><a href="">Шиповки</a></li>
+        <li><a href="">Клубная продукция</a></li>
+        <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+        <ul class="dropdown-category" dropdown-id="1">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul>
+        </li>
+        <li><a href="">Сланцы</a></li>
+        <li><a href="">Одежда</a></li>
+        <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+        <ul class="dropdown-category" dropdown-id="2">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul>
+        </li>
+        <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+        <ul class="dropdown-category" dropdown-id="3">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul></li>
+        <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+        <ul class="dropdown-category" dropdown-id="4">
+          <li class="dropdown-category__item"><a href="">lorem</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+        </ul></li>
+        <li><a href="">Медицина</a></li>
+        <li><a href="">Мячи</a></li>
+        <li><a href="">Сумки и рюкзаки</a></li>
+        <li><a href="">Аксессуары</a></li>
+        <li><a href="">Щитки</a></li>
+      </ul>
+          <i class="catalog-filter__open-btn"></i>
+    </aside>
+       <div class="check-out__main-content-wrapper">
+     <a href="#" class="check-out__return-link">Главная</a>
+     
+      <h1 class="check-out__heading">Оформление заказа</h1> 
+				<form action="" class="check-out-form">	 
+       
+       <div class="check-out-form__row">
+      <div class="adres-info">       
+        <span class="check-out-form__caption">Куда доставить</span>
+        
+        <div class="adres-info__form-group adres-info__form-group--region">
+          <label for="region">Область <span>*</span></label>
+          <select class="adres-info__region-select" name="" id="region">
+            <option value="Москва и область">Москва и область</option>
+            <option value="Москва и область">Москва и область</option>
+            <option value="Москва и область">Москва и область</option>
+          </select>
+        </div>
+        
+        <div class="adres-info__form-group adres-info__form-group--city">
+          <label for="city">Город <span>*</span></label>
+          <select class="adres-info__city-select" name="" id="city">
+            <option value="Москва">Москва</option>
+            <option value="Москва">Москва</option>
+            <option value="Москва">Москва</option>
+          </select>
+        </div>
+      </div>
+        
+        <div class="delivery-methods">
+        	<span class="check-out-form__caption">Способ доставки</span>
+        	<div class="delivery-methods__courier">
+						<div class="delivery-methods__description">
+							<div class="delivery-methods__row">
+								<input id="courier" type="radio">
+								<i class="radio-icon"></i>
+								<label class="checkbox" for="post">Курьером</label>
+       				</div>
+							<p>Заказ отправляется на следующий рабочий день после подтверждения заказа менеджером.</p>        		
+							<span><b>Срок доставки:</b> 2-3 рабочих дня</span>
+							<span><b>Стоимость:</b> 400 <i class="ruble-icon">&#8381;</i></span>
+						</div>
+        	</div>
+        	
+        	<div class="delivery-methods__mail">
+						<div class="delivery-methods__description">
+							<div class="delivery-methods__row">
+								<input id="post" type="radio" checked>
+								<i class="radio-icon radio-icon--active"></i>
+								<label class="checkbox checkbox--active" for="post">Почтой России</label>
+       				</div>
+							
+							<p>Доставка «Почтой России» осуществляется только при полной оплате заказа.</p>        		
+							<span><b>Срок доставки:</b> 1-3 недели дня</span>
+							<span><b>Стоимость:</b> 400 <i class="ruble-icon">&#8381;</i></span>
+						</div>
+        	</div>        	
+        </div>
+        </div>
+      
+       <div class="personal-info">
+        <span class="settings-form__caption">Личная информация</span>       
+        
+        <div class="personal-info__form-group">        
+          <label for="surname">Фамилия <span>*</span></label>
+          <input id="surname" type="text" placeholder="Шевченко" required>
+        </div>
+        
+        <div class="personal-info__form-group">
+          <label for="name">Имя <span>*</span></label>
+          <input id="name" type="text" placeholder="Александр" required>
+        </div>
+        
+        <div class="personal-info__form-group">
+          <label for="lat-name">Отчество <span>*</span></label>
+          <input id="last-name" type="text" value="Укажите отчество">
+        </div>
+        
+        <div class="personal-info__form-group">
+          <label for="tel">Телефон <span>*</span></label>
+          <input id="tel" type="tel" placeholder="+7 (965) 889 88 23" required>
+        </div>        
+       </div>
+       <div class="check-out-form__column">
+      <div class="adres-info">       
+        <span class="check-out-form__caption">Адрес доставки</span>
+        
+        <div class="adres-info__street-select">
+          <label for="street-name">Улица <span>*</span></label>
+          <input class="adres-info__street-input" id="street-name" type="text" placeholder="Вспольный" required>
+          <select class="street-type" id="street-type">
+            <option value="переулок">переулок</option>
+            <option value="улица">улица</option>
+          </select> 
+           
+          <div class="adres-info__form-group adres-info__form-group--mob-hidden adres-info__form-group--house">
+            <label for="house">Дом <span>*</span></label>
+            <input id="house" type="number" placeholder="6">
+          </div>
+        </div>
+        
+        <div class="adres-info__adres-select">
+          <div class="adres-info__form-group adres-info__form-group--tab-hidden adres-info__form-group--house">
+            <label for="house">Дом <span>*</span></label>
+            <input id="house" type="number" placeholder="6">
+          </div>
+          
+          <div class="adres-info__form-group">
+            <label for="apartment">Квартира <span>*</span></label>
+            <input id="apartment" type="number" placeholder="86">
+          </div>
+          
+          <div class="adres-info__form-group">
+            <label for="index">Индекс <span>*</span></label>
+            <input id="index" type="number" value="000000">
+          </div>
+        </div>
+      </div>      
+       
+		 <div class="comment-group">
+			<label class="check-out-form__caption comment-caption" for="comment">Комментарии к заказу</label>
+			<textarea id="comment" name="" id="" cols="30" rows="5">Поле “Комментарий к заказу” показано в заполненном виде, чтобы была понятна его механика: по умолчанию это поле под одну строку, но если текста больше, то оно опускается под необходимое количество строк.</textarea>
+		 </div>
+     </div>
+       <div class="payment-methods">
+       	
+        	<span class="check-out-form__caption">Способ оплаты</span>
+        	<div class="payment-methods__cash">
+						<input id="cash" type="radio">
+						<div class="payment-methods__description">
+							<div class="payment-methods__row">
+								<i class="radio-icon radio-icon--active radio-icon--tab-hidden"></i>
+								<i class="payment-methods__icon payment-methods__icon--cash cash-active"></i>
+								<i class="radio-icon radio-icon--active radio-icon--mob-hidden"></i>
+      					<label class="checkbox checkbox--active" for="cash">Наличные при получении</label>
+       				</div>
+        		</div>
+        	</div>
+        	
+        	<div class="payment-methods__bank">
+						<input id="bank" type="radio">
+						<div class="payment-methods__description">
+							<div class="payment-methods__row">
+								<i class="radio-icon radio-icon--tab-hidden"></i>
+								<i class="payment-methods__icon payment-methods__icon--bank"></i>
+								<i class="radio-icon radio-icon--mob-hidden"></i>
+								<label class="checkbox" for="bank">Банковским переводом</label>
+       				</div>
+        		</div>
+        	</div>
+        	
+        	<div class="payment-methods__online">
+						<input id="online" type="radio">
+						<div class="payment-methods__description">
+							<div class="payment-methods__row">
+								<i class="radio-icon radio-icon--tab-hidden"></i>
+								<i class="payment-methods__icon payment-methods__icon--online"></i>
+								<i class="radio-icon radio-icon--mob-hidden"></i>
+								<label class="checkbox" for="online">Оплата онлайн</label>
+       				</div>
+       				<p>Через платёжную систему “Деньги Online”. Доступные способы оплаты: Visa, MasterCard, Maestro, Яндекс.Деньги, WebMoney, QIWI и др.</p>
+        		</div>
+        	</div> 
+       </div>
+        
+        <div class="your-order">
+        	<span class="check-out-form__caption">
+        		Твой заказ
+        	</span>
+        	
+      		<section class="order-item">
+      			<div class="order-item__row">
+      				<a href="" class="order-item__image order-item__image--1"></a>
+      				<div class="order-item__heading">
+      					<span class="order-item__manufacturer">Nike</span>
+      					<h3 class="order-item__name">MERCURIAL SUPERFLY FG</h3>
+      				</div>
+      				</div>
+      				<div class="order-item__description">
+      					<ul class="order-item__info">
+      						<li><b>Размер:</b> 41</li>
+      						<li><b>Количество:</b> 1</li>
+      						<li><b>Цена:</b> 15 490 <i class="ruble-icon">&#8381;</i></li>
+      					</ul>
+      					<span class="order-item__price">
+      						<span class="order-item__price-name">Стоимость</span>
+      						15 490 <i class="ruble-icon">&#8381;</i>
+      					</span>
+      				</div>
+      		</section>
+      		
+      		<section class="order-item">
+      			<div class="order-item__row">
+      				<a href="" class="order-item__image order-item__image--2"></a>
+      				<div class="order-item__heading">
+      					<span class="order-item__manufacturer">NIKE</span>
+      					<h3 class="order-item__name">Tech Fleece</h3>
+      				</div>
+      			</div>
+      				<div class="order-item__description">
+      					<ul class="order-item__info">
+      						<li><b>Размер:</b> 140-152</li>
+      						<li><b>Количество:</b> 2</li>
+      						<li><b>Цена:</b> 2 490 <i class="ruble-icon">&#8381;</i></li>
+      					</ul>
+      					<span class="order-item__price">
+      						<span class="order-item__price-name">Стоимость</span>
+      						4 980 <i class="ruble-icon">&#8381;</i>
+      					</span>
+      				</div>
+      		</section>
+      		
+      		<section class="delivery-info">
+      			<div class="delivery-info__row">
+							<span class="delivery-info__caption">Доставка</span>
+      			<h3 class="delivery-info__heading">Почта России</h3>
+      			</div>							
+							<span class="delivery-info__price">
+								<span class="delivery-info__price-name">Стоимость</span>
+								350 <i class="ruble-icon">&#8381;</i>
+							</span>
+      		</section>
+        	
+        </div>
+        
+        
+        <div class="cart-actions__price-summary">
+          <span class="cart-actions__price-value">
+          <span class="cart-actions__price-name">Итого</span>
+          20 470 <i class="ruble-icon">&#8381;</i> 
+          </span>
+        </div>
+        <button class="check-out-form__submit-btn">Подтвердить</button>
+        
+				</form>
+			</div>
+		 </div>
+	</section>
+        
+ <footer class="page-footer">
+   
+  <div class="page-footer__container">
+     
+     
+    <div class="page-footer__contacts">	
+			<ul>
+				<li><a href="" class="page-footer__vk-link"></a></li>
+				<li class="page-footer__adres">Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
+					<a href="" class="page-footer__tel">+7 (499) 922-44-22</a>
+				</li>
+			</ul>
+    </div> 
+    
+    <div class="page-footer__links page-footer__links--mobile">
+			<ul>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+    </div>
+    
+    <div class="page-footer__payment-methods">
+      <span>Мы принимаем к оплате:</span>
+      <ul>
+        <li><a class="method method--visa" href="#"></a></li>
+        <li><a class="method method--mastercard" href="#"></a></li>
+        <li><a class="method method--maestro" href="#"></a></li>
+        <li><a class="method method--qiwi" href="#"></a></li>
+      </ul>
+    </div>
+    
+    <div class="page-footer__links">
+			<ul>
+				<li><a href="">Оплата</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+    </div>
+        
+    <div class="page-footer__partners">      
+      <i class="arrow-left arrow-left--disabled"></i><span>Наши партнёры</span><i class="arrow-right"></i>
+      <ul class="js-list">
+        <li><a class="partner partner--rpfl" href="#"></a></li>
+        <li><a class="partner partner--puma" href="#"></a></li>
+        <li><a class="partner partner--nike" href="#"></a></li>
+        <li><a class="partner partner--reusch" href="#"></a></li>
+        <li><a class="partner partner--onedivision" href="#"></a></li>
+        <li><a class="partner partner--diadora" href="#"></a></li>
+        <li><a class="partner partner--mueler" href="#"></a></li>
+        <li><a class="partner partner--rfl" href="#"></a></li>
+      </ul>
+    </div>    
+    
+    <div class="page-footer__info">
+      <a class="page-footer__main-site-link" href="#">
+        <div class="page-footer__logo"></div>Основной сайт компании</a>
+      <p>
+        <span class="page-footer__copyright">© ООО "Премьер Футбол Групп" 2010 - 2015</span>
+        Использование материалов сайта допускается только с обязательной ссылкой на 
+        <a href="">premier-football.ru</a>
+        <a href="">Договор оферты</a>
+      </p>
+    </div>
+    
+    <a href="#" class="page-footer__stamp"></a>     
+      
+  </div>
+</footer>
+  
+  
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>  
+ <script src="js/script.js"></script> 
+</body>
+</html>

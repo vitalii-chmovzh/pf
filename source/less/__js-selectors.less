@@ -1,0 +1,267 @@
+.visible{
+  transition: .3s;
+  display: block !important;
+}
+
+.visible-ib{
+  transition: .3s;
+  display: inline-block !important;
+}
+
+.after-hidden{
+  &:after{
+    transition: .15s;
+    opacity: 0;
+  }
+}
+
+.after-visible{
+  &:after{
+    opacity: 1;
+  }
+}
+
+.after-red{
+  &:after{
+    transition: .3s;
+    background: rgba(233, 63, 54, 0.8);
+  }
+}
+
+.hidden{
+  display: none !important;
+}
+
+.rotated-arrow{
+  color: @blue;
+  transform: rotate(90deg);
+  border-left-color: @blue;
+}
+
+.blue{
+  color: @blue;
+}
+
+.red{
+  color: @red;
+}
+
+.gray{
+  color: @gray;
+}
+
+.light-bg{
+}
+
+.rotated{  
+  transform: rotate(90deg);
+}
+
+.red-bg{
+  background: rgba(233, 63, 54, 0.8);
+}
+
+.background-none{
+  background: none;
+}
+
+.fixed{  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200000;
+}
+
+.red-bg{
+  background: rgba(233, 63, 54, 0.8);
+}
+
+.cleared{
+  clear: both;
+  margin-right: 5.358% !important;
+}
+
+.cleared-margin{
+  margin-right: 0 !important;
+}
+
+.clear-left{
+  clear: left;
+}
+
+.opened{
+//  overflow: auto;
+  height: auto !important;
+//  min-height: calc(~"100vh - 99px");
+  padding: 20px 15px;
+  overflow-y: auto;
+  bottom: 0;
+}
+
+.catalog-filter--opened{
+  overflow: auto;
+  bottom: 0;
+  height: auto !important;
+//  min-height: calc(~"100vh - 99px") !important;
+}
+
+.product__more-btn--bottom{
+  transition:0;
+  bottom: -160% !important;
+}
+
+.main-menu__nav--hidden{
+  visibility: hidden;
+}
+
+.catalog-filter--hidden{
+  width: 0 !important;
+  padding: 0 !important;
+  padding-right: 15px !important;
+  transition:.3s;
+  
+  ul{    
+  width: 0 !important;
+  overflow:hidden !important;
+    
+  *{
+    overflow:hidden !important;      
+  }
+  }
+}
+
+.catalog--expanded{
+  @media(min-width:@screen-md){
+    width: 98% !important;  
+    padding: 0 !important;
+  }
+  
+  @media(min-width:@screen-lg){
+    width: 90% !important;
+    padding: 0 !important;
+  }
+}
+
+.product-container--expanded{  
+  @media(min-width:@screen-md){
+    width: 100% !important;
+    margin: 0 !important;
+    margin-left: 15px !important;
+    padding: 0 !important;
+  } 
+  
+  @media(min-width:@screen-lg){
+  }
+}
+
+.product--margin-none{
+  margin-right: 0 !important;
+  border-right:none !important;
+}
+
+.product--margin-30{  
+  @media (min-width: @screen-xs) {
+//    &:nth-of-type(even){
+      margin-right: 5.358% !important;
+    }
+//    &:nth-of-type(odd){
+//      .product--margin-none;
+//    }
+//  }
+//  @media (min-width: @screen-sm) {
+//      margin-right: 4.167% !important; 
+//  }
+//  
+//  @media (min-width: @screen-md) {
+//      margin-right:4.478% !important;
+//    }
+//  
+//  @media (min-width: @screen-lg) {
+//      margin-right:3.66% !important; 
+//    }
+//  
+//  @media (min-width: @screen-xlg) {
+//      margin-right:2.598% !important; 
+//    }  
+}
+
+
+//.item(){
+//  margin-left: auto;
+//  margin-right: auto;
+//  width: 290px;
+//  .xs-col(6;0;5.358%);
+//  .sm-col(4;0;4.167%);
+//  .md-col(4;0;4.478%);
+//  .lg-col(4;0;3.66%;);
+//  .xlg-col(4;0;2.598%;);
+//  min-height: 145px;
+//  margin-bottom: 15px;
+//  
+//  @media (min-width: @screen-xs) {
+//  margin-bottom: 30px;
+//  min-height: auto;
+//    padding-bottom: 0;
+//    &:nth-of-type(even){
+//      margin-right: 0; 
+//    }
+//  }
+//  @media (min-width: @screen-sm) {
+//  margin-bottom: 30px;
+//    
+//    &:nth-of-type(even){
+//      margin-right: 4.167%; 
+//    }
+//    
+//    &:nth-of-type(3n+3){
+//      margin-right: 0; 
+//    }
+//  }
+//  
+//  @media (min-width: @screen-md) {
+//    
+//    &:nth-of-type(even){
+//      margin-right:4.478%;
+//    }
+//    
+//    &:nth-of-type(3n+3){
+//      margin-right:0;
+//    }
+//  }
+//  
+//  @media (min-width: @screen-lg) {
+//    
+//    &:nth-of-type(even){
+//      margin-right:3.66%; 
+//    }
+//    
+//    &:nth-of-type(3n+3){
+//      margin-right:0; 
+//    }
+//  }
+//  
+//  @media (min-width: @screen-xlg) {
+//    
+//    &:nth-of-type(even){
+//      margin-right:2.598%; 
+//    }
+//    
+//    &:nth-of-type(3n+3){
+//      margin-right:0; 
+//    }
+//  }  
+//}
+
+.overflow-hidden{
+  overflow: hidden;
+}
+
+.product__properties--visible{
+  left: -50%;
+}
+
+.toggler-active{
+	color: @blue !important;
+	cursor:default !important;
+}

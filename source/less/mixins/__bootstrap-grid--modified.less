@@ -1,0 +1,387 @@
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.clearfix--modified() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: right;
+  }
+}
+
+// Grid system
+//
+// Generate semantic grid columns with these mixins.
+// Centered container element
+.container-fixed(@gutter: @grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  .clearfix;
+}
+
+.container-fixed-ib(@gutter: @grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+}
+
+.container() {
+  .container-fixed;
+  @media (min-width: @screen-sm) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg) {
+    width: @container-lg;
+  }
+  @media (min-width: @screen-xlg) {
+    width: @container-xlg;
+  }
+}
+
+
+.container--modified() {
+  .container-fixed;
+  @media (min-width: @screen-xs) {
+    width: 450px;
+  }
+  @media (min-width: @screen-sm) {
+    width: 720px;
+  }
+  @media (min-width: @screen-md) {
+    width: 720px;
+  }
+  @media (min-width: @screen-lg) {
+    width: 850px;
+  }
+  @media (min-width: @screen-xlg) {
+    width: 1160px;
+  }
+}
+
+.container-ib() {
+  .container-fixed-ib;
+  @media (min-width: @screen-sm) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg) {
+    width: @container-lg;
+  }
+  @media (min-width: @screen-xlg) {
+    width: @container-xlg;
+  }
+}
+
+.container-fluid() {
+  .container-fixed;
+}
+
+.container-fluid-ib() {
+  .container-fixed-ib;
+}
+
+// Creates a wrapper for a series of columns
+.row(@gutter: @grid-gutter-width) {
+  margin-left: ceil((@gutter / -2));
+  margin-right: floor((@gutter / -2));
+  &:extend(.clearfix all);
+}
+
+
+// Generate the extra small columns
+.xs-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  
+  @media (min-width: @screen-xs) {
+    float: left;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.xs-col-offset(@columns) {
+  margin-left: percentage((@columns / @grid-columns));
+}
+
+.xs-col-push(@columns) {
+  left: percentage((@columns / @grid-columns));
+}
+
+.xs-col-pull(@columns) {
+  right: percentage((@columns / @grid-columns));
+}
+
+// Generate the small columns
+.sm-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-sm) {
+    float: left;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.sm-col-offset(@columns) {
+  @media (min-width: @screen-sm) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.sm-col-push(@columns) {
+  @media (min-width: @screen-sm) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.sm-col-pull(@columns) {
+  @media (min-width: @screen-sm) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.md-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-md) {
+    float: left;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.md-col-offset(@columns) {
+  @media (min-width: @screen-md) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.md-col-push(@columns) {
+  @media (min-width: @screen-md) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.md-col-pull(@columns) {
+  @media (min-width: @screen-md) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.lg-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-lg) {
+    float: left;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.lg-col-offset(@columns) {
+  @media (min-width: @screen-lg) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.lg-col-push(@columns) {
+  @media (min-width: @screen-lg) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.lg-col-pull(@columns) {
+  @media (min-width: @screen-lg) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate VERY large columns
+.xlg-col(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  @media (min-width: @screen-xlg) {
+    float: left;
+    width: (percentage((@columns / @grid-columns)) - (@spacing * ((@grid-columns - @columns)/@grid-columns)));
+    margin-right: @spacing;
+  }
+}
+
+.xlg-col-offset(@columns) {
+  @media (min-width: @screen-xlg) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+
+.xlg-col-push(@columns) {
+  @media (min-width: @screen-xlg) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+
+.lg-col-pull(@columns) {
+  @media (min-width: @screen-xlg) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// REMOVE MARGIN-LEFT
+.remove-margin() {
+  margin-right: 0;
+  @media (min-width: @screen-xs) {
+    margin-right: 0;
+  }
+  @media (min-width: @screen-sm) {
+    margin-right: 0;
+  }
+  @media (min-width: @screen-md) {
+    margin-right: 0;
+  }
+  @media (min-width: @screen-lg) {
+    margin-right: 0;
+  }
+  @media (min-width: @screen-xlg) {
+    margin-right: 0;
+  }
+}
+
+
+
+
+
+
+
+.xs-col--modified(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+  
+  @media (min-width: @screen-xs) {
+    float: left;
+    width: 55px*@columns;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+
+
+.sm-col--modified(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+ 
+  
+  @media (min-width: @screen-sm) {
+    float: left;
+    width: 55px*@columns;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+
+.md-col--modified(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+    
+  @media (min-width: @screen-md) {
+    float: left;
+    width: 55px*@columns;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+
+.lg-col--modified(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+   
+  @media (min-width: @screen-lg) {
+    float: left;
+    width: 55px*@columns;
+    margin-right: 30px;
+  }
+}
+
+
+
+
+
+.xlg-col--modified(@columns;
+@gutter: @grid-gutter-width;
+@spacing: @grid-spacing) {
+  position: relative;
+  min-height: 1px;
+  padding-left: (@gutter / 2);
+  padding-right: (@gutter / 2);
+   
+  @media (min-width: @screen-xlg) {
+    float: left;
+    width: 55px*@columns;
+    margin-right: 30px;
+  }
+}

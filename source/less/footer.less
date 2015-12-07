@@ -1,0 +1,660 @@
+.page-footer{
+  position: relative;
+  background: @black-bg;
+  padding: 20px 0;
+  overflow: hidden;
+  &__container{
+    .container;
+  }
+  .arrow-right{
+
+    &:hover{
+      border-left-color: @red;
+    }
+  }
+
+  &__contacts{		
+		width: 100%;
+		.sm-col(5;0;0);
+		.md-col(4;0;0);
+		
+		ul{
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin-bottom: 30px;
+  	}
+  }
+	
+  &__links{
+		width: 100%;
+		margin-bottom: 30px;
+		display: none;		
+        .md-col(4;0;0);
+    
+		@media (min-width: @screen-sm) {
+		  display: block;
+          clear:both;
+		}
+    
+		@media (min-width: @screen-md) {
+          clear: none;
+		}
+    
+		
+		&--mobile{  
+			display: block;
+			@media (min-width: @screen-sm) {
+				display: none;
+			}
+		}
+		ul{
+          .heading(1.2rem;1.2rem;1.2rem;1.2rem;1.6rem;);
+          text-transform: uppercase;
+          text-align: center;
+          @media (min-width: @screen-md) {
+            margin-top: 28px;
+            text-align: right;
+          }      
+          @media (min-width: @screen-md) {
+            text-align: left;
+          }
+		}
+    li{
+      display: inline-block;
+    }
+    
+    a{
+      padding:0 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+    transition: .3s;
+      
+      &:active{
+        color: @red;
+      }
+    
+		@media (min-width: @screen-md) {
+          &:hover{
+            text-decoration: underline;
+          }
+		}
+    }
+  }
+      
+  &__payment-methods{
+		width: 100%;				
+		.sm-col(5;0;0);
+		.md-col(4;0;0);
+		.sm-col-offset(2);
+		.md-col-offset(0);
+		
+    .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
+    font-weight: 300;
+    margin-bottom: 30px;
+               
+      @media (max-width: @screen-sm) {
+        text-align: center;
+      }
+    
+    span{
+      color: #fff;
+      display: block;
+      margin-bottom: 15px;
+      
+      @media (min-width: @screen-sm) {
+        margin-bottom: 5px;
+      }
+    }
+    li{      
+      margin-right: 30px;
+      display: inline-block;
+             
+      @media (min-width: @screen-lg) {
+        margin-right: 50px;
+              
+        &:last-child{
+          margin-right: 0;
+        }        
+      }
+      
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }  
+	
+	&__partners{
+      position: relative;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 30px;
+      overflow: hidden;
+       
+      @media (min-width: @screen-xs) {
+        width: 450px;
+      }
+      
+      @media (min-width: @screen-sm) {
+        width: 735px;
+      }
+      
+      @media (min-width: @screen-md) {
+        width: 940px;
+      }
+      
+      @media (min-width: @screen-lg) {
+        width: 1140px;
+      }
+      
+		
+    i{
+      display: inline-block;
+      @media (min-width: @screen-md) {
+        display: none;
+      }
+    }
+    ul{
+      margin-top: 15px;
+			width: 500%;
+			text-align: left;
+      
+      @media (min-width: @screen-md) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    li{
+      display: inline-block;
+			margin-right: 30px;
+      
+      @media (min-width: @screen-xs){
+        margin-right: 40px;
+      }
+      
+      @media (min-width: @screen-sm){
+        margin-right: 27px;
+      }
+      
+      @media (min-width: @screen-xlg) {
+        margin-right: 60px;
+        
+        &:last-child{
+          margin-right: 0;    
+        } 
+      }
+    }
+    span{
+      .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
+      text-transform: uppercase;
+      display: inline-block;
+      color: #fff;
+      padding:0 10px;
+    }
+  } 
+	
+	&__info{
+		width: 100%;
+		
+      @media (min-width: @screen-xs){
+        width: 80%;
+      }
+      
+      @media (min-width: @screen-sm){
+        width: 100%;
+      }
+      
+    a{
+      vertical-align: top;
+      display: inline-block;
+      .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      transition: .3s;
+    }
+    
+    p{
+      margin-top: 15px;
+      .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;); 
+      color: #fff;
+      font-weight: 300;
+      
+      a{
+        margin-bottom: 10px;
+        display: block;
+        transition: .3s;
+        
+        &:active{
+          color: @red;
+        }
+        
+        @media (min-width: @screen-xs){
+          &:nth-of-type(1){          
+            display: inline-block;         
+          }
+        }
+        
+        @media (min-width: @screen-sm){  
+          &:nth-of-type(1){          
+            display: block;         
+          }
+        }
+      }
+    }
+  }
+  
+  
+  &__vk-link{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background: @blue;
+    border:1px solid @blue;
+    transition: .3s;
+    
+    &:after{
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 28px;
+      height: 15px;
+      background: url("../img/vk.svg");
+      background-size:cover;
+    }
+    
+    &:active{
+      background: none;
+      border: 1px solid #fff;
+    }
+    
+    @media (min-width: @screen-md){
+    &:hover{
+      background: none;
+      border: 1px solid #fff;
+    }
+    }
+  }
+  
+  &__adres{
+    vertical-align: top;
+    display: inline-block;
+    .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  &__tel{
+    margin-top: 5px;
+    display: block;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 900;
+    transition: .3s;
+    
+    &:active{
+      color: @red;
+    }
+    
+    @media (min-width: @screen-xs) {
+      display: inline-block;
+    }
+    
+    @media (min-width: @screen-sm) {
+      display: block;
+    }
+    
+    @media (min-width: @screen-md) {
+      &:hover{
+        color: @gray;        
+      }
+    }
+    
+    @media (min-width: @screen-xlg) {
+      font-size: 2.4rem;
+    }
+  }
+  
+
+  
+  &__logo{
+    height: 30px;
+    width: 55px;
+    background: url("../img/logo-30-w.svg");
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-top: -7px;
+    transition: .3s;
+  }
+  
+	&__main-site-link{
+      &:active{
+        
+        .page-footer__logo{
+          opacity: 0.5;
+          background: url("../img/logo-30-color.svg");
+        }
+        
+        color: @red;
+        text-decoration: none;
+      }
+      
+      
+		@media (min-width: @screen-md) {
+          &:hover{
+            text-decoration: underline;
+        
+            .page-footer__logo{
+              background: url("../img/logo-30-color.svg");
+            }
+          }
+		}
+      
+	}
+  &__copyright{
+    display: block;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+  
+  &__stamp{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    
+    &:hover{
+      width: 80px;
+      height: 80px;
+      
+      &:before{
+        width: 80px;
+        height: 80px;
+      }
+      
+    }
+    
+    &:before{
+      position: absolute;
+      content: '';
+      bottom: 0;
+      right: 0;
+      width: 70px;
+      height: 70px;
+      background: url("../img/stamp-base.svg");
+    }
+    
+    &:after{
+      position: absolute;
+      content: '';
+      bottom: 8px;
+      right: 11px;
+      width: 15px;
+      height: 26px;
+      transform: rotate(-45deg);
+      background: url("../img/hvltg.svg") center center no-repeat;
+      background-size: cover;
+      transition: .3s;
+    }
+  }
+}
+
+.method{
+  display: block;
+  width: 50px;
+  height: 35px;
+  
+  &--visa{
+    background: url("../img/visa.svg") center no-repeat;
+  }
+  
+  &--mastercard{
+    background: url("../img/mastercard.svg") center no-repeat;
+  }
+  
+  &--maestro{
+    background: url("../img/maestro.svg") center no-repeat;
+  }
+  
+  &--qiwi{
+    width: 34px;
+    background: url("../img/qiwi.svg") center no-repeat;
+  }
+}
+
+.partner{
+  display: inline-block;
+  width: 77px;
+  height: 77px;
+  transition: 0;
+  &--rpfl{
+    background: url("../img/rpfl.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/rpfl--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/rpfl--gray.svg") center no-repeat;   
+      }
+    }
+  }
+  
+  &--puma{
+    background: url("../img/puma.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/puma--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/puma--gray.svg") center no-repeat;   
+      }
+    }
+  }
+  
+  &--nike{
+    background: url("../img/nike.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/nike--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/nike--gray.svg") center no-repeat;   
+      }
+    }
+  }
+  &--reusch{
+    background: url("../img/nike.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/nike--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/nike--gray.svg") center no-repeat;   
+      }
+    }
+  }
+  &--onedivision{
+    background: url("../img/nike.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/nike--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/nike--gray.svg") center no-repeat;   
+      }
+    }
+  }
+  &--mueler{
+    background: url("../img/nike.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/nike--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/nike--gray.svg") center no-repeat;   
+      }
+    }
+  }  
+  &--diadora{
+    background: url("../img/diadora.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/diadora--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/diadora--gray.svg") center no-repeat;   
+      }
+    }
+  }  
+  &--rfl{
+    background: url("../img/rfs.svg") center no-repeat;
+    
+    
+    &:active{
+      background: url("../img/rfs--red.svg") center no-repeat;      
+    }
+    @media (min-width: @screen-md) {
+      &:hover{
+        background: url("../img/rfs--gray.svg") center no-repeat;   
+      }
+    }
+  }
+}
+
+//  
+//  
+
+//  
+
+
+//  
+
+//
+//
+.arrow-left{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 5px solid transparent;
+    transition: .3s;
+  
+  &:hover{
+    border-right-color: @red;
+  }
+      
+  &--disabled{
+    opacity: .2;
+
+    &:hover{
+      border-right-color: #fff;
+    }
+    
+  } 
+  
+  &--gray{
+    border-right-color: @gray;
+  }   
+  
+  &--light-gray{    
+    border-top: 5px solid transparent;
+    border-right: 10px solid @light-bg;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.arrow-right{
+  cursor: pointer;
+  width: 0;
+  height: 0;  
+  border-top: 5px solid transparent;
+  border-left: 10px solid #fff;
+  border-bottom: 5px solid transparent;
+    transition: .3s;
+  &:hover{
+    border-left-color: @blue;
+  }
+  &--gray{
+    border-left-color: @gray;
+  } 
+  
+  &--disabled{
+    opacity: .2;
+    
+    &:hover{
+      border-right-color: #fff;
+    }
+  }
+}
+
+  
+.arrow-bottom{
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 10px solid #fff;
+    transition: .3s;
+  
+  &:hover{
+    border-top-color: @red;
+  }
+      
+  &--disabled{
+    opacity: .2;
+
+    &:hover{
+      border-top-color: #fff;
+    }
+    
+  } 
+  
+  &--gray{
+    border-top-color: @gray;
+  }   
+  
+  &--light-gray{    
+    border-top: 5px solid transparent;
+    border-right: 10px solid @light-bg;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.js-list{
+  position: relative;
+  left: 0;
+  transition: .3s linear left;
+}
+
+//

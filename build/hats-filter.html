@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>Template</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/hover.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Adding Roboto in indian style-->
+    
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>  
+
+	<section class="filter">
+		<div class="filter__row">
+			<h2 class="filter__heading">Фильтры</h2>
+			<i class="filter__icon"></i>
+		</div>
+		<form action="" class="filter-form">
+			<section class="filter-form__brands">
+				<span class="filter-form__caption">Бренды</span>
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="adidas-hat" type="checkbox">
+						<label for="adidas-hat">Adidas</label>
+					</div>
+				</div>	
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="diadora-hat" type="checkbox">
+						<label for="diadora-hat">Diadora</label>
+					</div>
+				</div>
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="nike-hat" type="checkbox">
+						<label for="nike-hat">Nike</label>
+					</div>
+				</div>
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="puma-hat" type="checkbox">
+						<label for="puma-hat">Puma</label>
+					</div>
+				</div>
+				
+			</section>
+			
+			<section class="filter-form__price">
+				<span class="filter-form__caption">Цена</span>
+				<div class="range-controls">
+					<div class="range-controls__min-toggle"></div>
+					<div class="range-controls__scale"></div>
+					<div class="range-controls__max-toggle"></div>
+				</div>
+				
+				<div class="price-output">
+					<div class="price-output__row">
+						<label class="filter-form__caption" for="min-price-hat">От</label>
+						<input id="min-price-hat" type="text" value="1 000">
+						<i class="ruble-icon">&#8381;</i>
+					</div>
+					<div class="price-output__row">
+						<label class="filter-form__caption" for="max-price-hat">До</label>
+						<input id="max-price-hat" type="text" value="16 990">
+						<i class="ruble-icon">&#8381;</i>
+					</div>
+				</div>				
+			</section>
+				
+			<div class="filter-form__actions">
+				<button class="filter-form__submit">Применить</button>
+				<button type="reset" class="filter-form__reset">Сбросить</button>
+			</div>
+			
+		</form>
+		
+	</section>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+</script>  
+ <script src="js/script.js"></script> 
+</body>
+</html>

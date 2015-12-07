@@ -1,0 +1,76 @@
+.angled-img(){
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+
+.angled-img-block(){
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+     clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%); 
+}
+
+.angled-bottom(@deg: -1.5deg){
+  position: relative;
+  z-index: 1;
+  &:after{
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(@deg);
+    transform-origin: 100%;
+    z-index: -1;
+  }
+}
+
+.angled-top(@deg: 1.5deg){
+  position: relative;
+  z-index: 1;
+  &:before{
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(@deg);
+    transform-origin: 100%;
+    z-index: -1;
+  }
+}
+
+.angled-top-bottom(@deg-t: 1.5deg; @deg-b: -1.5deg){
+  position: relative;
+  z-index: 1;
+  &:before{
+    background: inherit;
+    top: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(@deg-t);
+    transform-origin: 100%;
+    z-index: -1;
+  }  
+  &:after{
+    background: inherit;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(@deg-b);
+    transform-origin: 100%;
+    z-index: -1;
+  }
+}

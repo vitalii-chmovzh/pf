@@ -1,0 +1,42 @@
+.card() {
+  border-radius: 4px;
+  box-shadow: @z2-shadow;
+}
+
+.fl-btn() {
+  transition: 0.3s ease;
+
+  border-radius: 50%;
+  box-shadow: @z2-shadow;
+
+  &:hover {
+    box-shadow: @z3-shadow;
+  }
+
+  &:active, &:focus {
+    box-shadow: @z2-shadow;
+  }
+}
+
+.raised-btn() {
+  transition: 0.3s ease;
+
+  border-radius: 4px;
+  box-shadow: @z1-shadow;
+
+  &:hover {
+    box-shadow: @z2-shadow;
+  }
+
+  &:focus {
+    box-shadow: @z1-shadow;
+  }
+
+  &:active, &:focus {
+    box-shadow: @z3-shadow;
+  }
+}
+
+.bar() {
+  box-shadow: @z2-shadow;
+}
