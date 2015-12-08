@@ -1,5 +1,8 @@
 $(document).ready(function(){
 	
+    var saleRow = $("products-sale");
+  
+  saleRow.hide();
 	
 	 	$(".big-red-btn").on("click touchstart", function(){		
 			
@@ -14,12 +17,14 @@ $(document).ready(function(){
 			
 			var cardId = $(this).attr('data-id'),
 			 contentId = $('.product__properties[data-id=' + cardId + ']'),
-			 wrapperId = $('.product__wrapper[data-id=' + cardId + ']');
+			 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
+			 propId = $('.product-properties[data-id=' + cardId + ']');
           
 			var wrappers = $('.product__wrapper');
 //			productsCont.removeClass("products--expanded");
 			wrapperId.toggleClass("product__wrapper--expanded");
-          
+			propId.toggleClass("visible");
+            $(this).toggleClass("button-right");
 		});
 });
 
