@@ -8,6 +8,7 @@
     <title>Template</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Adding Roboto in indian style-->
@@ -283,24 +284,26 @@
 			
 			<section class="filter-form__price">
 				<span class="filter-form__caption">Цена</span>
-				<div class="range-controls">
+				<!-- <div class="range-controls">
 					<div class="range-controls__min-toggle"></div>
 					<div class="range-controls__scale"></div>
 					<div class="range-controls__max-toggle"></div>
-				</div>
+				</div> -->
+				<div id="ui-slider"></div>
 				
 				<div class="price-output">
 					<div class="price-output__row">
 						<label class="filter-form__caption" for="min-price">От</label>
-						<input id="min-price" type="text" value="1 000">
+						<input id="min-price" type="text" value="">
 						<i class="ruble-icon">&#8381;</i>
 					</div>
 					<div class="price-output__row">
 						<label class="filter-form__caption" for="max-price">До</label>
-						<input id="max-price" type="text" value="16 990">
+						<input id="max-price" type="text" value="">
 						<i class="ruble-icon">&#8381;</i>
 					</div>
-				</div>				
+				</div>
+
 			</section>
 				
 			<div class="filter-form__actions">
@@ -312,8 +315,9 @@
 		
 	</section>
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
- <script src="js/script.js"></script> 
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js/script.js"></script> 
 </body>
 </html>
