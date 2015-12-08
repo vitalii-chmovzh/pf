@@ -134,7 +134,7 @@
       overflow: hidden;
        
       @media (min-width: @screen-xs) {
-        width: 450px;
+        width: 410px;
       }
       
       @media (min-width: @screen-sm) {
@@ -168,9 +168,9 @@
    //      align-items: center;
    //    }
    //  }
-   //  li{
-   //    display: inline-block;
-			// margin-right: 30px;
+    li{
+      display: inline-block;
+			margin-right: 30px;
       
    //    @media (min-width: @screen-xs){
    //      margin-right: 40px;
@@ -187,7 +187,7 @@
    //        margin-right: 0;    
    //      } 
    //    }
-   //  }
+    }
     span{
       .font(1.2rem;1.2rem;1.2rem;1.2rem;1.4rem;);
       text-transform: uppercase;
@@ -632,11 +632,16 @@
   }
 }
 
-// .js-list{
-//   position: relative;
-//   left: 0;
-//   transition: .3s linear left;
-// }
+.js-list-mobile{
+    @media (min-width: @screen-md) {
+      display: none;
+    }
+}
+.js-list{
+    @media (max-width: @screen-md) {
+      display: none;
+    }
+}
 
 //
 
