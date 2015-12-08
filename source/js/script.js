@@ -1,31 +1,28 @@
-window.onload = function initMap() {
-    var myLatLng = {lat: 50.3433403, lng: 30.552167199999985};
+// Map
+function initMap() {
+    var myLatLng = {lat: 55.73708, lng: 37.65420};
 
-    // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), {
       center: myLatLng,
       scrollwheel: false,
-      zoom: 15
+      zoom: 15,
+      zoomControl: false,
+      mapTypeControl: false,
+      streetViewControl: false
     });
-    var image = {
-      url: '',
-      // This marker is 20 pixels wide by 32 pixels high.
-      size: new google.maps.Size(
-        0, 
-        0      ),
-      // The origin for this image is (0, 0).
-      origin: new google.maps.Point(0, 0),
-      // The anchor for this image is the base of the flagpole at (0, 32).
-      anchor: new google.maps.Point(0, 32)
-    };
-    // Create a marker and set its position.
+
+    var image = 'img/marker.png';
+
     var marker = new google.maps.Marker({
-      map: map,
       position: myLatLng,
-      title: 'Manezh',
-            
+      map: map,
+      icon: image,
+      title: 'Премьер Футбол'     
     });
 }
+
+
+
 
 $(document).ready(function () {
   var display = false;
@@ -53,39 +50,57 @@ $(document).ready(function () {
     }, 200);
   });
   
-  
+  // Footer carousel
+  var winWidth = $(window).width();
+
+  // if (winWidth <= 992){
+    $('.js-list').bxSlider({
+        slideWidth: 77,
+        slideMargin: 30,
+        minSlides: 7,
+        maxSlides: 8,
+        moveSlides: 1,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        nextSelector: '.arrow-right',
+        prevSelector: '.arrow-left',
+        infiniteLoop: false,
+        hideControlOnEnd: true
+    });
+    // }
  // SIZES TOGGLING
   
-$('.sizes__product-type-toggler span').on("click, touchstart", function(){
-  var shoesBtn = $(".sizes__shoes-show"),
-      clothesBtn = $(".sizes__clothes-show"),
-      socksBtn = $(".sizes__socks-show");
-  var shoesTable = $(".sizes__shoes"),
-      clothesTable = $(".sizes__clothes"),
-      socksTable = $(".sizes__socks");
+// $('.sizes__product-type-toggler span').on("click, touchstart", function(){
+//   var shoesBtn = $(".sizes__shoes-show"),
+//       clothesBtn = $(".sizes__clothes-show"),
+//       socksBtn = $(".sizes__socks-show");
+//   var shoesTable = $(".sizes__shoes"),
+//       clothesTable = $(".sizes__clothes"),
+//       socksTable = $(".sizes__socks");
   
-  clothesTable.hide();
-  socksTable.hide();
+//   clothesTable.hide();
+//   socksTable.hide();
   
-  shoesBtn.on("click touchstart", function(){
-    shoesTable.show("slide", "fast");
-    clothesTable.hide();
-    socksTable.hdie();
-  });
+//   shoesBtn.on("click touchstart", function(){
+//     shoesTable.show("slide", "fast");
+//     clothesTable.hide();
+//     socksTable.hdie();
+//   });
   
-  clothesBtn.on("click touchstart", function(){
-    clothesTable.show("slide", "fast");
-    shoesTable.hide();
-    socksTable.hdie();
-  });
+//   clothesBtn.on("click touchstart", function(){
+//     clothesTable.show("slide", "fast");
+//     shoesTable.hide();
+//     socksTable.hdie();
+//   });
   
-  socksBtn.on("click touchstart", function(){
-    socksTable.show("slide", "fast");
-    clothesTable.hide();
-    socksTable.hdie();
-  });
+//   socksBtn.on("click touchstart", function(){
+//     socksTable.show("slide", "fast");
+//     clothesTable.hide();
+//     socksTable.hdie();
+//   });
     
-});
+// });
   
   
 if (window.matchMedia("(max-width: 1199px)").matches) { 
@@ -350,6 +365,35 @@ if (window.matchMedia("(max-width: 1199px)").matches) {
     } 
   });
   
+/* Products quantiry */
+
+var plus = $(".cart-product__quantity .plus-icon"),
+    minus = $(".cart-product__quantity .minus-icon");
+
+plus.on("click", function(){
+  var product = $(this).parent().find("input[name='size-select']"),
+      minus = $(this).parent().find(".minus-icon");
+      product[0].value++;
+      if(product[0].value > 1) {
+          minus.removeClass("minus-icon--disabled");
+      }
+      
+});
+
+minus.on("click", function(){
+   var product = $(this).parent().find("input[name='size-select']");
+       if(product[0].value > 1) {
+          product[0].value--;
+          $(this).removeClass("minus-icon--disabled");
+       } 
+       if(product[0].value == 1) {
+          $(this).addClass("minus-icon--disabled");
+       }
+});
+
+
+
+
 //  (function(){   
   
 //  if (window.matchMedia("(max-width: 992px)").matches) {
