@@ -537,124 +537,88 @@
 	}
 }
 
-// .range-controls {
-//   background: url("../img/bg.jpg") center center no-repeat;
-//   background-size: 250px 5px;
+.range-controls{
+  background: url("../img/bg.jpg") center center no-repeat;
+  background-size: 250px 5px;
 
-//     @media(min-width: @screen-sm) and (max-width: @screen-lg){
-//       background-size: 180px 5px;              
-//     }
+    @media(min-width: @screen-sm) and (max-width: @screen-lg){
+      background-size: 180px 5px;              
+    }
 
-//     @media(min-width: @screen-lg){
-//       background-size: 226px 5px;      
-//     }
+    @media(min-width: @screen-lg){
+      background-size: 226px 5px;      
+    }
 
-//     @media(min-width: @screen-xlg){
-//       background-size: 339px 5px;      
-//     }
+    @media(min-width: @screen-xlg){
+      background-size: 339px 5px;      
+    }
 
-// 	&__scale{
-//       position: relative;
-// 		vertical-align: middle;
-// 		display: inline-block;
-// 		height: 5px;
-// 		width: 250px;
-// 		background: @blue;
+	&__scale{
+      position: relative;
+		vertical-align: middle;
+		display: inline-block;
+		height: 5px;
+		width: 250px;
+		background: @blue;
               
-//         @media(min-width: @screen-sm) and (max-width: @screen-lg){
-// 		    width: 180px;            
-//         }
-              
-//         @media(min-width: @screen-lg){
-// 		    width: 226px;            
-//         }
-      
-//         @media(min-width: @screen-xlg){
-// 		    width: 339px;            
-//         }
-
-//       &:after{
-//         position: absolute;
-//         content: '';
-//         height: 5px;
-//         width: 250px;
-//         top: 0;
-//         left: 0;
-//       }
-      
-// 		&--inactive{
-// 			background: @border-color;
-// 		}
-// 	}
-	
-// 	&__min-toggle, &__max-toggle{
-// 		position: relative;
-//         cursor: pointer;
-// 		z-index: 20;
-// 		vertical-align: middle;
-// 		display: inline-block;
-// 		width: 20px;
-// 		height: 20px;
-// 		border-radius: 50%;
-// 		background: #fff;
-// 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-//         transition: .3s;
-              
-//         @media(min-width: @screen-md){
-//           &:hover{
-//            background: #000;
-//           }
-//         }
-// 	}
-	
-// 	&__min-toggle{
-// 		margin-right: -5px;
-// 	}
-	
-// 	&__max-toggle{
-// 		margin-left: -5px;
-// 	}
-
-// }
-
-// .range-controls{
-// 	margin-bottom: 20px;
-// }
-#ui-slider {
-  border:none!important;
-  height: 6px;
-  margin-bottom: 20px;
-  background: @border-color;
-  .ui-slider-range{
-    position: relative;
-    vertical-align: middle;
-    display: inline-block;
-    height: 6px;
-    width: 250px;
-    top: -5px;
-    background: #2864c7;
-  }
-  .ui-slider-handle{
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border: none;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-    top: -0.6em;
-      &:focus {
-        outline: none; 
-      } 
-      @media(min-width: @screen-md){
-        &:active{
-          background: #000;
+        @media(min-width: @screen-sm) and (max-width: @screen-lg){
+		    width: 180px;            
         }
-        &:hover{
-          background: #000;
+              
+        @media(min-width: @screen-lg){
+		    width: 226px;            
         }
+      
+        @media(min-width: @screen-xlg){
+		    width: 339px;            
+        }
+
+      &:after{
+        position: absolute;
+        content: '';
+        height: 5px;
+        width: 250px;
+        top: 0;
+        left: 0;
       }
-  }
+      
+		&--inactive{
+			background: @border-color;
+		}
+	}
+	
+	&__min-toggle, &__max-toggle{
+		position: relative;
+        cursor: pointer;
+		z-index: 20;
+		vertical-align: middle;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background: #fff;
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+        transition: .3s;
+              
+        @media(min-width: @screen-md){
+          &:hover{
+           background: #000;
+          }
+        }
+	}
+	
+	&__min-toggle{
+		margin-right: -5px;
+	}
+	
+	&__max-toggle{
+		margin-left: -5px;
+	}
+
+}
+
+.range-controls{
+	margin-bottom: 20px;
 }
 
 .price-output{

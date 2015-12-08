@@ -15,18 +15,28 @@
     position: absolute;
     top: 0;
     left: -5px;
-    width: 54px;
+    width: 60px;
     height: 36px;
     transform: skew(-15deg);
     text-align: center;
     padding-top: 11px;
+  
+    @media(min-width: @screen-xlg){
+      width: 75px;
+      height: 41px;
+      padding-top: 13px;
+    }
     
     &--new{
       background: @blue;
     }
     
+    &--sale{
+      background: @red;
+    }
+    
     span{
-      .font(1rem;1rem;1rem;1rem;1rem;1);
+      .font(1rem;1rem;1rem;1.2rem;1.4rem;1);
       transform: skew(15deg);
     }
   }
@@ -297,16 +307,16 @@
     cursor: pointer;
     position: absolute;
     width: 20px;
-    height: 40px;
+    height: 39px;
     border-left: 1px solid @border-color;
     border-top: 1px solid @border-color;
     right: 0;
-    bottom: 0;
+    bottom: 1px;
     background: #fff;
     z-index: 900;
     
     @media (min-width: @screen-xlg) {
-      height: 50px;  
+      height: 49px;  
     }
   }
   

@@ -50,25 +50,25 @@ $(document).ready(function () {
     }, 200);
   });
   
+  // Footer carousel
+  var winWidth = $(window).width();
 
-
-// Price range
-
-$(function() {
-    $( "#ui-slider" ).slider({
-      range: true,
-      min: 0,
-      max: 16990,
-      values: [ 100, 16990 ],
-      slide: function( event, ui ) {
-        $( "#min-price" ).val( ui.values[ 0 ] );
-        $( "#max-price" ).val( ui.values[ 1 ] );
-      }
+  // if (winWidth <= 992){
+    $('.js-list').bxSlider({
+        slideWidth: 77,
+        slideMargin: 30,
+        minSlides: 7,
+        maxSlides: 8,
+        moveSlides: 1,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        nextSelector: '.arrow-right',
+        prevSelector: '.arrow-left',
+        infiniteLoop: false,
+        hideControlOnEnd: true
     });
-    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
-    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
-});
-
+    // }
  // SIZES TOGGLING
   
 // $('.sizes__product-type-toggler span').on("click, touchstart", function(){
