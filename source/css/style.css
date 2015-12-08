@@ -2501,6 +2501,16 @@ input[type=search] {
   border-right: 10px solid #f6f6f6;
   border-bottom: 5px solid transparent;
 }
+@media (min-width: 992px) {
+  .js-list-mobile {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .js-list {
+    display: none;
+  }
+}
 .bx-viewport {
   border: none!important;
   background: transparent!important;

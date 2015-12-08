@@ -1054,6 +1054,16 @@
         <li><a class="partner partner--mueler" href="#"></a></li>
         <li><a class="partner partner--rfl" href="#"></a></li>
       </ul>
+      <ul class="js-list-mobile">
+        <li><a class="partner partner--rpfl" href="#"></a></li>
+        <li><a class="partner partner--puma" href="#"></a></li>
+        <li><a class="partner partner--nike" href="#"></a></li>
+        <li><a class="partner partner--reusch" href="#"></a></li>
+        <li><a class="partner partner--onedivision" href="#"></a></li>
+        <li><a class="partner partner--diadora" href="#"></a></li>
+        <li><a class="partner partner--mueler" href="#"></a></li>
+        <li><a class="partner partner--rfl" href="#"></a></li>
+      </ul>
     </div>    
     
     <div class="page-footer__info">
@@ -1079,38 +1089,19 @@
 <!-- <script src="js/script.js"></script>  -->
 <script>
   $(document).ready(function () {
-    var winWidth = $(window).width();
-
-    if (winWidth < 970){
-        $('.js-list').bxSlider({
-            slideWidth: 77,
-            slideMargin: 30,
-            maxSlides: 7,
-            moveSlides: 1,
-            pager: false,
-            nextText: '',
-            prevText: '',
-            nextSelector: '.arrow-right',
-            prevSelector: '.arrow-left',
-            infiniteLoop: false,
-            hideControlOnEnd: true
-        });
-    };
-
-    if (winWidth < 970 && winWidth >= 768){
-      onDeviceOrientationChange();
-    };
-
-    function onDeviceOrientationChange() {                    
-      if (Math.abs(window.orientation) === 0) {
-        slider.destroySlider();
-      } else {
-        slider.reloadSlider();
-      }
-    }
-
-    window.onorientationchange = onDeviceOrientationChange;
-
+    $('.js-list-mobile').bxSlider({
+        slideWidth: 77,
+        slideMargin: 30,
+        maxSlides: 7,
+        moveSlides: 1,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        nextSelector: '.arrow-right',
+        prevSelector: '.arrow-left',
+        infiniteLoop: false,
+        hideControlOnEnd: true
+    });
   });
 </script>
 </body>

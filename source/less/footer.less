@@ -632,11 +632,16 @@
   }
 }
 
-// .js-list{
-//   position: relative;
-//   left: 0;
-//   transition: .3s linear left;
-// }
+.js-list-mobile{
+    @media (min-width: @screen-md) {
+      display: none;
+    }
+}
+.js-list{
+    @media (max-width: @screen-md) {
+      display: none;
+    }
+}
 
 //
 
