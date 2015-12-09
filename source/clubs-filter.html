@@ -10,6 +10,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <!-- Adding Roboto in indian style-->
     
    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -234,24 +235,21 @@
 			
 			<section class="filter-form__price">
 				<span class="filter-form__caption">Цена</span>
-				<div class="range-controls">
-					<div class="range-controls__min-toggle"></div>
-					<div class="range-controls__scale"></div>
-					<div class="range-controls__max-toggle"></div>
-				</div>
+
+				<div id="ui-slider"></div>
 				
 				<div class="price-output">
 					<div class="price-output__row">
-						<label class="filter-form__caption" for="min-price-club">От</label>
-						<input id="min-price-club" type="text" value="1 000">
+						<label class="filter-form__caption" for="min-price">От</label>
+						<input id="min-price" type="text" value="">
 						<i class="ruble-icon">&#8381;</i>
 					</div>
 					<div class="price-output__row">
-						<label class="filter-form__caption" for="max-price-club">До</label>
-						<input id="max-price-club" type="text" value="16 990">
+						<label class="filter-form__caption" for="max-price">До</label>
+						<input id="max-price" type="text" value="">
 						<i class="ruble-icon">&#8381;</i>
 					</div>
-				</div>				
+				</div>			
 			</section>
 				
 			<div class="filter-form__actions">
@@ -265,7 +263,25 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
- <script src="js/script.js"></script> 
- <script src="js/select.js"></script> 
+<script src="js/script.js"></script> 
+<script src="js/select.js"></script> 
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+	// Price range
+	$(function() {
+	    $( "#ui-slider" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 16990,
+	      values: [ 100, 16990 ],
+	      slide: function( event, ui ) {
+	        $( "#min-price" ).val( ui.values[ 0 ] );
+	        $( "#max-price" ).val( ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
+	    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
+	});
+</script> 
 </body>
 </html>

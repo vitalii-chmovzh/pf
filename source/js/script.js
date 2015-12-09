@@ -52,22 +52,7 @@ $(document).ready(function () {
   
 
 
-// Price range
 
-$(function() {
-    $( "#ui-slider" ).slider({
-      range: true,
-      min: 0,
-      max: 16990,
-      values: [ 100, 16990 ],
-      slide: function( event, ui ) {
-        $( "#min-price" ).val( ui.values[ 0 ] );
-        $( "#max-price" ).val( ui.values[ 1 ] );
-      }
-    });
-    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
-    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
-});
 
  // SIZES TOGGLING
   
