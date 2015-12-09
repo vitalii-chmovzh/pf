@@ -1,183 +1,174 @@
 .tool-bar {
-  background: @black-bg;
-    padding: 10px 0;
-  &__container {
-    .container-fluid-ib;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    @media (min-width: @screen-md) {
-      width: @container-md;
-    }
-    @media (min-width: @screen-lg) {
-      width: @container-lg;
-    }
-    @media (min-width: @screen-xlg) {
-      width: @container-xlg;
-    }
-  }
-  &__logo{
-    height:30px;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    a{      
-      display: inline-block;
-      width: 55px;
-      height: 30px;
-      background: url("../img/logo-30-color.svg") center no-repeat;
-      transition: .3s;
-      
-      &:active{
-        opacity: 0.5;
-      }
-      
-      @media (min-width: @screen-sm) {
-        margin:0 8px;
-      }
-      
-      @media (min-width: @screen-xlg) {
-        margin:0 12px;
-      }
-    }
-    
-    span{
-      display: none;
-      .heading(2.4rem;2.4rem;2.4rem;2.4rem;3rem;1);
-      
-      @media (min-width: @screen-md) {
-        display: inline-block;
-        vertical-align: top;
-        font-weight: bold;
-        font-style: italic;
-        color: #fff;
-        text-transform: uppercase;
-      }
-    }
-  }
-  &__actions{
-    float: left;
-    width: percentage(10/12);
-    .xs-ib-col(10;0;0);
-    .sm-ib-col(4;0;0);
-    text-align: right;
-  
-    &--left{
-      display: none; 
-      
-      @media (min-width: @screen-sm) {
-        display: block;
-        float: left;
-        text-align: left;
-      }
-    }
-  }
-  
-  i {
-    display: inline-block;
-    vertical-align: middle;
-    transition: .3s;
-  }
-  
-  &__config-btn{
-    
-    &:active{
-      i{
-        background: url("../img/settings--red.svg");
-      }
-    }
-    
-    i{
-      width: 16px;
-      height: 16px;
-      margin-right: 30px;
-      background: url("../img/settings.svg");
-      background-size: cover;
-    }
-  }
-  
-  &__signout-btn{
-        
-    &:active{
-      i{
-        background: url("../img/exit--red.svg");
-      }
-    }
-    
-    i{
-      width: 16px;
-      height: 16px;
-      background: url("../img/exit.svg");
-      background-size: cover;
-    }
-  }
-  
-  &__login-btn{ 
-    &:active{
-      i{
-        background: url("../img/lock--red.svg");
-      }
-    }
-  
-    i{
-      width: 16px;
-      height: 16px;
-      margin-right: 30px;
-      background: url("../img/lock.svg");
-      background-size: cover;
-    }
-  }
-	
-  &__wishlist-btn{ 
-    &:active{
-      i{
-        background: url("../img/star--red.svg");
-      }
-    }
-  
-    i{
-      width: 16px;
-      height: 16px;
-      margin-right: 30px;
-      background: url("../img/star.svg");
-      background-size: cover;
-    }
-  }
-  
-  &__cart-btn{
-    text-decoration: none;
-    &:active{
-      i:first-of-type{
-        background: url("../img/cart--red.svg");
-      }
-      
-      i:last-of-type{
-        background: none;
-        color: @red;
-      }
-    }
-    
-    i:first-of-type{
-      width: 18px;
-      height: 16px;
-      margin-right: 5px;
-      background: url("../img/cart.svg");
-      background-size: cover;
-    }
-  }
-      
-  &__counter{
-    cursor: pointer;
-		.heading(1.2rem;1.2rem;1.2rem;1.4rem;1.6rem;1);
-    font-style: normal;
-    text-align: center;
-    color: @black-bg;
-    top: 0;
-    left: 24px;
-    padding: 4px 8px;
-    background: #fff;
-    border-radius: 50%;
-  }
+	background: @black-bg;
+	padding: 10px 0;
+	&__container {
+		.container-fluid-ib;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media (min-width: @screen-md) {
+			width: @container-md;
+		}
+		@media (min-width: @screen-lg) {
+			width: @container-lg;
+		}
+		@media (min-width: @screen-xlg) {
+			width: @container-xlg;
+		}
+	}
+	&__logo {
+		height: 30px;
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		a {
+			display: inline-block;
+			width: 55px;
+			height: 30px;
+			background: url("../img/logo-30-color.svg") center no-repeat;
+			transition: .3s;
+			&:active {
+				opacity: 0.5;
+			}
+			@media (min-width: @screen-sm) {
+				margin: 0 8px;
+			}
+			@media (min-width: @screen-xlg) {
+				margin: 0 12px;
+			}
+		}
+		span {
+			display: none;
+			.heading(2.4rem;
+			2.4rem;
+			2.4rem;
+			2.4rem;
+			3rem;
+			1);
+			@media (min-width: @screen-md) {
+				display: inline-block;
+				vertical-align: top;
+				font-weight: bold;
+				font-style: italic;
+				color: #fff;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&__actions {
+		float: left;
+		width: percentage(10/12);
+		.xs-ib-col(10;
+		0;
+		0);
+		.sm-ib-col(4;
+		0;
+		0);
+		text-align: right;
+		&--left {
+			display: none;
+			@media (min-width: @screen-sm) {
+				display: block;
+				float: left;
+				text-align: left;
+			}
+		}
+	}
+	i {
+		display: inline-block;
+		vertical-align: middle;
+		transition: .3s;
+	}
+	&__config-btn {
+		&:active {
+			i {
+				background: url("../img/settings--red.svg");
+			}
+		}
+		i {
+			width: 16px;
+			height: 16px;
+			margin-right: 30px;
+			background: url("../img/settings.svg");
+			background-size: cover;
+		}
+	}
+	&__signout-btn {
+		&:active {
+			i {
+				background: url("../img/exit--red.svg");
+			}
+		}
+		i {
+			width: 16px;
+			height: 16px;
+			background: url("../img/exit.svg");
+			background-size: cover;
+		}
+	}
+	&__login-btn {
+		&:active {
+			i {
+				background: url("../img/lock--red.svg");
+			}
+		}
+		i {
+			width: 16px;
+			height: 16px;
+			margin-right: 30px;
+			background: url("../img/lock.svg");
+			background-size: cover;
+		}
+	}
+	&__wishlist-btn {
+		&:active {
+			i {
+				background: url("../img/star--red.svg");
+			}
+		}
+		i {
+			width: 16px;
+			height: 16px;
+			margin-right: 30px;
+			background: url("../img/star.svg");
+			background-size: cover;
+		}
+	}
+	&__cart-btn {
+		text-decoration: none;
+		&:active {
+			i:first-of-type {
+				background: url("../img/cart--red.svg");
+			}
+			i:last-of-type {
+				background: none;
+				color: @red;
+			}
+		}
+		i:first-of-type {
+			width: 18px;
+			height: 16px;
+			margin-right: 5px;
+			background: url("../img/cart.svg");
+			background-size: cover;
+		}
+	}
+	&__counter {
+		cursor: pointer;
+		.heading(1.2rem;
+		1.2rem;
+		1.2rem;
+		1.4rem;
+		1.6rem;
+		1);
+		font-style: normal;
+		text-align: center;
+		color: @black-bg;
+		top: 0;
+		left: 24px;
+		padding: 4px 8px;
+		background: #fff;
+		border-radius: 50%;
+	}
 }
