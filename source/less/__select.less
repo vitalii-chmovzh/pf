@@ -85,10 +85,19 @@
 .trigger {
 	position: relative;
 	display: block;
+	
+	&:hover{
+	background: url("../img/dropdown--black.svg") no-repeat center right 15px !important;
+	background-size: 8px 4px !important;
+		
+	}
 }
 
 .activetrigger {
 	position: relative;
+	outline: none;
+	background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
+	background-size: 8px 4px !important;
 }
 
 .activetrigger:active {
@@ -121,7 +130,7 @@
 	1.6rem;
 	1);
 	text-decoration: none;
-	color: #000;
+	color: @gray;
 }
 
 .dropcontainer ul li a:active {
@@ -132,11 +141,11 @@
 	1.6rem;
 	1);
 	text-decoration: none;
-	color: @blue;
+	color: #000;
 }
 
 .dropcontainer ul li a:hover {
-	color: #000;
+	color: #2864c7;
 }
 
 .dropcontainer ul li:last-child {
