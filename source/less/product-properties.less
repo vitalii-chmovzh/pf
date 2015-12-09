@@ -439,33 +439,39 @@
 }
 
 .product-properties .arrow-right{
-  display: block;
   cursor: pointer;
   width: 0;
   height: 0; 
   right: 10px;
-  top: 64px; 
+  top: 63px; 
   border-top: 5px solid transparent;
   border-left: 10px solid @gray;
   border-bottom: 5px solid transparent;
-    transition: .3s;
+  transition: .3s;
+  display: none;
   &:hover{
     border-left-color: @blue;
   }
+ 	@media (max-width: 480px) {
+		display: block;
+	}
 }
 
 .product-properties .arrow-left{
-  display: block;
   cursor: pointer;
   width: 0;
   height: 0;
-
+  left: 10px;
+  top: 63px;
   border-top: 5px solid transparent;
   border-right: 10px solid @gray;
   border-bottom: 5px solid transparent;
-    transition: .3s;
-  
+  transition: .3s;
+  display: none;
   &:hover{
     border-right-color: @red;
   }
+  	@media (max-width: 480px) {
+		display: block;
+	}
 }
