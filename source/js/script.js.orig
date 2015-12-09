@@ -50,57 +50,139 @@ $(document).ready(function () {
     }, 200);
   });
   
+  // Footer carousel
+  var winWidth = $(window).width();
 
-
-// Price range
-
-$(function() {
-    $( "#ui-slider" ).slider({
-      range: true,
-      min: 0,
-      max: 16990,
-      values: [ 100, 16990 ],
-      slide: function( event, ui ) {
-        $( "#min-price" ).val( ui.values[ 0 ] );
-        $( "#max-price" ).val( ui.values[ 1 ] );
-      }
+  // if (winWidth <= 992){
+    $('.js-list').bxSlider({
+        slideWidth: 77,
+        slideMargin: 30,
+        minSlides: 7,
+        maxSlides: 8,
+        moveSlides: 1,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        nextSelector: '.arrow-right',
+        prevSelector: '.arrow-left',
+        infiniteLoop: false,
+        hideControlOnEnd: true
     });
-    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
-    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
-});
-
+    // }
  // SIZES TOGGLING
   
-// $('.sizes__product-type-toggler span').on("click, touchstart", function(){
-//   var shoesBtn = $(".sizes__shoes-show"),
-//       clothesBtn = $(".sizes__clothes-show"),
-//       socksBtn = $(".sizes__socks-show");
-//   var shoesTable = $(".sizes__shoes"),
-//       clothesTable = $(".sizes__clothes"),
-//       socksTable = $(".sizes__socks");
+$('.sizes__product-type-toggler span').on("click, touchstart", function(){
+  var shoesBtn = $(".sizes__shoes-show"),
+      clothesBtn = $(".sizes__clothes-show"),
+      socksBtn = $(".sizes__socks-show");
+  var shoesTable = $(".sizes__shoes"),
+      clothesTable = $(".sizes__clothes"),
+      socksTable = $(".sizes__socks");
   
-//   clothesTable.hide();
-//   socksTable.hide();
+  clothesTable.hide();
+  socksTable.hide();
   
-//   shoesBtn.on("click touchstart", function(){
-//     shoesTable.show("slide", "fast");
-//     clothesTable.hide();
-//     socksTable.hdie();
-//   });
+  shoesBtn.on("click touchstart", function(){
+    shoesTable.show("slide", "fast");
+    clothesTable.hide();
+    socksTable.hdie();
+  });
   
-//   clothesBtn.on("click touchstart", function(){
-//     clothesTable.show("slide", "fast");
-//     shoesTable.hide();
-//     socksTable.hdie();
-//   });
+  clothesBtn.on("click touchstart", function(){
+    clothesTable.show("slide", "fast");
+    shoesTable.hide();
+    socksTable.hdie();
+  });
   
-//   socksBtn.on("click touchstart", function(){
-//     socksTable.show("slide", "fast");
-//     clothesTable.hide();
-//     socksTable.hdie();
-//   });
+  socksBtn.on("click touchstart", function(){
+    socksTable.show("slide", "fast");
+    clothesTable.hide();
+    socksTable.hdie();
+  });
     
-// });
+});
+  
+  
+if (window.matchMedia("(max-width: 1199px)").matches) { 
+     
+  $('.product__more-btn').on("click touchstart", function () {
+   if (window.matchMedia("(max-width: 1199px)").matches) {
+    var cardId = $(this).attr('data-id'),
+     contentId = $('.product__properties[data-id=' + cardId + ']'),
+     nextId = parseInt(cardId, 10) + 1,
+     thirdId = parseInt(cardId, 10) + 2,
+     productId = $('.product[data-id=' + cardId + ']'),
+     productNextId = $('.product[data-id=' + nextId + ']'),
+     productThirdId = $('.product[data-id=' + thirdId + ']'),
+     productWrapperId = $('.product__wrapper[data-id=' + cardId + ']');
+    var productProperties = $('.product__properties');
+    var productBtnId = $('.product .product__more-btn[data-id=' + cardId + ']'); 
+    var productBtn = $('.product .product__more-btn'); 
+    var product = $('.product');
+    var productWrapper = $('.product__wrapper');
+     
+    productBtn.show();
+    productProperties.hide("fast");
+    product.removeClass("product--margin-none");
+    product.removeClass("product--margin-30");
+    productWrapper.removeClass("visible");
+     
+     
+     
+     
+     
+    if (display === true) {
+        contentId.hide();
+        productBtnId.show();
+        productId.removeClass("product--margin-none");
+        productWrapperId.removeClass("visible");
+        productNextId.removeClass("product--margin-30");
+        productThirdId.removeClass("product--margin-none");
+        product.removeClass("clear-left");
+        display = false;      
+    } 
+     
+     
+    else if (display === false) {
+      contentId.show();
+      productBtnId.hide();
+            
+      console.log(product.length);
+      
+      
+      //FOR EACH NECHETNIY
+    
+   if (window.matchMedia("(min-width: 480px)").matches) { 
+      productNextId.addClass("product--margin-30");
+      productThirdId.addClass("product--margin-none");
+      productId.addClass("product--margin-none");
+      productWrapperId.addClass("visible");
+    if(parseInt(cardId, 10) % 2 > 0){     
+      for(i = parseInt(thirdId, 10); i < product.length; i= i+2){
+        product.eq(i).addClass("product--margin-30");
+        console.log(i);
+      }
+      
+      for(i = parseInt(nextId, 10); i < product.length; i++){
+        product.eq(i).addClass("product--margin-none");
+        console.log(i);
+      }
+    }
+      
+      
+      if(parseInt(cardId, 10) % 2 == 0){
+        productId.addClass("clear-left");
+        productId.addClass("product--margin-none");
+        productProperties.addClass("product--margin-30");
+        console.log(cardId);
+      }
+      }
+      
+      display = true;
+    }
+   }
+  });
+}
   
   
   
@@ -283,6 +365,8 @@ $(function() {
     } 
   });
   
+<<<<<<< HEAD
+=======
 /* Products quantiry */
 
 var plus = $(".cart-product__quantity .plus-icon"),
@@ -312,6 +396,7 @@ minus.on("click", function(){
 
 
 
+>>>>>>> b26cbc701546b1497d108a8e68bf7c41f60f5f9a
 //  (function(){   
   
 //  if (window.matchMedia("(max-width: 992px)").matches) {
