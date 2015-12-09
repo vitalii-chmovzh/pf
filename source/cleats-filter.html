@@ -317,7 +317,24 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/script.js"></script> 
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+	// Price range
+	$(function() {
+	    $( "#ui-slider" ).slider({
+	      range: true,
+	      min: 0,
+	      max: 16990,
+	      values: [ 100, 16990 ],
+	      slide: function( event, ui ) {
+	        $( "#min-price" ).val( ui.values[ 0 ] );
+	        $( "#max-price" ).val( ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
+	    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
+	});
+</script> 
 </body>
 </html>
