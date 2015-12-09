@@ -9,6 +9,19 @@
       "name": "source",
       "path": "",
       "files": {
+        "42372335": {
+          "id": "42372335",
+          "path": "img/marker.png",
+          "output": "img/marker.png",
+          "name": "marker.png",
+          "category": "IMAGE",
+          "size": 1682,
+          "type": "png",
+          "initialSize": 1682,
+          "optimized": false,
+          "height": 0,
+          "width": 0
+        },
         "96555859": {
           "id": "96555859",
           "path": "catalog-filter.html",
@@ -135,17 +148,6 @@
           "path": "product-properties.html",
           "output": "product-properties.html",
           "name": "product-properties.html",
-          "category": "JUST_WATCH",
-          "customOutput": false,
-          "imported": false,
-          "parents": [],
-          "type": "html"
-        },
-        "1e1c35d7": {
-          "id": "1e1c35d7",
-          "path": "product.html",
-          "output": "product.html",
-          "name": "product.html",
           "category": "JUST_WATCH",
           "customOutput": false,
           "imported": false,
@@ -520,23 +522,6 @@
           "strictMath": false,
           "strictUnits": false
         },
-        "4a049962": {
-          "id": "4a049962",
-          "path": "less/footer--unfinished.less",
-          "output": "css/footer--unfinished.css",
-          "name": "footer--unfinished.less",
-          "category": "CSS",
-          "autoCompile": true,
-          "autoprefixer": false,
-          "compress": false,
-          "sourceMaps": false,
-          "customOutput": false,
-          "imported": false,
-          "parents": [],
-          "type": "less",
-          "strictMath": false,
-          "strictUnits": false
-        },
         "2eb61e94": {
           "id": "2eb61e94",
           "path": "less/footer.less",
@@ -839,23 +824,6 @@
           "strictMath": false,
           "strictUnits": false
         },
-        "e8d8efc1": {
-          "id": "e8d8efc1",
-          "path": "less/__active.less",
-          "output": "css/__active.css",
-          "name": "__active.less",
-          "category": "CSS",
-          "autoCompile": true,
-          "autoprefixer": false,
-          "compress": false,
-          "sourceMaps": false,
-          "customOutput": false,
-          "imported": false,
-          "parents": [],
-          "type": "less",
-          "strictMath": false,
-          "strictUnits": false
-        },
         "f5be334e": {
           "id": "f5be334e",
           "path": "less/__catalog-filter.less",
@@ -890,23 +858,6 @@
           "parents": [
             "bb53beb9"
           ],
-          "type": "less",
-          "strictMath": false,
-          "strictUnits": false
-        },
-        "e575ed01": {
-          "id": "e575ed01",
-          "path": "less/__promo--unfinished.less",
-          "output": "css/__promo--unfinished.css",
-          "name": "__promo--unfinished.less",
-          "category": "CSS",
-          "autoCompile": true,
-          "autoprefixer": false,
-          "compress": false,
-          "sourceMaps": false,
-          "customOutput": false,
-          "imported": false,
-          "parents": [],
           "type": "less",
           "strictMath": false,
           "strictUnits": false
@@ -1369,19 +1320,6 @@
           "height": 0,
           "width": 0
         },
-        "681168da": {
-          "id": "681168da",
-          "path": "img/slide-1--mob.jpg",
-          "output": "img/slide-1--mob.jpg",
-          "name": "slide-1--mob.jpg",
-          "category": "IMAGE",
-          "size": 1601636,
-          "type": "jpg",
-          "initialSize": 1601636,
-          "optimized": false,
-          "height": 0,
-          "width": 0
-        },
         "ba5425c3": {
           "id": "ba5425c3",
           "path": "img/tailoring-slider-img.jpg",
@@ -1454,7 +1392,6 @@
           "parents": [],
           "type": "css"
         },
-<<<<<<< HEAD
         "b102ba49": {
           "id": "b102ba49",
           "path": "js/select.js",
@@ -1476,7 +1413,70 @@
           "path": "less/__select.less",
           "output": "css/__select.css",
           "name": "__select.less",
+          "category": "CSS",
+          "autoCompile": false,
+          "autoprefixer": false,
+          "compress": false,
+          "sourceMaps": false,
+          "strictMath": false,
+          "strictUnits": false,
+          "customOutput": false,
+          "imported": true,
+          "parents": [
+            "bb53beb9"
+          ],
+          "type": "less"
+        },
+<<<<<<< HEAD
+        "95fe608e": {
+          "id": "95fe608e",
+          "path": "img/slide-2.jpg",
+          "output": "img/slide-2.jpg",
+          "name": "slide-2.jpg",
+          "category": "IMAGE",
+          "size": 396974,
+          "type": "jpg",
+          "initialSize": 396974,
+          "optimized": false,
+          "height": 0,
+          "width": 0
+        },
+        "9a9b1bd7": {
+          "id": "9a9b1bd7",
+          "path": "img/slide-1.jpg",
+          "output": "img/slide-1.jpg",
+          "name": "slide-1.jpg",
+          "category": "IMAGE",
+          "size": 1601636,
+          "type": "jpg",
+          "initialSize": 1601636,
+          "optimized": false,
+          "height": 0,
+          "width": 0
+        },
+        "0f6c6939": {
+          "id": "0f6c6939",
+          "path": "js/filters-expand.js",
+          "output": "js/filters-expand-dist.js",
+          "name": "filters-expand.js",
 =======
+        "90501f6a": {
+          "id": "90501f6a",
+          "path": "js/autosize.js",
+          "output": "js/autosize-dist.js",
+          "name": "autosize.js",
+>>>>>>> 0cec2a06cd28c2d2410780b6a96696c3efc95691
+          "category": "JS",
+          "autoCompile": false,
+          "uglify": true,
+          "mangle": true,
+          "babel": false,
+          "sourceMaps": false,
+          "customOutput": false,
+          "imported": false,
+          "parents": [],
+          "type": "javascript"
+        },
         "eb905c50": {
           "id": "eb905c50",
           "path": "css/__footer-bottom.css",
@@ -1498,7 +1498,36 @@
           "path": "less/__footer-bottom.less",
           "output": "css/__footer-bottom.css",
           "name": "__footer-bottom.less",
->>>>>>> 532d78e00b27a31a6b50c29812b28ba9f89f6d9a
+          "category": "CSS",
+          "autoCompile": true,
+          "autoprefixer": false,
+          "compress": false,
+          "sourceMaps": false,
+          "strictMath": false,
+          "strictUnits": false,
+          "customOutput": false,
+          "imported": false,
+          "parents": [],
+          "type": "less"
+        },
+        "681168da": {
+          "id": "681168da",
+          "path": "img/slide-1--mob.jpg",
+          "output": "img/slide-1--mob.jpg",
+          "name": "slide-1--mob.jpg",
+          "category": "IMAGE",
+          "size": 1601636,
+          "type": "jpg",
+          "initialSize": 1601636,
+          "optimized": false,
+          "height": 0,
+          "width": 0
+        },
+        "329f9ef0": {
+          "id": "329f9ef0",
+          "path": "less/__footer-bottom.less",
+          "output": "css/__footer-bottom.css",
+          "name": "__footer-bottom.less",
           "category": "CSS",
           "autoCompile": false,
           "autoprefixer": false,
@@ -1512,6 +1541,22 @@
             "bb53beb9"
           ],
           "type": "less"
+        },
+        "7267c607": {
+          "id": "7267c607",
+          "path": "js/product-properties.js",
+          "output": "js/product-properties-dist.js",
+          "name": "product-properties.js",
+          "category": "JS",
+          "autoCompile": false,
+          "uglify": true,
+          "mangle": true,
+          "babel": false,
+          "sourceMaps": false,
+          "customOutput": false,
+          "imported": false,
+          "parents": [],
+          "type": "javascript"
         }
       },
       "deploymentHistory": {},
