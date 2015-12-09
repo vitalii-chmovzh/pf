@@ -20,7 +20,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body id="catalog-page">
   <header class="page-header">
    
     <section class="tool-bar">
@@ -108,8 +108,296 @@
   
    
   <section class="catalog-page">
-   
-    <div class="catalog-page__container">
+	<section class="filter">
+	  <div class="filter-overflow">
+		<div class="filter__row">
+			<h2 class="filter__heading">Фильтры</h2>
+			<i class="filter__icon"></i>
+		</div>
+		<form action="" class="filter-form">
+			<section class="filter-form__brands">
+				<span class="filter-form__caption">Бренды и коллекции</span>
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="adidas" type="checkbox">
+						<label for="adidas">Adidas</label>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="11-pro" type="checkbox">
+							<label for="11-pro">11 Pro</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="ace" type="checkbox">
+							<label for="ace">Ace</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="adizero" type="checkbox">
+							<label for="adizero">Adizero</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="f50" type="checkbox">
+							<label for="f50">F50</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="messi" type="checkbox">
+							<label for="messi">Messi</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="nitrocharge" type="checkbox">
+							<label for="nitrocharge">Nitrocharge</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="predator" type="checkbox">
+							<label for="predator">Predator</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="x" type="checkbox">
+							<label for="x">X</label>
+						</div>
+					</div>
+				</div>	
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="mizuro" type="checkbox">
+						<label for="mizuro">Mizuro</label>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="morelia" type="checkbox">
+							<label for="morelia">Morelia</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="neo" type="checkbox">
+							<label for="neo">Neo</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="nike" type="checkbox">
+						<label for="nike">Nike</label>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="magista" type="checkbox">
+							<label for="magista">Magista</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="mercurial" type="checkbox">
+							<label for="mercurial">Mercurial</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="tiempo" type="checkbox">
+							<label for="tiempo">Tiempo</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="hypervenom" type="checkbox">
+							<label for="hypervenom">Hypervenom</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="brand">
+					<div class="brand__row">
+						<input id="puma" type="checkbox">
+						<label for="puma">Puma</label>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="king" type="checkbox">
+							<label for="king">King</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="momentta" type="checkbox">
+							<label for="momentta">Momentta</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="evopower" type="checkbox">
+							<label for="evopower">EvoPower</label>
+						</div>
+					</div>
+
+					<div class="brand__subbrand">
+						<div class="brand__row">
+							<input id="evospeed" type="checkbox">
+							<label for="evospeed">EvoSpeed</label>
+						</div>
+					</div>
+				</div>
+				
+			</section>
+			
+			<section class="filter-form__models">
+				<span class="filter-form__caption">Модель</span>
+				<div class="filter-form__models-row">
+					<input id="man" type="checkbox">
+					<label for="man">Мужская</label>
+				</div>
+				<div class="filter-form__models-row">
+					<input id="woman" type="checkbox">
+					<label for="woman">Женская</label>
+				</div>
+				<div class="filter-form__models-row">
+					<input id="kids" type="checkbox">
+					<label for="kids">Детская</label>
+				</div>
+				<div class="filter-form__models-row">
+					<input id="unisex" type="checkbox">
+					<label for="unisex">Унисекс</label>
+				</div>
+			</section>
+			
+			<section class="filter-form__sizes">
+				<div class="filter-form__row">
+					<label for="filter-form__caption">Система размеров <span>?</span></label>
+					<select name="" id="sizes-type">
+						<option value="">Российска</option>
+						<option value="">Французская</option>
+						<option value="">Американская</option>
+					</select>
+				</div>
+				
+				<div class="filter-form__row">
+					<ul>
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+					</ul>
+				</div>
+			</section>
+				
+			<section class="filter-form__sizes filter-form__sizes--kids">
+				<div class="filter-form__row">
+					<label class="filter-form__caption">Система размеров одежды <span>?</span></label>
+					<select name="" id="sizes-type-kids">
+						<option value="">Ростовка</option>
+						<option value="">Французская</option>
+						<option value="">Американская</option>
+					</select>
+				</div>
+				
+				<div class="filter-form__row">
+					<ul>
+						<li><input id="116128" type="checkbox"><label for="116128">116-128</label></li>
+						<li><input id="128140" type="checkbox"><label for="128140">128-140</label></li>
+						<li><input id="140152" type="checkbox"><label for="140152">140-152</label></li>
+						<li><input id="152158" type="checkbox"><label for="152158">152-158</label></li>
+						<li><input id="158170" type="checkbox"><label for="158170">158-170</label></li>
+					</ul>
+				</div>
+			</section>		
+			<section class="filter-form__features">
+				<span class="filter-form__caption">Возможности нанесения</span>
+				<div class="filter-form__features-row">
+					<input id="tailoring" type="checkbox">
+					<label for="tailoring">Нашивка</label>
+				</div>
+				<div class="filter-form__features-row">
+					<input id="printing" type="checkbox">
+					<label for="printing">Термопечать</label>
+				</div>
+			</section>
+			
+			<section class="filter-form__price">
+				<span class="filter-form__caption">Цена</span>
+				<div class="range-controls">
+					<div class="range-controls__min-toggle"></div>
+					<div class="range-controls__scale"></div>
+					<div class="range-controls__max-toggle"></div>
+				</div>
+				
+				<div class="price-output">
+					<div class="price-output__row">
+						<label class="filter-form__caption" for="min-price">От</label>
+						<input id="min-price" type="text" value="1 000">
+						<i class="ruble-icon">&#8381;</i>
+					</div>
+					<div class="price-output__row">
+						<label class="filter-form__caption" for="max-price">До</label>
+						<input id="max-price" type="text" value="16 990">
+						<i class="ruble-icon">&#8381;</i>
+					</div>
+				</div>				
+			</section>
+				
+			<div class="filter-form__actions">
+				<button class="filter-form__submit">Применить</button>
+				<button type="reset" class="filter-form__reset">Сбросить</button>
+			</div>
+			
+		</form>
+		
+				</div>
+	</section>
+           <div class="catalog-page__container">
             <aside class="catalog-filter">
       <ul class="catalog-filter__list">
         <li><a href="">Подарочные сертификаты</a></li>
@@ -174,13 +462,11 @@
           </div>
     <div class="open-filter__btn"><span class="open-filter__icon"></span><span class="open-filter__name">Фильтр</span></div>
         </div>
-        
+      
        <div class="product__wrapper" data-id="1">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--1">
-                <span class="product__label product__label--new"><span>NEW</span></span>
-              </a>
+              <a href="#" class="product__image product__image--1"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -197,38 +483,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="1">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="1">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -237,8 +541,7 @@
        <div class="product__wrapper" data-id="2">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--2">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--2"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -255,38 +558,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="2">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="2">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
         </div>
@@ -294,8 +615,7 @@
        <div class="product__wrapper" data-id="3">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--3">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--3"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -312,38 +632,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="3">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="3">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -353,8 +691,7 @@
        <div class="product__wrapper" data-id="4">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--4">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--4"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -371,38 +708,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="4">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="4">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -411,8 +766,7 @@
        <div class="product__wrapper" data-id="5">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--5">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--5"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -429,38 +783,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="5">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="5">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
         </div>
@@ -468,8 +840,7 @@
        <div class="product__wrapper" data-id="6">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--6">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--6"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -486,38 +857,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="6">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="6">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -527,8 +916,7 @@
        <div class="product__wrapper" data-id="7">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--7">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--7"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Adidas</span>
@@ -545,38 +933,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="7">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="7">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -585,8 +991,7 @@
        <div class="product__wrapper" data-id="8">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--8">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--8"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Adidas</span>
@@ -602,39 +1007,56 @@
                 
               </div>
             </article>
-
-             <div class="product__properties" data-id="8">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="8">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
         </div>
@@ -642,8 +1064,7 @@
        <div class="product__wrapper" data-id="9">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--9">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--9"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -659,39 +1080,56 @@
                 
               </div>
             </article>
-
-             <div class="product__properties" data-id="9">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="9">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -701,8 +1139,7 @@
        <div class="product__wrapper" data-id="10">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--10">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--10"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -719,38 +1156,56 @@
               </div>
             </article>
 
-             <div class="product__properties" data-id="10">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="10">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -759,8 +1214,7 @@
        <div class="product__wrapper" data-id="11">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--11">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--11"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -776,39 +1230,56 @@
                 
               </div>
             </article>
-
-             <div class="product__properties" data-id="11">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="11">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
         </div>
@@ -816,8 +1287,7 @@
        <div class="product__wrapper" data-id="12">
           <div class="product__container">
              <article class="product">
-              <a href="#" class="product__image product__image--12">
-                <span class="product__label product__label--new"><span>NEW</span></span></a>
+              <a href="#" class="product__image product__image--12"><span class="product__label product__label--new"><span>NEW</span></span></a>
               <div class="product__description">
                 <div class="product__row">
                   <span class="product__manufacturer">Nike</span>
@@ -833,39 +1303,56 @@
                 
               </div>
             </article>
-
-             <div class="product__properties" data-id="12">
-              <p class="product__sizes">
-                <select name="types" class="product__select-size">
+             <div class="product-properties" data-id="12">
+               <span class="product-number">67927-003</span>
+              <div class="product-properties__sizes">
+                <select name="types" class="product-properties__select-size turnintodropdown">
                   <option value="Российские">Российские</option>
                   <option value="Американские">Американские</option>
+                  <option value="Американские">Английские</option>
                   <option value="Французские">Французские</option>
                 </select>размеры в наличии:
-              </p>
+              </div>
               <span class="arrow-left arrow-left--gray"></span>
-              <div class="product__sizes-wrapper">
-                <ul class="product__sizes-list">
-                  <li><a href="">42</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
-                  <li><a href="">43</a></li>
-                  <li><a href="">43.5</a></li>
-                  <li><a href="">44</a></li>
-                  <li><a href="">44.5</a></li>
+              <div class="product-properties__sizes-wrapper">
+                <ul class="product-properties__sizes-list">
+						<li><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
               <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product__info">
+              <ul class="product-properties__info">
                 <li>Коллекция: <span>Nike Tiempo</span></li>
                 <li>Материал: <span>Натуральная кожа</span></li>
+                <li class="model-type">Модель: <span>Взрослая</span></li>
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
-              <ul class="product__buttons">
-                <li><a href="" class="product__wish-btn"><i></i> Хочу!</a></li>
-                <li><a href="" class="product__open-btn"> Подробнее</a></li>
+              <ul class="product-properties__buttons">
+                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
 
@@ -952,6 +1439,10 @@
   
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
+ <script src="js/jquery.bxslider.js"></script> 
  <script src="js/script.js"></script> 
+ <script src="js/script2.js"></script> 
+ <script src="js/select.js"></script> 
+ <script src="js/filters-expand.js"></script> 
 </body>
 </html>

@@ -118,7 +118,6 @@
 .catalog-filter--hidden{
   width: 0 !important;
   padding: 0 !important;
-  padding-right: 15px !important;
   transition:.3s;
   border-left: none;
   border-bottom: none;
@@ -257,7 +256,11 @@
 //}
 
 .overflow-hidden{
-  overflow: hidden;
+  overflow-x: hidden;
+  
+  @media (min-width: @screen-lg){
+    overflow: auto;
+  }
 }
 
 .product__properties--visible{
@@ -276,7 +279,7 @@
   @media(min-width: @screen-xs){
     display: block !important;   
     right: -230px;
-    bottom: 1px;
+    bottom: 0;
   }
   
   @media(min-width: @screen-sm){
@@ -295,5 +298,24 @@
   @media(min-width: @screen-xlg){
     display: block !important;
     right: -395px;
+    bottom: 1px;
+  }
+}
+
+.filter-visible{
+  display: block !important;
+  position: fixed;
+  z-index: 100000000000;
+  top: 0;
+  left: 0;
+  
+  @media(min-width: @screen-sm){
+    left: inherit;
+    right: 0;
+  }
+  
+  @media(min-width: @screen-lg){
+    left: inherit;
+    right: 50px;
   }
 }
