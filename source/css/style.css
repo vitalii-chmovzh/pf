@@ -2598,7 +2598,6 @@ input[type=search] {
 }
 @media (min-width: 768px) {
   .settings__main-content-wrapper {
-    width: 725px;
     margin: 0 auto;
   }
 }
@@ -2739,8 +2738,7 @@ input[type=search] {
 }
 @media (min-width: 1200px) {
   .settings__heading {
-    margin-top: -4px;
-    padding-bottom: 11px;
+    padding-bottom: 22px;
   }
 }
 @media (min-width: 1600px) {
@@ -2896,7 +2894,7 @@ input[type=search] {
 }
 @media (min-width: 992px) {
   .settings-form__caption {
-    padding-bottom: 7px;
+    padding-bottom: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -2929,7 +2927,7 @@ input[type=search] {
 }
 @media (min-width: 992px) {
   .settings-form label {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1;
   }
 }
@@ -3051,20 +3049,8 @@ input[type=search] {
 .adres-info select,
 .adres-info .trigger,
 .adres-info .activetrigger {
-  margin-top: 4px;
-  margin-bottom: 25px;
-}
-@media (min-width: 480px) and (max-width: 768px) {
-  .adres-info__form-group {
-    width: 44.82758621% !important;
-    display: inline-block !important;
-    margin-right: 8.344828% !important;
-    float: none !important;
-    margin-bottom: 0;
-  }
-  .adres-info__form-group:nth-of-type(2n) {
-    margin-right: 0 !important;
-  }
+  margin-top: 3px;
+  margin-bottom: 27px;
 }
 @media (min-width: 768px) {
   .adres-info {
@@ -3095,6 +3081,7 @@ input[type=search] {
 .adres-info__street-select {
   margin-top: 2px;
   position: relative;
+  clear: both;
 }
 @media (min-width: 768px) {
   .adres-info__street-select {
@@ -3108,6 +3095,11 @@ input[type=search] {
   width: 44.82758621%;
   display: inline-block;
   margin-right: 8.344828%;
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .adres-info__street-select input {
+    margin-right: 25%;
+  }
 }
 @media (min-width: 768px) {
   .adres-info__street-select input {
@@ -3128,6 +3120,16 @@ input[type=search] {
   .adres-info__street-select .activetrigger {
     width: 45.50724638%;
   }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .adres-info__street-select .trigger,
+  .adres-info__street-select .activetrigger {
+    width: 29.31034483%;
+  }
+}
+.adres-info__street-select .trigger,
+.adres-info__street-select .activetrigger {
+  padding-bottom: 6px;
 }
 .adres-info__form-group {
   position: relative;
@@ -3183,7 +3185,7 @@ input[type=search] {
     width: 100%;
   }
   .adres-info__form-group--house {
-    margin-top: 2px;
+    margin-top: 3px;
     margin-right: 0;
   }
 }
@@ -3199,7 +3201,7 @@ input[type=search] {
     border-bottom: none;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1600px) {
   .password-info {
     padding-top: 0;
     border-top: none;
@@ -3239,7 +3241,20 @@ input[type=search] {
 }
 @media (min-width: 480px) and (max-width: 768px) {
   .password-info__form-group--old-password {
-    width: 50%;
+    width: 44.82758621% !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .password-info__form-group--new-password {
+    width: 44.82758621% !important;
+    display: inline-block !important;
+    margin-right: 8.344828% !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .password-info__form-group--new-password-repeat {
+    width: 44.82758621% !important;
+    display: inline-block !important;
   }
 }
 .password-info input {
@@ -3252,7 +3267,7 @@ input[type=search] {
   .actions {
     clear: both;
     border-top: 1px solid #eaeaea;
-    padding-bottom: 45px;
+    padding-bottom: 14px;
     padding-top: 30px;
   }
 }
@@ -10622,6 +10637,10 @@ input[type=search] {
     width: 100% !important;
     margin-right: 0 !important;
   }
+}
+.check-out-form__column .adres-info__form-group--index,
+.check-out-form__column .adres-info__form-group--apartment {
+  margin-top: 1px;
 }
 .check-out-form__column .adres-info__street-select .trigger,
 .check-out-form__column .adres-info__street-select .activetrigger {
