@@ -1,10 +1,10 @@
 $(document).ready(function(){
 	
-    var saleRow = $(".products--sale");
+    var saleRow = $("products-sale");
   
   saleRow.hide();
 	
-	 	$(".catalog-filter__open-btn").on("click touchstart", function(){		
+	 	$(".big-red-btn").on("click touchstart", function(){		
 			
 			
           var productSectionContainer = $('.product__section-container');
@@ -26,27 +26,7 @@ $(document).ready(function(){
 			propId.toggleClass("visible");
             $(this).toggleClass("button-right");
 		});
-  
-  var catalogSale = $('.products--sale');
-  var catalogNew = $('.products--new');
-  $(".show-btn:first-of-type span").addClass("active--blue");
-  
-  
-  $('.show-btn:first-of-type').on("click touchstart", function(){  
-    catalogNew.show();
-    $(".show-btn:last-of-type span").removeClass("active--red");
-    $(".show-btn:first-of-type span").addClass("active--blue");
-    catalogSale.hide();
-  });
-  
-  $('.show-btn:last-of-type').on("click touchstart", function(){    
-    catalogSale.show();
-    $(".show-btn:first-of-type span").removeClass("active--blue");
-    $(".show-btn:last-of-type span").addClass("active--red");
-    catalogNew.hide();
-  });
 });
-
 
 // $(this).hide("slide", {direction: "right" }, "slow");
 //
