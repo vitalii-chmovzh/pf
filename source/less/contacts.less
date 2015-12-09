@@ -9,6 +9,14 @@
 	padding-top: 99px;
 	@media(min-width: @screen-md) {
 		padding-top: 105px;
+		width: 970px;
+		margin: 0 auto;
+	}
+	@media(min-width: @screen-lg) {
+		width: 1130px;
+	}
+	@media(min-width: @screen-xlg) {
+		width: 1590px;
 	}
 	&__row {
 		.clearfix;
@@ -111,6 +119,7 @@
 		.heading(1.8rem;
 		3.6rem;
 		3.6rem;
+		3.6rem;
 		4.8rem;
 		1);
 		color: #000;
@@ -121,7 +130,6 @@
 			padding-bottom: 15px;
 		}
 		@media(min-width: @screen-lg) {
-			margin-top: -4px;
 			padding-bottom: 11px;
 		}
 		@media(min-width: @screen-xlg) {
@@ -138,10 +146,11 @@
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
-			padding-bottom: 25px;
+			padding-bottom: 20px;
 		}
 		@media(min-width: @screen-lg) {
 			overflow: hidden !important;
+			padding-bottom: 13px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
@@ -163,6 +172,9 @@
 			color: @gray;
 			text-transform: uppercase;
 			padding-bottom: 7px;
+		}
+		@media(min-width: @screen-xlg) {
+			margin-top: 3px;
 		}
 	}
 }
@@ -208,6 +220,16 @@
 		font-size: 1.8rem;
 		color: @gray;
 		text-decoration: none;
+		
+		&:active{
+			color: @blue;
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+				color: #000;
+			}
+		}
 	}
 	&__warning {
 		font-weight: bold;
@@ -237,6 +259,7 @@
 		width: percentage(229/290);
 	}
 	li {
+		font-weight: 300;
 		padding-bottom: 15px;
 	}
 }
@@ -265,6 +288,16 @@
 		text-decoration: none;
 		font-weight: bold;
 		width: percentage(229/290);
+		
+		&:active{
+			color: @blue;
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+				color: #000;
+			}
+		}
 	}
 }
 
@@ -303,6 +336,7 @@
 		font-weight: bold;
 	}
 	li {
+		font-weight: 300;
 		padding-bottom: 7px;
 		@media(min-width: @screen-lg) {
 			padding-bottom: 10px;
@@ -349,6 +383,7 @@
 		@media(min-width: @screen-md) {
 			width: percentage(295/698);
 			margin-right: 14.759312%;
+			margin-bottom: 0;
 		}
 	}
 	&__second-article {
@@ -373,11 +408,11 @@
 			height: 460px;
 		}
 		@media(min-width: @screen-md) {
-			margin-right: -8%;
+			margin-right: -4%;
 			height: 450px;
 		}
 		@media(min-width: @screen-md) {
-			margin-right: -8%;
+			margin-right: -4%;
 			height: 450px;
 		}
 		@media(min-width: @screen-lg) {
