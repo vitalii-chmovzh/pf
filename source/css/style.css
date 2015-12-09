@@ -2577,6 +2577,12 @@ input[type=search] {
   background: url("../img/dropdown.svg") no-repeat center right 15px !important;
   background-size: 8px 4px !important;
 }
+.settings .activetrigger {
+  position: relative;
+  outline: none;
+  background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
+  background-size: 8px 4px !important;
+}
 .settings .catalog-filter__open-btn {
   display: none;
 }
@@ -4113,6 +4119,12 @@ input[type=search] {
 .sizes .activetrigger:focus {
   outline: none;
 }
+.sizes .activetrigger {
+  position: relative;
+  outline: none;
+  background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
+  background-size: 8px 4px !important;
+}
 .sizes .catalog-filter__open-btn {
   display: none;
 }
@@ -4243,13 +4255,13 @@ input[type=search] {
 }
 @media (min-width: 1200px) {
   .sizes__heading {
-    font-size: 4.8rem;
+    font-size: 3.6rem;
     line-height: 1.4;
   }
 }
 @media (min-width: 1600px) {
   .sizes__heading {
-    font-size: 1;
+    font-size: 4.8rem;
     line-height: 1.4;
   }
 }
@@ -4260,7 +4272,6 @@ input[type=search] {
 }
 @media (min-width: 1200px) {
   .sizes__heading {
-    margin-top: -4px;
     padding-bottom: 11px;
   }
 }
@@ -10294,6 +10305,12 @@ input[type=search] {
   margin-top: 0;
   margin-bottom: 2px;
 }
+.check-out .activetrigger {
+  position: relative;
+  outline: none;
+  background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
+  background-size: 8px 4px !important;
+}
 .check-out .trigger,
 .check-out .activetrigger {
   float: left;
@@ -11076,7 +11093,7 @@ input[type=search] {
 }
 @media (min-width: 1200px) {
   .delivery-methods .check-out-form__caption {
-    padding-bottom: 15px ;
+    padding-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -14727,9 +14744,11 @@ input[type=search] {
 .catalog-filter--hidden {
   width: 0 !important;
   padding: 0 !important;
-  padding-right: 15px !important;
   -webkit-transition: .3s;
           transition: .3s;
+  border-left: none;
+  border-bottom: none;
+  border-top: none;
 }
 .catalog-filter--hidden ul {
   width: 0 !important;
@@ -14746,7 +14765,7 @@ input[type=search] {
 }
 @media (min-width: 1200px) {
   .catalog--expanded {
-    width: 90% !important;
+    width: 98% !important;
     padding: 0 !important;
   }
 }
@@ -14768,7 +14787,12 @@ input[type=search] {
   }
 }
 .overflow-hidden {
-  overflow: hidden;
+  overflow-x: hidden;
+}
+@media (min-width: 1200px) {
+  .overflow-hidden {
+    overflow: auto;
+  }
 }
 .product__properties--visible {
   left: -50%;
@@ -14811,6 +14835,26 @@ input[type=search] {
   .button-right {
     display: block !important;
     right: -395px;
+    bottom: 1px;
+  }
+}
+.filter-visible {
+  display: block !important;
+  position: fixed;
+  z-index: 100000000000;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .filter-visible {
+    left: inherit;
+    right: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .filter-visible {
+    left: inherit;
+    right: 50px;
   }
 }
 .check-out-page .dropcontainer {
@@ -14912,8 +14956,15 @@ input[type=search] {
   position: relative;
   display: block;
 }
+.trigger:hover {
+  background: url("../img/dropdown--black.svg") no-repeat center right 15px !important;
+  background-size: 8px 4px !important;
+}
 .activetrigger {
   position: relative;
+  outline: none;
+  background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
+  background-size: 8px 4px !important;
 }
 .activetrigger:active {
   color: #2864c7;
@@ -14937,7 +14988,7 @@ input[type=search] {
   font-size: 1.6rem;
   line-height: 1;
   text-decoration: none;
-  color: #000;
+  color: #535353;
 }
 @media (min-width: 768px) {
   .dropcontainer ul li a {
@@ -14968,7 +15019,7 @@ input[type=search] {
   font-size: 1.6rem;
   line-height: 1;
   text-decoration: none;
-  color: #2864c7;
+  color: #000;
 }
 @media (min-width: 768px) {
   .dropcontainer ul li a:active {
@@ -14995,7 +15046,7 @@ input[type=search] {
   }
 }
 .dropcontainer ul li a:hover {
-  color: #000;
+  color: #2864c7;
 }
 .dropcontainer ul li:last-child {
   border-bottom: none;
