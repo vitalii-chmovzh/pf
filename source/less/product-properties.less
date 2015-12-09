@@ -142,11 +142,10 @@
 	}
 	&__sizes-wrapper {
 		position: relative;
-		display: inline-block;
 		width: 215px;
 		height: 45px;
 		overflow: hidden;
-		margin: 0 15px;
+		margin: 0 auto;
 		margin-bottom: 10px;
 		@media (min-width: @screen-xs) {
 			width: 200px;
@@ -437,4 +436,36 @@
 
 .rotate-arrow{
 	transform: rotate(180deg);
+}
+
+.product-properties .arrow-right{
+  display: block;
+  cursor: pointer;
+  width: 0;
+  height: 0; 
+  right: 10px;
+  top: 64px; 
+  border-top: 5px solid transparent;
+  border-left: 10px solid @gray;
+  border-bottom: 5px solid transparent;
+    transition: .3s;
+  &:hover{
+    border-left-color: @blue;
+  }
+}
+
+.product-properties .arrow-left{
+  display: block;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+
+  border-top: 5px solid transparent;
+  border-right: 10px solid @gray;
+  border-bottom: 5px solid transparent;
+    transition: .3s;
+  
+  &:hover{
+    border-right-color: @red;
+  }
 }
