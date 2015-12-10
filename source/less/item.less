@@ -2,6 +2,12 @@
 	position: relative;
 	padding-top: 99px;
 	.clearfix;
+	
+	@media (max-width: @screen-xs){
+		max-width: 320px;
+		margin: 0 auto;
+	}
+	
 	.catalog-filter {
 		&__open-btn {
 			display: none;
@@ -27,7 +33,7 @@
 			text-decoration: none;
 			color: @gray;
 			text-transform: uppercase;
-			padding-top: 15px;
+			padding-top: 0;
 			padding-bottom: 30px;
 		}
 	}
@@ -48,6 +54,7 @@
 		padding-top: 30px;
 		padding-bottom: 15px;
 		@media(min-width: @screen-sm) {
+			padding-top: 15px;
 			padding-bottom: 30px;
 			width: 720px;
 		}
@@ -118,6 +125,44 @@
 			@media(min-width: @screen-xlg) {
 				width: 1185px;
 			}
+			
+			.label-wrapper{
+				width: 54px;
+				height: 36px;
+				display: inline-block;
+				overflow: hidden;
+				vertical-align: middle;
+				margin-right: 15px;
+			}
+			
+			.product__label--new{
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				top: 0;
+				left: -5px;
+				width: 54px;
+				height: 36px;
+				transform: skew(-15deg);
+				text-align: center;
+				padding-top: 11px;
+					background: @blue;
+				
+				
+				@media (min-width: @screen-sm){
+					margin-right: 30px;
+				}
+				span {
+					color: #fff;
+					.font(1rem;
+					1rem;
+					1rem;
+					1.2rem;
+					1.4rem;
+					1);
+					transform: skew(15deg);
+				}
+			}
 		}
 	}
 	&__manufacturer {
@@ -133,13 +178,16 @@
 		font-weight: bold;
 		cursor: pointer;
 		display: inline-block;
-		width: 49%;
+		width: 105px;
 		text-align: left;
+		
+		&:active{
+			color: #000;
+		}
 	}
 	&__price {
 		display: inline-block;
 		vertical-align: middle;
-		width: 49%;
 		text-align: right;
 		font-weight: bold;
 		.font(1.6rem;
@@ -148,6 +196,23 @@
 		1.8rem;
 		2.4rem;
 		1);
+		width: 110px;
+		@media (min-width: @screen-sm){
+			width: 510px;
+		}
+		
+		@media (min-width: @screen-md){
+			width: 525px;
+		}
+		
+		@media (min-width: @screen-lg){
+			width: 650px;
+		}
+		
+		@media (min-width: @screen-xlg){
+			width: 675px;
+		}
+		
 		&--no {
 			padding-top: 6px;
 			.font(1rem;
@@ -199,23 +264,15 @@
 		font-weight: bold;
 		text-decoration: none;
 		text-transform: uppercase;
-		margin-bottom: 33px;
 		overflow: hidden;
+			margin-bottom: 11px;
 		transition: .3s;
-		&:active {
-			color: @blue;
-			text-decoration: none;
-		}
 		@media (min-width: @screen-xs) {
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			margin-bottom: 15px;
 		}
 		@media (min-width: @screen-md) {
-			&:hover {
-				color: #000;
-				text-decoration: underline;
-			}
+			margin-bottom: 14px;
 		}
 		@media (min-width: @screen-xlg) {
 			margin-bottom: 15px;
@@ -247,7 +304,7 @@
 			1.2rem;
 			1.4rem;
 			1.6rem;
-			1.5);
+			1.8);
 			@media(min-width: @screen-sm) {
 				width: auto;
 			}
@@ -292,18 +349,6 @@
 		text-align: center;
 		margin-bottom: 10px;
 		font-weight: 300;
-		@media(min-width: @screen-sm) {
-			margin-bottom: 60px;
-		}
-		@media(min-width: @screen-md) {
-			margin-bottom: 70px;
-		}
-		@media(min-width: @screen-lg) {
-			margin-bottom: 75px;
-		}
-		@media(min-width: @screen-xlg) {
-			margin-bottom: 255px;
-		}
 		.arrow-bottom {
 			display: none;
 			cursor: pointer;
@@ -343,6 +388,7 @@
 			padding-left: 30px;
 		}
 		&-row {
+			position: relative;
 			text-align: left;
 			.clearfix;
 			margin-bottom: 15px;
@@ -350,21 +396,28 @@
 		ul {
 			text-align: left;
 		}
-		select {
+		select, .trigger, .activetrigger {
 			.font(1.2rem;
 			1.2rem;
 			1.2rem;
 			1.4rem;
 			1.6rem;
 			1);
+			text-decoration: none;
 			display: inline-block;
 			font-weight: bold;
 			color: @gray;
 			appearance: none;
 			background: none;
 			border: none;
+			margin-right: 5px;
 			transition: .3s ease;
 			border-bottom: 2px dashed @gray;
+				background: none !important;
+			
+			&:hover, &:active, &:focus{
+				background: none !important;
+			}
 			&:active {
 				color: @blue;
 				border-bottom: 2px dashed @blue;
@@ -377,11 +430,6 @@
 			@media (min-width: @screen-md) {
 				&:hover {
 					border-color: #fff;
-				}
-			}
-			@media (min-width: @screen-xlg) {
-				&:hover {
-					border-color: #fff;
 					color: @blue;
 				}
 			}
@@ -390,6 +438,28 @@
 				padding: 10px;
 			}
 		}
+		
+		.dropcontainer{
+			top: 12px;	
+			width: 110px;
+			
+			@media (min-width: @screen-xlg){
+				top: 14px;
+				width: 150px;
+			}
+			ul li{
+				display: block;
+			}
+			ul li a{
+				.font(1.2rem;
+				1.2rem;
+				1.2rem;
+				1.4rem;
+				1.6rem;
+				1);
+			}
+		}
+		
 		li {
 			display: inline-block;
 			margin-right: 14px;
@@ -397,10 +467,11 @@
 			&:nth-of-type(5n+5) {
 				margin-right: 0;
 			}
-			input[type="checkbox"] {
+			input[type="radio"] {
 				display: none;
 			}
-			input[type="checkbox"]:checked + label {
+			
+			input[type="radio"]:checked + label {
 				color: #fff;
 				background: @red;
 				border-color: @red;
@@ -470,8 +541,25 @@
 			}
 		}
 		&-btn {
-			padding: 0 2px;
+			padding: 0 1px;
+			cursor: pointer;
 			border-bottom: 2px dashed @gray;
+			
+			&:active {
+				color: @blue;
+				border-bottom: 2px dashed @blue;
+			}
+			&:focus {
+				color: @blue;
+				outline: none;
+				border-bottom: 2px dashed @blue;
+			}
+			@media (min-width: @screen-md) {
+				&:hover {
+					border-color: #fff;
+					color: @blue;
+				}
+			}
 		}
 	}
 	&__sizes-list-wrapper {
@@ -483,10 +571,12 @@
 		}
 		@media(min-width: @screen-md) {
 			height: 93px;
+    		width: 235px;
 		}
 		@media(min-width: @screen-lg) {
 			height: auto;
 			overflow: auto;
+			width: auto;
 		}
 	}
 	&__wish {
@@ -499,7 +589,7 @@
 			1.2rem;
 			1.4rem;
 			1.6rem;
-			1.4);
+			1.8);
 			margin-bottom: 15px;
 			font-weight: 300;
 			@media(min-width: @screen-lg) {
@@ -536,6 +626,76 @@
 				vertical-align: middle;
 				display: inline-block;
 				background: url("../img/star--gray.svg");
+			}
+		&:active {
+			color: @blue;
+			i {
+				background: url("../img/star--blue.svg");
+			}
+		}
+		@media (min-width: @screen-md) {
+			&:hover {
+				color: #000;
+				i {
+					background: url("../img/star--black.svg");
+				}
+			}
+		}
+		}
+		
+		&-btn-add{
+			color: #fff;
+			background: @red;
+			transition: .3s ease;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			
+		@media(min-width: @screen-sm) {
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+		@media(min-width: @screen-md) {
+			margin-top: 35px;
+			margin-bottom: 35px;
+		}
+		@media(min-width: @screen-lg) {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		@media(min-width: @screen-xlg) {
+			margin-top: 130px;
+			margin-bottom: 130px;
+		}
+			
+			@media(min-width: @screen-xlg){
+				width: 150px;
+			}
+			
+			i {
+				width: 16px;
+				height: 16px;
+				margin-right: 5px;
+				vertical-align: middle;
+				display: inline-block;
+				background: url("../img/cart.svg") center no-repeat;
+			}
+			
+			&:active {
+				color: @red;
+				background: #fff;
+				i {
+					background: url("../img/cart--red.svg") center no-repeat;
+				}
+			}
+			
+			@media (min-width: @screen-md) {
+				&:hover {
+					background: @light-bg;
+					color: @red;
+					i {
+						background: url("../img/cart--red.svg") center no-repeat;
+					}
+				}
 			}
 		}
 	}
@@ -590,7 +750,7 @@
 			1.2rem;
 			1.4rem;
 			1.6rem;
-			1.4);
+			1.8);
 			margin-bottom: 23px;
 			font-weight: 300;
 		}
@@ -671,7 +831,7 @@
 		background: url("../img/product-1.jpg") center no-repeat;
 		background-size: cover;
 		margin: 0 auto;
-		margin-bottom: 15px;
+		margin-bottom: 11px;
 		@media(min-width: @screen-sm) {
 			height: 345px;
 			width: 345px;
@@ -687,6 +847,7 @@
 		@media(min-width: @screen-xlg) {
 			height: 780px;
 			width: 780px;
+			margin-bottom: 14px;
 		}
 	}
 	.pagination {
@@ -720,10 +881,13 @@
 }
 
 .social-media {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	clear: both;
+	@media (min-width: @screen-sm) {
+    	margin-left: 250px;
+	}
 	@media (min-width: @screen-md) {
-		margin-left: 290px;
+		margin-left: 250px;
 	}
 	@media (min-width: @screen-xlg) {
 		margin-left: 405px;
@@ -741,7 +905,12 @@
 	}
 	ul li {
 		display: inline-block;
-		margin-right: 10px;
+		margin-right: 13px;
+		
+		&:last-of-type{
+			margin-right: 0;
+		}
+		
 	}
 	ul a {
 		position: relative;
@@ -896,6 +1065,7 @@
 .same-items {
 	clear: both;
 	&__caption {
+		font-weight: normal;
 		text-transform: uppercase;
 		text-align: center;
 		color: @gray;
