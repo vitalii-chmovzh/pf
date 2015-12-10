@@ -1123,10 +1123,10 @@ input[type=search] {
   min-height: 320px;
   background: url("../img/slide-1--mob.jpg") center center;
   background-size: cover;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box!important;
+  display: -webkit-flex!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
@@ -1410,33 +1410,37 @@ input[type=search] {
   position: absolute;
   bottom: 15px;
   left: 0;
-  z-index: 2;
+  z-index: 999;
   width: 100px;
   left: 50%;
   margin-left: -50px;
 }
-.pagination li {
+.pagination .bx-pager-item {
   vertical-align: middle;
   display: inline-block;
+  margin-right: 3px;
+}
+.pagination .bx-pager-item a {
   padding: 2px;
   border: 2px solid #fff;
   background: none;
   cursor: pointer;
   -webkit-transition: .3s;
           transition: .3s;
+  font-size: 0;
 }
-.pagination li:hover {
+.pagination .bx-pager-item a:hover {
   background: #fff;
   border-color: rgba(255, 255, 255, 0);
   -webkit-transform: scale(0.5);
       -ms-transform: scale(0.5);
           transform: scale(0.5);
 }
-.pagination .active {
+.pagination .bx-pager-item a.active {
   padding: 0;
   border: 2px solid #fff;
 }
-.pagination .active:hover {
+.pagination .bx-pager-item a.active:hover {
   padding: 0;
   border: 2px solid #fff;
   -webkit-transform: scale(1);
@@ -7213,8 +7217,7 @@ input[type=search] {
 }
 .product-properties__sizes-wrapper {
   position: relative;
-  display: inline-block;
-  width: 215px;
+  width: 210px;
   height: 45px;
   overflow: hidden;
   margin: 0 auto;
@@ -7249,12 +7252,13 @@ input[type=search] {
   }
 }
 .product-properties__sizes-list {
-  position: absolute;
+  position: relative;
   display: inline-block;
-  width: 5000px;
   text-align: left;
   top: 0;
   left: 0;
+  -webkit-transition: all .5s;
+          transition: all .5s;
 }
 @media (min-width: 480px) {
   .product-properties__sizes-list {
@@ -7262,8 +7266,14 @@ input[type=search] {
     height: auto;
   }
 }
+@media (max-width: 480px) {
+  .product-properties__sizes-list {
+    width: 2000px;
+  }
+}
 .product-properties__sizes-list li {
-  display: inline-block;
+  display: block;
+  float: left;
   margin-right: 10px;
   margin-bottom: 10px;
 }
@@ -7689,6 +7699,9 @@ input[type=search] {
 }
 .product-properties .arrow-right:hover {
   border-left-color: #2864c7;
+}
+.product-properties .arrow-right.disabled {
+  display: none;
 }
 @media (max-width: 480px) {
   .product-properties .arrow-right {

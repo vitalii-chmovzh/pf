@@ -108,20 +108,36 @@
   </header>
   
   <section class="slider">
-      <article class="slide slide--first">
-       <div class="description">
-          <h1 class="description__heading">
-           Пусть ненавидят
-            <span>Бутсы Adidas F50 Adizero Messi</span>
-          </h1>
-          <a href="#" class="description__more-btn">Подробнее</a>
-        </div>
-      </article>
-      
+      <div class="slider-wrapper">
+        <article class="slide slide--first">
+         <div class="description">
+            <h1 class="description__heading">
+             Пусть ненавидят
+              <span>Бутсы Adidas F50 Adizero Messi</span>
+            </h1>
+            <a href="#" class="description__more-btn">Подробнее</a>
+          </div>
+        </article>
+        <article class="slide slide--first">
+         <div class="description">
+            <h1 class="description__heading">
+             Пусть ненавидят
+              <span>Бутсы Adidas F50 Adizero Messi</span>
+            </h1>
+            <a href="#" class="description__more-btn">Подробнее</a>
+          </div>
+        </article>
+        <article class="slide slide--first">
+         <div class="description">
+            <h1 class="description__heading">
+             Пусть ненавидят
+              <span>Бутсы Adidas F50 Adizero Messi</span>
+            </h1>
+            <a href="#" class="description__more-btn">Подробнее</a>
+          </div>
+        </article>
+      </div>
       <ul class="pagination">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
         <li></li>
       </ul>
      <div class="slider__overflow"></div>
@@ -2084,11 +2100,23 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
 <script src="js/jquery.bxslider.js"></script> 
+<script src="js/product-properties.js"></script>
 <!-- <script src="js/script.js"></script>  -->
-<script src="js/script2.js"></script> 
+<!-- <script src="js/script2.js"></script>  -->
 <script src="js/select.js"></script> 
 <script>
   $(document).ready(function () {
+
+    // Main slider
+    $('.slider-wrapper').bxSlider({
+        mode: 'fade',
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        controls: false,
+        pagerSelector: '.pagination'
+    });
+
+    // Footer slider
     $('.js-list-mobile').bxSlider({
         slideWidth: 77,
         slideMargin: 30,
@@ -2102,6 +2130,7 @@
         infiniteLoop: false,
         hideControlOnEnd: true
     });
+
   });
 </script>
 </body>
