@@ -142,6 +142,7 @@
 	}
 	&__sizes-wrapper {
 		position: relative;
+		display: inline-block;
 		width: 215px;
 		height: 45px;
 		overflow: hidden;
@@ -177,7 +178,7 @@
 		left: 0;
 		@media (min-width: @screen-xs) {
 			width: 100%;
-			height: 5000px;
+			height: auto;
 		}
 		li {
 			display: inline-block;
@@ -453,6 +454,9 @@
   &:hover{
     border-left-color: @blue;
   }
+  &.disabled{
+  	display: none;
+  }
  	@media (max-width: 480px) {
 		display: block;
 	}
@@ -472,8 +476,11 @@
   &:hover{
     border-right-color: @red;
   }
+  &.disabled{
+  	display: none;
+  }
   	@media (max-width: 480px) {
 		display: block;
 	}
->>>>>>> 9833122062ca551e3abe3179ee01008b86c2c441
+>>>>>>> 8facea39c46e365360e4e85537635b4abbb9f23f
 }

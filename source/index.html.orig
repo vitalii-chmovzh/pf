@@ -2102,6 +2102,10 @@
         infiniteLoop: false,
         hideControlOnEnd: true
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8facea39c46e365360e4e85537635b4abbb9f23f
   });
 </script>
 </body>

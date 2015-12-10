@@ -7,7 +7,7 @@ function initMap() {
       scrollwheel: false,
       zoom: 15,
       mapTypeControl: false,
-      streetViewControl: false,
+      streetViewControl: false
     });
 
     var image = 'img/marker.png';
