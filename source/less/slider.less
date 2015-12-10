@@ -19,7 +19,7 @@
 	min-height: 320px;
 	background: url("../img/slide-1--mob.jpg") center center;
 	background-size: cover;
-	display: flex;
+	display: flex!important;
 	align-items: flex-end;
 	@media (min-width: @screen-sm) {
 		height: 100vh;
@@ -193,31 +193,36 @@
 	position: absolute;
 	bottom: 15px;
 	left: 0;
-	z-index: 2;
+	z-index: 999;
 	width: 100px;
 	left: 50%;
 	margin-left: -50px;
-	li {
+	.bx-pager-item  {
 		vertical-align: middle;
-		display: inline-block;
+	    display: inline-block;
+	    margin-right: 3px;
+	    a {
 		padding: 2px;
 		border: 2px solid #fff;
 		background: none;
 		cursor: pointer;
 		transition: .3s;
-		&:hover {
-			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
-			transform: scale(0.5);
+		font-size: 0;
+			&:hover {
+				background: #fff;
+				border-color: rgba(255, 255, 255, 0);
+				transform: scale(0.5);
+			}
+			&.active {
+				padding: 0;
+				border: 2px solid #fff;
+				&:hover {
+					padding: 0;
+					border: 2px solid #fff;
+					transform: scale(1);
+				}
+			}
 		}
-	}
-	.active {
-		padding: 0;
-		border: 2px solid #fff;
-		&:hover {
-			padding: 0;
-			border: 2px solid #fff;
-			transform: scale(1);
-		}
-	}
+	}	
+	
 }
