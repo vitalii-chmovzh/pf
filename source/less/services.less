@@ -130,14 +130,17 @@
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
 			padding-bottom: 18px;
+			width: 930px;
+			margin: 0 auto;
 		}
 		@media(min-width: @screen-lg) {
-			overflow: hidden !important;
 			padding-bottom: 13px;
+			width: 1150px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
 			padding-bottom: 8px;
+			width: 1585px;
 		}
 	}
 	&__return-link {
@@ -228,7 +231,7 @@
 		}
 	}
 	&__product-img {
-		width: 110%;
+		width: 120%;
 		position: relative;
 		margin-bottom: 30px;
 		text-align: center;
@@ -257,19 +260,24 @@
 			@media(min-width: @screen-lg) {
 				max-height: 400px;
 			}
+			@media(min-width: @screen-xlg) {
+				max-height: 550px;
+			}
 		}
 		&:after {
 			position: absolute;
 			content: '';
-			background-image: -moz-linear-gradient( 135deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
-			background-image: -webkit-linear-gradient( 135deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
-			background-image: -ms-linear-gradient( 135deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
+			background-image: -moz-linear-gradient( 90deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
+			background-image: -webkit-linear-gradient( 90deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
+			background-image: -ms-linear-gradient( 90deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
 			transition: .3s;
 			width: 100%;
 			height: 100%;
 			top: 0;
 			left: 0;
 		}
+
+		
 		@media(min-width: @screen-lg) {
 			max-height: 550px;
 		}
@@ -312,7 +320,7 @@
 		@media(min-width: @screen-md) {
 			float: left;
 			width: 53.72%;
-			margin-right: 15px;
+			margin-right: 14px;
 		}
 	}
 	&__price-list {
@@ -356,7 +364,7 @@
 	&__price-list {
 		@media(min-width: @screen-md) {
 			float: right;
-			margin-right: 15px;
+			margin-right: 14px;
 		}
 	}
 	&__slider {
@@ -431,6 +439,9 @@
 		@media(min-width: @screen-md) {
 			width: 44.13%;
 			margin-top: 30px;
+		}
+		@media(min-width: @screen-lg) {
+			margin-top: 50px;
 		}
 		li {
 			padding: 10px 15px;

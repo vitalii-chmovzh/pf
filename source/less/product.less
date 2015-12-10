@@ -172,13 +172,15 @@
 		height: 16px;
 		background: url("../img/trash.svg") no-repeat;
 		background-size: cover;
-		transition: .3s;
-		&:active {
+		&:active, &:focus {
 			background: url("../img/trash--blue.svg") no-repeat;
 		}
 		@media (min-width: @screen-md) {
 			&:hover {
 				background: url("../img/trash--black.svg") no-repeat;
+			}
+			&:hover:active {
+				background: url("../img/trash--blue.svg") no-repeat;
 			}
 		}
 	}

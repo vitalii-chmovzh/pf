@@ -160,7 +160,7 @@
      <a href="#" class="wishlist__return-link">Главная</a>
       <h1 class="wishlist__heading">Список Желаний</h1>
       <div class="wishlist__toggler-group">
-        <span class="wishlist__all">Все Желания</span>
+        <span class="wishlist__all toggler-active">Все Желания</span>
         <span class="wishlist__present">В наличии</span>
       </div>
       
@@ -350,7 +350,7 @@
       </div>
   </section>
     </div>
-  <footer class="page-footer">
+<footer class="page-footer">
    
   <div class="page-footer__container">
      
@@ -391,8 +391,18 @@
     </div>
         
     <div class="page-footer__partners">      
-      <i class="arrow-left arrow-left--disabled"></i><span>Наши партнёры</span><i class="arrow-right"></i>
+      <i class="arrow-left footer-arrow-left"></i><span>Наши партнёры</span><i class="arrow-right footer-arrow-right"></i>
       <ul class="js-list">
+        <li><a class="partner partner--rpfl" href="#"></a></li>
+        <li><a class="partner partner--puma" href="#"></a></li>
+        <li><a class="partner partner--nike" href="#"></a></li>
+        <li><a class="partner partner--reusch" href="#"></a></li>
+        <li><a class="partner partner--onedivision" href="#"></a></li>
+        <li><a class="partner partner--diadora" href="#"></a></li>
+        <li><a class="partner partner--mueler" href="#"></a></li>
+        <li><a class="partner partner--rfl" href="#"></a></li>
+      </ul>
+      <ul class="js-list-mobile">
         <li><a class="partner partner--rpfl" href="#"></a></li>
         <li><a class="partner partner--puma" href="#"></a></li>
         <li><a class="partner partner--nike" href="#"></a></li>
@@ -419,10 +429,40 @@
       
   </div>
 </footer>
-<!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
  <script src="js/script.js"></script> 
--->
+ <script src="js/wishlist-toggler.js"></script> 
+<script src="js/jquery.bxslider.js"></script> 
+
+<script>
+  $(document).ready(function () {
+
+    // Main slider
+    $('.slider-wrapper').bxSlider({
+        mode: 'fade',
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        controls: false,
+        pagerSelector: '.pagination'
+    });
+
+    // Footer slider
+    $('.js-list-mobile').bxSlider({
+        slideWidth: 77,
+        slideMargin: 30,
+        maxSlides: 7,
+        moveSlides: 1,
+        pager: false,
+        nextText: '',
+        prevText: '',
+        nextSelector: '.footer-arrow-right',
+        prevSelector: '.footer-arrow-left',
+        infiniteLoop: false,
+        hideControlOnEnd: true
+    });
+
+  });
+</script>
 </body>
 </html>
