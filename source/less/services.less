@@ -122,20 +122,22 @@
 	&__container {
 		.container-fluid;
 		padding-top: 30px;
-		padding-bottom: 10px;
+		padding-bottom: 5px;
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
-			padding-bottom: 23px;
+			padding-bottom: 18px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
-			padding-bottom: 25px;
+			padding-bottom: 18px;
 		}
 		@media(min-width: @screen-lg) {
 			overflow: hidden !important;
+			padding-bottom: 13px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
+			padding-bottom: 8px;
 		}
 	}
 	&__return-link {
@@ -226,9 +228,22 @@
 		}
 	}
 	&__product-img {
+		width: 110%;
 		position: relative;
 		margin-bottom: 30px;
 		text-align: center;
+		
+		&--wrapper{
+			@media(min-width: @screen-md) {
+				width: 90%;
+			}
+			@media(min-width: @screen-xlg) {
+				width: 80%;
+			}
+		}
+			@media(min-width: @screen-xlg) {
+				width: 120%;
+			}
 		img {
 			display: inline-block;
 			max-width: 100%;
@@ -237,6 +252,7 @@
 			}
 			@media(min-width: @screen-md) {
 				max-height: 330px;
+				min-width: auto;
 			}
 			@media(min-width: @screen-lg) {
 				max-height: 400px;
@@ -296,7 +312,7 @@
 		@media(min-width: @screen-md) {
 			float: left;
 			width: 53.72%;
-			margin-right: percentage(15/698);
+			margin-right: 15px;
 		}
 	}
 	&__price-list {
@@ -340,7 +356,7 @@
 	&__price-list {
 		@media(min-width: @screen-md) {
 			float: right;
-			margin-right: percentage(15/698);
+			margin-right: 15px;
 		}
 	}
 	&__slider {
@@ -350,6 +366,7 @@
 		}
 	}
 	&__slide {
+		position: relative;
 		width: 100%;
 		padding-bottom: 100%;
 		background: url("../img/printing-slider-img.jpg") center center no-repeat;
