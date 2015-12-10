@@ -4718,7 +4718,7 @@ input[type=search] {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .servises__container:before,
 .servises__container:after {
@@ -4731,23 +4731,25 @@ input[type=search] {
 @media (min-width: 768px) {
   .servises__container {
     padding-top: 15px;
-    padding-bottom: 23px;
+    padding-bottom: 18px;
   }
 }
 @media (min-width: 992px) {
   .servises__container {
     padding-top: 45px;
-    padding-bottom: 25px;
+    padding-bottom: 18px;
   }
 }
 @media (min-width: 1200px) {
   .servises__container {
     overflow: hidden !important;
+    padding-bottom: 13px;
   }
 }
 @media (min-width: 1600px) {
   .servises__container {
     padding-top: 65px;
+    padding-bottom: 8px;
   }
 }
 .servises__return-link {
@@ -14688,6 +14690,7 @@ input[type=search] {
 @media (min-width: 1600px) {
   .social-media {
     margin-left: 405px;
+    margin-bottom: 12px;
   }
 }
 .social-media__caption {
