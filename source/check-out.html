@@ -251,22 +251,22 @@
            
           <div class="adres-info__form-group adres-info__form-group--mob-hidden adres-info__form-group--house">
             <label for="house">Дом <span>*</span></label>
-            <input id="house" type="number" placeholder="6">
+            <input class="house-input" id="house" type="number" placeholder="6">
           </div>
         </div>
         
         <div class="adres-info__adres-select">
           <div class="adres-info__form-group adres-info__form-group--tab-hidden adres-info__form-group--house">
-            <label for="house">Дом <span>*</span></label>
-            <input id="house" type="number" placeholder="6">
+            <label for="house-mob">Дом <span>*</span></label>
+            <input class="house-input" id="house-mob" type="number" placeholder="6">
           </div>
           
-          <div class="adres-info__form-group">
+          <div class="adres-info__form-group adres-info__form-group--apartment">
             <label for="apartment">Квартира <span>*</span></label>
             <input id="apartment" type="number" placeholder="86">
           </div>
           
-          <div class="adres-info__form-group">
+          <div class="adres-info__form-group adres-info__form-group--index">
             <label for="index">Индекс <span>*</span></label>
             <input id="index" type="number" value="000000">
           </div>
@@ -275,7 +275,7 @@
        
 		 <div class="comment-group">
 			<label class="check-out-form__caption comment-caption" for="comment">Комментарии к заказу</label>
-			<textarea id="comment" name="" id="" cols="30" rows="5">Поле “Комментарий к заказу” показано в заполненном виде, чтобы была понятна его механика: по умолчанию это поле под одну строку, но если текста больше, то оно опускается под необходимое количество строк.</textarea>
+			<textarea placeholder="Введите ваш комментарий" id="comment" name="" id="" cols="1" rows="1"></textarea>
 		 </div>
      </div>
        <div class="payment-methods">

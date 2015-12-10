@@ -27,12 +27,3 @@ $(document).ready(function(){
             $(this).toggleClass("button-right");
 		});
 });
-
-// $(this).hide("slide", {direction: "right" }, "slow");
-//
-//$('.collapsiblock').not(this).each(function(){
-//                $(this).addClass('collapsiblockCollapsed');
-//                $(this.target).animate({height:'hide', opacity:'hide'}, slidespeed);
-////             });
-//
-//$('div[title!="Суровый элемент"]')

@@ -20,9 +20,14 @@
 		}
 	}
 	.adres-info__street-select .dropcontainer {
-		right: inherit;
-		left: 160px;
-		width: 36.507246%;
+		right: 10px;
+		width: 44.82758621%;
+	}
+	@media (min-width: @screen-xs) {
+		.adres-info__street-select .dropcontainer {
+			right: 5px;
+			width: 29.507246%;
+		}
 	}
 	@media (min-width: @screen-sm) {
 		.adres-info__street-select .dropcontainer {
@@ -85,7 +90,6 @@
 .trigger {
 	position: relative;
 	display: block;
-	
 	&:hover{
 	background: url("../img/dropdown--black.svg") no-repeat center right 15px !important;
 	background-size: 8px 4px !important;

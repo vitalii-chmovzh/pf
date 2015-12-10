@@ -1,3 +1,4 @@
+
 .check-out {
 	position: relative;
 	padding-top: 99px;
@@ -145,6 +146,22 @@
 		padding-left: 15px;
 		width: 1185px;
 	}
+	
+	.radio, .checkbox{
+		transition: .3s;
+				@media(min-width: @screen-md) {
+					&:hover:after {
+						border: 1px solid #000;
+					}
+				}
+		&:after{			
+		border: 1px solid @border-color;
+		}
+	}
+	
+	#apartment, #index{
+		margin-bottom: 26px;
+	}
 	&__row {
 		.clearfix;
 		@media(min-width: @screen-sm) {
@@ -153,7 +170,7 @@
 		}
 	}
 	#last-name,
-	#index {
+	#index  {
 		color: @red;
 		border-bottom: 2px solid @red;
 	}
@@ -239,14 +256,31 @@
 						margin-right: 0 !important;
 					}
 				}
+				
+				&--index, &--apartment{
+				@media(min-width: @screen-xs) {
+					margin-top: 2px;
+				}
+				}
 			}
 			&__street-select {
+				
+				select,
 				.trigger,
 				.activetrigger {
-					float: left;
-					width: 36.507246%;
-					margin-top: -1px;
-					margin-right: 30px;
+					width: percentage(130/290);
+					display: inline-block;
+					position: relative;
+					
+					@media(max-width: @screen-sm) {
+						margin-right: 0;
+					}
+					@media(min-width: @screen-sm) {
+						width: 36.507246% ;
+					}
+					@media(min-width: @screen-xs) and (max-width: @screen-sm){				
+						width: 29.31034483%;
+					}
 				}
 				@media(min-width: @screen-sm) {
 					width: 470px;
@@ -262,10 +296,16 @@
 				}
 				input {
 					float: left;
-					width: 130px;
-					margin-right: 30px;
+					width: percentage(130/290);
+					margin-right: 10.344%;
+
+					@media(min-width: @screen-xs) and (max-width: @screen-sm){
+						margin-right: 25%;
+					}
+					
 					@media(min-width: @screen-sm) {
 						width: 143px;
+						margin-right: 30px;
 					}
 					@media(min-width: @screen-md) {
 						width: 168px;
@@ -367,6 +407,10 @@
 				}
 				&--house {
 					margin-right: 0;
+					
+					.house-input{
+						margin-top: -1px;
+					}
 				}
 			}
 		}
@@ -410,7 +454,7 @@
 		font-weight: bold;
 		margin-left: 0 !important;
 		@media(min-width: @screen-md) {
-			padding-bottom: 7px;
+			padding-bottom: 12px;
 		}
 		@media(min-width: @screen-lg) {
 			padding-bottom: 12px;
@@ -470,7 +514,19 @@
 	textarea {
 		line-height: 1.2 !important;
 		resize: none;
-		padding: 0 15px;
+		padding: 5px 15px;
+		
+		@media(min-width: @screen-lg){
+			padding-bottom: 6px;
+		}
+		
+		@media(min-width: @screen-xlg){
+			padding-bottom: 7px;
+		}
+		
+		@media(min-width: @screen-xlg){
+			margin-top: -2px;
+		}
 	}
 	&__submit-btn {
 		clear: both;
@@ -593,12 +649,16 @@
 			transition: .3s;
 			position: absolute;
 			content: '';
-			top: -2px;
+			top: -5px;
 			left: -30px;
 			width: 15px;
 			height: 15px;
 			background: @border-color;
 			border-radius: 50%;
+			
+			@media (min-width: @screen-xlg){
+				top: 0;
+			}
 		}
 		&--active {
 			color: @blue;
@@ -638,6 +698,7 @@
 	display: block;
 	.comment-caption {
 		text-transform: none;
+		padding-bottom: 0;
 	}
 }
 
@@ -750,7 +811,22 @@
 			@media(min-width: @screen-sm) {
 				position: absolute;
 				content: '';
-				top: -25px;
+				top: -22px;
+				left: 0;
+				right: 0;
+				width: 15px;
+				height: 15px;
+				background: #eaeaea;
+				border-radius: 50%;
+				-webkit-transition: .3s;
+				transition: .3s;
+				margin: auto;
+			}
+			
+			@media(min-width: @screen-xlg) {
+				position: absolute;
+				content: '';
+				top: -32px;
 				left: 0;
 				right: 0;
 				width: 15px;
@@ -775,6 +851,19 @@
 				position: absolute;
 				content: '';
 				top: -70px;
+				left: 0;
+				right: 0;
+				width: 54px;
+				height: 36px;
+				margin: auto;
+			}
+
+			
+			@media(min-width: @screen-xlg) {
+				transition: .3s;
+				position: absolute;
+				content: '';
+				top: -90px;
 				left: 0;
 				right: 0;
 				width: 54px;
@@ -829,6 +918,10 @@
 			display: block;
 			margin-top: 75px;
 		}
+		@media(min-width: @screen-xlg) {
+			display: block;
+			margin-top: 95px;
+		}
 	}
 	&__cash,
 	&__bank,
@@ -865,4 +958,9 @@
 	padding-bottom: 15px;
 	border-bottom: 1px solid @border-color;
 	margin-bottom: 15px;
+	
+		@media(min-width: @screen-xlg) {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
 }
