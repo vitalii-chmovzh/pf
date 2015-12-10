@@ -253,6 +253,14 @@ input[type=search] {
 .search-field:focus {
   outline: none;
 }
+.item-active {
+  cursor: auto !important;
+}
+@media (min-width: 992px) {
+  .item-active {
+    color: #2864c7 !important;
+  }
+}
 .main-menu {
   background: #f6f6f6;
   padding: 15px 0;
@@ -4738,18 +4746,21 @@ input[type=search] {
   .servises__container {
     padding-top: 45px;
     padding-bottom: 18px;
+    width: 930px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1200px) {
   .servises__container {
-    overflow: hidden !important;
     padding-bottom: 13px;
+    width: 1150px;
   }
 }
 @media (min-width: 1600px) {
   .servises__container {
     padding-top: 65px;
     padding-bottom: 8px;
+    width: 1585px;
   }
 }
 .servises__return-link {
@@ -4908,7 +4919,7 @@ input[type=search] {
   }
 }
 .servises__product-img {
-  width: 110%;
+  width: 120%;
   position: relative;
   margin-bottom: 30px;
   text-align: center;
@@ -5010,7 +5021,7 @@ input[type=search] {
   .tailoring__slider {
     float: left;
     width: 53.72%;
-    margin-right: 15px;
+    margin-right: 14px;
   }
 }
 @media (min-width: 992px) {
@@ -5059,7 +5070,7 @@ input[type=search] {
 @media (min-width: 992px) {
   .printing__price-list {
     float: right;
-    margin-right: 15px;
+    margin-right: 14px;
   }
 }
 @media (min-width: 992px) {
