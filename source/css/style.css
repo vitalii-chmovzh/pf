@@ -7455,11 +7455,13 @@ footer .bx-next.disabled {
   .product-properties__sizes-list {
     width: 100%;
     height: auto;
+    left: 0!important;
   }
 }
 @media (max-width: 480px) {
   .product-properties__sizes-list {
     width: 2000px;
+    top: 0!important;
   }
 }
 .product-properties__sizes-list li {
@@ -7892,7 +7894,7 @@ footer .bx-next.disabled {
   border-left-color: #2864c7;
 }
 .product-properties .arrow-right.disabled {
-  border-right-color: #f6f6f6;
+  border-left-color: #f6f6f6;
 }
 @media (max-width: 480px) {
   .product-properties .arrow-right {

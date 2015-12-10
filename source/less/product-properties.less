@@ -178,9 +178,11 @@
 		@media (min-width: @screen-xs) {
 			width: 100%;
 			height: auto;
+			left: 0!important;
 		}
-		@media (max-width: 480px) {
+		@media (max-width: @screen-xs) {
 			width: 2000px;
+			top: 0!important;
 		}
 		li {
 			display: block;
@@ -459,7 +461,7 @@
     border-left-color: @blue;
   }
   &.disabled{
-  	border-right-color: #f6f6f6;
+  	border-left-color: #f6f6f6;
   }
  	@media (max-width: 480px) {
 		display: block;
