@@ -6,7 +6,6 @@ function initMap() {
       center: myLatLng,
       scrollwheel: false,
       zoom: 15,
-      zoomControl: false,
       mapTypeControl: false,
       streetViewControl: false
     });
