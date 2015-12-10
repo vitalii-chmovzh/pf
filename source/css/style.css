@@ -7647,12 +7647,9 @@ input[type=search] {
     top: 17px;
   }
 }
-.product-properties .arrow-right.disabled {
+.disabled {
   display: none;
 }
-}
-.product-properties .arrow-left.disabled {
-  display: none;
 .wishlist-page .tool-bar__actions .tool-bar__wishlist-btn:active i {
   background: url("../img/star.svg");
 }
