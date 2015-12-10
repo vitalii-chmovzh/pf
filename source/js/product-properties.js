@@ -37,9 +37,10 @@ $(document).ready(function () {
 	/*** Sizes slider vertical ***/
 
 	var slideDown = $('.arrow-bottom'),
+		slideUp = $('.arrow-top'),
 		step = 108,
-		topValue = 0,
-		w = $(window).width();
+		w = $(window).width(),
+		bool = false;
     
     if (w <= 1199){
     	step = 102;
@@ -47,22 +48,60 @@ $(document).ready(function () {
 
 	slideDown.click(function(){
 		$this = $(this);
-		var block = $this.parent().find('.product-properties__sizes-list'), 
+
+		if(bool)
+			return;
+		bool = true;
+
+		var block = $this.parent().find('.product-properties__sizes-list'),
+			topValue = parseInt(block.css("top")),
+			prev =  $this.parent().find('.arrow-top'),
 			blockHeight = block.height();	
 
 		if(topValue > -(blockHeight - step)){
 			topValue -= step;		
-		} else {
-			topValue = 0;
 		}
 
 		if(topValue <= -(blockHeight - step)){
-			$this.addClass('rotate-arrow');
+			$this.addClass('disabled');
 		} else {
-			$this.removeClass('rotate-arrow');
+			prev.removeClass('disabled');
 		}
 				
 		block.css('top', topValue + 'px');
+		prev.removeClass('disabled');
+
+		setTimeout(function(){
+			bool = false;
+		}, 500);
+	});	
+
+	slideUp.click(function(){
+		$this = $(this);
+
+		if(bool)
+			return;
+		bool = true;
+
+		var block = $this.parent().find('.product-properties__sizes-list'),
+			topValue = parseInt(block.css("top")),
+			next =  $this.parent().find('.arrow-bottom'),
+			blockHeight = block.height();	
+
+		if(topValue < 0){
+			topValue += step;		
+		}
+
+		if(topValue >= 0){
+			$this.addClass('disabled');
+		} 
+				
+		block.css('top', topValue + 'px');
+		next.removeClass('disabled');
+
+		setTimeout(function(){
+			bool = false;
+		}, 500);
 	});	
 	
 	/*** Sizes slider horizontal ***/
@@ -75,39 +114,58 @@ $(document).ready(function () {
 
 		next.click(function(){
 			$this = $(this);
+
+			if(bool)
+				return;
+			bool = true;
+
 			var items = $this.parent().find('.product-properties__sizes-list li'),
 				prev = $this.parent().find('.arrow-left'),
 				blockWidth = items.length * itemWidth,
-				sizes = $this.parent().find('.product-properties__sizes-list');		
+				sizes = $this.parent().find('.product-properties__sizes-list'),
+				left = 	parseInt(sizes.css('left'));
 
-			if (leftValue > -(blockWidth - stepHorizontal)) {
-				leftValue -= stepHorizontal;
+			if (left > -(blockWidth - stepHorizontal)) {
+				left -= stepHorizontal;
 			}
 
-			if (leftValue <= -(blockWidth - stepHorizontal)) {
+			if (left <= -(blockWidth - stepHorizontal)) {
 				$this.addClass('disabled');
 			}
 
-			sizes.css('left', leftValue + 'px');
+			sizes.css('left', left + 'px');
 			prev.removeClass('disabled');
+
+			setTimeout(function(){
+				bool = false;
+			}, 500);
 		});
 
 		prev.click(function(){
 			$this = $(this);
+
+			if(bool)
+				return;
+			bool = true;
+
 			var sizes = $this.parent().find('.product-properties__sizes-list'),
 				next = $this.parent().find('.arrow-right'),
 				left = 	parseInt(sizes.css('left'));
 
 			if (left < 0) {
-				leftValue += stepHorizontal;
+				left += stepHorizontal;
 			}
-			if (left >= -stepHorizontal) {
+			if (left >= 0) {
 				$this.addClass('disabled');
 			}
 
 			next.removeClass('disabled');
 
-			sizes.css('left', leftValue + 'px');
+			sizes.css('left', left + 'px');
+
+			setTimeout(function(){
+				bool = false;
+			}, 500);
 		});
 		
 });

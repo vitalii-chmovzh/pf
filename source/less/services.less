@@ -470,11 +470,12 @@
 }
 
 
-.tailoring__slider-pagination {
+.tailoring__slider-pagination, .printing__slider-pagination {
 	padding: 5px 0;
 	position: static;
 	width: auto;
 	margin: 0;
+	text-align: center;
 	div {
 		vertical-align: middle;
 		display: inline-block;
@@ -491,16 +492,100 @@
 				border-color: rgba(0, 0, 0, 0);
 				transform: scale(0.5);
 			}
-			// &.active {
-			// 	padding: 0;
-			// 	border: 2px solid #000;
-			// 	&:hover {
-			// 		padding: 0;
-			// 		border: 2px solid #000;
-			// 		transform: scale(1);
-			// 	}
-			// }
+			&.active {
+				padding: 0;
+				border: 2px solid #000;
+				&:hover {
+					padding: 0;
+					border: 2px solid #000;
+					transform: scale(1);
+				}
+			}
 		}
 		
 	}
 }
+.tailoring__slider, .printing__slider{
+	position: relative;
+}
+.tailoring__slider .bx-next, .printing__slider .bx-next{
+		display: none;
+		@media(min-width: @screen-lg) {
+			display: block;
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			margin: auto;
+			border-top: 50px solid transparent;
+			border-right: 50px solid @border-color;
+			border-bottom: 50px solid transparent;
+			z-index: 999;
+			cursor: pointer;
+		}
+	&:after {
+		display: none;
+		@media(min-width: @screen-lg) {
+			display: block;
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 0;
+			left: 30px;
+			height: 0;
+			margin: auto;
+			border-top: 10px solid transparent;
+			border-left: 10px solid @gray;
+			border-bottom: 10px solid transparent;
+			z-index: 999;
+		}
+	}
+	&.disabled {
+		display: none;
+	}
+}	
+.tailoring__slider .bx-prev, .printing__slider .bx-prev {
+		display: none;
+		@media(min-width: @screen-lg) {
+			display: block;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			margin: auto;
+			border-top: 50px solid transparent;
+			border-left: 50px solid @border-color;
+			border-bottom: 50px solid transparent;
+			z-index: 999;
+			cursor: pointer;
+		}
+	&:after {
+		display: none;
+		@media(min-width: @screen-lg) {
+			display: block;
+			position: absolute;
+			content: '';
+			top: 0;
+			bottom: 0;
+			width: 0;
+			left: -40px;
+			height: 0;
+			margin: auto;
+			border-top: 10px solid transparent;
+			border-right: 10px solid @gray;
+			border-bottom: 10px solid transparent;
+			z-index: 999;
+		}
+	}
+	&.disabled {
+		display: none;
+	}
+}	

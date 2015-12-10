@@ -183,19 +183,12 @@
           <img src="./img/service-1.svg" alt="" class="tailoring__heading">
           <div class="tailoring__slider">
             <div class="tailoring__slider-wrapper">
-              <div class="tailoring__slide"><div class="item-slider__btn"><span class="item-slider__icon"></span></div></div>
+              <div class="tailoring__slide"></div>
               <div class="tailoring__slide"></div>
               <div class="tailoring__slide"></div>
               <div class="tailoring__slide"></div>
             </div>
             <ul class="tailoring__slider-pagination">
-              <li class="active"></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
             </ul>
           </div>
           <ul class="tailoring__price-list">
@@ -221,9 +214,14 @@
         <div class="printing">
           <img src="./img/service-2.svg" alt="" class="printing__heading">
           <div class="printing__slider">
-            <div class="printing__slide"><div class="item-slider__btn"><span class="item-slider__icon"></span></div></div>
+            <div class="printing__slider-wrapper">
+              <div class="printing__slide"></div>
+              <div class="printing__slide"></div>
+              <div class="printing__slide"></div>
+              <div class="printing__slide"></div>
+            </div>
           
-          <ul class="pagination">
+          <ul class="printing__slider-pagination">
           </ul>
           
           </div>
@@ -350,18 +348,28 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
 <script src="js/jquery.bxslider.js"></script>
- <script src="js/script.js"></script> 
- <script>
+<script src="js/script.js"></script> 
+<script>
   $(document).ready(function () {
 
-    // Main slider
+    // tailoring__slider
     $('.tailoring__slider-wrapper').bxSlider({
         mode: 'fade',
-        // slideSelector: 'tailoring__slide',
-        infiniteLoop: false,
         hideControlOnEnd: true,
-        controls: false,
+        infiniteLoop: false,
+        nextText: '',
+        prevText: '',
         pagerSelector: '.tailoring__slider-pagination'
+    });
+
+    // printing__slider
+     $('.printing__slider-wrapper').bxSlider({
+        mode: 'fade',
+        hideControlOnEnd: true,
+        infiniteLoop: false,
+        nextText: '',
+        prevText: '',
+        pagerSelector: '.printing__slider-pagination',
     });
 
   }); 
