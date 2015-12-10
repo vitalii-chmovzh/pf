@@ -19,6 +19,11 @@
 .wishlist {
 	position: relative;
 	padding-top: 99px;
+	
+	@media (max-width: @screen-xs){
+		max-width: 320px;
+		margin: 0 auto;
+	}
 	@media(min-width: @screen-md) {
 		padding-top: 105px;
 	}
@@ -67,6 +72,7 @@
 			text-decoration: none;
 			color: @gray;
 			text-transform: uppercase;
+    padding-left: 15px;
 		}
 		@media(min-width: @screen-md) {
 			padding-left: 15px;
@@ -75,16 +81,24 @@
 	&__container {
 		.container-fluid;
 		padding-top: 30px;
-		padding-bottom: 15px;
 		@media(min-width: @screen-sm) {
-			padding-bottom: 0;
+			padding-top: 15px;
+			padding-bottom: 18px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
+			padding-bottom: 18px;
+			width: 930px;
+			margin: 0 auto;
+		}
+		@media(min-width: @screen-lg) {
+			padding-bottom: 13px;
+			width: 1150px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
-			padding-bottom: 0;
+			padding-bottom: 8px;
+			width: 1585px;
 		}
 	}
 	&__heading {
@@ -113,6 +127,9 @@
 		text-align: center;
 		padding: 0 20px;
 		margin-bottom: 30px;
+		@media(min-width: @screen-xs) {
+			padding-right: 40px;
+		}
 		@media(min-width: @screen-lg) {
 			margin-bottom: 15px;
 		}
@@ -126,7 +143,6 @@
 			1.6rem;
 			1);
 			text-transform: uppercase;
-			transition: .3s;
 			@media(min-width: @screen-md) {
 				&:hover {
 					color: #000;
@@ -139,6 +155,7 @@
 		@media(min-width: @screen-sm) {
 			width: 330px;
 			padding: 0 30px;
+			padding-right: 40px;
 			margin: 0 auto;
 			margin-bottom: 30px;
 		}

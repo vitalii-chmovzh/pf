@@ -6295,15 +6295,17 @@ input[type=search] {
   height: 16px;
   background: url("../img/trash.svg") no-repeat;
   background-size: cover;
-  -webkit-transition: .3s;
-          transition: .3s;
 }
-.product__action:active {
+.product__action:active,
+.product__action:focus {
   background: url("../img/trash--blue.svg") no-repeat;
 }
 @media (min-width: 992px) {
   .product__action:hover {
     background: url("../img/trash--black.svg") no-repeat;
+  }
+  .product__action:hover:active {
+    background: url("../img/trash--blue.svg") no-repeat;
   }
 }
 .product__name {
@@ -7783,6 +7785,12 @@ input[type=search] {
   position: relative;
   padding-top: 99px;
 }
+@media (max-width: 480px) {
+  .wishlist {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 992px) {
   .wishlist {
     padding-top: 105px;
@@ -7849,6 +7857,7 @@ input[type=search] {
     text-decoration: none;
     color: #535353;
     text-transform: uppercase;
+    padding-left: 15px;
   }
 }
 @media (min-width: 768px) and (min-width: 768px) {
@@ -7886,7 +7895,6 @@ input[type=search] {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
-  padding-bottom: 15px;
 }
 .wishlist__container:before,
 .wishlist__container:after {
@@ -7898,18 +7906,29 @@ input[type=search] {
 }
 @media (min-width: 768px) {
   .wishlist__container {
-    padding-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 18px;
   }
 }
 @media (min-width: 992px) {
   .wishlist__container {
     padding-top: 45px;
+    padding-bottom: 18px;
+    width: 930px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .wishlist__container {
+    padding-bottom: 13px;
+    width: 1150px;
   }
 }
 @media (min-width: 1600px) {
   .wishlist__container {
     padding-top: 65px;
-    padding-bottom: 0;
+    padding-bottom: 8px;
+    width: 1585px;
   }
 }
 .wishlist__heading {
@@ -7967,6 +7986,11 @@ input[type=search] {
   padding: 0 20px;
   margin-bottom: 30px;
 }
+@media (min-width: 480px) {
+  .wishlist__toggler-group {
+    padding-right: 40px;
+  }
+}
 @media (min-width: 1200px) {
   .wishlist__toggler-group {
     margin-bottom: 15px;
@@ -7979,8 +8003,6 @@ input[type=search] {
   font-size: 1.4rem;
   line-height: 1;
   text-transform: uppercase;
-  -webkit-transition: .3s;
-          transition: .3s;
 }
 @media (min-width: 768px) {
   .wishlist__toggler-group span {
@@ -8018,6 +8040,7 @@ input[type=search] {
   .wishlist__toggler-group {
     width: 330px;
     padding: 0 30px;
+    padding-right: 40px;
     margin: 0 auto;
     margin-bottom: 30px;
   }
