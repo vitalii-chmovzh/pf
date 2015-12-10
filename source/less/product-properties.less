@@ -60,6 +60,10 @@
 		vertical-align: top;
 		margin-top: 15px;
 		transition: .3s;
+		
+		@media(min-width: @screen-xs){
+			margin-top: 0;
+		}
 	}
 	.arrow-right {
 		&:hover {
@@ -96,10 +100,12 @@
 		margin-right: -5px;
 		margin-left: -5px;
 		@media (min-width: @screen-xs) {
+			margin-top: 10px;
 			margin-bottom: 10px;
+			margin-bottom: 4px;
 		}
 		@media (min-width: @screen-sm) {
-			margin-bottom: 15px;
+			margin-bottom: 9px;
 		}
 		@media (min-width: @screen-lg) {
 			margin-top: 25px;
@@ -280,10 +286,10 @@
 			padding-bottom: 5px;
 		}
 		@media (min-width: @screen-lg) {
-			padding-bottom: 25px;
+			padding-bottom: 12px;
 		}
 		@media (min-width: @screen-xlg) {
-			padding-bottom: 34px;
+			padding-bottom: 36px;
 		}
 		li {
 			font-weight: 300;
