@@ -178,8 +178,13 @@
         <div class="tailoring">
           <img src="./img/service-1.svg" alt="" class="tailoring__heading">
           <div class="tailoring__slider">
-            <div class="tailoring__slide"></div>
-            <ul class="pagination">
+            <div class="tailoring__slider-wrapper">
+              <div class="tailoring__slide"></div>
+              <div class="tailoring__slide"></div>
+              <div class="tailoring__slide"></div>
+              <div class="tailoring__slide"></div>
+            </div>
+            <ul class="tailoring__slider-pagination">
               <li class="active"></li>
               <li></li>
               <li></li>
@@ -215,13 +220,6 @@
             <div class="printing__slide"></div>
           
           <ul class="pagination">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
           </ul>
           
           </div>
@@ -347,6 +345,22 @@
   
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
+<script src="js/jquery.bxslider.js"></script>
  <script src="js/script.js"></script> 
+ <script>
+  $(document).ready(function () {
+
+    // Main slider
+    $('.tailoring__slider-wrapper').bxSlider({
+        mode: 'fade',
+        // slideSelector: 'tailoring__slide',
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        controls: false,
+        pagerSelector: '.tailoring__slider-pagination'
+    });
+
+  }); 
+</script>
 </body>
 </html>

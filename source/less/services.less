@@ -451,3 +451,39 @@
 			padding: 0 20px;
 	}
 }
+
+
+.tailoring__slider-pagination {
+	padding: 5px 0;
+	position: static;
+	width: auto;
+	margin: 0;
+	div {
+		vertical-align: middle;
+		display: inline-block;
+		margin-left: 4px;	
+		a{
+		padding: 2px;
+		border: 2px solid @gray;
+		background: none;
+		cursor: pointer;
+		transition: .3s;
+		font-size: 0;
+			&:hover {
+				background: #000;
+				border-color: rgba(0, 0, 0, 0);
+				transform: scale(0.5);
+			}
+			// &.active {
+			// 	padding: 0;
+			// 	border: 2px solid #000;
+			// 	&:hover {
+			// 		padding: 0;
+			// 		border: 2px solid #000;
+			// 		transform: scale(1);
+			// 	}
+			// }
+		}
+		
+	}
+}

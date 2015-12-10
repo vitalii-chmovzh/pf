@@ -5241,6 +5241,33 @@ input[type=search] {
     padding: 0 20px;
   }
 }
+.tailoring__slider-pagination {
+  padding: 5px 0;
+  position: static;
+  width: auto;
+  margin: 0;
+}
+.tailoring__slider-pagination div {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 4px;
+}
+.tailoring__slider-pagination div a {
+  padding: 2px;
+  border: 2px solid #535353;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: .3s;
+          transition: .3s;
+  font-size: 0;
+}
+.tailoring__slider-pagination div a:hover {
+  background: #000;
+  border-color: rgba(0, 0, 0, 0);
+  -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
+          transform: scale(0.5);
+}
 .contacts-page .main-menu__active {
   color: #2864c7;
 }
