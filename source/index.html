@@ -108,36 +108,20 @@
   </header>
   
   <section class="slider">
-      <div class="slider-wrapper">
-        <article class="slide slide--first">
-         <div class="description">
-            <h1 class="description__heading">
-             Пусть ненавидят
-              <span>Бутсы Adidas F50 Adizero Messi</span>
-            </h1>
-            <a href="#" class="description__more-btn">Подробнее</a>
-          </div>
-        </article>
-        <article class="slide slide--first">
-         <div class="description">
-            <h1 class="description__heading">
-             Пусть ненавидят
-              <span>Бутсы Adidas F50 Adizero Messi</span>
-            </h1>
-            <a href="#" class="description__more-btn">Подробнее</a>
-          </div>
-        </article>
-        <article class="slide slide--first">
-         <div class="description">
-            <h1 class="description__heading">
-             Пусть ненавидят
-              <span>Бутсы Adidas F50 Adizero Messi</span>
-            </h1>
-            <a href="#" class="description__more-btn">Подробнее</a>
-          </div>
-        </article>
-      </div>
+      <article class="slide slide--first">
+       <div class="description">
+          <h1 class="description__heading">
+           Пусть ненавидят
+            <span>Бутсы Adidas F50 Adizero Messi</span>
+          </h1>
+          <a href="#" class="description__more-btn">Подробнее</a>
+        </div>
+      </article>
+      
       <ul class="pagination">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
         <li></li>
       </ul>
      <div class="slider__overflow"></div>
@@ -2100,24 +2084,11 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
 <script src="js/jquery.bxslider.js"></script> 
-<script src="js/product-properties.js"></script>
 <!-- <script src="js/script.js"></script>  -->
-<!-- <script src="js/script2.js"></script>  -->
+<script src="js/script2.js"></script> 
 <script src="js/select.js"></script> 
-<script src="js/product-properties.js"></script> 
 <script>
   $(document).ready(function () {
-
-    // Main slider
-    $('.slider-wrapper').bxSlider({
-        mode: 'fade',
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        controls: false,
-        pagerSelector: '.pagination'
-    });
-
-    // Footer slider
     $('.js-list-mobile').bxSlider({
         slideWidth: 77,
         slideMargin: 30,
@@ -2131,44 +2102,6 @@
         infiniteLoop: false,
         hideControlOnEnd: true
     });
-
-    // One Page Scroll
-
-    // function slideTo(x, y, time, decelRate, interval) {
-    //   if (arguments.length < 6) {
-    //     if (!decelRate)
-    //       decelRate = 1;
-    //     if (!interval)
-    //       interval = 25;
-    //     slideTo(x, y, time * decelRate, decelRate, interval, (new Date()).getTime() + time);
-    //     return;
-    //   }
-    //   var dateTime = arguments[5];
-    //   var now = (new Date()).getTime();
-    //   if (now >= dateTime)
-    //     return;
-    //   setTimeout(function() { slideTo(x, y, time - interval * decelRate, decelRate, interval, dateTime); }, interval);
-    //   var rateX = (x - window.scrollX) * interval / time;
-    //   var rateY = (y - window.scrollY) * interval / time;
-    //   window.scrollBy(rateX, rateY);
-    // }
-
-    // var mainHeight = $('.slider').height(),
-    //     headerHeight = $('.page-header').height(),
-    //     offset = mainHeight - headerHeight,
-    //     w = $( window ).width();
-
-    // if(w >= 768){    
-    //   $(window).scroll(function() {
-    //     var scrollTop = $(this).scrollTop();
-
-    //     if ( scrollTop > 50 && scrollTop <= 100){
-    //         slideTo(0, offset, 800, 0.5 , 20)
-    //     }
-    //   });
-    // }
-
-
   });
 </script>
 </body>

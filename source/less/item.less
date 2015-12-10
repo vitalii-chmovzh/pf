@@ -46,6 +46,7 @@
 		margin: 0 auto;
 	}
 	@media(min-width: @screen-xlg) {
+		margin-top: 5px;
 		padding-top: 152px;
 		width: 1605px;
 	}
@@ -56,7 +57,7 @@
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
 			padding-bottom: 30px;
-			width: 720px;
+			width: 750px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 0;
@@ -578,6 +579,10 @@
 			overflow: auto;
 			width: auto;
 		}
+		
+		@media(min-width: @screen-xlg) {
+			padding-bottom: 5px;
+		}	
 	}
 	&__wish {
 		@media(min-width: @screen-sm) {
@@ -919,6 +924,11 @@
 		display: block;
 		border: 1px solid #000;
 		transition: .1s;
+		
+		@media (min-width: @screen-xlg){
+			width: 52px;
+			height: 52px;
+		}
 	}
 	ul .vk {
 		border-color: #426b9a;
