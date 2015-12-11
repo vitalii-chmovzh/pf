@@ -42,6 +42,23 @@
 			}
 		}
 	}
+	
+	&__main-wrapper{
+		
+	@media (max-width: @screen-sm) {
+		width: 480px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-xs) {
+		width: 320px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-md) {
+		width: auto;
+		margin: 0 auto;
+	}
+	}
+	
 	p {
 		.font(1.2rem;
 		1.2rem;
@@ -231,7 +248,7 @@
 		}
 	}
 	&__product-img {
-		width: 120%;
+		width: 100%;
 		position: relative;
 		margin-bottom: 30px;
 		text-align: center;
@@ -244,6 +261,9 @@
 				width: 80%;
 			}
 		}
+			@media(min-width: @screen-md) {
+				width: 110%;
+			}
 			@media(min-width: @screen-xlg) {
 				width: 120%;
 			}
