@@ -1,9 +1,21 @@
 .servises {
 	position: relative;
 	padding-top: 99px;
-	overflow: hidden;
 	@media(min-width: @screen-md) {
 		padding-top: 105px;
+	}
+	
+	@media (min-width: @screen-md) {
+		width: 932px;
+		margin: 0 auto;
+	}
+	@media (min-width: @screen-lg) {
+		width: 1150px;
+		margin: 0 auto;
+	}
+	@media (min-width: @screen-xlg) {
+		width: 1580px;
+		margin: 0 auto;
 	}
 	&__row {
 		@media(min-width: @screen-sm) and (max-width: @screen-md) {
@@ -56,6 +68,9 @@
 	@media (max-width: @screen-md) {
 		width: auto;
 		margin: 0 auto;
+	}
+	@media (min-width: @screen-md) {
+		padding-left: 20%;
 	}
 	}
 	
@@ -228,21 +243,17 @@
 		p,
 		ul {
 			@media(min-width: @screen-sm) {
-				width: percentage(410/720);
 				margin: 0 auto;
 			}
 			@media(min-width: @screen-md) {
-				width: percentage(540/720);
 				margin: 0 auto;
 			}
 			@media(min-width: @screen-xlg) {
-				width: percentage(645/1200);
 				margin: 0 auto;
 			}
 		}
 		ul {
 			@media(min-width: @screen-xlg) {
-				padding-right: 8%;
 			}
 		}
 	}
@@ -391,6 +402,7 @@
 		@media(min-width: @screen-md) {
 			float: right;
 			width: 53.72%;
+			margin-left: 14px;
 		}
 	}
 	&__slide {
