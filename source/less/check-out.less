@@ -3,6 +3,18 @@
 	position: relative;
 	padding-top: 99px;
 	overflow: hidden;
+	@media (max-width: @screen-xs) {
+		width: 320px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-sm) {
+		width: 480px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-xs) {
+		width: 320px;
+		margin: 0 auto;
+	}
 	@media (max-width: 768px) and (min-width: 480px) {
 		.adres-info__form-group--mob-hidden {
 			display: none !important;
@@ -101,6 +113,16 @@
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
 			padding-bottom: 30px;
+		}
+		@media(min-width: @screen-md) {
+			width: 930px;
+			margin: 0 auto;
+		}
+		@media(min-width: @screen-lg) {
+			width: 1150px;
+		}
+		@media(min-width: @screen-xlg) {
+			width: 1585px;
 		}
 	}
 	&__heading {
