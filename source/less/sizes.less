@@ -14,6 +14,14 @@
 	  width: 1580px;
 	  margin: 0 auto;
   }
+	@media (max-width: @screen-sm) {
+		max-width: 390px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-xs) {
+		max-width: 320px;
+		margin: 0 auto;
+	}
   
   label{
     display: block;
@@ -112,7 +120,17 @@ border-bottom: 2px solid #000;
     @media(min-width: @screen-xlg){
       padding-top: 65px;
       padding-bottom: 0;
-    }    
+    } 
+		@media(min-width: @screen-md) {
+			width: 930px;
+			margin: 0 auto;
+		}
+		@media(min-width: @screen-lg) {
+			width: 1150px;
+		}
+		@media(min-width: @screen-xlg) {
+			width: 1585px;
+		}   
   }  
   
   &__heading{
