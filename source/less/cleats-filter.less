@@ -189,7 +189,7 @@
 			span {
 				color: @red;
 				transition: .3s;
-				&:active {
+				&:active, &:hover:active {
 					color: @blue;
 				}
 				@media(min-width: @screen-md) {
@@ -222,7 +222,7 @@
 			1);
 			border-radius: 0 !important;
 			transition: .3s;
-			&:active {
+			&:active, &:hover:active {
 				outline: none;
 				background: url("../img/dropdown--red.svg") no-repeat center right 15px !important;
 				background-size: 8px 4px !important;
@@ -421,7 +421,7 @@
 		margin-right: 30px;
 		background: @blue;
 		&:active,
-		&:hover {
+		&:hover, &:hover:active {
 			background: none;
 			color: @blue;
 			border: 1px solid @blue;
@@ -434,7 +434,7 @@
 		color: @gray;
 		background: @light-bg;
 		&:active,
-		&:hover {
+		&:hover, &:hover:active {
 			background: none;
 			color: @red;
 			border: 1px solid @red;

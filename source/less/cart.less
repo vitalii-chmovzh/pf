@@ -2,7 +2,7 @@
 	.tool-bar {
 		&__actions {
 			.tool-bar__cart-btn {
-				&:active {
+				&:active, &:hover:active {
 					i {
 						background: url("../img/cart.svg");
 					}
@@ -172,7 +172,6 @@
 			padding-bottom: 15px;
 		}
 		@media(min-width: @screen-lg) {
-			margin-top: -4px;
 			padding-bottom: 11px;
 		}
 		@media(min-width: @screen-xlg) {
@@ -347,7 +346,7 @@
 			cursor: pointer;
 			display: inline-block;
 			margin-right: 25px;
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 			}
 			@media (min-width: @screen-xlg) {
@@ -361,7 +360,7 @@
 			height: 16px;
 			background: url("../img/trash.svg") no-repeat;
 			background-size: cover;
-			&:active {
+			&:active, &:hover:active {
 				background: url("../img/trash--blue.svg") no-repeat;
 			}
 			&--tab-hidden {
@@ -384,7 +383,7 @@
 			text-transform: uppercase;
 			margin-bottom: 33px;
 			overflow: hidden;
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 				text-decoration: none;
 			}
@@ -632,13 +631,13 @@
 
 
 				
-				&:active{					
+				&:active, &:hover:active{					
 				background: url("../img/minus--blue.svg") center center no-repeat;
 				}
 				&--disabled {
 					background: url("../img/minus--disabled.svg") center center no-repeat;
 				
-				&:active{					
+				&:active, &:hover:active{					
 				background: url("../img/minus--disabled.svg") center center no-repeat;
 				}
 				}
@@ -648,13 +647,13 @@
 				right: 0;
 				bottom: 1px;
 				
-				&:active{					
+				&:active, &:hover:active{					
 				background: url("../img/plus--blue.svg") center center no-repeat;
 				}
 				&--disabled {
 					background: url("../img/plus-disabled.svg") center center no-repeat;
 				
-				&:active{					
+				&:active, &:hover:active{					
 				background: url("../img/plus--blue.svg") center center no-repeat;
 				}
 				}
@@ -723,7 +722,7 @@
 			text-decoration: none;
 			color: @gray;
 			width: percentage(120/290);
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 			}
 			
@@ -878,7 +877,7 @@
 		&:focus {
 			outline: none;
 		}
-		&:active{
+		&:active, &:hover:active{
 			background: none;
 			color: @blue;
 			border: 1px solid @blue;
@@ -1028,7 +1027,7 @@
 		text-decoration: none;
 		margin-bottom: 15px;
 		transition: .3s;
-		&:active {
+		&:active, &:hover:active {
 			background: none;
 			color: @blue;
 			border: 1px solid @blue;
@@ -1121,7 +1120,7 @@
 		cursor: pointer;
 		display: inline-block;
 		margin-bottom: 10px;
-		&:active {
+		&:active, &:hover:active {
 			color: @blue;
 		}
 	}
@@ -1138,7 +1137,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		overflow: hidden;
-		&:active {
+		&:active, &:hover:active {
 			color: @blue;
 			text-decoration: none;
 		}

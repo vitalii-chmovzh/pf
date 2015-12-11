@@ -51,7 +51,7 @@
 			color: @gray;
 			margin-bottom: 35px;
 			transition: .3s;
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 			}
 			&:first-of-type {
@@ -70,7 +70,7 @@
 		background: url("../img/settings--black.svg");
 		background-size: cover;
 		transition: .3s;
-		&:active {
+		&:active, &:hover:active {
 			background: url("../img/settings--blue.svg");
 			background-size: cover;
 		}
@@ -81,14 +81,14 @@
 		background: url("../img/exit--black.svg");
 		background-size: cover;
 		transition: .3s;
-		&:active {
+		&:active, &:hover:active {
 			background: url("../img/exit--blue.svg");
 			background-size: cover;
 		}
 	}
 	&__btn {
 		&--config {
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 				.mobile-menu__config-btn {
 					background: url("../img/settings--blue.svg");
@@ -97,7 +97,7 @@
 			}
 		}
 		&--signout {
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 				.mobile-menu__signout-btn {
 					background: url("../img/exit--blue.svg");
@@ -125,7 +125,7 @@
 		text-decoration: none;
 		font-weight: bold;
 		transition: .3s;
-		&:active {
+		&:active, &:hover:active {
 			color: @blue;
 		}
 	}
@@ -145,7 +145,7 @@
 		@media (min-width: @screen-sm) {
 			margin-top: 23px;
 		}
-		&:active {
+		&:active, &:hover:active {
 			color: @blue;
 			.mobile-menu__logo {
 				background: url("../img/logo-30-color.svg");
@@ -167,7 +167,7 @@
 		1.4rem;
 		);
 		transition: .3s;
-		&:active {
+		&:active, &:hover:active {
 			color: @blue;
 		}
 		//      &:hover, &:active, &:focus{

@@ -2,7 +2,7 @@
 	.tool-bar {
 		&__actions {
 			.tool-bar__wishlist-btn {
-				&:active {
+				&:active, &:hover:active {
 					i {
 						background: url("../img/star.svg");
 					}
@@ -110,8 +110,9 @@
 		.heading(1.8rem;
 		3.6rem;
 		3.6rem;
+		3.6rem;
 		4.8rem;
-		1);
+		1.4);
 		color: #000;
 		line-height: 1;
 		padding-bottom: 25px;
@@ -121,7 +122,6 @@
 			padding-left: 15px;
 		}
 		@media(min-width: @screen-lg) {
-			margin-top: -4px;
 			padding-bottom: 11px;
 		}
 		@media(min-width: @screen-xlg) {
@@ -153,13 +153,20 @@
 					color: #000;
 				}
 			}
-			&:active {
+			&:active, &:hover:active {
 				color: @blue;
 			}
 		}
 		@media(min-width: @screen-sm) {
-			width: 330px;
-			padding: 0 30px;
+			width:690px;
+			padding: 0 38px;
+			padding-right: 40px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		@media(min-width: @screen-md) {
+			width:870px;
+			padding: 0 38px;
 			padding-right: 40px;
 			margin: 0 auto;
 			margin-bottom: 30px;

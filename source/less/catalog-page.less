@@ -62,6 +62,7 @@
 		.heading(1.8rem;
 		3.6rem;
 		3.6rem;
+		3.6rem;
 		4.8rem;
 		1);
 		color: #000;
@@ -79,7 +80,6 @@
 			margin-left: 0;
 		}
 		@media(min-width: @screen-lg) {
-			margin-top: -4px;
 			padding-bottom: 11px;
 		}
 		@media(min-width: @screen-xlg) {
@@ -248,7 +248,7 @@
 		transition: .1s ease;
 		cursor: pointer;
 		text-align: center;
-		&:active {
+		&:active, &:hover:active {
 			background: @red;
 		}
 		@media(min-width: @screen-sm) {

@@ -28,7 +28,7 @@
 			height: 30px;
 			background: url("../img/logo-30-color.svg") center no-repeat;
 			transition: .3s;
-			&:active {
+			&:active, &:hover:active {
 				opacity: 0.5;
 			}
 			@media (min-width: @screen-sm) {
@@ -81,7 +81,7 @@
 		transition: .3s;
 	}
 	&__config-btn {
-		&:active {
+		&:active, &:hover:active {
 			i {
 				background: url("../img/settings--red.svg");
 			}
@@ -95,7 +95,7 @@
 		}
 	}
 	&__signout-btn {
-		&:active {
+		&:active, &:hover:active {
 			i {
 				background: url("../img/exit--red.svg");
 			}
@@ -108,7 +108,7 @@
 		}
 	}
 	&__login-btn {
-		&:active {
+		&:active, &:hover:active {
 			i {
 				background: url("../img/lock--red.svg");
 			}
@@ -122,7 +122,7 @@
 		}
 	}
 	&__wishlist-btn {
-		&:active {
+		&:active, &:hover:active {
 			i {
 				background: url("../img/star--red.svg");
 			}
@@ -137,7 +137,7 @@
 	}
 	&__cart-btn {
 		text-decoration: none;
-		&:active {
+		&:active, &:hover:active {
 			i:first-of-type {
 				background: url("../img/cart--red.svg");
 			}
