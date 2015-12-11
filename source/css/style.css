@@ -9359,14 +9359,16 @@ footer .bx-next.disabled {
 .cart-product__quantity .minus-icon,
 .cart-product__quantity .plus-icon {
   cursor: pointer;
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 30px;
   display: block;
   position: absolute;
+  bottom: 2px!important;
+  background-size: 16px!important;
 }
 .cart-product__quantity .minus-icon {
   background: url("../img/minus--gray.svg") center center no-repeat;
-  left: 15px;
+  left: 0;
   bottom: 5px;
 }
 .cart-product__quantity .minus-icon:active {
@@ -9380,8 +9382,8 @@ footer .bx-next.disabled {
 }
 .cart-product__quantity .plus-icon {
   background: url("../img/plus--gray.svg") center center no-repeat;
-  right: 15px;
-  bottom: 5px;
+  right: 0;
+  bottom: 1px;
 }
 .cart-product__quantity .plus-icon:active {
   background: url("../img/plus--blue.svg") center center no-repeat;
