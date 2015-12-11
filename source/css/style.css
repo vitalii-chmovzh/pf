@@ -6520,12 +6520,17 @@ footer .bx-next.disabled {
   content: '';
   background-image: -webkit-linear-gradient(135deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
   background-image: -ms-linear-gradient(135deg, rgba(0, 0, 0, 0.14902) 0%, rgba(0, 0, 0, 0) 100%);
-  -webkit-transition: .3s;
-          transition: .3s;
+  -webkit-transition: .1s;
+          transition: .1s;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
+}
+@media (min-width: 992px) {
+  .product__image:hover:after {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 .product__image--1 {
   background: url("../img/product-1.jpg") center center;
@@ -8396,7 +8401,7 @@ footer .bx-next.disabled {
 }
 @media (min-width: 1200px) {
   .wishlist__toggler-group span {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 }
@@ -9093,6 +9098,10 @@ footer .bx-next.disabled {
 @media (min-width: 992px) {
   .cart-product__name {
     white-space: pre-wrap;
+  }
+  .cart-product__name:hover {
+    color: #000;
+    text-decoration: underline;
   }
 }
 @media (min-width: 1600px) {
@@ -10456,6 +10465,7 @@ footer .bx-next.disabled {
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .order-item__name {
@@ -10496,6 +10506,10 @@ footer .bx-next.disabled {
 @media (min-width: 992px) {
   .order-item__name {
     white-space: pre-wrap;
+  }
+  .order-item__name:hover {
+    color: #000;
+    text-decoration: underline;
   }
 }
 @media (min-width: 1600px) {
@@ -11301,6 +11315,11 @@ footer .bx-next.disabled {
 @media (min-width: 768px) {
   .check-out-form__column textarea {
     width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .check-out-form__column textarea {
+    width: 240px;
   }
 }
 @media (min-width: 768px) {
@@ -16789,6 +16808,23 @@ footer .bx-next.disabled {
     color: #2864c7;
   }
 }
+.sizes-popup {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 15px;
+}
+.sizes-popup__heading {
+  margin-bottom: 15px;
+}
+.sizes-popup table {
+  float: none;
+  width: 100%;
+  margin-top: 0;
+}
+.sizes-popup tr th:nth-of-type(4),
+.sizes-popup tr td:nth-of-type(4) {
+  background: rgba(233, 63, 54, 0.2);
+}
 ::-webkit-input-placeholder {
   color: #000;
   position: relative;
@@ -16842,4 +16878,7 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+table {
+  border-spacing: inherit;
 }
