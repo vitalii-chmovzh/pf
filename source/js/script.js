@@ -50,7 +50,16 @@ $(document).ready(function () {
   });
   
   
-  
+  /* Dropdowns close part */
+
+  $('body').on('click', function(event) {
+      //Hide all select.js dropdowns
+
+      $('.dropcontainer').find('.dropdownvisible').removeClass('dropdownvisible').addClass('dropdownhidden');
+      $('.sizes__brand-toggler').find('.activetrigger').removeClass('activetrigger').addClass('trigger');
+  });
+
+
   
   
   $('.catalog-filter .arrow-right').on("click touchstart", function(){

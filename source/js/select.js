@@ -10,6 +10,8 @@ function tamingselect()
 	var ts_triggeroff='trigger';			// class for the inactive trigger link
 	var ts_dropdownclosed='dropdownhidden'; // closed dropdown
 	var ts_dropdownopen='dropdownvisible';	// open dropdown
+	var body = document.body;
+	var dropcontainer = document.getElementsByClassName('dropcontainer');
 /*
 	Turn all selects into DOM dropdowns
 */
@@ -28,11 +30,13 @@ function tamingselect()
 			var trigger=document.createElement('a');
 			ts_addclass(trigger,ts_triggeroff);
 			trigger.href='#';
-			trigger.onclick=function(){
+			trigger.onclick=function(event) {
+				event.stopPropagation();
 				ts_swapclass(this,ts_triggeroff,ts_triggeron)
 				ts_swapclass(this.parentNode.getElementsByTagName('ul')[0],ts_dropdownclosed,ts_dropdownopen);
 				return false;
 			}
+
 			trigger.appendChild(document.createTextNode(sels[i].options[0].text));
 			sels[i].parentNode.insertBefore(trigger,sels[i]);
 			var replaceUL=document.createElement('ul');
@@ -117,3 +121,5 @@ window.onload=function()
 	tamingselect();
 	// add more functions if necessary
 }
+
+
