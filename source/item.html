@@ -9,10 +9,12 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
     <!-- Adding Roboto in indian style-->
     
    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
+
     
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -166,15 +168,14 @@
      
       <div class="item-page__wrapper">
         <div class="item-slider">
-          <div class="item-slider__slide">
-         <div class="item-slider__btn"><span class="item-slider__icon"></span></div>
+          <div class="item-slider-wrapper">
+            <a href="img/product-1.jpg" data-lightbox="image-1" class="item-slider__slide"></a>
+            <a href="img/product-1.jpg" data-lightbox="image-1" class="item-slider__slide"></a>
+            <a href="img/product-1.jpg" data-lightbox="image-1" class="item-slider__slide"></a>
+            <a href="img/product-1.jpg" data-lightbox="image-1" class="item-slider__slide"></a>
           </div>
-            <ul class="pagination">
-              <li class="active"></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+           <!-- <div class="item-slider__btn"><span class="item-slider__icon"></span></div> -->
+            <ul class="item-slider-wrapper-pagination"></ul>
         </div>
         <div class="item-page__column">
           <div class="item-page__hint">
@@ -191,6 +192,7 @@
               </select>
               <span>размеры в наличии:</span>
             </div>
+            <span class="arrow-top arrow-top--gray disabled"></span>
             <div class="item-page__sizes-list-wrapper">
               <ul class="sizes-group">
               <li><input name="sizes" id="1" type="radio"><label for="1">40</label></li>
@@ -208,7 +210,7 @@
               <li><input name="sizes" id="13" type="radio"><label for="13">46</label></li>
             </ul>              
             </div>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
+            <span class="arrow-bottom arrow-bottom--gray"></span>
             <span class="item-page__sizes-btn">Таблица размеров</span>
 
             <a href="" class="item-page__wish-btn item-page__wish-btn-add"><i class="item-page__star-icon"></i><span>В корзину</span></a>
@@ -574,19 +576,20 @@
  <script src="js/select.js"></script> 
  <script src="js/add-btn-show.js"></script> 
 <script src="js/jquery.bxslider.js"></script> 
-
+<script src="js/lightbox.js"></script>
 <script src="js/product-properties.js"></script>
 
 <script>
   $(document).ready(function () {
 
     // Main slider
-    $('.slider-wrapper').bxSlider({
+    $('.item-slider-wrapper').bxSlider({
         mode: 'fade',
         infiniteLoop: false,
         hideControlOnEnd: true,
-        controls: false,
-        pagerSelector: '.pagination'
+        nextText: '',
+        prevText: '',
+        pagerSelector: '.item-slider-wrapper-pagination'
     });
 
     // Footer slider
