@@ -1,0 +1,275 @@
+.add-to-cart, .add-to-wishlist, .sign-up-popup{
+	width: 290px;
+	padding: 15px;
+	padding-bottom: 30px;
+	margin: 100px;
+	border: 1px solid @red;
+		text-align: center;
+			background: #fff;
+	
+	@media(min-width: @screen-sm){
+		width: 345px;
+	}
+	
+	@media(min-width: @screen-md){
+		width: 320px;
+	}
+	@media(min-width: @screen-lg){
+		width: 390px;
+		padding: 15px 30px;
+	}
+	@media(min-width: @screen-xlg){
+		width: 530px;
+		padding: 15px 30px;
+		padding-bottom: 30px;
+	}
+	
+		&__heading{			
+			display: inline-block;
+			.heading(1.4rem;
+			1.4rem;
+			1.4rem;
+			1.6rem;
+			2rem;
+			1);
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 23px;
+		}
+	
+	&__descr{		
+			.font(1.2rem;
+			1.2rem;
+			1.2rem;
+			1.2rem;
+			1.4rem;
+			1.8);
+		font-weight: 300;
+		margin-bottom: 12px;
+	}
+	
+	&__btn{
+		margin: 0 auto;
+		margin-bottom: 23px;
+			.heading(1.4rem;
+			1.4rem;
+			1.4rem;
+			1.4rem;
+			1.4rem;
+			1);
+		
+	@media(min-width: @screen-xlg){
+		padding: 15px 20px;
+		width: 180px;
+	}
+		span{
+			vertical-align: middle;
+			padding-top: 0;
+		}
+	
+	&--no-bg{
+		text-transform: none;
+		border: none;
+		background: none;
+		width: auto;
+		padding: 0;
+		margin-bottom: 0;
+		
+		span{
+			vertical-align: middle;
+		}
+		@media (min-width: @screen-md) {
+			&:hover:active {
+				color: @blue;
+				i {
+					background: url("../img/star--blue.svg");
+				}
+			}
+		}
+	}
+	}
+	
+	&__additional{
+		text-decoration: none;
+			.font(1.2rem;
+			1.2rem;
+			1.2rem;
+			1.2rem;
+			1.4rem;
+			1.4);
+		display: inline-block;
+		color: @gray;
+		
+		&:active{
+			color: @blue;
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+				color: #000;
+				&:active{
+					color: @blue;
+				}				
+			}
+		}
+	}
+}
+
+.sign-up-popup{
+	&__actions{
+		text-align: right;
+		span{
+			cursor: pointer;
+			display: inline-block;
+			.heading(1.4rem;
+			1.4rem;
+			1.4rem;
+			1.6rem;
+			2rem;
+			1);
+			text-transform: uppercase;
+			margin-bottom: 23px;
+			margin-right: 30px;
+			
+		}
+		
+	}
+	
+	label {
+		display: block;
+		.font(1.2rem;
+		1.2rem;
+		1.2rem;
+		1.4rem;
+		1.6rem;
+		1);
+		text-align: left;
+		font-weight: bold;
+		span {
+			color: @red;
+		}
+	}
+	input,
+	select,
+	.trigger,
+	.activetrigger {
+		display: block;
+		appearance: none;
+		-webkit-appearance: none;
+		padding: 5px 15px;
+		margin-bottom: 30px;
+		background: none;
+		border: none;
+		width: 100%;
+		color: #000;
+		text-decoration: none;
+		border-bottom: 2px solid #000;
+		.font(1.6rem;
+		1.6rem;
+		1.6rem;
+		1.4rem;
+		1.6rem;
+		1);
+		border-radius: 0 !important;
+		&:focus {
+			outline: none;
+		}
+	}
+	input[type="radio"],
+	input[type="checkbox"] {
+		display: none;
+	}
+	.remember {
+		margin-left: 25px;
+		.font(1.2rem;
+		1.2rem;
+		1.2rem;
+		1.4rem;
+		1.6rem;
+		1);
+		transition: .3s ease;
+		font-weight: normal;
+		cursor: pointer;
+			position: relative;
+			&:after {
+				position: absolute;
+				content: '';
+				width: 15px;
+				height: 15px;
+				background: @border-color;
+				border: 1px solid @border-color;
+				top: -2px;
+				left: -25px;
+			}
+		&:after {
+			transition: .3s ease;
+		}
+		@media(min-width: @screen-md) {
+			&:hover:after {
+				border: 1px solid #000;
+			}
+		}
+	}
+	
+	&__row{
+		clear: both;
+		margin-bottom: 23px;
+	}
+	input[type="checkbox"]:checked + label {
+		color: @blue;
+		&:after {
+			background: @blue;
+			border: 1px solid @blue;
+		}
+	}
+	
+	button{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		background: @blue;
+		color: #fff;
+		justify-content: center;
+		margin-bottom: 0;
+		
+		i{
+			background: url("../img/lock.svg");
+		}
+		
+		span{
+			vertical-align: middle;
+		}
+		
+		&:focus{
+			outline: none;
+		}
+		
+		&:active{
+			background: #fff;
+			border: 1px solid @blue;
+			color: @blue;
+			
+			i{
+				background: url("../img/lock--blue.svg");
+			}
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+					background: @light-bg;
+					border: 1px solid @blue;
+					color: @blue;
+					i{
+						background: url("../img/lock--blue.svg");
+					}
+				&:active{
+					color: @blue;
+				}				
+			}
+		}
+	}
+}
