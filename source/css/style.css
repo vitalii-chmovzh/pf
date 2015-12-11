@@ -15829,6 +15829,31 @@ footer .bx-next.disabled {
     padding-left: 54px;
   }
 }
+.catalog-filter-wrapper {
+  background: #fff;
+}
+@media (min-width: 992px) {
+  .catalog-filter-wrapper {
+    width: 242px;
+  }
+}
+@media (min-width: 1200px) {
+  .catalog-filter-wrapper {
+    width: 278px;
+  }
+}
+@media (min-width: 1600px) {
+  .catalog-filter-wrapper {
+    width: 355px;
+  }
+}
+.catalog-filter-wrapper.catalog-filter-fixed {
+  position: fixed;
+  top: 133px;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
 .visible {
   -webkit-transition: .3s;
           transition: .3s;
