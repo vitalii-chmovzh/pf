@@ -102,6 +102,16 @@
 			padding-top: 65px;
 			padding-bottom: 0;
 		}
+		@media(min-width: @screen-md) {
+			width: 930px;
+			margin: 0 auto;
+		}
+		@media(min-width: @screen-lg) {
+			width: 1150px;
+		}
+		@media(min-width: @screen-xlg) {
+			width: 1585px;
+		}
 	}
 	&__heading {
 		.heading(1.8rem;
@@ -196,6 +206,18 @@
 	@media(min-width: @screen-md) {
 		width: auto;
 		padding-left: 15px;
+	}
+	@media (max-width: @screen-md) {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-sm) {
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	@media (max-width: @screen-xs) {
+		max-width: 320px;
+		margin: 0 auto;
 	}
 	&__caption {
 		text-transform: uppercase;
