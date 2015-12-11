@@ -81,8 +81,10 @@
 		transition: .3s;
 	}
 	&__config-btn {
+		transition: .3s;
 		&:active, &:hover:active {
 			i {
+				opacity: 1;
 				background: url("../img/settings--red.svg");
 			}
 		}
@@ -93,10 +95,17 @@
 			background: url("../img/settings.svg");
 			background-size: cover;
 		}
+			@media (min-width: @screen-md) {
+				&:hover{
+					opacity: 0.7;
+				}
+			}
 	}
 	&__signout-btn {
+		transition: .3s;
 		&:active, &:hover:active {
 			i {
+				opacity: 1;
 				background: url("../img/exit--red.svg");
 			}
 		}
@@ -106,8 +115,14 @@
 			background: url("../img/exit.svg");
 			background-size: cover;
 		}
+			@media (min-width: @screen-md) {
+				&:hover{
+					opacity: 0.7;
+				}
+			}
 	}
 	&__login-btn {
+		transition: .3s;
 		&:active, &:hover:active {
 			i {
 				background: url("../img/lock--red.svg");
@@ -120,8 +135,14 @@
 			background: url("../img/lock.svg");
 			background-size: cover;
 		}
+			@media (min-width: @screen-md) {
+				&:hover{
+					opacity: 0.7;
+				}
+			}
 	}
 	&__wishlist-btn {
+		transition: .3s;
 		&:active, &:hover:active {
 			i {
 				background: url("../img/star--red.svg");
@@ -134,8 +155,14 @@
 			background: url("../img/star.svg");
 			background-size: cover;
 		}
+			@media (min-width: @screen-md) {
+				&:hover{
+					opacity: 0.7;
+				}
+			}
 	}
 	&__cart-btn {
+		transition: .3s;
 		text-decoration: none;
 		&:active, &:hover:active {
 			i:first-of-type {
@@ -153,6 +180,11 @@
 			background: url("../img/cart.svg");
 			background-size: cover;
 		}
+			@media (min-width: @screen-md) {
+				&:hover{
+					opacity: 0.7;
+				}
+			}
 	}
 	&__counter {
 		cursor: pointer;

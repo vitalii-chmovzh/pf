@@ -108,20 +108,36 @@
   </header>
   
   <section class="slider">
-      <article class="slide slide--first">
-       <div class="description">
-          <h1 class="description__heading">
-           Пусть ненавидят
-            <span>Бутсы Adidas F50 Adizero Messi</span>
-          </h1>
-          <a href="#" class="description__more-btn">Подробнее</a>
-        </div>
-      </article>
-      
+      <div class="slider-wrapper">
+        <article class="slide slide--first">
+         <div class="description">
+            <h1 class="description__heading">
+             Пусть ненавидят
+              <span>Бутсы Adidas F50 Adizero Messi</span>
+            </h1>
+            <a href="#" class="description__more-btn">Подробнее</a>
+          </div>
+        </article>
+        <article class="slide slide--first">
+         <div class="description">
+            <h1 class="description__heading">
+             Пусть ненавидят
+              <span>Бутсы Adidas F50 Adizero Messi</span>
+            </h1>
+            <a href="#" class="description__more-btn">Подробнее</a>
+          </div>
+        </article>
+        <article class="slide slide--first">
+         <div class="description">
+            <h1 class="description__heading">
+             Пусть ненавидят
+              <span>Бутсы Adidas F50 Adizero Messi</span>
+            </h1>
+            <a href="#" class="description__more-btn">Подробнее</a>
+          </div>
+        </article>
+      </div>
       <ul class="pagination">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
         <li></li>
       </ul>
      <div class="slider__overflow"></div>
@@ -129,29 +145,55 @@
   
   <section class="catalog">
      <aside class="catalog-filter">
-      <ul class="catalog-filter__list">
-        <li><a href="">Подарочные сертификаты</a></li>
-        <li><a href="">Бутсы</a></li>
-        <li><a href="">Обувь для зала</a></li>
-        <li><a href="">Шиповки</a></li>
-        <li><a href="">Клубная продукция</a></li>
-        <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
-        <ul class="dropdown-category" dropdown-id="1">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+     <div class="catalog-filter-wrapper">
+        <ul class="catalog-filter__list">
+          <li><a href="">Подарочные сертификаты</a></li>
+          <li><a href="">Бутсы</a></li>
+          <li><a href="">Обувь для зала</a></li>
+          <li><a href="">Шиповки</a></li>
+          <li><a href="">Клубная продукция</a></li>
+          <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+          <ul class="dropdown-category" dropdown-id="1">
+            <li class="dropdown-category__item"><a href="">lorem</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          </ul>
+          </li>
+          <li><a href="">Сланцы</a></li>
+          <li><a href="">Одежда</a></li>
+          <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+          <ul class="dropdown-category" dropdown-id="2">
+            <li class="dropdown-category__item"><a href="">lorem</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          </ul>
+          </li>
+          <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+          <ul class="dropdown-category" dropdown-id="3">
+            <li class="dropdown-category__item"><a href="">lorem</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          </ul></li>
+          <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+          <ul class="dropdown-category" dropdown-id="4">
+            <li class="dropdown-category__item"><a href="">lorem</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+          </ul></li>
+          <li><a href="">Медицина</a></li>
+          <li><a href="">Мячи</a></li>
+          <li><a href="">Сумки и рюкзаки</a></li>
+          <li><a href="">Аксессуары</a></li>
+          <li><a href="">Щитки</a></li>
         </ul>
-        </li>
-        <li><a href="">Сланцы</a></li>
-        <li><a href="">Одежда</a></li>
-        <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
-        <ul class="dropdown-category" dropdown-id="2">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
+<<<<<<< HEAD
+        <i class="catalog-filter__open-btn"></i>
+     </div>    
+=======
         </li>
         <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
         <ul class="dropdown-category" dropdown-id="3">
@@ -171,9 +213,10 @@
         <li><a href="">Мячи</a></li>
         <li><a href="">Сумки и рюкзаки</a></li>
         <li><a href="">Аксессуары</a></li>
-        <li><a href="">Щитки</a></li>
+         <li><a class="last" href="">Щитки</a></li>
       </ul>
           <i class="catalog-filter__open-btn"></i>
+>>>>>>> 542c9ce07e875a96c5f0492249c7b39ae5924c1d
     </aside>
     <div class="catalog__products-wrapper">
     <ul class="catalog__categories">
@@ -214,6 +257,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -289,6 +333,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -363,6 +408,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -439,6 +485,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -514,6 +561,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -588,6 +636,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -664,6 +713,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -738,6 +788,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -811,6 +862,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -887,6 +939,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -961,6 +1014,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1034,6 +1088,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1112,6 +1167,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1187,6 +1243,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1261,6 +1318,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1337,6 +1395,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1412,6 +1471,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1486,6 +1546,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1562,6 +1623,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1636,6 +1698,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1709,6 +1772,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1785,6 +1849,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1859,6 +1924,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -1932,6 +1998,7 @@
                 </select>размеры в наличии:
               </div>
               <span class="arrow-left arrow-left--gray disabled"></span>
+							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
 						<li><input id="32" type="checkbox"><label for="32">32</label></li>
@@ -2084,11 +2151,23 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
 <script src="js/jquery.bxslider.js"></script> 
+<script src="js/product-properties.js"></script>
 <!-- <script src="js/script.js"></script>  -->
-<script src="js/script2.js"></script> 
+<!-- <script src="js/script2.js"></script>  -->
 <script src="js/select.js"></script> 
 <script>
   $(document).ready(function () {
+
+    // Main slider
+    $('.slider-wrapper').bxSlider({
+        mode: 'fade',
+        infiniteLoop: false,
+        hideControlOnEnd: true,
+        controls: false,
+        pagerSelector: '.pagination'
+    });
+
+    // Footer slider
     $('.js-list-mobile').bxSlider({
         slideWidth: 77,
         slideMargin: 30,
@@ -2102,10 +2181,23 @@
         infiniteLoop: false,
         hideControlOnEnd: true
     });
-<<<<<<< HEAD
-=======
 
->>>>>>> 8facea39c46e365360e4e85537635b4abbb9f23f
+
+    // Sticky catalog filter
+
+    var  catFilter = $(".catalog-filter-wrapper");
+         catFilterOffset = catFilter.offset().top;
+
+    // $(window).scroll(function(){
+    //   var scrollTop = $(this).scrollTop();
+         
+    //       if(scrollTop > (catFilterOffset - 125)){
+    //         catFilter.addClass('catalog-filter-fixed');
+    //       }else{
+    //         catFilter.removeClass('catalog-filter-fixed');
+    //       }
+    // })
+
   });
 </script>
 </body>
