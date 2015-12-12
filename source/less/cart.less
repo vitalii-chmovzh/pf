@@ -879,6 +879,7 @@
 		text-align: center;
 		color: #fff;
 		background: @blue;
+		transition: .1s;
 		&:focus {
 			outline: none;
 		}
@@ -892,7 +893,11 @@
 			width: 95px;
 		}
 		@media(min-width: @screen-md) {
-			
+			&:hover{
+				background: @light-bg;
+				color: @blue;
+				border: 1px solid @blue;				
+			}
 		}
 		@media(min-width: @screen-lg) {
 			padding: 13px 15px;
@@ -1031,14 +1036,23 @@
 		background: @blue;
 		text-decoration: none;
 		margin-bottom: 15px;
-		transition: .3s;
-		&:active, &:hover:active {
+		transition: .1s;
+		cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+		&:active, &:hover:active{
 			background: none;
 			color: @blue;
 			border: 1px solid @blue;
 		}
-		&:focus {
-			outline: none;
+
+		@media(min-width: @screen-md) {
+			&:hover{
+				background: @light-bg;
+				color: @blue;
+				border: 1px solid @blue;				
+			}
 		}
 		@media(min-width: @screen-sm) {
 			padding: 13px 0;

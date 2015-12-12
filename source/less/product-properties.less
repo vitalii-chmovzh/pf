@@ -130,19 +130,17 @@
 		transition: .3s ease;
 		//      margin-right: 3px;
 		border-bottom: 2px dashed @gray;
+		background: none !important;
 		&:active, &:hover:active {
 			color: @blue;
 			border-bottom: 2px dashed @blue;
+			background: none !important;
 		}
 		@media (min-width: @screen-md) {
 			&:hover {
-				border-color: #fff;
-			}
-		}
-		@media (min-width: @screen-xlg) {
-			&:hover {
-				border-color: #fff;
-				color: @blue;
+				color: @gray;
+				border-bottom: 2px dashed #fff;
+				background: none !important;
 			}
 		}
 	}
@@ -291,7 +289,7 @@
 			padding-bottom: 12px;
 		}
 		@media (min-width: @screen-xlg) {
-			padding-bottom: 36px;
+			padding-bottom: 33px;
 		}
 		li {
 			font-weight: 300;
@@ -339,14 +337,15 @@
 		text-decoration: none;
 		color: @gray;
 		border: 1px solid @border-color;
-		border-left: none;
 		border-right: none;
 		border-bottom: none;
 		background: @light-bg;
 		transition: .3s;
 		&:active, &:hover:active {
 			color: @blue;
+			background: #fff;
 			i {
+		transition: .3s;
 				background: url("../img/star--blue.svg");
 			}
 		}
