@@ -295,5 +295,24 @@
 		border-right: 1px solid #eaeaea;
 	    border-bottom: 1px solid #eaeaea;
 	    border-left: 1px solid #eaeaea;
+	    @media (max-width: @screen-xlg) {
+	    	top: 116px;
+	    }
+	    @media (max-width: @screen-lg) {
+	    	top: 140px;
+	    }
 	}
+	&.catalog-filter-bottom {
+		position: absolute;
+		bottom: 100px;
+		border-right: 1px solid #eaeaea;
+	    border-bottom: 1px solid #eaeaea;
+	    border-left: 1px solid #eaeaea;
+	}
+}
+.position-static{
+	position: static;
+}
+.catalog{
+	position: relative;
 }

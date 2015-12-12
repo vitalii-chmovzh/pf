@@ -2160,18 +2160,34 @@
 
     // Sticky catalog filter
 
-    var  catFilter = $(".catalog-filter-wrapper");
-         catFilterOffset = catFilter.offset().top;
+    var  sidebar = $(".catalog-filter-wrapper"),
+         sidebarOffset = sidebar.offset().top;  
 
-    // $(window).scroll(function(){
-    //   var scrollTop = $(this).scrollTop();
-         
-    //       if(scrollTop > (catFilterOffset - 125)){
-    //         catFilter.addClass('catalog-filter-fixed');
-    //       }else{
-    //         catFilter.removeClass('catalog-filter-fixed');
-    //       }
-    // })
+    $(window).scroll(function(){
+      var scrollTop = $(this).scrollTop(),
+          headerHeight = $('.page-header').height(),
+          footerOffset = $('.page-footer').offset().top,
+          sidebarHeight = sidebar.height();
+          
+          if(scrollTop > (sidebarOffset - 125)){
+
+            sidebar.addClass('catalog-filter-fixed');
+
+            if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
+              sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+              $('.catalog-filter').addClass('position-static');
+            } 
+            else {
+              sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
+              $('.catalog-filter').removeClass('position-static');
+            }
+
+          } 
+          else {
+            sidebar.removeClass('catalog-filter-fixed');
+          }
+          
+    })
 
   });
 </script>
