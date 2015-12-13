@@ -14,8 +14,8 @@
 	transition: .33s ease-in-out;
 	@media (max-width: 991px) {
 		overflow-y: auto;
-		min-height: 0;
-		height: 0;
+		height: 100%;
+		display: none;
 	}
 	@media (max-width: 991px) {
 		position: fixed;
@@ -307,6 +307,10 @@
 	}
 	@media (min-width: @screen-xlg) {
 		width: 355px;
+	}
+	@media (max-width: 991px) {
+		position: static !important;
+		width: 100%!important;
 	}
 	&.catalog-filter-fixed{
 		position: fixed;
