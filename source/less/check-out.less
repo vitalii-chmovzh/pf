@@ -238,6 +238,9 @@
 			width: 645px;
 		}
 		textarea {
+				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+					width: 100% !important;
+				}
 			@media(min-width: @screen-sm) {
 				width: 100%;
 			}
@@ -337,7 +340,8 @@
 					margin-right: 10.344%;
 
 					@media(min-width: @screen-xs) and (max-width: @screen-sm){
-						margin-right: 25%;
+						margin-right: 41%;
+						width: 29.31034483%;
 					}
 					
 					@media(min-width: @screen-sm) {
@@ -432,6 +436,18 @@
 						width: 100% !important;
 						margin-right: 0 !important;
 					}
+				}
+			}
+			
+			&--region {
+				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+    			width: 44.82758621%;					
+    			margin-right: 8.344828%;
+				}
+			}
+			&--city {
+				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+    			width: 44.82758621%;
 				}
 			}
 			@media(min-width: @screen-sm) {
@@ -654,6 +670,12 @@
 		width: 750px;
 	}
 	&__courier {
+				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+    			width: 44.82758621%;					
+    			margin-right: 8.344828%;
+					display: inline-block;
+					vertical-align: top;
+				}
 		@media(min-width: @screen-sm) {
 			float: left;
 			margin-right: 30px;
@@ -667,6 +689,11 @@
 		}
 	}
 	&__mail {
+				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+    			width: 44.82758621%;			
+					vertical-align: top;
+					display: inline-block;
+				}
 		@media(min-width: @screen-sm) {
 			float: left;
 			width: 210px;
@@ -749,6 +776,9 @@
 .comment-group {
 	clear: both;
 	display: block;
+				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+					width: 100%;
+				}
 	.comment-caption {
 		text-transform: none;
 		padding-bottom: 0;

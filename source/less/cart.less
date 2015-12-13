@@ -941,6 +941,11 @@
 		.clearfix;
 	}
 	&__info {
+		
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			width: 63.7%;
+			float: left;
+		}
 		@media (min-width: @screen-sm) {
 			float: left;
 			width: 625px;
@@ -1046,6 +1051,12 @@
 			color: @blue;
 			border: 1px solid @blue;
 		}
+		
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			float: left;
+			margin-top: 20px;
+			margin-bottom: 0;
+		}
 
 		@media(min-width: @screen-md) {
 			&:hover{
@@ -1080,10 +1091,13 @@
 	height: auto;
 	@media (min-width: @screen-xs) {
 		float: none;
-		width: 360px;
+		width: 450px;
 		margin: 0 auto;
 		margin-bottom: 15px;
 	}
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			height: 122px;
+		}
 	@media (min-width: @screen-sm) {
 		float: none;
 		width: 720px;
@@ -1102,6 +1116,10 @@
 	}
 	&__row {
 		.clearfix;
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			float: left;
+			width: 65%;
+		}
 		@media (min-width: @screen-sm) {
 			float: left;
 			width: 372px;
@@ -1161,10 +1179,12 @@
 			color: @blue;
 			text-decoration: none;
 		}
-		@media (min-width: @screen-xs) {
+		@media (min-width: @screen-sm) {
+			margin-bottom: 15px;
+		}
+		@media (min-width: @screen-sm) {
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			margin-bottom: 15px;
 		}
 		@media (min-width: @screen-md) {
 			white-space: pre-wrap;
@@ -1196,6 +1216,11 @@
 			height: 100%;
 			top: 0;
 			left: 0;
+		}
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			height: 122px;
+			width: 122px;
+			margin-right: 20px;
 		}
 		@media(min-width: @screen-sm) {
 			width: 95px;
@@ -1247,6 +1272,11 @@
 				padding-bottom: 13px;
 			}
 		}
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			float: left;
+			width: 26%;
+			margin-left: 7%;
+		}
 		@media (min-width: @screen-sm) {
 			width: 250px;
 		}
@@ -1279,6 +1309,12 @@
 		1.8rem;
 		2.4rem;
 		1);
+		
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			position: absolute;
+			bottom: 10px;
+			left: 142px;
+		}
 		&-name {
 			display: block;
 			padding-bottom: 5px;
@@ -1303,7 +1339,7 @@
 	margin-bottom: 30px;
 	@media (min-width: @screen-xs) {
 		float: none;
-		width: 360px;
+		width: 450px;
 		margin: 0 auto;
 		margin-bottom: 30px;
 		padding-bottom: 15px !important;
@@ -1325,6 +1361,11 @@
 	}
 	&__row {
 		.clearfix;
+		
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			width: 30.5%;
+			float: left;
+		}
 		@media (min-width: @screen-sm) {
 			float: left;
 			margin-left: 110px;
@@ -1387,6 +1428,10 @@
 		1.8rem;
 		2.4rem;
 		1);
+		
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			float: left;
+		}
 		@media (min-width: @screen-sm) {
 			float: left;
 			width: auto;
