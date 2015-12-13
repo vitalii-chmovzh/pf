@@ -163,7 +163,7 @@ $(document).ready(function () {
     });
   
   $('.catalog-filter__open-btn').on("click", function(){
-    
+//    var 
     if (flag === true) {
       catalogFilter.addClass("catalog-filter--hidden");
       uselessWrapper.removeClass("catalog__products-wrapper");

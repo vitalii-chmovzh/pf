@@ -104,6 +104,9 @@
     width: 1590px !important;
   }
 }
+.products__section-container--expanded .sort-actions {
+  padding-right: 25px !important;
+}
 .products__section-container {
   padding: 0 !important;
   width: auto;
