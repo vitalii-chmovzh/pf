@@ -28,6 +28,14 @@
 	@media(min-width: @screen-lg) {
 		padding-top: 83px;
 	}
+	
+	input, textarea, .trigger, .activetrigger{
+		line-height: normal !important;
+	}
+	
+	input{
+		padding-bottom: 7px !important;
+	}
 	select,
 	.trigger,
 	.activetrigger {
@@ -320,7 +328,7 @@
 	select,
 	.trigger,
 	.activetrigger {
-		margin-top: 3px;
+		margin-top: 2px;
 		margin-bottom: 27px;
 	}
 	@media(min-width: @screen-sm) {
@@ -348,7 +356,6 @@
 		width: 100%;
 	}
 	&__street-select {
-		margin-top: 2px;
 		position: relative;
 		clear: both;
 		@media(min-width: @screen-sm) {
@@ -374,10 +381,26 @@
 		.trigger,
 		.activetrigger {
 			width: percentage(130/290);
+			margin-top: 3px;
+			padding-bottom: 7px !important;
 			display: inline-block;
 			position: relative;
 			@media(min-width: @screen-sm) {
 				width: percentage(157/345);
+			}
+		}
+		
+		.dropcontainer{
+			@media(max-width: @screen-sm) {
+			right: 3px !important;
+			}
+			@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+    		width: 29.31034483% !important;
+			}
+			@media(min-width: @screen-lg) and (max-width: @screen-xlg) {
+			}
+			@media(min-width: @screen-xlg) {			
+				right: 7px !important;
 			}
 		}
 		

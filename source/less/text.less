@@ -260,6 +260,18 @@
 			1.4);
 			font-weight: bold;
 		}
+		
+		a{
+			&:active, &:hover:active{
+				color: @blue;
+			}
+			
+			@media (min-width: @screen-md){
+				&:hover{
+					color: #000;
+				}
+			}
+		}
 		p {
 			padding-top: 15px;
 			padding-bottom: 0;
