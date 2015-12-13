@@ -4089,6 +4089,9 @@ footer .bx-next.disabled {
     line-height: 1.4;
   }
 }
+.text__recomendations a {
+  transition: .1s;
+}
 .text__recomendations a:active,
 .text__recomendations a:hover:active {
   color: #2864c7;
