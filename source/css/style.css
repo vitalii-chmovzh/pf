@@ -15943,8 +15943,8 @@ footer .bx-next.disabled {
 @media (max-width: 991px) {
   .catalog-filter {
     overflow-y: auto;
-    min-height: 0;
-    height: 0;
+    height: 100%;
+    display: none;
   }
 }
 @media (max-width: 991px) {
@@ -16283,6 +16283,12 @@ footer .bx-next.disabled {
     width: 355px;
   }
 }
+@media (max-width: 991px) {
+  .catalog-filter-wrapper {
+    position: static !important;
+    width: 100%!important;
+  }
+}
 .catalog-filter-wrapper.catalog-filter-fixed {
   position: fixed;
   top: 133px;
@@ -16412,6 +16418,9 @@ footer .bx-next.disabled {
   border-left: none;
   border-bottom: none;
   border-top: none;
+}
+.catalog-filter--hidden .catalog-filter-wrapper {
+  width: 0 !important;
 }
 .catalog-filter--hidden ul {
   width: 0 !important;
@@ -16781,7 +16790,6 @@ footer .bx-next.disabled {
   width: 290px;
   padding: 15px;
   padding-bottom: 30px;
-  margin: 100px;
   border: 1px solid #e93f36;
   text-align: center;
   background: #fff;
