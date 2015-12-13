@@ -84,11 +84,11 @@
   border-left: 10px solid #fff;
   border-bottom: 5px solid transparent;
     transition: .3s;
-  &:hover{
-    border-left-color: @blue;
-  }
   &--gray{
     border-left-color: @gray;
+  &:active, &:hover:active{
+    border-left-color: @blue !important;
+  }
   } 
   
   &--disabled{
@@ -239,7 +239,7 @@
 				top: 12px;
 				right: 15px;
 				&:hover {
-					border-left-color: #000 !important;
+					border-left-color: #000;
 				}
 			}
 			@media (min-width: @screen-lg) {
@@ -263,8 +263,25 @@
 			height: 40px;
 			right: -10px;
 			bottom: 50%;
-			margin-top: 20px;
-			background: url("../img/more-btn.jpg");
+			border: 1px solid @border-color;
+			background: #fff;
+			
+			&:hover{
+				&:after{
+					background: url("../img/more--red.svg") no-repeat;
+				}
+			}
+			
+			&:after{
+				transition: .1s;
+				position: absolute;
+				content: '';
+			bottom: 19%;
+				right: 7px;
+				height: 24px;
+				width: 4px;
+				background: url("../img/more.svg") no-repeat;
+			}
 		}
 	}
 }
@@ -272,6 +289,7 @@
 .dropdown-category {
 	display: none;
 	&__item a {
+		border-bottom: none;
 		@media (min-width: @screen-md) {
 			padding-left: 54px;
 		}

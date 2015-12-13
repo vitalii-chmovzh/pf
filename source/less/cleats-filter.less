@@ -433,11 +433,22 @@
 	&__reset {
 		color: @gray;
 		background: @light-bg;
-		&:active,
-		&:hover, &:hover:active {
+		transition: .1s;
+		cursor: pointer;
+		&:focus {
+			outline: none;
+		}
+		&:active, &:hover:active{
 			background: none;
 			color: @red;
 			border: 1px solid @red;
+		}
+
+		@media(min-width: @screen-md) {
+			&:hover{
+				background: @light-bg;
+				color: @red;		
+			}
 		}
 	}
 }
