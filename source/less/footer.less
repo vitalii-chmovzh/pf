@@ -349,6 +349,7 @@
     bottom: 0;
     right: 0;
     background: #fff;
+    transition: .2s linear;
     
     &:hover{
       width: 80px;
@@ -362,6 +363,7 @@
     }
     
     &:before{
+    transition: .2s linear;
       position: absolute;
       content: '';
       bottom: 0;
@@ -415,16 +417,19 @@
   width: 77px;
   height: 77px;
   transition: 0;
+	transition: .3s linear;
+	transition-property: opacity;
   &--rpfl{
     background: url("../img/rpfl.svg") center no-repeat;
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/rpfl--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/rpfl--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }
@@ -434,11 +439,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/puma--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/puma--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }
@@ -448,11 +454,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/nike--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/nike--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }
@@ -461,11 +468,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/nike--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/nike--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }
@@ -474,11 +482,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/nike--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/nike--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }
@@ -487,11 +496,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/nike--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/nike--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }  
@@ -500,11 +510,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/diadora--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/diadora--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }  
@@ -513,11 +524,12 @@
     
     
     &:active, &:hover:active{
+			opacity: 1;	
       background: url("../img/rfs--red.svg") center no-repeat;      
     }
     @media (min-width: @screen-md) {
       &:hover{
-        background: url("../img/rfs--gray.svg") center no-repeat;   
+				opacity: 0.5;
       }
     }
   }

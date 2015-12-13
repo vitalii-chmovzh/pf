@@ -34,6 +34,22 @@
 	&__wrapper {
 		.item;
 		overflow: hidden;
+		
+		@media (min-width: @screen-sm){
+			height: 312px;
+		}
+		
+		@media (min-width: @screen-md){
+			height: 302px;
+		}
+		
+		@media (min-width: @screen-lg){
+			height: 369px;
+		}
+		
+		@media (min-width: @screen-xlg){
+			height: 484px;
+		}
 	}
 	&__container {
 		width: 100%;
@@ -163,7 +179,21 @@
 	}
 	&__description {
 		padding: 15px;
+		padding-bottom: 14px;
 		padding-right: 10px;
+		
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			padding-bottom: 11px;
+		}
+		
+		@media (min-width: @screen-md) and (max-width: @screen-lg){
+			padding-bottom: 12px;
+		}
+		
+		@media (min-width: @screen-lg) and (max-width: @screen-xlg){
+			padding-bottom: 13px;
+		}
+		
 	}
 	&__row {
 		margin-bottom: 15px;

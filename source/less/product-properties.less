@@ -105,11 +105,14 @@
 			margin-bottom: 4px;
 		}
 		@media (min-width: @screen-sm) {
-			margin-bottom: 9px;
+			margin-bottom: 3px;
+		}
+		@media (min-width: @screen-md) {
+			margin-bottom: 4px;
 		}
 		@media (min-width: @screen-lg) {
 			margin-top: 25px;
-			margin-bottom: 16px;
+			margin-bottom: 11px;
 		}
 		@media (min-width: @screen-xlg) {
 			margin-top: 25px;
@@ -304,6 +307,12 @@
 			&:last-of-type {
 				margin-bottom: 0;
 			}
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			margin-bottom: 13px;
+			&:last-of-type {
+				margin-bottom: 1px;
+			}
+		}
 			span {
 				display: inline;
 				font-weight: bold;
