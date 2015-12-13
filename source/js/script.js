@@ -192,7 +192,7 @@ $(document).ready(function () {
     } 
   });
   
-/* Products quantiry */
+/* Products quantity */
 
 var plus = $(".cart-product__quantity .plus-icon"),
     minus = $(".cart-product__quantity .minus-icon");
@@ -218,7 +218,18 @@ minus.on("click", function(){
        }
 });
 
+// Fixed-filter toggle
+$(".open-filter__btn").on("click", function(){
+  if(window.matchMedia("(max-width:480px)").matches){
+    $("body").addClass("overflow-hidden-full");
+  }
+  $("section.filter").show('slide', {direction: 'right'}, 500);
+});
 
+$(".filter__icon").on("click", function(){
+  $("body").removeClass("overflow-hidden-full");
+  $("section.filter").hide('slide', {direction: 'right'}, 500);
+});
 
   
 });
