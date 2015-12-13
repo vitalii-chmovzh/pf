@@ -82,7 +82,7 @@ $(document).ready(function () {
   var uselessWrapper = $('.useless-wrapper');
   var products = $(".product");
   
-	catalogNew.hide();
+	catalogSale.hide();
 	
   $(".show-btn:first-of-type span").addClass("active--blue");
   

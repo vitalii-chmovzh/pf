@@ -6515,10 +6515,14 @@ footer .bx-next.disabled {
       -ms-transform: skew(-15deg);
           transform: skew(-15deg);
   text-align: center;
+  z-index: 1000;
   padding-top: 11px;
 }
 .product__label--new {
   background: #2864c7;
+}
+.product__label--sale {
+  background: #e93f36;
 }
 .product__label span {
   font-family: 'Roboto', sans-serif;
@@ -16790,7 +16794,6 @@ footer .bx-next.disabled {
   width: 290px;
   padding: 15px;
   padding-bottom: 30px;
-  border: 1px solid #e93f36;
   text-align: center;
   background: #fff;
 }
