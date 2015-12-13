@@ -99,46 +99,27 @@ $(document).ready(function () {
   });
   
   $('.main-menu__heading').on("click", function(){
-    
-    if(mobileMenu.hasClass("opened")){
+      if(catalogFilter.css('display') == 'none'){
+        $('body').addClass("overflow-hidden-full");
+      }else{
+        $('body').removeClass("overflow-hidden-full");
+      }
       mobileMenu.removeClass("opened");
       menuBtn.removeClass("rotated");
-    }
-    
-    if (display === true) {
-      catalogFilter.removeClass("catalog-filter--opened");
-      searchCloseBtn.hide();
-      
-      $('body').removeClass("overflow-hidden-full");
-      display = false;
-      
-    } else if (display === false) {
-      catalogFilter.addClass("catalog-filter--opened");      
-      $('body').addClass("overflow-hidden-full");
-      display = true;
-    }
-    
+      catalogFilter.slideToggle();      
   });
   
  
   menuBtn.on("click", function(){
-    
-    if(catalogFilter.hasClass("catalog-filter--opened")){
-      catalogFilter.removeClass("catalog-filter--opened");
-    }
-    
-    if (display === true) {
-      mobileMenu.removeClass("opened");
-      menuBtn.removeClass("rotated");
-      $('body').removeClass("overflow-hidden-full");
-      display = false;
-      
-    } else if (display === false) {
-      mobileMenu.addClass("opened");
-      menuBtn.addClass("rotated");
+    catalogFilter.hide();
+    if(!mobileMenu.hasClass("opened")){
       $('body').addClass("overflow-hidden-full");
-      display = true;
-    }
+    }else{
+      $('body').removeClass("overflow-hidden-full");
+    } 
+    
+    mobileMenu.toggleClass("opened");
+    menuBtn.toggleClass("rotated");
   });
   
 
@@ -172,9 +153,7 @@ $(document).ready(function () {
            searchCloseBtn.hide();
            display = false;
            menuBtn.show("fast");
-
          }
-
        });
       }
       }
