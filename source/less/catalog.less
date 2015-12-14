@@ -249,8 +249,9 @@ section.filter {
     z-index: 999999;
     top: 0;
     bottom: 0;
-    right: 20px;
+    margin-left: 561px;
     display: none;
+    padding: 0;
     .filter-form{
     	display: block;
 	    overflow-y: scroll;
@@ -258,10 +259,20 @@ section.filter {
 	    position: absolute;
 	    top: 40px;
 	    bottom: 0;
+	    padding: 30px 15px;
     }
     @media (max-width: @screen-xs) {
 		width: 100%;
-		// left: 0;
+		right: 0;
+	}
+	@media (max-width: @screen-lg) {
+		margin-left: 425px;
+	}
+	@media (max-width: @screen-md) {
+		margin-left: 459px;
+	}
+	@media (max-width: @screen-sm) {
+		margin-left: 0;
 		right: 0;
 	}
 }
