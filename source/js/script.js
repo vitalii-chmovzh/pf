@@ -31,6 +31,7 @@ $(document).ready(function () {
   
   sliderBtn.on("click touchstart", function (e) {
     e.preventDefault();
+	  console.log(1);
   if (window.matchMedia("(max-width: 991px)").matches) {
     sliderDescription.addClass("after-hidden"); 
     sliderOverflow.fadeIn(100);        
