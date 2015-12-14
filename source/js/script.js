@@ -20,9 +20,6 @@ function initMap() {
     });
 }
 
-
-
-
 $(document).ready(function () {
   var display = false;
   var flag = true;
@@ -69,18 +66,19 @@ $(document).ready(function () {
         dropdown.slideToggle();  
   });
     
-  var catalogSale = $('.products--sale');
-  var catalogNew = $('.products--new');
-  var catalogFilter = $('.catalog-filter');
-  var mobileMenu = $('.mobile-menu');
-  var searchBtn = $('.main-menu__search-btn');    
-  var searchField = $('.search-field');
-  var searchCloseBtn = $('.main-menu__close-btn');
-  var menuBtn = $('.main-menu__open-btn');
-  var catalogWrapper = $(".catalog__products-wrapper");
-  var catalogContainer = $('.product__section-container');
-  var uselessWrapper = $('.useless-wrapper');
-  var products = $(".product");
+  var catalogSale = $('.products--sale'),
+      catalogNew = $('.products--new'),
+      catalogFilter = $('.catalog-filter'),
+      mobileMenu = $('.mobile-menu'),
+      searchBtn = $('.main-menu__search-btn'),   
+      searchField = $('.search-field'),
+      searchCloseBtn = $('.main-menu__close-btn'),
+      menuBtn = $('.main-menu__open-btn'),
+      catalogWrapper = $(".catalog__products-wrapper"),
+      catalogContainer = $('.product__section-container'),
+      uselessWrapper = $('.useless-wrapper'),
+      products = $(".product"),
+      menu__nav = $(".main-menu__nav");
   
 	catalogSale.hide();
 	
@@ -125,42 +123,22 @@ $(document).ready(function () {
     menuBtn.toggleClass("rotated");
   });
   
-
-  
-  window.addEventListener("resize", function() { 
-    
-    
-    if (window.matchMedia("(max-width: 992px)").matches) {
-        $('body').removeClass("overflow-hidden");  
-        searchField.hide();
-    }
-    
-    if (window.matchMedia("(min-width: 992px)").matches) {
-        $('body').removeClass("overflow-hidden");  
-        searchField.hide();
-    }
-  });
-    
     searchBtn.on("click", function(e){
       e.preventDefault();
-     if (window.matchMedia("(max-width: 992px)").matches) {
-     if (display === false) {
-        searchField.show("fast");
-        searchCloseBtn.show("fast");
-        menuBtn.hide();
-        display = true;
-
-       searchCloseBtn.click(function(){
-          if (display === true) {
-           searchField.hide("fast");
-           searchCloseBtn.hide();
-           display = false;
-           menuBtn.show("fast");
-         }
-       });
-      }
-      }
+      menu__nav.addClass("hidden-block");
+      searchCloseBtn.addClass("inline-block");
+      searchField.show("fast");
+      menuBtn.addClass("display-none");
     });
+
+    searchCloseBtn.on("click", function(e){
+      e.preventDefault();
+      menu__nav.removeClass("hidden-block");
+      searchCloseBtn.removeClass("inline-block");
+      searchField.hide("fast");
+      menuBtn.removeClass("display-none");
+    });
+
   
   $('.catalog-filter__open-btn').on("click", function(){
 //    var 
