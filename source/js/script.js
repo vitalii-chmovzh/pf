@@ -209,5 +209,20 @@ $(".filter__icon").on("click", function(){
   $("section.filter").hide('slide', {direction: 'right'}, 500);
 });
 
+// Footer slider
+$('.js-list-mobile').bxSlider({
+    slideWidth: 77,
+    slideMargin: 30,
+    maxSlides: 7,
+    moveSlides: 1,
+    pager: false,
+    nextText: '',
+    prevText: '',
+    nextSelector: '.footer-arrow-right',
+    prevSelector: '.footer-arrow-left',
+    infiniteLoop: false,
+    hideControlOnEnd: true
+});
+
   
 });

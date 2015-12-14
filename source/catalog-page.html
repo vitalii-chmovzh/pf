@@ -11,6 +11,7 @@
     <link href="css/hover.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
     <!-- Adding Roboto in indian style-->
     
    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -22,6 +23,30 @@
     <![endif]-->
 </head>
 <body>
+  <div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-content">
+        <article class="add-to-cart">
+          <span class="add-to-cart__heading">Товар добавлен в корзину</span>
+          <p class="add-to-cart__descr">Бутсы Mercurial Superfly FG 41 размера добавлены в корзину</p>
+          
+                  <a href="#" class="add-to-cart__btn item-page__wish-btn item-page__wish-btn-add"><i class="item-page__star-icon"></i><span>В корзину</span></a>
+                  
+                  <a href="#" class="add-to-cart__additional">Продолжить покупки</a>
+        </article>
+        <button class="md-close"></button>
+    </div>
+  </div>
+  <div class="md-modal md-effect-1" id="modal-2">
+    <div class="md-content">
+        <article class="add-to-wishlist">
+          <span class="add-to-wishlist__heading">Товар добавлен в список желаний</span>
+          <p class="add-to-wishlist__descr">Бутсы Mercurial Superfly FG  добавлены в твой список желаний</p>
+          
+                  <a href="" class="add-to-wishlist__btn add-to-wishlist__btn--no-bg item-page__wish-btn item-page__wish-btn-later"><i class="item-page__star-icon"></i><span>Мой список желаний</span></a>
+        </article>
+        <button class="md-close"></button>
+    </div>
+  </div>
  <div class="wrapper">
   <header class="page-header">
    
@@ -52,23 +77,25 @@
     
     <section class="main-menu">
       <div class="main-menu__container">
-        <i class="main-menu__open-btn"></i>
-        <i class="main-menu__close-btn"></i>
-        <span class="main-menu__heading">Каталог</span>
-        <nav class="main-menu__nav">
-          <ul>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Размеры</a></li>
-            <li><a href="">Рекомендации</a></li>
-            <li><a href="">Оплата</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <form action="">
-          <input class="search-field" type="search" placeholder="Что ищешь?">
-          <button class="main-menu__search-btn"></button>
-        </form>
+        <div class="search-wrapper">   
+          <i class="main-menu__open-btn"></i>
+          <i class="main-menu__close-btn"></i>
+          <span class="main-menu__heading">Каталог</span>
+          <nav class="main-menu__nav">
+            <ul>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Размеры</a></li>
+              <li><a href="">Рекомендации</a></li>
+              <li><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <form action="">
+            <input class="search-field" type="search" placeholder="Что ищешь?">
+            <button class="main-menu__search-btn"></button>
+          </form>
+        </div>
          <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
          <span class="main-menu__contacts">
        Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
@@ -112,53 +139,55 @@
   <section class="catalog-page">
    
     <div class="catalog-page__container">
-            <aside class="catalog-filter">
-      <ul class="catalog-filter__list">
-        <li><a href="">Подарочные сертификаты</a></li>
-        <li><a href="">Бутсы</a></li>
-        <li><a href="">Обувь для зала</a></li>
-        <li><a href="">Шиповки</a></li>
-        <li><a href="">Клубная продукция</a></li>
-        <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
-        <ul class="dropdown-category" dropdown-id="1">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
-        </li>
-        <li><a href="">Сланцы</a></li>
-        <li><a href="">Одежда</a></li>
-        <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
-        <ul class="dropdown-category" dropdown-id="2">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
-        </li>
-        <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
-        <ul class="dropdown-category" dropdown-id="3">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul></li>
-        <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
-        <ul class="dropdown-category" dropdown-id="4">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul></li>
-        <li><a href="">Медицина</a></li>
-        <li><a href="">Мячи</a></li>
-        <li><a href="">Сумки и рюкзаки</a></li>
-        <li><a href="">Аксессуары</a></li>
-         <li><a class="last" href="">Щитки</a></li>
-      </ul>
+      <aside class="catalog-filter">
+       <div class="catalog-filter-wrapper">
+          <ul class="catalog-filter__list">
+            <li><a href="">Подарочные сертификаты</a></li>
+            <li><a href="">Бутсы</a></li>
+            <li><a href="">Обувь для зала</a></li>
+            <li><a href="">Шиповки</a></li>
+            <li><a href="">Клубная продукция</a></li>
+            <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+            <ul class="dropdown-category" dropdown-id="1">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul>
+            </li>
+            <li><a href="">Сланцы</a></li>
+            <li><a href="">Одежда</a></li>
+            <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+            <ul class="dropdown-category" dropdown-id="2">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul>
+            </li>
+            <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+            <ul class="dropdown-category" dropdown-id="3">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul></li>
+            <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+            <ul class="dropdown-category" dropdown-id="4">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul></li>
+            <li><a href="">Медицина</a></li>
+            <li><a href="">Мячи</a></li>
+            <li><a href="">Сумки и рюкзаки</a></li>
+            <li><a href="">Аксессуары</a></li>
+           <li><a class="last" href="">Щитки</a></li>
+          </ul>
           <i class="catalog-filter__open-btn"></i>
-    </aside>
+       </div>    
+      </aside>
    
       <div class="catalog-page__main-content-wrapper">  
         <section class="filter">
@@ -358,30 +387,30 @@
               
               <div class="filter-form__row">
                 <ul>
-                  <li><input id="32" type="checkbox"><label for="32">32</label></li>
-                  <li><input id="33" type="checkbox"><label for="33">33</label></li>
-                  <li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-                  <li><input id="34" type="checkbox"><label for="34">34</label></li>
-                  <li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-                  <li><input id="35" type="checkbox"><label for="35">35</label></li>
-                  <li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-                  <li><input id="36" type="checkbox"><label for="36">36</label></li>
-                  <li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-                  <li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-                  <li><input id="38" type="checkbox"><label for="38">38</label></li>
-                  <li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-                  <li><input id="39" type="checkbox"><label for="39">39</label></li>
-                  <li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-                  <li><input id="40" type="checkbox"><label for="40">40</label></li>
-                  <li><input id="41" type="checkbox"><label for="41">41</label></li>
-                  <li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-                  <li><input id="42" type="checkbox"><label for="42">42</label></li>
-                  <li><input id="43" type="checkbox"><label for="43">43</label></li>
-                  <li><input id="44" type="checkbox"><label for="44">44</label></li>
-                  <li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-                  <li><input id="45" type="checkbox"><label for="45">45</label></li>
-                  <li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-                  <li><input id="46" type="checkbox"><label for="46">46</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
             </section>
@@ -398,11 +427,11 @@
               
               <div class="filter-form__row">
                 <ul>
-                  <li><input id="116128" type="checkbox"><label for="116128">116-128</label></li>
-                  <li><input id="128140" type="checkbox"><label for="128140">128-140</label></li>
-                  <li><input id="140152" type="checkbox"><label for="140152">140-152</label></li>
-                  <li><input id="152158" type="checkbox"><label for="152158">152-158</label></li>
-                  <li><input id="158170" type="checkbox"><label for="158170">158-170</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="116128" type="checkbox"><label for="116128">116-128</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="128140" type="checkbox"><label for="128140">128-140</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="140152" type="checkbox"><label for="140152">140-152</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="152158" type="checkbox"><label for="152158">152-158</label></li>
+                  <li class="md-trigger" data-modal="modal-1"><input id="158170" type="checkbox"><label for="158170">158-170</label></li>
                 </ul>
               </div>
             </section>    
@@ -500,30 +529,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -535,7 +564,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -576,30 +605,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -611,7 +640,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -651,30 +680,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -686,7 +715,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -728,30 +757,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -763,7 +792,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -804,30 +833,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -839,7 +868,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -879,30 +908,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -914,7 +943,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -956,30 +985,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -991,7 +1020,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -1031,30 +1060,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -1066,7 +1095,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -1105,30 +1134,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -1140,7 +1169,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -1182,30 +1211,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -1217,7 +1246,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -1257,30 +1286,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -1292,7 +1321,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -1331,30 +1360,30 @@
 							<span class="arrow-top arrow-top--gray disabled"></span>
               <div class="product-properties__sizes-wrapper">
                 <ul class="product-properties__sizes-list">
-						<li><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li><input id="46" type="checkbox"><label for="46">46</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
+						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
                 </ul>
               </div>
               <span class="arrow-right arrow-right--gray"></span>
@@ -1366,7 +1395,7 @@
                 <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
               </ul>
               <ul class="product-properties__buttons">
-                <li><a href="" class="product-properties__wish-btn"><i></i> Хочу!</a></li>
+                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
                 <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
               </ul>
             </div>
@@ -1472,7 +1501,7 @@
       
   </div>
 </footer>
-  
+<div class="md-overlay"></div><!-- the overlay element -->  
   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
@@ -1483,48 +1512,54 @@
 <script src="js/product-properties.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
 <script>
   $(document).ready(function () {
-
-    // Main slider
-    $('.slider-wrapper').bxSlider({
-        mode: 'fade',
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        controls: false,
-        pagerSelector: '.pagination'
-    });
-
-    // Footer slider
-    $('.js-list-mobile').bxSlider({
-        slideWidth: 77,
-        slideMargin: 30,
-        maxSlides: 7,
-        moveSlides: 1,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        nextSelector: '.footer-arrow-right',
-        prevSelector: '.footer-arrow-left',
-        infiniteLoop: false,
-        hideControlOnEnd: true
-    });
-
     // Price range
-    $(function() {
-        $( "#ui-slider" ).slider({
-          range: true,
-          min: 0,
-          max: 16990,
-          values: [ 100, 16990 ],
-          slide: function( event, ui ) {
-            $( "#min-price" ).val( ui.values[ 0 ] );
-            $( "#max-price" ).val( ui.values[ 1 ] );
-          }
-        });
-        $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
-        $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
+    $( "#ui-slider" ).slider({
+      range: true,
+      min: 0,
+      max: 16990,
+      values: [ 100, 16990 ],
+      slide: function( event, ui ) {
+        $( "#min-price" ).val( ui.values[ 0 ] );
+        $( "#max-price" ).val( ui.values[ 1 ] );
+      }
     });
+    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
+    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
+    
+    // Sticky catalog filter
+
+    var  sidebar = $(".catalog-filter-wrapper"),
+         sidebarOffset = sidebar.offset().top;  
+
+    $(window).scroll(function(){
+      var scrollTop = $(this).scrollTop(),
+          headerHeight = $('.page-header').height(),
+          footerOffset = $('.page-footer').offset().top,
+          sidebarHeight = sidebar.height();
+          
+          if(scrollTop > (sidebarOffset - 125)){
+
+            sidebar.addClass('catalog-filter-fixed');
+
+            if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
+              sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+              $('.catalog-filter').addClass('position-static');
+            } 
+            else {
+              sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
+              $('.catalog-filter').removeClass('position-static');
+            }
+
+          } 
+          else {
+            sidebar.removeClass('catalog-filter-fixed');
+          }
+          
+    })
 
   });
 </script>

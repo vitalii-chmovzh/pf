@@ -48,23 +48,25 @@
     
     <section class="main-menu">
       <div class="main-menu__container">
-        <i class="main-menu__open-btn"></i>
-        <i class="main-menu__close-btn"></i>
-        <span class="main-menu__heading">Каталог</span>
-        <nav class="main-menu__nav">
-          <ul>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Размеры</a></li>
-            <li><a href="">Рекомендации</a></li>
-            <li><a href="">Оплата</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <form action="">
-          <input class="search-field" type="search" placeholder="Что ищешь?">
-          <button class="main-menu__search-btn"></button>
-        </form>
+        <div class="search-wrapper">   
+          <i class="main-menu__open-btn"></i>
+          <i class="main-menu__close-btn"></i>
+          <span class="main-menu__heading">Каталог</span>
+          <nav class="main-menu__nav">
+            <ul>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Размеры</a></li>
+              <li><a href="">Рекомендации</a></li>
+              <li><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <form action="">
+            <input class="search-field" type="search" placeholder="Что ищешь?">
+            <button class="main-menu__search-btn"></button>
+          </form>
+        </div>
          <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
          <span class="main-menu__contacts">
        Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
@@ -464,35 +466,5 @@
  <script src="js/script.js"></script> 
  <script src="js/toggler.js"></script> 
 <script src="js/jquery.bxslider.js"></script> 
-
-<script>
-  $(document).ready(function () {
-
-    // Main slider
-    $('.slider-wrapper').bxSlider({
-        mode: 'fade',
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        controls: false,
-        pagerSelector: '.pagination'
-    });
-
-    // Footer slider
-    $('.js-list-mobile').bxSlider({
-        slideWidth: 77,
-        slideMargin: 30,
-        maxSlides: 7,
-        moveSlides: 1,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        nextSelector: '.footer-arrow-right',
-        prevSelector: '.footer-arrow-left',
-        infiniteLoop: false,
-        hideControlOnEnd: true
-    });
-
-  });
-</script>
 </body>
 </html>
