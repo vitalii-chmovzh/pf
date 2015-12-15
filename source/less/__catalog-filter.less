@@ -230,6 +230,13 @@
 			top: 15px;
 			z-index: 10000;
 			&:after {
+				
+				@media(max-width: @screen-xs){
+				height: 80px !important;
+				z-index: 10000;
+				width: 100px !important;
+					
+				}
 				position: absolute;
 				content: '';
 				right: -16px;
