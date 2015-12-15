@@ -1102,14 +1102,54 @@ input[type=search] {
 }
 .tool-bar__login-btn:active i,
 .tool-bar__login-btn:hover:active i {
-  background: url("../img/lock--red.svg");
+  background: url("../img/lock--red.svg") center center no-repeat;
 }
 .tool-bar__login-btn i {
   width: 16px;
   height: 16px;
-  margin-right: 30px;
-  background: url("../img/lock.svg");
+  background: url("../img/lock.svg") center center no-repeat;
   background-size: cover;
+  margin-right: 3px;
+}
+.tool-bar__login-btn span {
+  display: none;
+  position: relative;
+  top: 3px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .tool-bar__login-btn span {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 992px) {
+  .tool-bar__login-btn span {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .tool-bar__login-btn span {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 1600px) {
+  .tool-bar__login-btn span {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+}
+@media (min-width: 992px) {
+  .tool-bar__login-btn span {
+    display: inline-block;
+    vertical-align: bottom;
+  }
 }
 @media (min-width: 992px) {
   .tool-bar__login-btn:hover {

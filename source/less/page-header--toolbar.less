@@ -125,15 +125,27 @@
 		transition: .1s;
 		&:active, &:hover:active {
 			i {
-				background: url("../img/lock--red.svg");
+				background: url("../img/lock--red.svg") center center no-repeat;
 			}
 		}
 		i {
 			width: 16px;
 			height: 16px;
-			margin-right: 30px;
-			background: url("../img/lock.svg");
+			background: url("../img/lock.svg") center center no-repeat;
 			background-size: cover;
+				margin-right: 3px;
+		}
+		span{
+			display: none;
+			position: relative;
+			top: 3px;
+			.heading(1.2rem;1.2rem;1.2rem;1.4rem;1.4rem;1);
+			color: #fff;
+			text-decoration: none;
+			@media(min-width: @screen-md){
+				display: inline-block;
+				vertical-align: bottom;
+			}
 		}
 			@media (min-width: @screen-md) {
 				&:hover{
