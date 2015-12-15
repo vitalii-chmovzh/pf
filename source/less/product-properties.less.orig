@@ -59,7 +59,7 @@
 		display: inline-block;
 		vertical-align: top;
 		margin-top: 15px;
-		transition: .3s;
+		transition: .1s;
 	}
 	.arrow-right {
 		&:hover {
@@ -121,7 +121,7 @@
 		appearance: none;
 		background: none;
 		border: none;
-		transition: .3s ease;
+		transition: .1s ease;
 		//      margin-right: 3px;
 		border-bottom: 2px dashed @gray;
 		&:active {
@@ -245,7 +245,7 @@
 			text-align: center;
 			color: @gray;
 			text-decoration: none;
-			transition: .3s;
+			transition: .1s;
 			.heading(1.4rem;
 			1.4rem;
 			1.4rem;
@@ -329,7 +329,7 @@
 		border-right: none;
 		border-bottom: none;
 		background: @light-bg;
-		transition: .3s;
+		transition: .1s;
 		&:active {
 			color: @blue;
 			i {
@@ -378,7 +378,7 @@
 		border: 1px solid @border-color;
 		border-right: none;
 		border-bottom: none;
-		transition: .3s;
+		transition: .1s;
 		&:active {
 			color: @red;
 			background: #fff;
@@ -449,7 +449,7 @@
   border-top: 5px solid transparent;
   border-left: 10px solid @gray;
   border-bottom: 5px solid transparent;
-  transition: .3s;
+  transition: .1s;
   display: none;
   &:hover{
     border-left-color: @blue;
@@ -471,7 +471,7 @@
   border-top: 5px solid transparent;
   border-right: 10px solid @gray;
   border-bottom: 5px solid transparent;
-  transition: .3s;
+  transition: .1s;
   display: none;
   &:hover{
     border-right-color: @red;
