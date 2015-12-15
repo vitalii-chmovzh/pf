@@ -120,8 +120,10 @@
 		height: 16px;
 		background: none;
 		border: none;
-		background: url("../img/search.svg") no-repeat;
-		transition: .3s;
+		background: url("../img/search--black.svg") no-repeat;
+		transition: .3s;				
+		opacity: 0.55;
+
 		&:active, &:hover:active {
 			background: url("../img/search--blue.svg") no-repeat;
 		}
@@ -131,7 +133,7 @@
 		@media (min-width: @screen-md) {
 			margin-right: 120px;
 			&:hover {
-				background: url("../img/search--black.svg") no-repeat;
+			opacity: 1;
 			}
 		}
 		@media (min-width: @screen-lg) {
