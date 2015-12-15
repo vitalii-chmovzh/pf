@@ -234,9 +234,9 @@
 				content: '';
 				right: -16px;
 				top: -19px;
-				height: 43px;
+				height: 60px;
 				z-index: 10000;
-				width: 48px;
+				width: 80px;
 			}
 			@media (min-width: @screen-sm) {
 				top: 16px;
@@ -295,6 +295,10 @@
 
 .dropdown-category {
 	display: none;
+	
+	&__item{
+		border-bottom: 1px solid @border-color;
+	}
 	&__item a {
 		border-bottom: none;
 		@media (min-width: @screen-md) {
