@@ -170,6 +170,12 @@ html {
   font-size: 10px;
   height: 100%;
 }
+a,
+span,
+button,
+i {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 body {
   background: #FFFFFF;
   height: 100%;
@@ -620,8 +626,12 @@ input[type=search] {
 }
 .mobile-menu__wrapper {
   max-width: 220px;
-  margin: 0 auto;
   height: 345px;
+}
+@media (min-width: 480px) {
+  .mobile-menu__wrapper {
+    margin: 0 auto;
+  }
 }
 @media (min-width: 768px) {
   .mobile-menu__wrapper {
@@ -637,6 +647,9 @@ input[type=search] {
   .mobile-menu {
     display: none;
   }
+}
+.mobile-menu .unsigned {
+  margin-top: 51px;
 }
 .mobile-menu ul {
   float: left;
@@ -714,6 +727,19 @@ input[type=search] {
   background: url("../img/settings--blue.svg");
   background-size: cover;
 }
+.mobile-menu__login-btn {
+  width: 16px;
+  height: 16px;
+  background: url("../img/lock--gray.svg");
+  background-size: cover;
+  -webkit-transition: .1s;
+          transition: .1s;
+}
+.mobile-menu__login-btn:active,
+.mobile-menu__login-btn:hover:active {
+  background: url("../img/lock--blue.svg");
+  background-size: cover;
+}
 .mobile-menu__signout-btn {
   width: 16px;
   height: 16px;
@@ -733,6 +759,15 @@ input[type=search] {
 .mobile-menu__btn--config:active .mobile-menu__config-btn,
 .mobile-menu__btn--config:hover:active .mobile-menu__config-btn {
   background: url("../img/settings--blue.svg");
+  background-size: cover;
+}
+.mobile-menu__btn--login:active,
+.mobile-menu__btn--login:hover:active {
+  color: #2864c7;
+}
+.mobile-menu__btn--login:active .mobile-menu__login-btn,
+.mobile-menu__btn--login:hover:active .mobile-menu__login-btn {
+  background: url("../img/lock--blue.svg");
   background-size: cover;
 }
 .mobile-menu__btn--signout:active,
@@ -1032,6 +1067,7 @@ input[type=search] {
 }
 .tool-bar__login-btn {
   transition: .1s;
+  text-decoration: none;
 }
 .tool-bar__login-btn:active i,
 .tool-bar__login-btn:hover:active i {
@@ -1049,20 +1085,19 @@ input[type=search] {
   position: relative;
   top: 3px;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1;
   color: #fff;
-  text-decoration: none;
 }
 @media (min-width: 768px) {
   .tool-bar__login-btn span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 }
 @media (min-width: 992px) {
   .tool-bar__login-btn span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1;
   }
 }
