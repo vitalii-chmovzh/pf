@@ -10,8 +10,10 @@
 	transition: .33s ease-in-out;
 	&__wrapper {
 		max-width: 220px;
-		margin: 0 auto;
 		height: 345px;
+		@media (min-width: @screen-xs) {
+			margin: 0 auto;
+		}
 		@media (min-width: @screen-sm) {
 			margin: 0;
 		}
@@ -22,6 +24,11 @@
 	@media (min-width: @screen-md) {
 		display: none;
 	}
+	
+	.unsigned{
+		margin-top: 51px;
+	}
+	
 	ul {
 		float: left;
 		&:first-of-type {
@@ -75,6 +82,18 @@
 			background-size: cover;
 		}
 	}
+	
+	&__login-btn {
+		width: 16px;
+		height: 16px;
+		background: url("../img/lock--gray.svg");
+		background-size: cover;
+		transition: .1s;
+		&:active, &:hover:active {
+			background: url("../img/lock--blue.svg");
+			background-size: cover;
+		}
+	}
 	&__signout-btn {
 		width: 16px;
 		height: 16px;
@@ -92,6 +111,15 @@
 				color: @blue;
 				.mobile-menu__config-btn {
 					background: url("../img/settings--blue.svg");
+					background-size: cover;
+				}
+			}
+		}
+		&--login {
+			&:active, &:hover:active {
+				color: @blue;
+				.mobile-menu__login-btn {
+					background: url("../img/lock--blue.svg");
 					background-size: cover;
 				}
 			}
