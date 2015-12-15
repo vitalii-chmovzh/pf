@@ -135,10 +135,14 @@ table{
 
 
 // Search
-
+.main-menu{
+		position: relative;
+}
 .search-wrapper{
-  display: inline-block; 
-  position: relative;
+	@media(min-width: @screen-md){
+		  display: inline-block; 
+		  position: relative;
+	}
   .main-menu__close-btn{
     display: none;
     vertical-align: middle;
@@ -146,6 +150,9 @@ table{
     @media(max-width: @screen-md){
        float: left; 
     }
+	  @media(min-width: 320px) and (max-width: @screen-sm){
+		  margin-right: 0;
+	  }
   } 
   .main-menu__open-btn {
     @media(max-width: @screen-md){
@@ -170,12 +177,22 @@ table{
     }
   }
   .search-field{
-    top: -6px;
+		  top: 4px;
   }
   @media(max-width: @screen-md){
      display: block;
      width: 100%; 
   }
+	
+	@media(min-width: 320px) and (max-width: @screen-md){
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .hidden-block{
