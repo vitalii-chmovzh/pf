@@ -148,28 +148,35 @@ menuBtn.on("click", function(){
 // Search open 
 searchBtn.on("click", function(e){
   e.preventDefault();
+  e.stopPropagation();
   menu__nav.addClass("hidden-block");
   searchCloseBtn.addClass("inline-block");
   searchField.show("fast");
   menuBtn.addClass("display-none");
 
-  // Close menu,catalog
-  $('html, body').removeClass("overflow-hidden-full");  
-  mobileMenu.slideUp("slow");
-  menuBtn.removeClass("rotated");
-  mobileMenu.slideUp("slow");
-  catalogFilter.slideUp("slow");
+  if (window.matchMedia("(max-width:992px)").matches) {
+    // Close menu,catalog
+    $('html, body').removeClass("overflow-hidden-full");  
+    mobileMenu.slideUp("slow");
+    menuBtn.removeClass("rotated");
+    mobileMenu.slideUp("slow");
+    catalogFilter.slideUp("slow");
+  }
 });
 
 // Search close
 searchCloseBtn.on("click", function(e){
   e.preventDefault();
+  e.stopPropagation();
   menu__nav.removeClass("hidden-block");
   searchCloseBtn.removeClass("inline-block");
   searchField.hide("fast");
   menuBtn.removeClass("display-none");
 });  
-  
+
+searchField.on("click", function(e){
+  e.stopPropagation();
+});
 /* Products quantity */
 
 var plus = $(".cart-product__quantity .plus-icon"),
@@ -231,6 +238,15 @@ $('body').on('click', function(event) {
 
     $('.dropcontainer').find('.dropdownvisible').removeClass('dropdownvisible').addClass('dropdownhidden');
     $('.sizes__brand-toggler').find('.activetrigger').removeClass('activetrigger').addClass('trigger');
+
+    // Hide search
+    if(window.matchMedia("(min-width:970px)").matches){
+      menu__nav.removeClass("hidden-block");
+      searchCloseBtn.removeClass("inline-block");
+      searchField.hide("fast");
+      menuBtn.removeClass("display-none");
+    }
+    
 });  
 
 });
