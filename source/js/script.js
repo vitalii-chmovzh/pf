@@ -259,7 +259,6 @@ $('body').on('click', function(event) {
       searchField.hide("fast");
       menuBtn.removeClass("display-none");
     }
-    
-});  
-
+});
+  
 });
