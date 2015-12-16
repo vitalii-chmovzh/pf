@@ -97,8 +97,6 @@
 		1.4rem;
 		1.6rem;
 		1);
-		margin-right: -5px;
-		margin-left: -5px;
 		@media (min-width: @screen-xs) {
 			margin-top: 10px;
 			margin-bottom: 7px;
@@ -138,6 +136,10 @@
 			border-bottom: 2px dashed @blue;
 			background: none !important;
 		}
+		
+		&:hover{
+			background: none !important;
+		}
 		@media (min-width: @screen-md) {
 			&:hover {
 				color: @gray;
@@ -148,7 +150,7 @@
 	}
 	&__sizes-wrapper {
 		position: relative;
-		width: 210px;
+		width: 220px;
 		height: 45px;
 		overflow: hidden;
 		margin: 0 auto;
@@ -193,7 +195,7 @@
 		li {
 			display: block;
 			float: left;
-			margin-right: 10px;
+			margin-right: 15px;
 			margin-bottom: 10px;
 			&:last-of-type {
 				margin-right: 0;
@@ -444,7 +446,7 @@
 	.product-number {
 		position: absolute;
 		top: 13px;
-		left: 10px;
+		left: 15px;
 		margin-top: 0;
 		font-weight: bold;
 		.font(1rem;
