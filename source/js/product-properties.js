@@ -194,8 +194,8 @@ $(document).ready(function () {
 
 	var next = $('.product-properties').find('.arrow-right'),
 		prev = $('.product-properties').find('.arrow-left'),
-		itemWidth = 52,
-		stepHorizontal = 216,
+		itemWidth = 57,
+		stepHorizontal = 236,
 		leftValue = 0;
 
 		next.click(function(){
@@ -225,6 +225,9 @@ $(document).ready(function () {
 			setTimeout(function(){
 				bool = false;
 			}, 500);
+
+
+			console.log();
 		});
 
 		prev.click(function(){
