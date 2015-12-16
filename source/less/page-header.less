@@ -1,5 +1,5 @@
 .page-header {
-	transition: .3s;
+	transition: .1s;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -12,6 +12,8 @@ input[type=search] {
 }
 
 .search-field {
+	top: -10px;
+    width: 80%;
 	border-radius: 0 !important;
 	display: none;
 	z-index: 10000;
@@ -19,9 +21,8 @@ input[type=search] {
 	left: 0;
 	right: 0;
 	margin: auto;
-	top: 60px;
+	// top: 60px;
 	padding: 5px;
-	width: 215px;
 	text-align: center;
 	background: @light-bg;
 	border: none;
@@ -29,11 +30,20 @@ input[type=search] {
 	.font(1.6rem;
 	1.6rem;
 	1.6rem;
-	1.2rem;
-	1.4rem;
+	1.6rem;
+	1.6rem;
 	);
-	@media(min-width: @screen-md) {
-		top: 85px;
+	@media(max-width: @screen-xlg) {
+		top: -8px;
+	}
+	@media(max-width: @screen-lg) {
+		top: -13px;
+	}
+	@media(max-width: @screen-md) {
+		top: 1px;
+	}
+	@media(max-width: @screen-xs) {
+		width: 215px;
 	}
 	&:focus {
 		outline: none;

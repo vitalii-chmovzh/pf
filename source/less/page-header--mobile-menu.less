@@ -1,17 +1,22 @@
 .mobile-menu {
 	position: fixed;
 	top: 99px;
+	bottom: 0;
+	display: none;
 	width: 100%;
-	height: 0;
+	height: 100%;
 	overflow: hidden;
 	z-index: 10000;
 	left: 0;
 	background: #fff;
-	transition: .33s ease-in-out;
+	padding: 20px 15px;
+	// transition: .33s ease-in-out;
 	&__wrapper {
-		max-width: 220px;
-		margin: 0 auto;
+		max-width: 100%;
 		height: 345px;
+		@media (min-width: @screen-xs) {
+			margin: 0 auto;
+		}
 		@media (min-width: @screen-sm) {
 			margin: 0;
 		}
@@ -22,11 +27,22 @@
 	@media (min-width: @screen-md) {
 		display: none;
 	}
+	@media (max-width: @screen-xs) {
+		height: 100%;
+		padding-bottom: 101px;
+		box-sizing: border-box;
+		overflow: auto;
+	}
+	.unsigned{
+		margin-top: 51px;
+	}
+	
 	ul {
 		float: left;
-		&:first-of-type {
-			margin-right: 70px;
-		}
+		width: 50%;
+		// &:first-of-type {
+		// 	margin-right: 70px;
+		// }
 		@media (min-width: @screen-sm) {
 			float: none;
 			margin-right: 0;
@@ -50,7 +66,7 @@
 			1);
 			color: @gray;
 			margin-bottom: 35px;
-			transition: .3s;
+			transition: .1s;
 			&:active, &:hover:active {
 				color: @blue;
 			}
@@ -69,9 +85,21 @@
 		height: 16px;
 		background: url("../img/settings--black.svg");
 		background-size: cover;
-		transition: .3s;
+		transition: .1s;
 		&:active, &:hover:active {
 			background: url("../img/settings--blue.svg");
+			background-size: cover;
+		}
+	}
+	
+	&__login-btn {
+		width: 16px;
+		height: 16px;
+		background: url("../img/lock--gray.svg");
+		background-size: cover;
+		transition: .1s;
+		&:active, &:hover:active {
+			background: url("../img/lock--blue.svg");
 			background-size: cover;
 		}
 	}
@@ -80,7 +108,7 @@
 		height: 16px;
 		background: url("../img/exit--black.svg");
 		background-size: cover;
-		transition: .3s;
+		transition: .1s;
 		&:active, &:hover:active {
 			background: url("../img/exit--blue.svg");
 			background-size: cover;
@@ -92,6 +120,15 @@
 				color: @blue;
 				.mobile-menu__config-btn {
 					background: url("../img/settings--blue.svg");
+					background-size: cover;
+				}
+			}
+		}
+		&--login {
+			&:active, &:hover:active {
+				color: @blue;
+				.mobile-menu__login-btn {
+					background: url("../img/lock--blue.svg");
 					background-size: cover;
 				}
 			}
@@ -124,7 +161,7 @@
 		font-size: 1.8rem;
 		text-decoration: none;
 		font-weight: bold;
-		transition: .3s;
+		transition: .1s;
 		&:active, &:hover:active {
 			color: @blue;
 		}
@@ -134,13 +171,13 @@
 		vertical-align: middle;
 		width: 55px;
 		height: 30px;
-		margin-right: 15px;
+		margin-right: 10px;
 		background: url("../img/logo-30-w.svg") center no-repeat;
 		background-size: cover;
-		transition: .3s ease;
+		transition: .1s ease;
 	}
 	&__add-link {
-		margin-top: 78px;
+		margin-top: 35px;
 		display: block;
 		@media (min-width: @screen-sm) {
 			margin-top: 23px;
@@ -166,7 +203,7 @@
 		1.2rem;
 		1.4rem;
 		);
-		transition: .3s;
+		transition: .1s;
 		&:active, &:hover:active {
 			color: @blue;
 		}

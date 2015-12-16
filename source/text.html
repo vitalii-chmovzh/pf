@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <meta name="format-detection" content="telephone=no">
     <title>Template</title>
     <link href="css/normalize.css" rel="stylesheet">
@@ -51,23 +51,25 @@
     
     <section class="main-menu">
       <div class="main-menu__container">
-        <i class="main-menu__open-btn"></i>
-        <i class="main-menu__close-btn"></i>
-        <span class="main-menu__heading">Каталог</span>
-        <nav class="main-menu__nav">
-          <ul>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Размеры</a></li>
-            <li><a href="">Рекомендации</a></li>
-            <li><a href="">Оплата</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <form action="">
-          <input class="search-field" type="search" placeholder="Что ищешь?">
-          <button class="main-menu__search-btn"></button>
-        </form>
+        <div class="search-wrapper">   
+          <i class="main-menu__open-btn"></i>
+          <i class="main-menu__close-btn"></i>
+          <span class="main-menu__heading">Каталог</span>
+          <nav class="main-menu__nav">
+            <ul>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Размеры</a></li>
+              <li><a href="">Рекомендации</a></li>
+              <li><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <form action="">
+            <input class="search-field" type="search" placeholder="Что ищешь?">
+            <button class="main-menu__search-btn"></button>
+          </form>
+        </div>
          <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
          <span class="main-menu__contacts">
        Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
@@ -109,53 +111,55 @@
   
   <section class="text">
     <div class="text__container">
-         <aside class="catalog-filter">
-      <ul class="catalog-filter__list">
-        <li><a href="">Подарочные сертификаты</a></li>
-        <li><a href="">Бутсы</a></li>
-        <li><a href="">Обувь для зала</a></li>
-        <li><a href="">Шиповки</a></li>
-        <li><a href="">Клубная продукция</a></li>
-        <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
-        <ul class="dropdown-category" dropdown-id="1">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
-        </li>
-        <li><a href="">Сланцы</a></li>
-        <li><a href="">Одежда</a></li>
-        <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
-        <ul class="dropdown-category" dropdown-id="2">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
-        </li>
-        <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
-        <ul class="dropdown-category" dropdown-id="3">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul></li>
-        <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
-        <ul class="dropdown-category" dropdown-id="4">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul></li>
-        <li><a href="">Медицина</a></li>
-        <li><a href="">Мячи</a></li>
-        <li><a href="">Сумки и рюкзаки</a></li>
-        <li><a href="">Аксессуары</a></li>
-         <li><a class="last" href="">Щитки</a></li>
-      </ul>
+      <aside class="catalog-filter">
+       <div class="catalog-filter-wrapper">
+          <ul class="catalog-filter__list">
+            <li><a href="">Подарочные сертификаты</a></li>
+            <li><a href="">Бутсы</a></li>
+            <li><a href="">Обувь для зала</a></li>
+            <li><a href="">Шиповки</a></li>
+            <li><a href="">Клубная продукция</a></li>
+            <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+            <ul class="dropdown-category" dropdown-id="1">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul>
+            </li>
+            <li><a href="">Сланцы</a></li>
+            <li><a href="">Одежда</a></li>
+            <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+            <ul class="dropdown-category" dropdown-id="2">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul>
+            </li>
+            <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+            <ul class="dropdown-category" dropdown-id="3">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul></li>
+            <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+            <ul class="dropdown-category" dropdown-id="4">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul></li>
+            <li><a href="">Медицина</a></li>
+            <li><a href="">Мячи</a></li>
+            <li><a href="">Сумки и рюкзаки</a></li>
+            <li><a href="">Аксессуары</a></li>
+           <li><a class="last" href="">Щитки</a></li>
+          </ul>
           <i class="catalog-filter__open-btn"></i>
-    </aside>
+       </div>    
+      </aside>
     <div class="text__main-content-wrapper">
      <a href="#" class="text__return-link">Главная</a>
       <h1 class="text__heading">Рекомендации</h1>
@@ -488,31 +492,36 @@
 
 <script>
   $(document).ready(function () {
+    // Sticky catalog filter
 
-    // Main slider
-    $('.slider-wrapper').bxSlider({
-        mode: 'fade',
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        controls: false,
-        pagerSelector: '.pagination'
+    var  sidebar = $(".catalog-filter-wrapper"),
+         sidebarOffset = sidebar.offset().top;  
+
+    $(window).scroll(function(){
+      var scrollTop = $(this).scrollTop(),
+          headerHeight = $('.page-header').height(),
+          footerOffset = $('.page-footer').offset().top,
+          sidebarHeight = sidebar.height();
+          
+          if(scrollTop > (sidebarOffset - 125)){
+
+            sidebar.addClass('catalog-filter-fixed');
+
+            if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
+              sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+              $('.catalog-filter').addClass('position-static');
+            } 
+            else {
+              sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
+              $('.catalog-filter').removeClass('position-static');
+            }
+
+          } 
+          else {
+            sidebar.removeClass('catalog-filter-fixed');
+          }
+          
     });
-
-    // Footer slider
-    $('.js-list-mobile').bxSlider({
-        slideWidth: 77,
-        slideMargin: 30,
-        maxSlides: 7,
-        moveSlides: 1,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        nextSelector: '.footer-arrow-right',
-        prevSelector: '.footer-arrow-left',
-        infiniteLoop: false,
-        hideControlOnEnd: true
-    });
-
   });
 </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
     <meta name="format-detection" content="telephone=no">
     <title>Template</title>
     <link href="css/normalize.css" rel="stylesheet">
@@ -14,21 +14,49 @@
     
    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
     
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+  
+<div class="md-modal md-effect-1" id="modal-1">
+  <div class="md-content">
+ 	<article class="sign-up-popup">
+ 		<div class="sign-up-popup__actions">
+ 			<span class="entering toggler-active">Вход</span>
+ 			<span class="registration">Регистрация</span>
+ 		</div>
+		<label for="email">email</label>
+
+ 		<input id="email-reg" type="email" placeholder="Твой email" required>
+
+		<label for="password">Пароль</label>
+
+ 		<input id="password-reg" type="password" placeholder="******" required>
+
+		<div class="sign-up-popup__row">
+			<input id="remember" type="checkbox">
+			<label class="remember" for="remember">Запомнить меня</label>
+		</div>
+ 		<button type="submit" class="item-page__wish-btn item-page__wish-btn-later actions__submit"><i class="item-page__star-icon"></i> <span>Войти</span></button>
+
+ 	</article>
+      <button class="md-close"></button>
+  </div>
+</div>
 <body class="cart-page">
  <div class="wrapper">
   <header class="page-header">
    
     <section class="tool-bar">
       <div class="tool-bar__container">
-        <div class="tool-bar__actions tool-bar__actions--left">
+        <div data-modal="modal-1"  class="md-trigger tool-bar__actions tool-bar__actions--left">
           
-          <a href="#" class="tool-bar__login-btn"><i></i></a> 
+          <a href="#"class="tool-bar__login-btn"><i></i> <span>ВОЙТИ</span></a> 
           
         </div>
         
@@ -48,23 +76,25 @@
     
     <section class="main-menu">
       <div class="main-menu__container">
-        <i class="main-menu__open-btn"></i>
-        <i class="main-menu__close-btn"></i>
-        <span class="main-menu__heading">Каталог</span>
-        <nav class="main-menu__nav">
-          <ul>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">Размеры</a></li>
-            <li><a href="">Рекомендации</a></li>
-            <li><a href="">Оплата</a></li>
-            <li><a href="">Доставка</a></li>
-            <li><a href="">Контакты</a></li>
-          </ul>
-        </nav>
-        <form action="">
-          <input class="search-field" type="search" placeholder="Что ищешь?">
-          <button class="main-menu__search-btn"></button>
-        </form>
+        <div class="search-wrapper">   
+          <i class="main-menu__open-btn"></i>
+          <i class="main-menu__close-btn"></i>
+          <span class="main-menu__heading">Каталог</span>
+          <nav class="main-menu__nav">
+            <ul>
+              <li><a href="">Услуги</a></li>
+              <li><a href="">Размеры</a></li>
+              <li><a href="">Рекомендации</a></li>
+              <li><a href="">Оплата</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <form action="">
+            <input class="search-field" type="search" placeholder="Что ищешь?">
+            <button class="main-menu__search-btn"></button>
+          </form>
+        </div>
          <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
          <span class="main-menu__contacts">
        Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
@@ -76,13 +106,13 @@
       <nav class="mobile-menu">
        <div class="mobile-menu__wrapper">
         <ul>
-          <li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
+          <li class="md-trigger" data-modal="modal-1"><a class="mobile-menu__btn--login" href=""><i class="mobile-menu__login-btn"></i>Вход</a></li>
           <li><a href="">Услуги</a></li>
           <li><a href="">Размеры</a></li>
           <li><a href="">Рекомендации</a></li>
         </ul>
-        <ul>
-          <li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
+        <ul class="unsigned">
+          <li></li>
           <li><a href="">Оплата</a></li>
           <li><a href="">Доставка</a></li>
           <li><a href="">Контакты</a></li>
@@ -106,53 +136,55 @@
   
    <section class="cart">
     <div class="cart__container">
-         <aside class="catalog-filter">
-      <ul class="catalog-filter__list">
-        <li><a href="">Подарочные сертификаты</a></li>
-        <li><a href="">Бутсы</a></li>
-        <li><a href="">Обувь для зала</a></li>
-        <li><a href="">Шиповки</a></li>
-        <li><a href="">Клубная продукция</a></li>
-        <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
-        <ul class="dropdown-category" dropdown-id="1">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
-        </li>
-        <li><a href="">Сланцы</a></li>
-        <li><a href="">Одежда</a></li>
-        <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
-        <ul class="dropdown-category" dropdown-id="2">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul>
-        </li>
-        <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
-        <ul class="dropdown-category" dropdown-id="3">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul></li>
-        <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
-        <ul class="dropdown-category" dropdown-id="4">
-          <li class="dropdown-category__item"><a href="">lorem</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-          <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-        </ul></li>
-        <li><a href="">Медицина</a></li>
-        <li><a href="">Мячи</a></li>
-        <li><a href="">Сумки и рюкзаки</a></li>
-        <li><a href="">Аксессуары</a></li>
-         <li><a class="last" href="">Щитки</a></li>
-      </ul>
+      <aside class="catalog-filter">
+       <div class="catalog-filter-wrapper">
+          <ul class="catalog-filter__list">
+            <li><a href="">Подарочные сертификаты</a></li>
+            <li><a href="">Бутсы</a></li>
+            <li><a href="">Обувь для зала</a></li>
+            <li><a href="">Шиповки</a></li>
+            <li><a href="">Клубная продукция</a></li>
+            <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+            <ul class="dropdown-category" dropdown-id="1">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul>
+            </li>
+            <li><a href="">Сланцы</a></li>
+            <li><a href="">Одежда</a></li>
+            <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+            <ul class="dropdown-category" dropdown-id="2">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul>
+            </li>
+            <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+            <ul class="dropdown-category" dropdown-id="3">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul></li>
+            <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+            <ul class="dropdown-category" dropdown-id="4">
+              <li class="dropdown-category__item"><a href="">lorem</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
+            </ul></li>
+            <li><a href="">Медицина</a></li>
+            <li><a href="">Мячи</a></li>
+            <li><a href="">Сумки и рюкзаки</a></li>
+            <li><a href="">Аксессуары</a></li>
+           <li><a class="last" href="">Щитки</a></li>
+          </ul>
           <i class="catalog-filter__open-btn"></i>
-    </aside>
+       </div>    
+      </aside>
     
     <div class="cart__main-content-wrapper">
      <a href="#" class="cart__return-link">Главная</a>
@@ -353,7 +385,7 @@
       						<li><b>Размер:</b> 41</li>
       						<li><b>Количество:</b> 1</li>
       						<li><b>Цена:</b> 15 490 <i class="ruble-icon">&#8381;</i></li>
-      					</ul
+						</ul>
       					<span class="order-item__price">
       						<span class="order-item__price-name">Стоимость</span>
       						15 490 <i class="ruble-icon">&#8381;</i>
@@ -459,40 +491,13 @@
       
   </div>
 </footer>
+<div class="md-overlay"></div><!-- the overlay element -->  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
 </script>  
  <script src="js/script.js"></script> 
  <script src="js/toggler.js"></script> 
 <script src="js/jquery.bxslider.js"></script> 
-
-<script>
-  $(document).ready(function () {
-
-    // Main slider
-    $('.slider-wrapper').bxSlider({
-        mode: 'fade',
-        infiniteLoop: false,
-        hideControlOnEnd: true,
-        controls: false,
-        pagerSelector: '.pagination'
-    });
-
-    // Footer slider
-    $('.js-list-mobile').bxSlider({
-        slideWidth: 77,
-        slideMargin: 30,
-        maxSlides: 7,
-        moveSlides: 1,
-        pager: false,
-        nextText: '',
-        prevText: '',
-        nextSelector: '.footer-arrow-right',
-        prevSelector: '.footer-arrow-left',
-        infiniteLoop: false,
-        hideControlOnEnd: true
-    });
-
-  });
-</script>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
 </body>
 </html>

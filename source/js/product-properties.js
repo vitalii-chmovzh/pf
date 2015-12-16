@@ -8,7 +8,7 @@ $(document).ready(function () {
   
   	saleRow.hide();
 	
- 	$(".big-red-btn").on("click touchstart", function(){		
+ 	$(".big-red-btn").on("click", function(){		
 		
       var productSectionContainer = $('.product__section-container');
       
@@ -16,7 +16,7 @@ $(document).ready(function () {
 		
 	});
 
- 	buttons.on("click touchstart", function(){		
+ 	buttons.on("click", function(){		
 		var cardId = $(this).attr('data-id'),
 		 contentId = $('.product__properties[data-id=' + cardId + ']'),
 		 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
@@ -194,8 +194,8 @@ $(document).ready(function () {
 
 	var next = $('.product-properties').find('.arrow-right'),
 		prev = $('.product-properties').find('.arrow-left'),
-		itemWidth = 52,
-		stepHorizontal = 216,
+		itemWidth = 57,
+		stepHorizontal = 236,
 		leftValue = 0;
 
 		next.click(function(){
@@ -225,6 +225,9 @@ $(document).ready(function () {
 			setTimeout(function(){
 				bool = false;
 			}, 500);
+
+
+			console.log();
 		});
 
 		prev.click(function(){

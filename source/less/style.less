@@ -16,6 +16,10 @@ html {
   
 }
 
+a,span, button, i{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 body {
   background: #FFFFFF;  
   height: 100%;
@@ -51,8 +55,8 @@ select::-ms-expand {
 @import "page-header--toolbar.less";
 @import "slider.less";
 @import "catalog.less";
-//@import "catalog--filter.less";
-//@import "catalog--product-card.less";
+// @import "catalog--filter.less";
+// @import "catalog--product-card.less";
 @import "footer.less";
 @import "settings.less";
 @import "text.less";
@@ -131,4 +135,73 @@ input[type=number]::-webkit-outer-spin-button {
 
 table{	
     border-spacing: inherit;
+}
+
+
+// Search
+.main-menu{
+		position: relative;
+}
+.search-wrapper{
+	@media(min-width: @screen-md){
+		  display: inline-block; 
+		  position: relative;
+	}
+  .main-menu__close-btn{
+    display: none;
+    vertical-align: middle;
+    margin-right: 20px;
+    @media(max-width: @screen-md){
+       float: left; 
+    }
+	  @media(min-width: 320px) and (max-width: @screen-sm){
+		  margin-right: 0;
+	  }
+  } 
+  .main-menu__open-btn {
+    @media(max-width: @screen-md){
+       float: left; 
+    }
+  }
+  .main-menu__nav{
+    vertical-align: middle;
+    margin-right: 0;
+  }
+  form {
+    display: inline-block;
+    vertical-align: middle;
+    @media(max-width: @screen-md){
+       float: right; 
+    }
+  }
+  .main-menu__search-btn {
+    margin: 0 0 0 30px;
+    @media(max-width: @screen-md){
+       margin: 0; 
+    }
+  }
+  @media(max-width: @screen-md){
+     display: block;
+     width: 100%; 
+  }
+	
+	@media(min-width: 320px) and (max-width: @screen-md){
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.hidden-block{
+  visibility: hidden;
+}
+.inline-block{
+  display: inline-block!important;
+}
+.display-none{
+  display: none;
 }

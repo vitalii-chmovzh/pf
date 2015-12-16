@@ -10,7 +10,7 @@
     float: left;
     width: 200px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 14px;
     margin-right: 15px;
     min-height: auto;
     padding-bottom: 0;
@@ -48,17 +48,17 @@
   
   @media (min-width: @screen-xs) {
     width: 430px !important;
-    transition: .3s linear;
+    transition: .1s linear;
   }
 	
   @media (max-width: @screen-xs) {
 		height: auto !important;
-    transition: .3s linear;
+    transition: .1s linear;
   }
   
   @media (min-width: @screen-sm) {
     width: 450px !important;
-    transition: .3s linear;
+    transition: .1s linear;
   }
   
   @media (min-width: @screen-md) {
@@ -67,16 +67,18 @@
   
   @media (min-width: @screen-lg) {
     width: 550px !important;
-    transition: .3s linear;
+    transition: .1s linear;
   }
   
   @media (min-width: @screen-xlg) {
     width: 760px !important;
-    transition: .3s linear;
+    transition: .1s linear;
   } 
   
   .product{
-    
+	  @media (max-width: @screen-xs){
+		  border-bottom: none;
+	  }
     @media (min-width: @screen-xs) {
       width: 200px !important;
 		border-right: none;
@@ -96,7 +98,7 @@
 
     @media (min-width: @screen-xlg) {
       width: 365px !important;
-    } 
+    }
 
       &__properties{    
         @media (min-width: @screen-xs) {
@@ -126,12 +128,13 @@
     padding: 0 !important;
     width: auto;
   margin: 0 auto;
+	.clearfix;
   @media (min-width: @screen-md) {
     width: 940px !important;
   }
   
   @media (min-width: @screen-lg) {
-    width: 1140px !important;
+    width: 1171px !important;
   }
   
   @media (min-width: @screen-xlg) {

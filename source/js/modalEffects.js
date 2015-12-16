@@ -32,14 +32,22 @@ var ModalEffects = (function() {
 			}
 
 			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
-				overlay.removeEventListener( 'click', removeModalHandler );
-				overlay.addEventListener( 'click', removeModalHandler );
+				$this = $(this);
+				var input = $this.parent().find("input")[0];
 
-				if( classie.has( el, 'md-setperspective' ) ) {
-					setTimeout( function() {
-						classie.add( document.documentElement, 'md-perspective' );
-					}, 25 );
+				if(input && input.checked){
+					return false;
+				} 
+				else {
+					classie.add( modal, 'md-show' );
+					overlay.removeEventListener( 'click', removeModalHandler );
+					overlay.addEventListener( 'click', removeModalHandler );
+
+					if( classie.has( el, 'md-setperspective' ) ) {
+						setTimeout( function() {
+							classie.add( document.documentElement, 'md-perspective' );
+						}, 25 );
+					}
 				}
 			});
 

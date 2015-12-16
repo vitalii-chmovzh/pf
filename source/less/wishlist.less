@@ -14,6 +14,24 @@
 			}
 		}
 	}
+.product{
+	&__row{
+		
+		@media (min-width: @screen-xs){
+			margin-bottom: 9px;
+		}
+		@media (min-width: @screen-md){
+			margin-bottom: 9px;
+		}
+		@media (min-width: @screen-lg){
+			margin-bottom: 11px;
+		}
+		@media (min-width: @screen-xlg){
+			margin-bottom: 13px;
+		}
+	}
+}
+
 }
 
 .wishlist {
@@ -30,7 +48,7 @@
 	@media(min-width: @screen-lg) {
 		padding-top: 83px;
 	}
-	@media (max-width: @screen-sm) {
+	@media (max-width: 767px) {
 		max-width: 390px;
 		margin: 0 auto;
 	}

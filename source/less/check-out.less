@@ -7,7 +7,7 @@
 		width: 320px;
 		margin: 0 auto;
 	}
-	@media (max-width: @screen-sm) {
+	@media (max-width: 767px) {
 		width: 480px;
 		margin: 0 auto;
 	}
@@ -15,7 +15,7 @@
 		width: 320px;
 		margin: 0 auto;
 	}
-	@media (max-width: 768px) and (min-width: 480px) {
+	@media (max-width: 767px) and (min-width: 480px) {
 		.adres-info__form-group--mob-hidden {
 			display: none !important;
 		}
@@ -182,7 +182,7 @@
 		width: 1185px;
 	}
 	.radio, .checkbox{
-		transition: .3s;
+		transition: .1s;
 				@media(min-width: @screen-md) {
 					&:hover:after {
 						border: 1px solid #000;
@@ -238,13 +238,13 @@
 			width: 645px;
 		}
 		textarea {
-				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+				@media(min-width: @screen-xs) and (max-width: 767px) {
 					width: 100% !important;
 				}
 			@media(min-width: @screen-sm) {
 				width: 100%;
 			}
-			@media(max-width: @screen-sm) {
+			@media(max-width: 767px) {
 				width: 240px;
 			}
 		}
@@ -312,13 +312,13 @@
 					display: inline-block;
 					position: relative;
 					
-					@media(max-width: @screen-sm) {
+					@media(max-width: 767px) {
 						margin-right: 0;
 					}
 					@media(min-width: @screen-sm) {
 						width: 36.507246% ;
 					}
-					@media(min-width: @screen-xs) and (max-width: @screen-sm){				
+					@media(min-width: @screen-xs) and (max-width: 767px){				
 						width: 29.31034483%;
 					}
 				}
@@ -339,7 +339,7 @@
 					width: percentage(130/290);
 					margin-right: 10.344%;
 
-					@media(min-width: @screen-xs) and (max-width: @screen-sm){
+					@media(min-width: @screen-xs) and (max-width: 767px){
 						margin-right: 41%;
 						width: 29.31034483%;
 					}
@@ -440,13 +440,13 @@
 			}
 			
 			&--region {
-				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+				@media(min-width: @screen-xs) and (max-width: 767px) {
     			width: 44.82758621%;					
     			margin-right: 8.344828%;
 				}
 			}
 			&--city {
-				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+				@media(min-width: @screen-xs) and (max-width: 767px) {
     			width: 44.82758621%;
 				}
 			}
@@ -670,7 +670,7 @@
 		width: 750px;
 	}
 	&__courier {
-				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+				@media(min-width: @screen-xs) and (max-width: 767px) {
     			width: 44.82758621%;					
     			margin-right: 8.344828%;
 					display: inline-block;
@@ -689,7 +689,7 @@
 		}
 	}
 	&__mail {
-				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+				@media(min-width: @screen-xs) and (max-width: 767px) {
     			width: 44.82758621%;			
 					vertical-align: top;
 					display: inline-block;
@@ -724,9 +724,9 @@
 		display: inline-block;
 		line-height: 1 !important;
 		margin-left: 30px;
-		transition: .3s;
+		transition: .1s;
 		&:after {
-			transition: .3s;
+			transition: .1s;
 			position: absolute;
 			content: '';
 			top: -2px;
@@ -776,7 +776,7 @@
 .comment-group {
 	clear: both;
 	display: block;
-				@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+				@media(min-width: @screen-xs) and (max-width: 767px) {
 					width: 100%;
 				}
 	.comment-caption {
@@ -880,7 +880,7 @@
 		display: inline-block;
 		line-height: 1 !important;
 		margin-left: 92px;
-		transition: .3s;
+		transition: .1s;
 		&:after {
 			position: absolute;
 			content: '';
@@ -890,7 +890,7 @@
 			height: 15px;
 			background: @border-color;
 			border-radius: 50%;
-			transition: .3s;
+			transition: .1s;
 			@media(min-width: @screen-sm) {
 				position: absolute;
 				content: '';
@@ -901,8 +901,8 @@
 				height: 15px;
 				background: #eaeaea;
 				border-radius: 50%;
-				-webkit-transition: .3s;
-				transition: .3s;
+				-webkit-transition: .1s;
+				transition: .1s;
 				margin: auto;
 			}
 			
@@ -916,13 +916,13 @@
 				height: 15px;
 				background: #eaeaea;
 				border-radius: 50%;
-				-webkit-transition: .3s;
-				transition: .3s;
+				-webkit-transition: .1s;
+				transition: .1s;
 				margin: auto;
 			}
 		}
 		&:before {
-			transition: .3s;
+			transition: .1s;
 			position: absolute;
 			content: '';
 			top: -12px;
@@ -930,7 +930,7 @@
 			width: 54px;
 			height: 36px;
 			@media(min-width: @screen-sm) {
-				transition: .3s;
+				transition: .1s;
 				position: absolute;
 				content: '';
 				top: -70px;
@@ -943,7 +943,7 @@
 
 			
 			@media(min-width: @screen-xlg) {
-				transition: .3s;
+				transition: .1s;
 				position: absolute;
 				content: '';
 				top: -90px;

@@ -18,33 +18,62 @@
 	height: 100vh;
 	background: url("../img/slide-1--mob.jpg") center center;
 	background-size: cover;
-	display: flex!important;
-	align-items: flex-end;
-	
+	display: block;
 	&--second{
 		background: url("../img/slide-2.jpg") center center no-repeat !important;
-		background-size: cover;
+		background-size: cover !important;
 	}
 	@media (min-width: @screen-sm) {
 		height: 100vh;
 	}
-	@media (min-width: @screen-md) {
-		justify-content: flex-end;
+	.slide-link{
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: background .5s;
+		&:after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
 	}
+	&:active {
+		.slide-link{
+			background: rgba(233, 63, 54, 0.8);
+		}
+		.description{
+			background: none;
+		}
+		.description__more-btn{
+			background: none;
+		}
+	}	
 }
 
 .description {
-	position: relative;
-	z-index: 1;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 9;
 	width: 100%;
 	padding-top: 30px;
 	padding-left: 15px;
+	text-decoration: none;
+	transition: background .3s;
 	@media (min-width: @screen-md) {
-		width: 270px;
+		width: 315px;
 		padding-top: 15px;
 		min-height: 680px;
 		height: 100vh;
-		padding-left: 45px;
+		padding-left: 5px;
 	}
 	@media (min-width: @screen-lg) {
 		width: 330px;
@@ -57,6 +86,13 @@
 	}
 	@media (min-width: @screen-xlg) {
 		width: 450px;
+	}
+	@media (max-width: @screen-md) {
+		top: auto;
+		bottom: 0;
+	}
+	&.after-red{
+		background: rgba(233, 63, 54, 0.8);
 	}
 	&:after {
 		position: absolute;
@@ -92,14 +128,14 @@
 		color: #fff;
 		@media (min-width: @screen-md) {
 			margin-top: 250px;
-			margin-top: 35vh;
+			// margin-top: 35vh;
 		}
 		@media (min-width: @screen-lg) {
 			display: block;
 			width: 210px;
 			text-align: left;
 			margin-top: 250px;
-			margin-top: 35vh;
+			// margin-top: 35vh;
 			margin-left: percentage(50/350);
 			transform: skew(-10deg);
 		}
@@ -108,9 +144,13 @@
 			width: 250px;
 			text-align: left;
 			margin-top: 250px;
-			margin-top: 40vh;
+			// margin-top: 40vh;
 			margin-left: percentage(45/450);
 			transform: skew(-10deg);
+		}
+		@media (max-width: @screen-lg) and (min-width: @screen-md){
+			width: 220px;
+			float: right;
 		}
 		span {
 			display: block;
@@ -123,7 +163,7 @@
 			font-weight: bold;
 			text-transform: none;
 			margin-top: 5px;
-			@media(max-width: @screen-sm) {
+			@media(max-width: 767px) {
 				padding-right: 60px;
 			}
 		}
@@ -210,7 +250,7 @@
 		border: 2px solid #fff;
 		background: none;
 		cursor: pointer;
-		transition: .3s;
+		transition: .1s;
 		font-size: 0;
 			&:hover {
 				background: #fff;
@@ -229,4 +269,10 @@
 		}
 	}	
 	
+}
+.background-none{
+	background: none!important;
+	&:after{
+		background: none!important;
+	}
 }
