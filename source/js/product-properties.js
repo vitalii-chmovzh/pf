@@ -7,14 +7,6 @@ $(document).ready(function () {
 
   
   	saleRow.hide();
-	
- 	$(".big-red-btn").on("click", function(){		
-		
-      var productSectionContainer = $('.product__section-container');
-      
-      productSectionContainer.toggleClass('products__section-container--expanded');
-		
-	});
 
  	buttons.on("click", function(){		
 		var cardId = $(this).attr('data-id'),
