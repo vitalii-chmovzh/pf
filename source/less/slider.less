@@ -18,9 +18,7 @@
 	height: 100vh;
 	background: url("../img/slide-1--mob.jpg") center center;
 	background-size: cover;
-	display: flex!important;
-	align-items: flex-end;
-	
+	display: block;
 	&--second{
 		background: url("../img/slide-2.jpg") center center no-repeat !important;
 		background-size: cover !important;
@@ -28,13 +26,12 @@
 	@media (min-width: @screen-sm) {
 		height: 100vh;
 	}
-	@media (min-width: @screen-md) {
-		justify-content: flex-end;
-	}
 }
 
 .description {
-	position: relative;
+	position: absolute;
+	top: 0;
+	right: 0;
 	z-index: 1;
 	width: 100%;
 	padding-top: 30px;
@@ -57,6 +54,10 @@
 	}
 	@media (min-width: @screen-xlg) {
 		width: 450px;
+	}
+	@media (max-width: @screen-md) {
+		top: auto;
+		bottom: 0;
 	}
 	&:after {
 		position: absolute;

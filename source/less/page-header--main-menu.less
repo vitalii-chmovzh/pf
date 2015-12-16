@@ -42,14 +42,20 @@
 		}
 	}
 	&__close-btn {
-		display: none;
+		display: block;
 		cursor: pointer;
 		vertical-align: baseline;
 		width: 16px;
 		height: 16px;
 		background: url("../img/cross.svg");
 		transition: .1s ease;
-		
+		@media (min-width: @screen-md) {
+			position: absolute;
+			left: 0;
+		    top: 0;
+		    bottom: 0;
+		    margin: auto;
+		}
 		&:active{
 			background: url("../img/cross--blue.svg");
 		}
