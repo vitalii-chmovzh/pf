@@ -114,7 +114,7 @@
 }
 @media (min-width: 1200px) {
   .products__section-container--expanded {
-    width: 1160px !important;
+    width: 1171px !important;
   }
 }
 @media (min-width: 1600px) {
@@ -681,7 +681,7 @@ input[type=search] {
   padding: 20px 15px;
 }
 .mobile-menu__wrapper {
-  max-width: 220px;
+  max-width: 100%;
   height: 345px;
 }
 @media (min-width: 480px) {
@@ -704,14 +704,20 @@ input[type=search] {
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .mobile-menu {
+    height: 100%;
+    padding-bottom: 101px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+}
 .mobile-menu .unsigned {
   margin-top: 51px;
 }
 .mobile-menu ul {
   float: left;
-}
-.mobile-menu ul:first-of-type {
-  margin-right: 70px;
+  width: 50%;
 }
 @media (min-width: 768px) {
   .mobile-menu ul {
@@ -902,7 +908,7 @@ input[type=search] {
           transition: .1s ease;
 }
 .mobile-menu__add-link {
-  margin-top: 78px;
+  margin-top: 35px;
   display: block;
 }
 @media (min-width: 768px) {
@@ -1708,20 +1714,23 @@ input[type=search] {
 }
 @media (min-width: 992px) {
   .catalog {
-    width: 932px;
+    width: 948px;
     margin: 0 auto;
+    padding-left: 15px;
   }
 }
 @media (min-width: 1200px) {
   .catalog {
-    width: 1150px;
+    width: 1165px;
     margin: 0 auto;
+    padding-left: 17px;
   }
 }
 @media (min-width: 1600px) {
   .catalog {
-    width: 1580px;
+    width: 1595px;
     margin: 0 auto;
+    padding-left: 35px;
   }
 }
 .catalog__categories {
@@ -6910,7 +6919,7 @@ footer .bx-next.disabled {
     float: left;
     width: 200px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 14px;
     margin-right: 15px;
     min-height: auto;
     padding-bottom: 0;
@@ -8529,10 +8538,10 @@ footer .bx-next.disabled {
 }
 @media (min-width: 768px) {
   .product-properties__buttons li {
-    width: 100px;
+    width: 102px;
   }
   .product-properties__buttons li:first-of-type {
-    width: 100px;
+    width: 102px;
   }
 }
 @media (min-width: 992px) {
@@ -9491,7 +9500,7 @@ footer .bx-next.disabled {
     float: left;
     width: 200px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 14px;
     margin-right: 15px;
     min-height: auto;
     padding-bottom: 0;
@@ -10714,7 +10723,7 @@ footer .bx-next.disabled {
     float: left;
     width: 200px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 14px;
     margin-right: 15px;
     min-height: auto;
     padding-bottom: 0;
@@ -11044,7 +11053,7 @@ footer .bx-next.disabled {
     float: left;
     width: 200px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 14px;
     margin-right: 15px;
     min-height: auto;
     padding-bottom: 0;
@@ -11514,7 +11523,7 @@ footer .bx-next.disabled {
     float: left;
     width: 200px;
     margin-bottom: 30px;
-    margin-left: 15px;
+    margin-left: 14px;
     margin-right: 15px;
     min-height: auto;
     padding-bottom: 0;
@@ -16543,13 +16552,9 @@ footer .bx-next.disabled {
 }
 @media (max-width: 991px) {
   .catalog-filter {
-    overflow-y: auto;
-    height: 100%;
+    overflow-y: scroll;
     display: none;
-  }
-}
-@media (max-width: 991px) {
-  .catalog-filter {
+    font-size: 16px;
     position: fixed;
     overflow-x: hidden;
     top: 99px;
@@ -16752,8 +16757,6 @@ footer .bx-next.disabled {
   color: #535353;
   width: 100%;
   text-decoration: none;
-  -webkit-transition: .1s;
-          transition: .1s;
 }
 .catalog-filter__list a:active,
 .catalog-filter__list a:hover:active {
@@ -16852,7 +16855,8 @@ footer .bx-next.disabled {
     width: 20px;
     height: 40px;
     right: -10px;
-    bottom: 50%;
+    top: 50%;
+    margin-top: -20px;
     border: 1px solid #eaeaea;
     background: #fff;
   }
@@ -16869,6 +16873,15 @@ footer .bx-next.disabled {
     height: 24px;
     width: 4px;
     background: url("../img/more.svg") no-repeat;
+  }
+}
+@media (min-width: 992px) and (min-width: 1600px) {
+  .catalog-filter__open-btn {
+    height: 50px;
+    margin-top: -25px;
+  }
+  .catalog-filter__open-btn:after {
+    bottom: 23%;
   }
 }
 .dropdown-category {
