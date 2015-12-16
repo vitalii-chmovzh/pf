@@ -25,28 +25,41 @@ $(document).ready(function () {
   var flag = true;
   
 
-  var sliderDescription = $(".description"); 
-  var sliderBtn = $(".description__more-btn"); 
-  var sliderOverflow = $(".slider__overflow"); 
+  var slideLink = $(".slide-link"),
+      sliderDescription = $(".description"), 
+      sliderBtn = $(".description__more-btn"),
+      sliderOverflow = $(".slider__overflow"); 
   
-  sliderBtn.on("click touchstart", function (e) {
-    e.preventDefault();
-	  console.log(1);
-  if (window.matchMedia("(max-width: 991px)").matches) {
-    sliderDescription.addClass("after-hidden"); 
-    sliderOverflow.fadeIn(100);        
-   }  
-    
+  // Main slider hover effect
+  sliderBtn.on("mouseover", function () {
   if (window.matchMedia("(min-width: 992px)").matches) {
     sliderDescription.addClass("after-red");     
    }
-    
-    setTimeout(function(){
-      sliderOverflow.fadeOut();
-      location.href= $(this).attr("href");
-    }, 200);
   });
-  
+
+  sliderBtn.on("mouseout", function () {
+  if (window.matchMedia("(min-width: 992px)").matches) {
+    sliderDescription.removeClass("after-red");     
+   }
+  });
+
+  // sliderBtn.on("click", function (e){
+  //   if (window.matchMedia("(max-width: 992px)").matches) {
+
+  //     e.preventDefault();
+
+  //     var href = $(this).attr("href");
+
+  //     $(this).addClass("background-none");
+  //     slideLink.addClass("after-red");
+  //     sliderDescription.addClass("background-none");
+
+  //     setTimeout(function(){
+  //       location.href = href;
+  //     }, 500);
+  //   }
+  // });
+
    
   $(".catalog-filter .arrow-right").on("click", function(){
         dropdown = $(this).parent().find("ul.dropdown-category");
