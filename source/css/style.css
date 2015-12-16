@@ -38,6 +38,11 @@
             transition: .1s linear;
   }
 }
+@media (max-width: 480px) {
+  .product__wrapper--expanded .product {
+    border-bottom: none;
+  }
+}
 @media (min-width: 480px) {
   .product__wrapper--expanded .product {
     width: 200px !important;
@@ -372,7 +377,7 @@ input[type=search] {
   }
 }
 .main-menu__close-btn {
-  display: none;
+  display: block;
   cursor: pointer;
   vertical-align: baseline;
   width: 16px;
@@ -380,6 +385,15 @@ input[type=search] {
   background: url("../img/cross.svg");
   -webkit-transition: .1s ease;
           transition: .1s ease;
+}
+@media (min-width: 992px) {
+  .main-menu__close-btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
 }
 .main-menu__close-btn:active {
   background: url("../img/cross--blue.svg");
@@ -1308,14 +1322,7 @@ input[type=search] {
   height: 100vh;
   background: url("../img/slide-1--mob.jpg") center center;
   background-size: cover;
-  display: -webkit-box!important;
-  display: -webkit-flex!important;
-  display: -ms-flexbox!important;
-  display: flex!important;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  display: block;
 }
 .slide--second {
   background: url("../img/slide-2.jpg") center center no-repeat !important;
@@ -1326,16 +1333,10 @@ input[type=search] {
     height: 100vh;
   }
 }
-@media (min-width: 992px) {
-  .slide {
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
 .description {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 1;
   width: 100%;
   padding-top: 30px;
@@ -1366,6 +1367,12 @@ input[type=search] {
 @media (min-width: 1600px) {
   .description {
     width: 450px;
+  }
+}
+@media (max-width: 992px) {
+  .description {
+    top: auto;
+    bottom: 0;
   }
 }
 .description:after {
@@ -1705,7 +1712,7 @@ input[type=search] {
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1;
   color: #535353;
   text-transform: uppercase;
   text-decoration: none;
@@ -1713,25 +1720,25 @@ input[type=search] {
 @media (min-width: 768px) {
   .catalog__categories span {
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 @media (min-width: 992px) {
   .catalog__categories span {
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 @media (min-width: 1200px) {
   .catalog__categories span {
     font-size: 1.4rem;
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 @media (min-width: 1600px) {
   .catalog__categories span {
     font-size: 1.6rem;
-    line-height: 1.4;
+    line-height: 1;
   }
 }
 .catalog__categories .active--blue {
@@ -8442,7 +8449,7 @@ footer .bx-next.disabled {
   padding: 13px 0;
   background: #e93f36;
   color: #fff;
-  padding-left: 30px;
+  padding-left: 25px;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1.4rem;
   line-height: 1;
@@ -8486,25 +8493,31 @@ footer .bx-next.disabled {
 @media (min-width: 480px) {
   .product-properties__open-btn {
     padding: 13px 0;
-    padding-left: 10px;
+    padding-left: 10.5px;
+  }
+}
+@media (min-width: 768px) {
+  .product-properties__open-btn {
+    padding: 13px 0;
+    padding-left: 10.5px;
   }
 }
 @media (min-width: 992px) {
   .product-properties__open-btn {
     padding: 13px 0;
-    padding-left: 10px;
+    padding-left: 10.5px;
   }
 }
 @media (min-width: 1200px) {
   .product-properties__open-btn {
     padding: 13px 0;
-    padding-left: 27px;
+    padding-left: 25px;
   }
 }
 @media (min-width: 1600px) {
   .product-properties__open-btn {
     padding: 17px 0;
-    padding-left: 53px;
+    padding-left: 47px;
     height: 50px;
   }
 }
@@ -17429,6 +17442,8 @@ footer .bx-next.disabled {
   line-height: 1.4;
   display: inline-block;
   color: #535353;
+  -webkit-transition: .1s;
+          transition: .1s;
 }
 @media (min-width: 768px) {
   .add-to-cart__additional,
