@@ -8,7 +8,7 @@ $(document).ready(function () {
   
   	saleRow.hide();
 	
- 	$(".big-red-btn").on("click touchstart", function(){		
+ 	$(".big-red-btn").on("click", function(){		
 		
       var productSectionContainer = $('.product__section-container');
       
@@ -16,7 +16,7 @@ $(document).ready(function () {
 		
 	});
 
- 	buttons.on("click touchstart", function(){		
+ 	buttons.on("click", function(){		
 		var cardId = $(this).attr('data-id'),
 		 contentId = $('.product__properties[data-id=' + cardId + ']'),
 		 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
