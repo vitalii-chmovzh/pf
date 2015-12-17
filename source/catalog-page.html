@@ -1589,37 +1589,40 @@
 <script src="js/classie.js"></script>
 <script src="js/modalEffects.js"></script>
 <script>
-  // Sticky catalog filter
+  $(document).ready(function () {
 
-  var  sidebar = $(".catalog-filter-wrapper"),
-       catalogFilter = $('.catalog-filter'),
-       sidebarOffset = sidebar.offset().top;  
+    // Sticky catalog filter
 
-  $(window).scroll(function(){
-    var scrollTop = $(this).scrollTop(),
-        headerHeight = $('.page-header').height(),
-        footerOffset = $('.page-footer').offset().top,
-        sidebarHeight = sidebar.height();
-        
-        if(scrollTop > (sidebarOffset - headerHeight)){
+    var  sidebar = $(".catalog-filter-wrapper"),
+         catalogFilter = $('.catalog-filter'),
+         sidebarOffset = sidebar.offset().top;  
 
-          sidebar.addClass('catalog-filter-fixed');
-          $('.catalog-filter').addClass('position-static');
+    $(window).scroll(function(){
+      var scrollTop = $(this).scrollTop(),
+          headerHeight = $('.page-header').height(),
+          footerOffset = $('.page-footer').offset().top,
+          sidebarHeight = sidebar.height();
+          
+          if(scrollTop > (sidebarOffset - headerHeight)){
 
-          if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
-            sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+            sidebar.addClass('catalog-filter-fixed');
+            $('.catalog-filter').addClass('position-static');
+
+            if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
+              sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+            } 
+            else {
+              sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');  
+            }
+
           } 
           else {
-            sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');  
+            sidebar.removeClass('catalog-filter-fixed');
+            $('.catalog-filter').removeClass('position-static');
           }
-
-        } 
-        else {
-          sidebar.removeClass('catalog-filter-fixed');
-          $('.catalog-filter').removeClass('position-static');
-        }
-        
-  });
+          
+    });
+  });  
 </script>
 </body>
 </html>
