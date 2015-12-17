@@ -272,38 +272,6 @@ $('body').on('click', function(event) {
     }
 });
 
-// Sticky catalog filter
-
-var  sidebar = $(".catalog-filter-wrapper"),
-     catalogFilter = $('.catalog-filter'),
-     sidebarOffset = sidebar.offset().top;  
-
-$(window).scroll(function(){
-  var scrollTop = $(this).scrollTop(),
-      headerHeight = $('.page-header').height(),
-      footerOffset = $('.page-footer').offset().top,
-      sidebarHeight = sidebar.height();
-      
-      if(scrollTop > (sidebarOffset - headerHeight)){
-
-        sidebar.addClass('catalog-filter-fixed');
-        $('.catalog-filter').addClass('position-static');
-
-        if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
-          sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
-        } 
-        else {
-          sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
-          $('.catalog-filter').removeClass('position-static');
-        }
-
-      } 
-      else {
-        sidebar.removeClass('catalog-filter-fixed');
-      }
-      
-});
-
 // Price range
 if($( "#ui-slider" ).length != 0){
   $( "#ui-slider" ).slider({

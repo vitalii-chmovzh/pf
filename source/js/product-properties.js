@@ -22,7 +22,6 @@ $(document).ready(function () {
 		if(!wrapperId.hasClass("product__wrapper--expanded")){
 			e.preventDefault();
 			$(this).find(expandedBtnId).addClass("hidden");
-			console.log(expandedBtnId);
 		}
 		
 		productsCont.not(wrapperId).removeClass("product__wrapper--expanded");
