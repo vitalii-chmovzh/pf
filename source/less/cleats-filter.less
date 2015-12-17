@@ -2,17 +2,20 @@
 	padding: 30px 15px;
 	background: @light-bg;
 	width: 320px;
+	@media(min-width: @screen-xs){
+		width: 352px;
+	}
 	@media(min-width: @screen-sm) and (max-width: @screen-lg) {
-		width: 250px;
+		width: 272px;
 	}
 	@media(min-width: @screen-sm) {
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
 	}
 	@media(min-width: @screen-lg) {
-		width: 295px;
+		width: 312px;
 	}
 	@media(min-width: @screen-xlg) {
-		width: 405px;
+		width: 427px;
 	}
 	&__row {
 		.clearfix;
@@ -425,9 +428,6 @@
 			background: none;
 			color: @blue;
 			border: 1px solid @blue;
-		}
-		@media(min-width: @screen-sm) and (max-width: @screen-lg) {
-			margin-right: 27px;
 		}
 	}
 	&__reset {
