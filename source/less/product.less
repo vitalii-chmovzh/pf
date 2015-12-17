@@ -205,7 +205,7 @@
 		
 	}
 	&__row {
-		margin-bottom: 15px;
+		margin-bottom: 12px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -255,7 +255,7 @@
 		color: @gray;
 		text-decoration: none;
 		text-transform: uppercase;
-		margin-bottom: 33px;
+		margin-bottom: 36px;
 		overflow: hidden;
 		transition: .1s;
 		&:active, &:hover:active {
@@ -265,7 +265,7 @@
 		@media (min-width: @screen-xs) {
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			margin-bottom: 15px;
+			margin-bottom: 18px;
 		}
 		@media (min-width: @screen-md) {
 			&:hover {
@@ -274,7 +274,7 @@
 			}
 		}
 		@media (min-width: @screen-xlg) {
-			margin-bottom: 15px;
+			margin-bottom: 18px;
 			line-height: 1;
 		}
 	}
@@ -313,10 +313,26 @@
 			1);
 		}
 		&--old {
-			position: relative;
+			position: absolute;
 			display: block;
 			font-size: 1rem;
 			font-weight: bold;
+			bottom: 17px;
+			@media (min-width: @screen-xs) {
+				bottom: 31px;
+			}
+			@media (min-width: @screen-sm) {
+				bottom: 28px;
+			}
+			@media (min-width: @screen-md) {
+				bottom: 30px;
+			}
+			@media (min-width: @screen-lg) {
+				bottom: 32px;
+			}
+			@media (min-width: @screen-xlg) {
+				bottom: 40px;
+			}
 			&:after {
 				content: '';
 				position: absolute;
@@ -327,6 +343,8 @@
 				height: 1px;
 				background: @red;
 			}
+			
+			
 			.ruble-icon {
 				font-size: 1rem;
 			}
@@ -371,6 +389,12 @@
 		background: url("../img/more.svg") no-repeat;
 		@media (min-width: @screen-xlg) {
 			top: 13px;
+		}
+	}
+	&__more-text {
+		display: none;
+		@media (min-width: @screen-lg) {
+			display: inline-block;
 		}
 	}
 	&__properties {
