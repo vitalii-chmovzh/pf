@@ -14,11 +14,15 @@ $(document).ready(function () {
 		 contentId = $('.product__properties[data-id=' + cardId + ']'),
 		 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
 		 propId = $('.product-properties[data-id=' + cardId + ']'),
-		 btnId = $('.product__more-btn[data-id=' + cardId + ']');      
+		 btnId = $('.product__more-btn[data-id=' + cardId + ']'),
+		expandedBtnId=$('.product__more-btn--expanded');      
 		var wrappers = $('.product__wrapper');
+			$(this).find(expandedBtnId).removeClass("hidden");
 		
 		if(!wrapperId.hasClass("product__wrapper--expanded")){
 			e.preventDefault();
+			$(this).find(expandedBtnId).addClass("hidden");
+			console.log(expandedBtnId);
 		}
 		
 		productsCont.not(wrapperId).removeClass("product__wrapper--expanded");
@@ -34,7 +38,10 @@ $(document).ready(function () {
 		 contentId = $('.product__properties[data-id=' + cardId + ']'),
 		 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
 		 propId = $('.product-properties[data-id=' + cardId + ']'),
-		 imageId = $('.product__image[data-id=' + cardId + ']');
+		 imageId = $('.product__image[data-id=' + cardId + ']'),
+		 expandedBtnId=$('.product__more-btn--expanded');    
+
+			expandedBtnId.removeClass("hidden");
       
 		var wrappers = $('.product__wrapper');
 		
