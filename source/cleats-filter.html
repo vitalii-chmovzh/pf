@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
     <title>Template</title>
     <link href="css/normalize.css" rel="stylesheet">
@@ -319,22 +319,5 @@
 </script>  
 <script src="js/script.js"></script> 
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script>
-	// Price range
-	$(function() {
-	    $( "#ui-slider" ).slider({
-	      range: true,
-	      min: 0,
-	      max: 16990,
-	      values: [ 100, 16990 ],
-	      slide: function( event, ui ) {
-	        $( "#min-price" ).val( ui.values[ 0 ] );
-	        $( "#max-price" ).val( ui.values[ 1 ] );
-	      }
-	    });
-	    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
-	    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
-	});
-</script> 
 </body>
 </html>

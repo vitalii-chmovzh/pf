@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta name="format-detection" content="telephone=no">
     <title>Template</title>
     <link href="css/normalize.css" rel="stylesheet">
@@ -489,40 +489,5 @@
  <script src="js/script.js"></script> 
  <script src="js/text-toggler.js"></script> 
 <script src="js/jquery.bxslider.js"></script> 
-
-<script>
-  $(document).ready(function () {
-    // Sticky catalog filter
-
-    var  sidebar = $(".catalog-filter-wrapper"),
-         sidebarOffset = sidebar.offset().top;  
-
-    $(window).scroll(function(){
-      var scrollTop = $(this).scrollTop(),
-          headerHeight = $('.page-header').height(),
-          footerOffset = $('.page-footer').offset().top,
-          sidebarHeight = sidebar.height();
-          
-          if(scrollTop > (sidebarOffset - 125)){
-
-            sidebar.addClass('catalog-filter-fixed');
-
-            if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
-              sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
-              $('.catalog-filter').addClass('position-static');
-            } 
-            else {
-              sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
-              $('.catalog-filter').removeClass('position-static');
-            }
-
-          } 
-          else {
-            sidebar.removeClass('catalog-filter-fixed');
-          }
-          
-    });
-  });
-</script>
 </body>
 </html>
