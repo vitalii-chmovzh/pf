@@ -737,7 +737,7 @@ perspective effects (not including the modals and the overlay).
 
 
 .md-close{
-	display: none!important;
+	cursor: pointer;
 }
 .md-trigger{
 	cursor: pointer;
