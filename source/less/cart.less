@@ -29,6 +29,9 @@
 	@media(min-width: @screen-md) {
 		padding-top: 105px;
 	}
+	@media(min-width: @screen-lg) and (max-width: @screen-xlg) {
+		overflow: hidden;
+	}
 	@media(min-width: @screen-lg) {
 		padding-top: 83px;
 	}
@@ -36,8 +39,9 @@
 		max-width: 390px;
 		margin: 0 auto;
 	}
-	@media (max-width: @screen-xs) {
-		max-width: 320px;
+	
+	@media (min-width: @screen-xs) and (max-width: @screen-sm){
+		max-width: 470px;
 		margin: 0 auto;
 	}
 	&__products-row {
@@ -165,6 +169,10 @@
 		line-height: 1;
 		padding-bottom: 25px;
 		text-transform: uppercase;
+	
+	@media (min-width: @screen-xs) and (max-width: @screen-sm){
+		margin-left: 15px;
+	}
 		@media(min-width: @screen-sm) {
 			padding-bottom: 20px;
 		}
@@ -919,7 +927,6 @@
 	@media (min-width: @screen-xs) {
 		float: none;
 		width: 360px;
-		margin: 0 auto;
 	}
 	@media (min-width: @screen-sm) {
 		float: none;

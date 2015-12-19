@@ -4,18 +4,44 @@ $(document).ready(function () {
 		productsCont = $('.product__wrapper'),
 		productsProp = $('.product-properties'),
 		buttons = $(".product__more-btn");
-
+	var productImage = $(".product__image");
   
   	saleRow.hide();
 
+	productImage.on('click', function(e){
+			
+		var cardId = $(this).attr('data-id'),
+		 contentId = $('.product__properties[data-id=' + cardId + ']'),
+		 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
+		 propId = $('.product-properties[data-id=' + cardId + ']'),
+		 btnId = $('.product__more-btn[data-id=' + cardId + ']'),
+		expandedBtnId=$('.product__more-btn--expanded');      
+		var wrappers = $('.product__wrapper');
+			$(this).find(expandedBtnId).removeClass("hidden");
+		
+		if(!wrapperId.hasClass("product__wrapper--expanded")){
+			e.preventDefault();
+			$(this).find(expandedBtnId).addClass("hidden");
+		}
+		productsCont.not(wrapperId).removeClass("product__wrapper--expanded");
+		productsProp.not(propId).removeClass("visible");
+		buttons.not($(this)).removeClass("button-right");
+		wrapperId.addClass("product__wrapper--expanded");
+		propId.addClass("visible");
+        btnId.addClass("button-right");
+	});
  	buttons.on("click", function(){		
 		var cardId = $(this).attr('data-id'),
 		 contentId = $('.product__properties[data-id=' + cardId + ']'),
 		 wrapperId = $('.product__wrapper[data-id=' + cardId + ']'),
-		 propId = $('.product-properties[data-id=' + cardId + ']');
+		 propId = $('.product-properties[data-id=' + cardId + ']'),
+		 imageId = $('.product__image[data-id=' + cardId + ']'),
+		 expandedBtnId=$('.product__more-btn--expanded');    
+
+			expandedBtnId.removeClass("hidden");
       
 		var wrappers = $('.product__wrapper');
-
+		
 		productsCont.not(wrapperId).removeClass("product__wrapper--expanded");
 		productsProp.not(propId).removeClass("visible");
 		buttons.not($(this)).removeClass("button-right");

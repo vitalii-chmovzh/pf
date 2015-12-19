@@ -229,6 +229,17 @@ $(".filter__icon").on("click", function(){
   $("section.filter").hide('slide', {direction: 'right'}, 500);
 });
 
+// Main slider
+if($('.slider-wrapper').length != 0){
+  $('.slider-wrapper').bxSlider({
+      mode: 'fade',
+      infiniteLoop: false,
+      hideControlOnEnd: true,
+      speed: 700,
+      controls: false,
+      pagerSelector: '.pagination'
+  });
+}
 // Footer slider
 $('.js-list-mobile').bxSlider({
     slideWidth: 77,
@@ -260,5 +271,21 @@ $('body').on('click', function(event) {
       menuBtn.removeClass("display-none");
     }
 });
+
+// Price range
+if($( "#ui-slider" ).length != 0){
+  $( "#ui-slider" ).slider({
+    range: true,
+    min: 0,
+    max: 16990,
+    values: [ 100, 16990 ],
+    slide: function( event, ui ) {
+      $( "#min-price" ).val( ui.values[ 0 ] );
+      $( "#max-price" ).val( ui.values[ 1 ] );
+    }
+  });
+  $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
+  $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
+}    
   
 });

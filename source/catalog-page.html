@@ -1,1567 +1,2640 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-    <title>Template</title>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/hover.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <!-- Adding Roboto in indian style-->
-    
-   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
-    
-    <!--[if lt IE 9]>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>Template</title>
+
+
+
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700italic,300,300italic,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic,700italic,400italic,500,500italic,100italic,900,900italic' rel='stylesheet' type='text/css'>
+
+	<!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body>
-  <div class="md-modal md-effect-1" id="modal-1">
-    <div class="md-content">
-        <article class="add-to-cart">
-          <span class="add-to-cart__heading">Товар добавлен в корзину</span>
-          <p class="add-to-cart__descr">Бутсы Mercurial Superfly FG 41 размера добавлены в корзину</p>
-          
-                  <a href="#" class="add-to-cart__btn item-page__wish-btn item-page__wish-btn-add"><i class="item-page__star-icon"></i><span>В корзину</span></a>
-                  
-                  <a href="#" class="add-to-cart__additional">Продолжить покупки</a>
-        </article>
-        <button class="md-close"></button>
-    </div>
-  </div>
-  <div class="md-modal md-effect-1" id="modal-2">
-    <div class="md-content">
-        <article class="add-to-wishlist">
-          <span class="add-to-wishlist__heading">Товар добавлен в список желаний</span>
-          <p class="add-to-wishlist__descr">Бутсы Mercurial Superfly FG  добавлены в твой список желаний</p>
-          
-                  <a href="" class="add-to-wishlist__btn add-to-wishlist__btn--no-bg item-page__wish-btn item-page__wish-btn-later"><i class="item-page__star-icon"></i><span>Мой список желаний</span></a>
-        </article>
-        <button class="md-close"></button>
-    </div>
-  </div>
- <div class="wrapper">
-  <header class="page-header">
-   
-    <section class="tool-bar">
-      <div class="tool-bar__container">
-        <div class="tool-bar__actions tool-bar__actions--left">
-          
-          <a href="#" class="tool-bar__config-btn"><i></i></a> 
-          <a href="#" class="tool-bar__signout-btn"><i></i></a>
-          
-        </div>
-        
-        <div class="tool-bar__logo">
-          <span>Премьер</span><a href="#"></a><span>Футбол</span>      
-        </div>
-        
-        <div class="tool-bar__actions">
-         
-          <a href="#" class="tool-bar__wishlist-btn"><i></i></a>
-          
-          <a href="#" class="tool-bar__cart-btn">
-            <i></i>
-            <i class="tool-bar__counter">1</i>
-          </a>
-        </div>
-      </div>
-    </section>
-    
-    <section class="main-menu">
-      <div class="main-menu__container">
-        <div class="search-wrapper">   
-          <i class="main-menu__open-btn"></i>
-          <i class="main-menu__close-btn"></i>
-          <span class="main-menu__heading">Каталог</span>
-          <nav class="main-menu__nav">
-            <ul>
-              <li><a href="">Услуги</a></li>
-              <li><a href="">Размеры</a></li>
-              <li><a href="">Рекомендации</a></li>
-              <li><a href="">Оплата</a></li>
-              <li><a href="">Доставка</a></li>
-              <li><a href="">Контакты</a></li>
-            </ul>
-          </nav>
-          <form action="">
-            <input class="search-field" type="search" placeholder="Что ищешь?">
-            <button class="main-menu__search-btn"></button>
-          </form>
-        </div>
-         <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
-         <span class="main-menu__contacts">
+	<div class="md-modal md-effect-1" id="modal-1">
+		<div class="md-content">
+			<article class="add-to-cart">
+				<span class="add-to-cart__heading">Товар добавлен в корзину</span>
+				<p class="add-to-cart__descr">Бутсы Mercurial Superfly FG 41 размера добавлены в корзину</p>
+
+				<a href="#" class="add-to-cart__btn item-page__wish-btn item-page__wish-btn-add"><i class="item-page__star-icon"></i><span>В корзину</span></a>
+
+				<a href="#" class="add-to-cart__additional">Продолжить покупки</a>
+			</article>
+			<button class="md-close"></button>
+		</div>
+	</div>
+	<div class="md-modal md-effect-1" id="modal-2">
+		<div class="md-content">
+			<article class="add-to-wishlist">
+				<span class="add-to-wishlist__heading">Товар добавлен в список желаний</span>
+				<p class="add-to-wishlist__descr">Бутсы Mercurial Superfly FG добавлены в твой список желаний</p>
+
+				<a href="" class="add-to-wishlist__btn add-to-wishlist__btn--no-bg item-page__wish-btn item-page__wish-btn-later"><i class="item-page__star-icon"></i><span>Мой список желаний</span></a>
+			</article>
+			<button class="md-close"></button>
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="page-header">
+
+			<section class="tool-bar">
+				<div class="tool-bar__container">
+					<div class="tool-bar__actions tool-bar__actions--left">
+
+						<a href="#" class="tool-bar__config-btn"><i></i></a>
+						<a href="#" class="tool-bar__signout-btn"><i></i></a>
+
+					</div>
+
+					<div class="tool-bar__logo">
+						<span>Премьер</span>
+						<a href="#"></a><span>Футбол</span>
+					</div>
+
+					<div class="tool-bar__actions">
+
+						<a href="#" class="tool-bar__wishlist-btn"><i></i></a>
+
+						<a href="#" class="tool-bar__cart-btn">
+							<i></i>
+							<i class="tool-bar__counter">1</i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="main-menu">
+				<div class="main-menu__container">
+					<div class="search-wrapper">
+						<i class="main-menu__open-btn"></i>
+						<i class="main-menu__close-btn"></i>
+						<span class="main-menu__heading">Каталог</span>
+						<nav class="main-menu__nav">
+							<ul>
+								<li><a href="">Услуги</a></li>
+								<li><a href="">Размеры</a></li>
+								<li><a href="">Рекомендации</a></li>
+								<li><a href="">Оплата</a></li>
+								<li><a href="">Доставка</a></li>
+								<li><a href="">Контакты</a></li>
+							</ul>
+						</nav>
+						<form action="">
+							<input class="search-field" type="search" placeholder="Что ищешь?">
+							<button class="main-menu__search-btn"></button>
+						</form>
+					</div>
+					<a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-mobile">Основной сайт компании</a>
+					<span class="main-menu__contacts">
        Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
         <a href="" class="main-menu__tel">+7 (499) 922-44-22</a>
         <a href="#" class="main-menu__main-site-link main-menu__main-site-link--hidden-desktop">Основной сайт компании</a>
       </span>
-      </div>
-      
-      <nav class="mobile-menu">
-       <div class="mobile-menu__wrapper">
-        <ul>
-          <li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
-          <li><a href="">Услуги</a></li>
-          <li><a href="">Размеры</a></li>
-          <li><a href="">Рекомендации</a></li>
-        </ul>
-        <ul>
-          <li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
-          <li><a href="">Оплата</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-        
-        <span class="mobile-menu__contacts">
+				</div>
+
+				<nav class="mobile-menu">
+					<div class="mobile-menu__wrapper">
+						<ul>
+							<li><a class="mobile-menu__btn--config" href=""><i class="mobile-menu__config-btn"></i> Настройки</a></li>
+							<li><a href="">Услуги</a></li>
+							<li><a href="">Размеры</a></li>
+							<li><a href="">Рекомендации</a></li>
+						</ul>
+						<ul>
+							<li><a class="mobile-menu__btn--signout" href=""><i class="mobile-menu__signout-btn"></i> Выход</a></li>
+							<li><a href="">Оплата</a></li>
+							<li><a href="">Доставка</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
+
+						<span class="mobile-menu__contacts">
          Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
         <a href="" class="mobile-menu__tel">+7 (499) 922-44-22</a>
         
         <span class="mobile-menu__add-link">  
           <a class="mobile-menu__main-site-link" href="#">
-          <span class="mobile-menu__logo"></span>Основной сайт компании</a>  
-        </span>
-      </span>
-        </div>
-      </nav>
-      
-    </section>
-  </header>
-       
-  
-   
-  <section class="catalog-page">
-   
-    <div class="catalog-page__container">
-      <aside class="catalog-filter">
-       <div class="catalog-filter-wrapper">
-          <ul class="catalog-filter__list">
-            <li><a href="">Подарочные сертификаты</a></li>
-            <li><a href="">Бутсы</a></li>
-            <li><a href="">Обувь для зала</a></li>
-            <li><a href="">Шиповки</a></li>
-            <li><a href="">Клубная продукция</a></li>
-            <li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
-            <ul class="dropdown-category" dropdown-id="1">
-              <li class="dropdown-category__item"><a href="">lorem</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-            </ul>
-            </li>
-            <li><a href="">Сланцы</a></li>
-            <li><a href="">Одежда</a></li>
-            <li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
-            <ul class="dropdown-category" dropdown-id="2">
-              <li class="dropdown-category__item"><a href="">lorem</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-            </ul>
-            </li>
-            <li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
-            <ul class="dropdown-category" dropdown-id="3">
-              <li class="dropdown-category__item"><a href="">lorem</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-            </ul></li>
-            <li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
-            <ul class="dropdown-category" dropdown-id="4">
-              <li class="dropdown-category__item"><a href="">lorem</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-              <li class="dropdown-category__item" ><a href="">Lorem ipsum.</a></li>
-            </ul></li>
-            <li><a href="">Медицина</a></li>
-            <li><a href="">Мячи</a></li>
-            <li><a href="">Сумки и рюкзаки</a></li>
-            <li><a href="">Аксессуары</a></li>
-           <li><a class="last" href="">Щитки</a></li>
-          </ul>
-          <i class="catalog-filter__open-btn"></i>
-       </div>    
-      </aside>
-   
-      <div class="catalog-page__main-content-wrapper">  
-        <section class="filter">
-          <div class="filter__row">
-            <h2 class="filter__heading">Фильтры</h2>
-            <i class="filter__icon"></i>
-          </div>
-          <form action="" class="filter-form">
-            <section class="filter-form__brands">
-              <span class="filter-form__caption">Бренды и коллекции</span>
-              
-              <div class="brand">
-                <div class="brand__row">
-                  <input id="adidas" type="checkbox">
-                  <label for="adidas">Adidas</label>
-                </div>
+          <span class="mobile-menu__logo"></span>Основной сайт компании</a>
+						</span>
+						</span>
+					</div>
+				</nav>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="11-pro" type="checkbox">
-                    <label for="11-pro">11 Pro</label>
-                  </div>
-                </div>
+			</section>
+		</header>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="ace" type="checkbox">
-                    <label for="ace">Ace</label>
-                  </div>
-                </div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="adizero" type="checkbox">
-                    <label for="adizero">Adizero</label>
-                  </div>
-                </div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="f50" type="checkbox">
-                    <label for="f50">F50</label>
-                  </div>
-                </div>
+		<section class="catalog-page">
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="messi" type="checkbox">
-                    <label for="messi">Messi</label>
-                  </div>
-                </div>
+			<div class="catalog-page__container">
+				<aside class="catalog-filter">
+					<div class="catalog-filter-wrapper">
+						<ul class="catalog-filter__list">
+							<li><a href="">Подарочные сертификаты</a></li>
+							<li><a href="">Бутсы</a></li>
+							<li><a href="">Обувь для зала</a></li>
+							<li><a href="">Шиповки</a></li>
+							<li><a href="">Клубная продукция</a></li>
+							<li dropdown-id="1"><a href="">Кроссовки</a><i class="arrow-right arrow-right--gray" dropdown-id="1"></i>
+								<ul class="dropdown-category" dropdown-id="1">
+									<li class="dropdown-category__item"><a href="">lorem</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+								</ul>
+							</li>
+							<li><a href="">Сланцы</a></li>
+							<li><a href="">Одежда</a></li>
+							<li dropdown-id="2"><a href="">Форма игрока </a><i class="arrow-right arrow-right--gray" dropdown-id="2"></i>
+								<ul class="dropdown-category" dropdown-id="2">
+									<li class="dropdown-category__item"><a href="">lorem</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+								</ul>
+							</li>
+							<li dropdown-id="3"><a href="">Форма вратаря </a><i class="arrow-right arrow-right--gray" dropdown-id="3"></i>
+								<ul class="dropdown-category" dropdown-id="3">
+									<li class="dropdown-category__item"><a href="">lorem</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+								</ul>
+							</li>
+							<li dropdown-id="4"><a href="">Форма судьи </a><i class="arrow-right arrow-right--gray" dropdown-id="4"></i>
+								<ul class="dropdown-category" dropdown-id="4">
+									<li class="dropdown-category__item"><a href="">lorem</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+									<li class="dropdown-category__item"><a href="">Lorem ipsum.</a></li>
+								</ul>
+							</li>
+							<li><a href="">Медицина</a></li>
+							<li><a href="">Мячи</a></li>
+							<li><a href="">Сумки и рюкзаки</a></li>
+							<li><a href="">Аксессуары</a></li>
+							<li><a class="last" href="">Щитки</a></li>
+						</ul>
+						<i class="catalog-filter__open-btn"></i>
+					</div>
+				</aside>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="nitrocharge" type="checkbox">
-                    <label for="nitrocharge">Nitrocharge</label>
-                  </div>
-                </div>
+				<div class="catalog-page__main-content-wrapper">
+					<section class="filter">
+						<div class="filter__row">
+							<h2 class="filter__heading">Фильтры</h2>
+							<i class="filter__icon"></i>
+						</div>
+						<form action="" class="filter-form">
+							<section class="filter-form__brands">
+								<span class="filter-form__caption">Бренды и коллекции</span>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="predator" type="checkbox">
-                    <label for="predator">Predator</label>
-                  </div>
-                </div>
+								<div class="brand">
+									<div class="brand__row">
+										<input id="adidas" type="checkbox">
+										<label for="adidas">Adidas</label>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="x" type="checkbox">
-                    <label for="x">X</label>
-                  </div>
-                </div>
-              </div>  
-              
-              <div class="brand">
-                <div class="brand__row">
-                  <input id="mizuro" type="checkbox">
-                  <label for="mizuro">Mizuro</label>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="11-pro" type="checkbox">
+											<label for="11-pro">11 Pro</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="morelia" type="checkbox">
-                    <label for="morelia">Morelia</label>
-                  </div>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="ace" type="checkbox">
+											<label for="ace">Ace</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="neo" type="checkbox">
-                    <label for="neo">Neo</label>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="brand">
-                <div class="brand__row">
-                  <input id="nike" type="checkbox">
-                  <label for="nike">Nike</label>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="adizero" type="checkbox">
+											<label for="adizero">Adizero</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="magista" type="checkbox">
-                    <label for="magista">Magista</label>
-                  </div>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="f50" type="checkbox">
+											<label for="f50">F50</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="mercurial" type="checkbox">
-                    <label for="mercurial">Mercurial</label>
-                  </div>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="messi" type="checkbox">
+											<label for="messi">Messi</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="tiempo" type="checkbox">
-                    <label for="tiempo">Tiempo</label>
-                  </div>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="nitrocharge" type="checkbox">
+											<label for="nitrocharge">Nitrocharge</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="hypervenom" type="checkbox">
-                    <label for="hypervenom">Hypervenom</label>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="brand">
-                <div class="brand__row">
-                  <input id="puma" type="checkbox">
-                  <label for="puma">Puma</label>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="predator" type="checkbox">
+											<label for="predator">Predator</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="king" type="checkbox">
-                    <label for="king">King</label>
-                  </div>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="x" type="checkbox">
+											<label for="x">X</label>
+										</div>
+									</div>
+								</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="momentta" type="checkbox">
-                    <label for="momentta">Momentta</label>
-                  </div>
-                </div>
+								<div class="brand">
+									<div class="brand__row">
+										<input id="mizuro" type="checkbox">
+										<label for="mizuro">Mizuro</label>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="evopower" type="checkbox">
-                    <label for="evopower">EvoPower</label>
-                  </div>
-                </div>
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="morelia" type="checkbox">
+											<label for="morelia">Morelia</label>
+										</div>
+									</div>
 
-                <div class="brand__subbrand">
-                  <div class="brand__row">
-                    <input id="evospeed" type="checkbox">
-                    <label for="evospeed">EvoSpeed</label>
-                  </div>
-                </div>
-              </div>
-              
-            </section>
-            
-            <section class="filter-form__models">
-              <span class="filter-form__caption">Модель</span>
-              <div class="filter-form__models-row">
-                <input id="man" type="checkbox">
-                <label for="man">Мужская</label>
-              </div>
-              <div class="filter-form__models-row">
-                <input id="woman" type="checkbox">
-                <label for="woman">Женская</label>
-              </div>
-              <div class="filter-form__models-row">
-                <input id="kids" type="checkbox">
-                <label for="kids">Детская</label>
-              </div>
-              <div class="filter-form__models-row">
-                <input id="unisex" type="checkbox">
-                <label for="unisex">Унисекс</label>
-              </div>
-            </section>
-            
-            <section class="filter-form__sizes">
-              <div class="filter-form__row">
-                <label for="filter-form__caption">Система размеров <span>?</span></label>
-                <select name="" id="sizes-type">
-                  <option value="">Российска</option>
-                  <option value="">Французская</option>
-                  <option value="">Американская</option>
-                </select>
-              </div>
-              
-              <div class="filter-form__row">
-                <ul>
-                  <li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-            </section>
-              
-            <section class="filter-form__sizes filter-form__sizes--kids">
-              <div class="filter-form__row">
-                <label class="filter-form__caption">Система размеров одежды <span>?</span></label>
-                <select name="" id="sizes-type-kids">
-                  <option value="">Ростовка</option>
-                  <option value="">Французская</option>
-                  <option value="">Американская</option>
-                </select>
-              </div>
-              
-              <div class="filter-form__row">
-                <ul>
-                  <li class="md-trigger" data-modal="modal-1"><input id="116128" type="checkbox"><label for="116128">116-128</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="128140" type="checkbox"><label for="128140">128-140</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="140152" type="checkbox"><label for="140152">140-152</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="152158" type="checkbox"><label for="152158">152-158</label></li>
-                  <li class="md-trigger" data-modal="modal-1"><input id="158170" type="checkbox"><label for="158170">158-170</label></li>
-                </ul>
-              </div>
-            </section>    
-            <section class="filter-form__features">
-              <span class="filter-form__caption">Возможности нанесения</span>
-              <div class="filter-form__features-row">
-                <input id="tailoring" type="checkbox">
-                <label for="tailoring">Нашивка</label>
-              </div>
-              <div class="filter-form__features-row">
-                <input id="printing" type="checkbox">
-                <label for="printing">Термопечать</label>
-              </div>
-            </section>
-            
-            <section class="filter-form__price">
-              <span class="filter-form__caption">Цена</span>
-              <!-- <div class="range-controls">
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="neo" type="checkbox">
+											<label for="neo">Neo</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="brand">
+									<div class="brand__row">
+										<input id="nike" type="checkbox">
+										<label for="nike">Nike</label>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="magista" type="checkbox">
+											<label for="magista">Magista</label>
+										</div>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="mercurial" type="checkbox">
+											<label for="mercurial">Mercurial</label>
+										</div>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="tiempo" type="checkbox">
+											<label for="tiempo">Tiempo</label>
+										</div>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="hypervenom" type="checkbox">
+											<label for="hypervenom">Hypervenom</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="brand">
+									<div class="brand__row">
+										<input id="puma" type="checkbox">
+										<label for="puma">Puma</label>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="king" type="checkbox">
+											<label for="king">King</label>
+										</div>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="momentta" type="checkbox">
+											<label for="momentta">Momentta</label>
+										</div>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="evopower" type="checkbox">
+											<label for="evopower">EvoPower</label>
+										</div>
+									</div>
+
+									<div class="brand__subbrand">
+										<div class="brand__row">
+											<input id="evospeed" type="checkbox">
+											<label for="evospeed">EvoSpeed</label>
+										</div>
+									</div>
+								</div>
+
+							</section>
+
+							<section class="filter-form__models">
+								<span class="filter-form__caption">Модель</span>
+								<div class="filter-form__models-row">
+									<input id="man" type="checkbox">
+									<label for="man">Мужская</label>
+								</div>
+								<div class="filter-form__models-row">
+									<input id="woman" type="checkbox">
+									<label for="woman">Женская</label>
+								</div>
+								<div class="filter-form__models-row">
+									<input id="kids" type="checkbox">
+									<label for="kids">Детская</label>
+								</div>
+								<div class="filter-form__models-row">
+									<input id="unisex" type="checkbox">
+									<label for="unisex">Унисекс</label>
+								</div>
+							</section>
+
+							<section class="filter-form__sizes">
+								<div class="filter-form__row">
+									<label for="filter-form__caption">Система размеров <span>?</span></label>
+									<select name="" id="sizes-type">
+										<option value="">Российска</option>
+										<option value="">Французская</option>
+										<option value="">Американская</option>
+									</select>
+								</div>
+
+								<div class="filter-form__row">
+									<ul>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="32" type="checkbox">
+											<label for="32">32</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="33" type="checkbox">
+											<label for="33">33</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="335" type="checkbox">
+											<label for="335">33.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="34" type="checkbox">
+											<label for="34">34</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="345" type="checkbox">
+											<label for="345">34.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="35" type="checkbox">
+											<label for="35">35</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="355" type="checkbox">
+											<label for="355">35.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="36" type="checkbox">
+											<label for="36">36</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="365" type="checkbox">
+											<label for="365">36.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="375" type="checkbox">
+											<label for="375">37.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="38" type="checkbox">
+											<label for="38">38</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="385" type="checkbox">
+											<label for="385">38.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="39" type="checkbox">
+											<label for="39">39</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="395" type="checkbox">
+											<label for="395">39.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="40" type="checkbox">
+											<label for="40">40</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="41" type="checkbox">
+											<label for="41">41</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="415" type="checkbox">
+											<label for="415">41.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="42" type="checkbox">
+											<label for="42">42</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="43" type="checkbox">
+											<label for="43">43</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="44" type="checkbox">
+											<label for="44">44</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="445" type="checkbox">
+											<label for="445">44.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="45" type="checkbox">
+											<label for="45">45</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="455" type="checkbox">
+											<label for="455">45.5</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="46" type="checkbox">
+											<label for="46">46</label>
+										</li>
+									</ul>
+								</div>
+							</section>
+
+							<section class="filter-form__sizes filter-form__sizes--kids">
+								<div class="filter-form__row">
+									<label class="filter-form__caption">Система размеров одежды <span>?</span></label>
+									<select name="" id="sizes-type-kids">
+										<option value="">Ростовка</option>
+										<option value="">Французская</option>
+										<option value="">Американская</option>
+									</select>
+								</div>
+
+								<div class="filter-form__row">
+									<ul>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="116128" type="checkbox">
+											<label for="116128">116-128</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="128140" type="checkbox">
+											<label for="128140">128-140</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="140152" type="checkbox">
+											<label for="140152">140-152</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="152158" type="checkbox">
+											<label for="152158">152-158</label>
+										</li>
+										<li class="md-trigger" data-modal="modal-1">
+											<input id="158170" type="checkbox">
+											<label for="158170">158-170</label>
+										</li>
+									</ul>
+								</div>
+							</section>
+							<section class="filter-form__features">
+								<span class="filter-form__caption">Возможности нанесения</span>
+								<div class="filter-form__features-row">
+									<input id="tailoring" type="checkbox">
+									<label for="tailoring">Нашивка</label>
+								</div>
+								<div class="filter-form__features-row">
+									<input id="printing" type="checkbox">
+									<label for="printing">Термопечать</label>
+								</div>
+							</section>
+
+							<section class="filter-form__price">
+								<span class="filter-form__caption">Цена</span>
+								<!-- <div class="range-controls">
                 <div class="range-controls__min-toggle"></div>
                 <div class="range-controls__scale"></div>
                 <div class="range-controls__max-toggle"></div>
               </div> -->
-              <div id="ui-slider"></div>
-              
-              <div class="price-output">
-                <div class="price-output__row">
-                  <label class="filter-form__caption" for="min-price">От</label>
-                  <input id="min-price" type="text" value="">
-                  <i class="ruble-icon">&#8381;</i>
-                </div>
-                <div class="price-output__row">
-                  <label class="filter-form__caption" for="max-price">До</label>
-                  <input id="max-price" type="text" value="">
-                  <i class="ruble-icon">&#8381;</i>
-                </div>
-              </div>
+								<div id="ui-slider"></div>
 
-            </section>
-              
-            <div class="filter-form__actions">
-              <button class="filter-form__submit">Применить</button>
-              <button type="reset" class="filter-form__reset">Сбросить</button>
-            </div>
-            
-          </form>
-          
-        </section>
-        
-      <div class="product__section-container">
-           
-        <a href="#" class="catalog-page__return-link">Главная</a>
-        <h1 class="catalog-page__heading">Бутсы</h1>
-        
-        <div class="sort-actions">
-         <div class="sort-actions__row">
-            <span class="sort-actions__name">Сортировать:</span>
-            <span class="sort-actions__price">По цене <i class="arrow-up"></i></span>
-            <span class="sort-actions__novelty">По новизне</span>
-          </div>
-    <div class="open-filter__btn"><span class="open-filter__icon"></span><span class="open-filter__name">Фильтр</span></div>
-        </div>
-        
-      
-       <div class="product__wrapper" data-id="1">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--1"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">MERCURIAL SUPERFLY FG</a>
-                <span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="1">
+								<div class="price-output">
+									<div class="price-output__row">
+										<label class="filter-form__caption" for="min-price">От</label>
+										<input id="min-price" type="text" value="">
+										<i class="ruble-icon">&#8381;</i>
+									</div>
+									<div class="price-output__row">
+										<label class="filter-form__caption" for="max-price">До</label>
+										<input id="max-price" type="text" value="">
+										<i class="ruble-icon">&#8381;</i>
+									</div>
+								</div>
+
+							</section>
+
+							<div class="filter-form__actions">
+								<button class="filter-form__submit">Применить</button>
+								<button type="reset" class="filter-form__reset">Сбросить</button>
+							</div>
+
+						</form>
+
+					</section>
+
+					<div class="product__section-container">
+
+						<a href="#" class="catalog-page__return-link">Главная</a>
+						<h1 class="catalog-page__heading">Бутсы</h1>
+
+						<div class="sort-actions">
+							<div class="sort-actions__row">
+								<span class="sort-actions__name">Сортировать:</span>
+								<span class="sort-actions__price">По цене <i class="arrow-up"></i></span>
+								<span class="sort-actions__novelty">По новизне</span>
+							</div>
+							<div class="open-filter__btn"><span class="open-filter__icon"></span><span class="open-filter__name">Фильтр</span></div>
+						</div>
+
+
+
+						<div class="product__wrapper" data-id="1">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--1" data-id="1">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="1">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										</div>
+										<a href="" class="product__name">MERCURIAL SUPERFLY FG</a>
+										<span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
 
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="2">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--2"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">MERCURIAL Vapor X CR FG</a>
-                <span class="product__price">10 990 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="2">
+										<div class="product__more-btn" data-id="1">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="1">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="2">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--2" data-id="2">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="2">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="3">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--3"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">Magista Obra SG-Pro</a>
-                <span class="product__price">14 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="3">
+										</div>
+										<a href="" class="product__name">MERCURIAL Vapor X CR FG</a>
+										<span class="product__price"> <span class="product__price--old">12 990 <i class="ruble-icon">&#8381;</i></span>10 990 <i class="ruble-icon">&#8381;</i></span>
+
+										<div class="product__more-btn" data-id="2">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="2">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="3">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--3" data-id="3">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="3">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										</div>
+										<a href="" class="product__name">Magista Obra SG-Pro</a>
+										<span class="product__price">14 490 <i class="ruble-icon">&#8381;</i></span>
 
-        </div>
-        </div>
-      
-       <div class="product__wrapper" data-id="4">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--4"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">MERCURIAL SUPERFLY CR FG</a>
-                <span class="product__price">14 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="4">
+										<div class="product__more-btn" data-id="3">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="3">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="product__wrapper" data-id="4">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--4" data-id="4">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="4">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										</div>
+										<a href="" class="product__name">MERCURIAL SUPERFLY CR FG</a>
+										<span class="product__price">14 490 <i class="ruble-icon">&#8381;</i></span>
 
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="5">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--5"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">Tiempo Legend V FG</a>
-                <span class="product__price">9 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="5">
+										<div class="product__more-btn" data-id="4">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="4">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="5">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--5" data-id="5">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="5">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="6">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--6"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">Hypervenom Phantom FG</a>
-                <span class="product__price">10 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="6">
+										</div>
+										<a href="" class="product__name">Tiempo Legend V FG</a>
+										<span class="product__price">9 490 <i class="ruble-icon">&#8381;</i></span>
+
+										<div class="product__more-btn" data-id="5">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="5">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="6">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--6" data-id="6">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="6">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										</div>
+										<a href="" class="product__name">Hypervenom Phantom FG</a>
+										<span class="product__price">10 490 <i class="ruble-icon">&#8381;</i></span>
 
-        </div>
-        </div>
-      
-       <div class="product__wrapper" data-id="7">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--7"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Adidas</span>
-    
-                </div>
-                <a href="" class="product__name">F50 Adizero FG</a>
-                <span class="product__price">4 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="7">
+										<div class="product__more-btn" data-id="6">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="6">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="product__wrapper" data-id="7">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--7" data-id="7">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Adidas</span>
 
-             <div class="product-properties" data-id="7">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										</div>
+										<a href="" class="product__name">F50 Adizero FG</a>
+										<span class="product__price">4 490 <i class="ruble-icon">&#8381;</i></span>
 
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="8">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--8"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Adidas</span>
-    
-                </div>
-                <a href="" class="product__name">F50 Adizero Messi</a>
-                <span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="8">
+										<div class="product__more-btn" data-id="7">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="7">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="8">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--8" data-id="8">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
-             <div class="product-properties" data-id="8">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="9">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--9"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">MERCURIAL SUPERFLY SG-PRO</a>
-                <span class="product__price">5 390 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="9">
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Adidas</span>
+
+										</div>
+										<a href="" class="product__name">F50 Adizero Messi</a>
+										<span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
+
+										<div class="product__more-btn" data-id="8">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+								<div class="product-properties" data-id="8">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="9">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--9" data-id="9">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
-             <div class="product-properties" data-id="9">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-        </div>
-        </div>
-      
-       <div class="product__wrapper" data-id="10">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--10"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">HYPERVENOM PHANTOM II SG-PRO</a>
-                <span class="product__price">8 990 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="10">
+										</div>
+										<a href="" class="product__name">MERCURIAL SUPERFLY SG-PRO</a>
+										<span class="product__price">5 390 <i class="ruble-icon">&#8381;</i></span>
+
+										<div class="product__more-btn" data-id="9">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+								<div class="product-properties" data-id="9">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="product__wrapper" data-id="10">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--10" data-id="10">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-             <div class="product-properties" data-id="10">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										</div>
+										<a href="" class="product__name">HYPERVENOM PHANTOM II SG-PRO</a>
+										<span class="product__price">8 990 <i class="ruble-icon">&#8381;</i></span>
 
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="11">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--11"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">MERCURIAL SUPERFLY FG</a>
-                <span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="11">
+										<div class="product__more-btn" data-id="10">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+
+								<div class="product-properties" data-id="10">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="11">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--11" data-id="11">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
-             <div class="product-properties" data-id="11">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
-        </div>
-        </div>
-       <div class="product__wrapper" data-id="12">
-          <div class="product__container">
-             <article class="product">
-              <a href="#" class="product__image product__image--12"></a>
-              <div class="product__description">
-                <div class="product__row">
-                  <span class="product__manufacturer">Nike</span>
-    
-                </div>
-                <a href="" class="product__name">MAGISTA OBRA FG</a>
-                <span class="product__price">14 990 <i class="ruble-icon">&#8381;</i></span>
-                
-                <div class="product__more-btn" data-id="12">
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
+
+										</div>
+										<a href="" class="product__name">MERCURIAL SUPERFLY FG</a>
+										<span class="product__price">15 490 <i class="ruble-icon">&#8381;</i></span>
+
+										<div class="product__more-btn" data-id="11">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+								<div class="product-properties" data-id="11">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrapper" data-id="12">
+							<div class="product__container">
+								<article class="product">
+									<a href="#" class="product__image product__image--12" data-id="12">
+										<span class="product__label product__label--new"><span>NEW</span></span>
+										<span class="product__more-btn product__more-btn--expanded">      	
                   <span class="product__more-icon">
                   </span>
-                </div>
-                
-              </div>
-            </article>
-             <div class="product-properties" data-id="12">
-               <span class="product-number">67927-003</span>
-              <div class="product-properties__sizes">
-                <select name="types" class="product-properties__select-size turnintodropdown">
-                  <option value="Российские">Российские</option>
-                  <option value="Американские">Американские</option>
-                  <option value="Американские">Английские</option>
-                  <option value="Французские">Французские</option>
-                </select>размеры в наличии:
-              </div>
-              <span class="arrow-left arrow-left--gray disabled"></span>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-              <div class="product-properties__sizes-wrapper">
-                <ul class="product-properties__sizes-list">
-						<li class="md-trigger" data-modal="modal-1"><input id="32" type="checkbox"><label for="32">32</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="33" type="checkbox"><label for="33">33</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="335" type="checkbox"><label for="335">33.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="34" type="checkbox"><label for="34">34</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="345" type="checkbox"><label for="345">34.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="35" type="checkbox"><label for="35">35</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="355" type="checkbox"><label for="355">35.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="36" type="checkbox"><label for="36">36</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="365" type="checkbox"><label for="365">36.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="375" type="checkbox"><label for="375">37.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="38" type="checkbox"><label for="38">38</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="385" type="checkbox"><label for="385">38.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="39" type="checkbox"><label for="39">39</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="395" type="checkbox"><label for="395">39.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="40" type="checkbox"><label for="40">40</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="41" type="checkbox"><label for="41">41</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="415" type="checkbox"><label for="415">41.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="42" type="checkbox"><label for="42">42</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="43" type="checkbox"><label for="43">43</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="44" type="checkbox"><label for="44">44</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="445" type="checkbox"><label for="445">44.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="45" type="checkbox"><label for="45">45</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="455" type="checkbox"><label for="455">45.5</label></li>
-						<li class="md-trigger" data-modal="modal-1"><input id="46" type="checkbox"><label for="46">46</label></li>
-                </ul>
-              </div>
-              <span class="arrow-right arrow-right--gray"></span>
-              <span class="arrow-bottom arrow-bottom--gray"></span>
-              <ul class="product-properties__info">
-                <li>Коллекция: <span>Nike Tiempo</span></li>
-                <li>Материал: <span>Натуральная кожа</span></li>
-                <li class="model-type">Модель: <span>Взрослая</span></li>
-                <li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
-              </ul>
-              <ul class="product-properties__buttons">
-                <li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
-                <li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
-              </ul>
-            </div>
+										<span class="product__more-text">Предпросмотр</span>
+										</span>
+									</a>
+									<div class="product__description">
+										<div class="product__row">
+											<span class="product__manufacturer">Nike</span>
 
-        </div>
-        </div>
-      
-       <div class="catalog-page__button-wrapper">
-      <ul class="catalog__pagination">
-        <li><a class="arrow-left arrow-left--light-gray" href=""></a></li>
-        <li><a class="active" href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">...</a></li>
-        <li><a href="">5</a></li>
-        <li><a class="arrow-right arrow-right--gray" href=""></a></li>
-      </ul>
+										</div>
+										<a href="" class="product__name">MAGISTA OBRA FG</a>
+										<span class="product__price">14 990 <i class="ruble-icon">&#8381;</i></span>
+
+										<div class="product__more-btn" data-id="12">
+											<span class="product__more-icon">
+                  </span>
+										</div>
+
+									</div>
+								</article>
+								<div class="product-properties" data-id="12">
+									<span class="product-number">67927-003</span>
+									<div class="product-properties__sizes">
+										<select name="types" class="product-properties__select-size turnintodropdown">
+											<option value="Российские">Российские</option>
+											<option value="Американские">Американские</option>
+											<option value="Американские">Английские</option>
+											<option value="Французские">Французские</option>
+										</select>размеры в наличии:
+									</div>
+									<span class="arrow-left arrow-left--gray disabled"></span>
+									<span class="arrow-top arrow-top--gray disabled"></span>
+									<div class="product-properties__sizes-wrapper">
+										<ul class="product-properties__sizes-list">
+											<li>
+												<input id="32" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="32">32</label>
+											</li>
+											<li>
+												<input id="33" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="33">33</label>
+											</li>
+											<li>
+												<input id="335" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="335">33.5</label>
+											</li>
+											<li>
+												<input id="34" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="34">34</label>
+											</li>
+											<li>
+												<input id="345" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="345">34.5</label>
+											</li>
+											<li>
+												<input id="35" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="35">35</label>
+											</li>
+											<li>
+												<input id="355" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="355">35.5</label>
+											</li>
+											<li>
+												<input id="36" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="36">36</label>
+											</li>
+											<li>
+												<input id="365" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="365">36.5</label>
+											</li>
+											<li>
+												<input id="375" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="375">37.5</label>
+											</li>
+											<li>
+												<input id="38" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="38">38</label>
+											</li>
+											<li>
+												<input id="385" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="385">38.5</label>
+											</li>
+											<li>
+												<input id="39" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="39">39</label>
+											</li>
+											<li>
+												<input id="395" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="395">39.5</label>
+											</li>
+											<li>
+												<input id="40" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="40">40</label>
+											</li>
+											<li>
+												<input id="41" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="41">41</label>
+											</li>
+											<li>
+												<input id="415" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="415">41.5</label>
+											</li>
+											<li>
+												<input id="42" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="42">42</label>
+											</li>
+											<li>
+												<input id="43" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="43">43</label>
+											</li>
+											<li>
+												<input id="44" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="44">44</label>
+											</li>
+											<li>
+												<input id="445" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="445">44.5</label>
+											</li>
+											<li>
+												<input id="45" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="45">45</label>
+											</li>
+											<li>
+												<input id="455" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="455">45.5</label>
+											</li>
+											<li>
+												<input id="46" type="checkbox">
+												<label data-modal="modal-1" class="md-trigger" for="46">46</label>
+											</li>
+										</ul>
+									</div>
+									<span class="arrow-right arrow-right--gray"></span>
+									<span class="arrow-bottom arrow-bottom--gray"></span>
+									<ul class="product-properties__info">
+										<li>Коллекция: <span>Nike Tiempo</span></li>
+										<li>Материал: <span>Натуральная кожа</span></li>
+										<li class="model-type">Модель: <span>Взрослая</span></li>
+										<li>Возможно <span>нанесение</span> и <span>нашивка</span></li>
+									</ul>
+									<ul class="product-properties__buttons">
+										<li><a class="product-properties__wish-btn md-trigger" data-modal="modal-2"><i></i> Хочу!</a></li>
+										<li><a href="" class="product-properties__open-btn"> Подробнее</a></li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="catalog-page__button-wrapper">
+							<ul class="catalog__pagination">
+								<li>
+									<a class="arrow-left arrow-left--light-gray" href=""></a>
+								</li>
+								<li><a class="active" href="">1</a></li>
+								<li><a href="">2</a></li>
+								<li><a href="">...</a></li>
+								<li><a href="">5</a></li>
+								<li>
+									<a class="arrow-right arrow-right--gray" href=""></a>
+								</li>
+							</ul>
+						</div>
+						<div class="catalog-page__button-wrapper">
+							<a href="#" class="catalog__more-btn">Больше товаров</a>
+						</div>
+					</div>
 				</div>
-       <div class="catalog-page__button-wrapper">
-        <a href="#" class="catalog__more-btn">Больше товаров</a>
-      </div>
-      </div>
-      </div>
-    </div>
-  </section>     
- </div>      
-   
-<footer class="page-footer">
-   
-  <div class="page-footer__container">
-     
-     
-    <div class="page-footer__contacts">	
-			<ul>
-				<li><a href="" class="page-footer__vk-link"></a></li>
-				<li class="page-footer__adres">Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно: 
-					<a href="" class="page-footer__tel">+7 (499) 922-44-22</a>
-				</li>
-			</ul>
-    </div> 
-    
-    <div class="page-footer__links page-footer__links--mobile">
-			<ul>
-				<li><a href="">Оплата</a></li>
-				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li>
-			</ul>
-    </div>
-    
-    <div class="page-footer__payment-methods">
-      <span>Мы принимаем к оплате:</span>
-      <ul>
-        <li><a class="method method--visa" href="#"></a></li>
-        <li><a class="method method--mastercard" href="#"></a></li>
-        <li><a class="method method--maestro" href="#"></a></li>
-        <li><a class="method method--qiwi" href="#"></a></li>
-      </ul>
-    </div>
-    
-    <div class="page-footer__links">
-			<ul>
-				<li><a href="">Оплата</a></li>
-				<li><a href="">Доставка</a></li>
-				<li><a href="">Контакты</a></li>
-			</ul>
-    </div>
-        
-    <div class="page-footer__partners">      
-      <i class="arrow-left footer-arrow-left"></i><span>Наши партнёры</span><i class="arrow-right footer-arrow-right"></i>
-      <ul class="js-list">
-        <li><a class="partner partner--rpfl" href="#"></a></li>
-        <li><a class="partner partner--puma" href="#"></a></li>
-        <li><a class="partner partner--nike" href="#"></a></li>
-        <li><a class="partner partner--reusch" href="#"></a></li>
-        <li><a class="partner partner--onedivision" href="#"></a></li>
-        <li><a class="partner partner--diadora" href="#"></a></li>
-        <li><a class="partner partner--mueler" href="#"></a></li>
-        <li><a class="partner partner--rfl" href="#"></a></li>
-      </ul>
-      <ul class="js-list-mobile">
-        <li><a class="partner partner--rpfl" href="#"></a></li>
-        <li><a class="partner partner--puma" href="#"></a></li>
-        <li><a class="partner partner--nike" href="#"></a></li>
-        <li><a class="partner partner--reusch" href="#"></a></li>
-        <li><a class="partner partner--onedivision" href="#"></a></li>
-        <li><a class="partner partner--diadora" href="#"></a></li>
-        <li><a class="partner partner--mueler" href="#"></a></li>
-        <li><a class="partner partner--rfl" href="#"></a></li>
-      </ul>
-    </div>    
-    
-    <div class="page-footer__info">
-      <a class="page-footer__main-site-link" href="#">
-        <div class="page-footer__logo"></div>Основной сайт компании</a>
-      <p>
-        <span class="page-footer__copyright">© ООО "Премьер Футбол Групп" 2010 - 2015</span>
-        Использование материалов сайта допускается только с обязательной ссылкой на 
-        <a href="">premier-football.ru</a>
-        <a href="">Договор оферты</a>
-      </p>
-    </div>
-    
-    <a href="#" class="page-footer__stamp"></a>     
-      
-  </div>
-</footer>
-<div class="md-overlay"></div><!-- the overlay element -->  
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-</script>  
-<script src="js/script.js"></script> 
-<script src="js/arrow-toggling.js"></script> 
-<script src="js/jquery.bxslider.js"></script> 
-<script src="js/select.js"></script> 
-<script src="js/product-properties.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src="js/jquery.ui.touch-punch.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/modalEffects.js"></script>
-<script>
-  $(document).ready(function () {
-    // Price range
-    $( "#ui-slider" ).slider({
-      range: true,
-      min: 0,
-      max: 16990,
-      values: [ 100, 16990 ],
-      slide: function( event, ui ) {
-        $( "#min-price" ).val( ui.values[ 0 ] );
-        $( "#max-price" ).val( ui.values[ 1 ] );
-      }
-    });
-    $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
-    $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
-    
-    // Sticky catalog filter
+			</div>
+		</section>
+	</div>
 
-    var  sidebar = $(".catalog-filter-wrapper"),
-         sidebarOffset = sidebar.offset().top;  
+	<footer class="page-footer">
 
-    $(window).scroll(function(){
-      var scrollTop = $(this).scrollTop(),
-          headerHeight = $('.page-header').height(),
-          footerOffset = $('.page-footer').offset().top,
-          sidebarHeight = sidebar.height();
-          
-          if(scrollTop > (sidebarOffset - 125)){
+		<div class="page-footer__container">
 
-            sidebar.addClass('catalog-filter-fixed');
 
-            if(footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)){
-              sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
-              $('.catalog-filter').addClass('position-static');
-            } 
-            else {
-              sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
-              $('.catalog-filter').removeClass('position-static');
-            }
+			<div class="page-footer__contacts">
+				<ul>
+					<li>
+						<a href="" class="page-footer__vk-link"></a>
+					</li>
+					<li class="page-footer__adres">Москва, с 10<sup>00</sup> до 20<sup>00</sup> ежедневно:
+						<a href="" class="page-footer__tel">+7 (499) 922-44-22</a>
+					</li>
+				</ul>
+			</div>
 
-          } 
-          else {
-            sidebar.removeClass('catalog-filter-fixed');
-          }
-          
-    })
+			<div class="page-footer__links page-footer__links--mobile">
+				<ul>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
 
-  });
-</script>
+			<div class="page-footer__payment-methods">
+				<span>Мы принимаем к оплате:</span>
+				<ul>
+					<li>
+						<a class="method method--visa" href="#"></a>
+					</li>
+					<li>
+						<a class="method method--mastercard" href="#"></a>
+					</li>
+					<li>
+						<a class="method method--maestro" href="#"></a>
+					</li>
+					<li>
+						<a class="method method--qiwi" href="#"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-footer__links">
+				<ul>
+					<li><a href="">Оплата</a></li>
+					<li><a href="">Доставка</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="page-footer__partners">
+				<i class="arrow-left footer-arrow-left"></i><span>Наши партнёры</span><i class="arrow-right footer-arrow-right"></i>
+				<ul class="js-list">
+					<li>
+						<a class="partner partner--rpfl" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--puma" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--nike" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--reusch" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--onedivision" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--diadora" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--mueler" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--rfl" href="#"></a>
+					</li>
+				</ul>
+				<ul class="js-list-mobile">
+					<li>
+						<a class="partner partner--rpfl" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--puma" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--nike" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--reusch" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--onedivision" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--diadora" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--mueler" href="#"></a>
+					</li>
+					<li>
+						<a class="partner partner--rfl" href="#"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-footer__info">
+				<a class="page-footer__main-site-link" href="#">
+					<div class="page-footer__logo"></div>Основной сайт компании</a>
+				<p>
+					<span class="page-footer__copyright">© ООО "Премьер Футбол Групп" 2010 - 2015</span> Использование материалов сайта допускается только с обязательной ссылкой на
+					<a href="">premier-football.ru</a>
+					<a href="">Договор оферты</a>
+				</p>
+			</div>
+
+			<a href="#" class="page-footer__stamp"></a>
+
+		</div>
+	</footer>
+	<div class="md-overlay"></div>
+	<!-- the overlay element -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+	</script>
+	<script src="js/script.js"></script>
+	<script src="js/arrow-toggling.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/select.js"></script>
+	<script src="js/product-properties.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/modalEffects.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			// Sticky catalog filter
+
+			var sidebar = $(".catalog-filter-wrapper"),
+				catalogFilter = $('.catalog-filter'),
+				sidebarOffset = sidebar.offset().top;
+
+			$(window).scroll(function () {
+				var scrollTop = $(this).scrollTop(),
+					headerHeight = $('.page-header').height(),
+					footerOffset = $('.page-footer').offset().top,
+					sidebarHeight = sidebar.height();
+
+				if (scrollTop > (sidebarOffset - headerHeight)) {
+
+					sidebar.addClass('catalog-filter-fixed');
+					$('.catalog-filter').addClass('position-static');
+
+					if (footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)) {
+						sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+					} else {
+						sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
+					}
+
+				} else {
+					sidebar.removeClass('catalog-filter-fixed');
+					$('.catalog-filter').removeClass('position-static');
+				}
+
+			});
+		});
+	</script>
 </body>
+
 </html>
