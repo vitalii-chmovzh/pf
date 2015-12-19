@@ -49,7 +49,7 @@
 		.clearfix;
 	}
 	&__toggler-group {
-		width: 215px;
+		width: 109%;
 		margin: 0 auto;
 		text-align: center;
 		text-transform: uppercase;
@@ -69,6 +69,20 @@
 		}
 		span {
 			cursor: pointer;
+      
+			&:active{
+				color: @blue;
+			}
+			
+			@media (min-width: @screen-md){
+      &:hover{
+        color: #000; 
+				
+				&:active{
+					color: @blue;
+				}
+      }
+    }
 		}
 	}
 	&__all {
@@ -127,6 +141,9 @@
 		.container-fluid;
 		padding-top: 15px;
 		padding-bottom: 15px;
+		@media(max-width: 767px) {
+			padding-top: 30px;
+		}
 		@media(min-width: @screen-sm) {
 			padding-bottom: 30px;
 		}

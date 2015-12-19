@@ -27,6 +27,7 @@
 		@media(min-width: @screen-xlg){
 			width: 65px;
 			padding-top: 13px;
+			left: -7px;
 			height: 40px;
 		}
 		&--new {
@@ -223,6 +224,10 @@
 		@media (min-width: @screen-lg) and (max-width: @screen-xlg){
 			padding-bottom: 13px;
 		}
+		@media (min-width: @screen-xlg){
+			padding-top: 20px;
+			padding-bottom: 12px;
+		}
 		
 	}
 	&__row {
@@ -286,7 +291,7 @@
 		@media (min-width: @screen-xs) {
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			margin-bottom: 18px;
+			margin-bottom: 12px;
 		}
 		@media (min-width: @screen-md) {
 			&:hover {
@@ -295,7 +300,7 @@
 			}
 		}
 		@media (min-width: @screen-xlg) {
-			margin-bottom: 18px;
+			margin-bottom: 14px;
 			line-height: 1;
 		}
 	}
@@ -340,51 +345,45 @@
 			font-weight: bold;
 			bottom: 17px;
 			@media (min-width: @screen-xs) {
-				bottom: 31px;
+				bottom: 0;
+				position: relative;
+				display: inline-block;
+				margin-right: 5px;
 			}
-			@media (min-width: @screen-sm) {
-				bottom: 28px;
-			}
-			@media (min-width: @screen-md) {
-				bottom: 30px;
-			}
-			@media (min-width: @screen-lg) {
-				bottom: 32px;
-			}
+//			@media (min-width: @screen-sm) {
+//				bottom: 28px;
+//			}
+//			@media (min-width: @screen-md) {
+//				bottom: 30px;
+//			}
+				@media (min-width: @screen-lg) {
+					font-size: 1.2rem;
+				}
 			@media (min-width: @screen-xlg) {
-				bottom: 40px;
+					font-size: 1.4rem;
 			}
 			&:after {
 				content: '';
 				position: absolute;
 				top: 4px;
-				left: -4px;
+				left: 0;
 				z-index: 1;
-				width: 46px;
+				width: 41px;
 				height: 1px;
 				background: @red;
+				@media (min-width: @screen-lg) {
+					top: 6px;
+					width: 47px;
+				}
+				@media (min-width: @screen-xlg) {
+					top: 6px;
+					width: 54px;
+				}
 			}
 			
 			
 			.ruble-icon {
 				font-size: 1rem;
-			}
-			bottom: 20px;
-			@media (min-width: @screen-xs){
-				bottom: 30px;
-			}
-			@media (min-width: @screen-sm){
-				bottom: 30px;
-			}
-			
-			@media (min-width: @screen-md){
-				bottom: 30px;
-			}
-			@media (min-width: @screen-lg){
-				bottom: 32px;
-			}
-			@media (min-width: @screen-xlg){
-				bottom: 37px;
 			}
 			
 		}
@@ -408,6 +407,12 @@
 		
 		@media (min-width: @screen-md) {
 			&:hover{
+				
+				.product__more-text{
+					transition: .1s;
+					color: @red;
+				}
+				
 				.product__more-icon{
 				background: url("../img/more--red.svg") no-repeat;			
 			}
@@ -684,7 +689,7 @@
 	&__info {
 		padding-bottom: 15px;
 		@media (min-width: @screen-xs) {
-			margin-top: 15px;
+			margin-top: 12px;
 			padding-bottom: 23px;
 		}
 		li {
