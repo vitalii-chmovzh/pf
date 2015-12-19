@@ -12,9 +12,10 @@
     font-weight: normal;
     font-style: normal;
 }
+@import "normalize.less";
 
 .ruble-icon{
-	font-family: 'als_rublregular';
+	font-family: 'als_rublregular' !important;
   font-style: normal;
   font-weight: inherit;
   line-height: 1;
@@ -25,7 +26,8 @@ html {
   min-width: 320px !important;
   font-size: 10px;
   height: 100%;
-  
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;  
 }
 
 a,span, button, i{

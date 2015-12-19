@@ -31,6 +31,44 @@
 		}
 	}
 }
+	.product__wrapper{
+		
+		@media(min-width: @screen-sm){
+			margin-bottom: 15px;
+		}
+	}
+	.product-properties__buttons{
+		
+		@media(max-width: @screen-xs){
+			margin-top: 0 !important;
+		}
+		margin-top: 4px !important;
+		@media (min-width: @screen-xlg){
+			margin-top: 1px !important;
+		}
+	}
+	.product__description {
+		padding: 15px;
+		padding-bottom: 14px;
+		padding-right: 10px;
+		
+		@media (min-width: @screen-sm) and (max-width: @screen-md){
+			padding-bottom: 12px;
+		}
+		
+		@media (min-width: @screen-md) and (max-width: @screen-lg){
+			padding-bottom: 12.5px;
+		}
+		
+		@media (min-width: @screen-lg) and (max-width: @screen-xlg){
+			padding-bottom: 15px;
+		}
+		@media (min-width: @screen-xlg){
+			padding-top: 18px !important;
+			padding-bottom: 12px;
+		}
+		
+	}
 
 }
 
@@ -139,13 +177,14 @@
 		line-height: 1;
 		padding-bottom: 25px;
 		text-transform: uppercase;
+		@media(min-width: @screen-xs) {
+			padding-left: 15px;
+		}
+		
 		@media(min-width: @screen-sm) {
 			padding-bottom: 20px;
 			padding-left: 15px;
 		}
-	@media (max-width: 767px) {
-		margin-left: 15px;
-	}
 		@media(min-width: @screen-lg) {
 			padding-bottom: 11px;
 		}
@@ -155,11 +194,9 @@
 	}
 	&__toggler-group {
 		text-align: center;
-		padding: 0 20px;
 		margin-bottom: 30px;
-			width:104%;
 		@media(min-width: @screen-xs) {
-			padding-right: 40px;
+		padding: 0 20px;
 		}
 		@media(min-width: @screen-lg) {
 			margin-bottom: 15px;
@@ -184,20 +221,41 @@
 			}
 		}
 		@media(min-width: @screen-sm) {
-			width:690px;
+			width: auto;
+			margin: 0 auto;
+			margin-bottom: 30px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    left: -4px;
+		}
+		@media(min-width: @screen-md) {
 			padding: 0 38px;
+			width: 104%;
+			position: static;
 			padding-right: 40px;
 			margin: 0 auto;
 			margin-bottom: 30px;
 		}
-		@media(min-width: @screen-md) {
+		@media(min-width: @screen-lg) {
 			padding: 0 38px;
+			width: 109.5%;
+			position: static;
+			padding-right: 40px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		@media(min-width: @screen-xlg) {
+			padding: 0 38px;
+			width: 100%;
+			position: static;
 			padding-right: 40px;
 			margin: 0 auto;
 			margin-bottom: 30px;
 		}
 	}
 	&__all {
-		margin-right: 30px;
+		margin-right: 27px;
+		
 	}
 }
