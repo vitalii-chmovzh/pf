@@ -35,13 +35,39 @@
 			display: inline-block;
 			&:first-child {
 				margin-right: 26px;
-			}
-			span {
-				@media (min-width: @screen-md) {
-					&:hover {
-						color: #000;
+				
+				span{			
+      
+						&:active{
+							color: @blue;
+						}
+
+						@media (min-width: @screen-md){
+						&:hover{
+							color: #000; 
+
+							&:active{
+								color: @blue;
+							}
+						}
 					}
 				}
+			}
+			span {
+      
+			&:active{
+				color: @red;
+			}
+			
+			@media (min-width: @screen-md){
+      &:hover{
+        color: #000; 
+				
+				&:active{
+					color: @red;
+				}
+      }
+    }
 			}
 		}
 		span {

@@ -188,12 +188,23 @@ border-bottom: 2px solid #000;
       .heading(1.4rem;1.4rem;1.6rem;1.6rem;1);  
       text-transform: uppercase;
       
+			&:active{
+				color: @blue;
+			}
+			
+			@media (min-width: @screen-md){
+      &:hover{
+        color: #000; 
+				
+				&:active{
+					color: @blue;
+				}
+      }
+    }
+			
 			@media(min-width: @screen-lg){
 				font-size: 1.4rem;
 			}
-      &:hover{
-        color: #000;  
-      }
     }
     
     @media(min-width: @screen-sm){

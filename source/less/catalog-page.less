@@ -13,9 +13,6 @@
 			margin: 0 auto;
 		}
 	}
-	.button-right{
-		bottom: 0 !important;
-	}
 	&__row {
 		.clearfix;
 	}
@@ -225,6 +222,20 @@
 				border-bottom: 5px solid transparent;
 			}
 		}
+      
+			&:active{
+				color: @blue;
+			}
+			
+			@media (min-width: @screen-md){
+      &:hover{
+        color: #000; 
+				
+				&:active{
+					color: @blue;
+				}
+      }
+    }
 	}
 	&__novelty {
 		cursor: pointer;
@@ -235,6 +246,20 @@
 		1.6rem;
 		1);
 		text-transform: uppercase;
+      
+			&:active{
+				color: @blue;
+			}
+			
+			@media (min-width: @screen-md){
+      &:hover{
+        color: #000; 
+				
+				&:active{
+					color: @blue;
+				}
+      }
+    }
 	}
 }
 

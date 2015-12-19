@@ -24,6 +24,7 @@
 	@media (min-width: @screen-md) {
 		width: 230px !important;
 		padding-left: 30px;
+		padding-top: 12px;
 		padding-right: 0;
 	}
 	@media (min-width: @screen-lg) {
@@ -92,12 +93,12 @@
 	@media (min-width: @screen-xs) {
 		display: block;
 		margin: 0 auto;
-		margin-left: 45.5%;
+		margin-left: 45.7%;
 	}
 		@media (min-width: @screen-sm) {
 			display: block;
 			margin: 0 auto;
-    		margin-left: 42.5%;
+    		margin-left: 43.5%;
 		}
 		@media (min-width: @screen-md) and (max-width: @screen-lg) {
 			display: block;
@@ -129,7 +130,7 @@
 		1.6rem;
 		1);
 		@media (min-width: @screen-xs) {
-			margin-top: 14px;
+			margin-top: 13px;
 			margin-bottom: 5px;
 		}
 		@media (min-width: @screen-sm) {
@@ -194,7 +195,6 @@
 			overflow-y: hidden;
 			height: 100px;
 			margin: 0;
-			margin-bottom: 2px;
 		}
 		@media (min-width: @screen-sm) {
 			width: 210px;
@@ -354,21 +354,21 @@
 		}
 	}
 	&__info {
-		padding-bottom: 10px;
+		padding-bottom: 13px;
 		@media (min-width: @screen-xs) {
-			margin-top: 15px;
+			margin-top: 9px;
 		}
 		@media (min-width: @screen-sm) and (max-width: @screen-md) {
-			padding-bottom: 15px;
+			padding-bottom: 17px;
 		}
 		@media (min-width: @screen-md) {
-			padding-bottom: 6px;
+			padding-bottom: 12px;
 		}
 		@media (min-width: @screen-lg) {
-			padding-bottom: 11px;
+			padding-bottom: 12px;
 		}
 		@media (min-width: @screen-xlg) {
-			padding-bottom: 25px;
+			padding-bottom: 28px;
 		}
 		li {
 			font-weight: 300;
@@ -410,9 +410,9 @@
 			@media(min-width: @screen-xs){
 				
 				&:first-of-type{
-					width: 96px;
+					width: 97px;
 				}
-				width: 105px;
+				width: 97px;
 			}
 			@media(min-width: @screen-sm){
 				
@@ -463,6 +463,7 @@
 		color: @gray;
 		border: 1px solid @border-color;
 		border-right: none;
+		border-left: 	none;
 		border-bottom: none;
 		background: @light-bg;
 		transition: .1s;
@@ -473,6 +474,9 @@
 		transition: .1s;
 				background: url("../img/star--blue.svg");
 			}
+		}
+		@media (min-width: @screen-xs) {
+			border-left: 1px solid @border-color;
 		}
 		@media (min-width: @screen-md) {
 			&:hover {
