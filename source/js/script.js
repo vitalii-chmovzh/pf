@@ -286,6 +286,19 @@ if($( "#ui-slider" ).length != 0){
   });
   $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
   $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
-}    
-  
+}
+
+//Disable light-box on mobile
+function disableLightbox(){
+    var lightboxItems = $("a[data-lightbox]");
+
+    if(lightboxItems.length != 0){
+        lightboxItems.removeAttr("href data-lightbox");
+    }
+};
+
+if(window.matchMedia("(max-width:350px)").matches){
+    disableLightbox();
+}
+
 });
