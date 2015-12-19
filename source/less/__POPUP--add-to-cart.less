@@ -2,6 +2,7 @@
 	width: 290px;
 	padding: 15px;
 	padding-bottom: 30px;
+	border: 1px solid @red;
 	// margin: 100px;
 		text-align: center;
 			background: #fff;
@@ -15,12 +16,13 @@
 	}
 	@media(min-width: @screen-lg){
 		width: 390px;
-		padding: 15px 30px;
+		padding:25px 30px;
+		padding-bottom: 23px;
 	}
 	@media(min-width: @screen-xlg){
 		width: 530px;
-		padding: 15px 30px;
-		padding-bottom: 30px;
+		padding: 29px 30px;
+		padding-bottom: 26px;
 	}
 	
 		&__heading{			
@@ -34,6 +36,10 @@
 			text-transform: uppercase;
 			font-weight: bold;
 			margin-bottom: 23px;
+			
+			@media(min-width: @screen-lg){
+				margin-bottom: 19px;
+			}
 		}
 	
 	&__descr{		
@@ -41,10 +47,14 @@
 			1.2rem;
 			1.2rem;
 			1.2rem;
-			1.4rem;
+			1.6rem;
 			1.8);
 		font-weight: 300;
 		margin-bottom: 12px;
+		
+		@media(min-width: @screen-lg){
+			margin-bottom: 8px;
+		}
 	}
 	
 	&__btn{
@@ -54,11 +64,16 @@
 			1.4rem;
 			1.4rem;
 			1.4rem;
-			1.4rem;
+			1.6rem;
 			1);
+		
+			@media(min-width: @screen-lg){
+				margin-bottom: 23px;
+			}
 		
 	@media(min-width: @screen-xlg){
 		padding: 15px 20px;
+		margin-bottom: 25px;
 		width: 180px;
 	}
 		span{
@@ -94,7 +109,7 @@
 			1.2rem;
 			1.2rem;
 			1.2rem;
-			1.4rem;
+			1.6rem;
 			1.4);
 		display: inline-block;
 		color: @gray;
@@ -113,6 +128,19 @@
 			}
 		}
 	}
+}
+
+.add-to-cart{
+	&__additional{
+		font-weight: bold;
+	}
+}
+
+.add-to-wishlist{
+	span{
+		font-weight: bold;
+	}
+	
 }
 
 .sign-up-popup{
@@ -224,6 +252,12 @@
 	}
 	
 	button{
+		.font(1.2rem;
+		1.2rem;
+		1.2rem;
+		1.4rem;
+		1.6rem;
+		1);
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -274,6 +308,64 @@
 	}
 }
 
+.add-to-wishlist--signed-out{
+	
+	.add-to-wishlist__descr{
+		color: @red;
+	}
+	
+	a{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		background: @blue;
+		color: #fff;
+		justify-content: center;
+		margin-bottom: 0;
+		
+		i{
+			background: url("../img/lock.svg");
+		}
+		
+		span{
+			vertical-align: middle;
+			font-weight: normal;
+		}
+		
+		&:focus{
+			outline: none;
+		}
+		
+		&:active, &:hover:active{
+			background: #fff;
+			border: 1px solid @blue;
+			color: @blue;
+			
+			i{
+				background: url("../img/lock--blue.svg");
+			}
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+					background: @light-bg;
+					border: 1px solid @blue;
+					color: @blue;
+					i{
+						background: url("../img/lock--blue.svg");
+					}
+				&:active{
+					color: @blue;
+				}				
+			}
+		}
+}
+}
+
 .sizes-popup{
 	padding-left: 0;
 	padding-right: 0;
@@ -294,6 +386,7 @@
 	}
 	
 }
+
 .add-to-cart .item-page__wish-btn-add{
 	position: static!important;
 }

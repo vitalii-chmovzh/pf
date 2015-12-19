@@ -7,7 +7,7 @@ $(document).ready(function () {
 	var productImage = $(".product__image");
   
   	saleRow.hide();
-	
+
 	productImage.on('click', function(e){
 			
 		var cardId = $(this).attr('data-id'),
@@ -23,11 +23,9 @@ $(document).ready(function () {
 			e.preventDefault();
 			$(this).find(expandedBtnId).addClass("hidden");
 		}
-		
 		productsCont.not(wrapperId).removeClass("product__wrapper--expanded");
 		productsProp.not(propId).removeClass("visible");
 		buttons.not($(this)).removeClass("button-right");
-
 		wrapperId.addClass("product__wrapper--expanded");
 		propId.addClass("visible");
         btnId.addClass("button-right");
