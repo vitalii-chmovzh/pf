@@ -140,7 +140,7 @@ $('.main-menu__heading').on("click", function(){
   }
   mobileMenu.hide();
   menuBtn.removeClass("rotated");
-  catalogFilter.slideToggle("slow");      
+  catalogFilter.slideToggle("slow");
 });
 
 // Mobile menu
