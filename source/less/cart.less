@@ -26,6 +26,11 @@
 .cart {
 	position: relative;
 	padding-top: 99px;
+	overflow: hidden;
+	@media(min-width: @screen-xs) {
+		padding-top: 105px;
+		overflow: visible;
+	}
 	@media(min-width: @screen-md) {
 		padding-top: 105px;
 	}
@@ -338,14 +343,10 @@
 			}
 		}
 		&__row {
-			margin-bottom: 15px;
+				margin-bottom: 9px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			height: 18px;
-			@media (min-width: @screen-sm) {
-				margin-bottom: 9px;
-			}
 			&--mob-hidden {
 				display: none;
 				@media (min-width: @screen-sm) {
@@ -385,8 +386,16 @@
 			height: 16px;
 			background: url("../img/trash.svg") no-repeat;
 			background-size: cover;
+			transition: .1s;
 			&:active, &:hover:active {
 				background: url("../img/trash--blue.svg") no-repeat;
+			}
+			
+			@media (min-width: @screen-md){
+			&:hover{
+				background: url("../img/trash--black.svg") no-repeat;
+			}
+				
 			}
 			&--tab-hidden {
 				@media (min-width: @screen-sm) {
@@ -755,7 +764,6 @@
 			&:active, &:hover:active {
 				color: @blue;
 			}
-			
 			@media(max-width: 767px) {
 				width: auto;
 				margin-top: 25px;
@@ -908,21 +916,20 @@
 		&:focus {
 			outline: none;
 		}
-		&:active, &:hover:active{
-			background: none;
-			color: @blue;
+		&:active, &:hover:active {
 			border: 1px solid @blue;
+			color: @blue;
+			background: #fff;
+		}
+		@media (min-width: @screen-md) {
+			&:hover {
+				color: @blue;
+				background: @light-bg;
+			}
 		}
 		@media(min-width: @screen-sm) {
 			padding: 13px 0;
 			width: 95px;
-		}
-		@media(min-width: @screen-md) {
-			&:hover{
-				background: @light-bg;
-				color: @blue;
-				border: 1px solid @blue;				
-			}
 		}
 		@media(min-width: @screen-lg) {
 			padding: 13px 15px;
@@ -1070,24 +1077,22 @@
 		&:focus {
 			outline: none;
 		}
-		&:active, &:hover:active{
-			background: none;
-			color: @blue;
+		&:active, &:hover:active {
 			border: 1px solid @blue;
+			color: @blue;
+			background: #fff;
+		}
+		@media (min-width: @screen-md) {
+			&:hover {
+				color: @blue;
+				background: @light-bg;
+			}
 		}
 		
 		@media (min-width: @screen-xs) and (max-width: 767px) {
 			float: left;
 			margin-top: 20px;
 			margin-bottom: 0;
-		}
-
-		@media(min-width: @screen-md) {
-			&:hover{
-				background: @light-bg;
-				color: @blue;
-				border: 1px solid @blue;				
-			}
 		}
 		@media(min-width: @screen-sm) {
 			padding: 13px 0;
@@ -1178,7 +1183,6 @@
 		text-transform: uppercase;
 		display: block;
 		font-weight: bold;
-		cursor: pointer;
 		display: inline-block;
 		margin-bottom: 10px;
 		&:active, &:hover:active {
@@ -1399,6 +1403,10 @@
 			width: 440px;
 		}
 		@media (min-width: @screen-lg) {
+			width: 557px;
+   		margin-left: 112px;
+		}
+		@media (min-width: @screen-xlg) {
 			width: 775px;
 			margin-left: 150px;
 		}
@@ -1468,5 +1476,18 @@
 				font-size: 1.4rem;
 			}
 		}
+	}
+}
+
+.cart-story{
+	&__no-story{
+			.font(1.2rem;
+			1.2rem;
+			1.2rem;
+			1.4rem;
+			1.6rem;
+			1);
+		font-weight: 300;
+		text-align: center;
 	}
 }

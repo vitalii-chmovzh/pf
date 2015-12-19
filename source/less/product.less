@@ -222,7 +222,7 @@
 		}
 		
 		@media (min-width: @screen-lg) and (max-width: @screen-xlg){
-			padding-bottom: 13px;
+			padding-bottom: 14px;
 		}
 		@media (min-width: @screen-xlg){
 			padding-top: 20px;
@@ -236,6 +236,7 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+
 	&__manufacturer {
 		.font(1rem;
 		1rem;
@@ -246,7 +247,6 @@
 		text-transform: uppercase;
 		display: block;
 		font-weight: bold;
-		cursor: pointer;
 		display: inline-block;
 		margin-right: 50px;
 	}
@@ -255,6 +255,7 @@
 		cursor: pointer;
 		width: 16px;
 		height: 16px;
+		vertical-align: middle;
 		background: url("../img/trash.svg") no-repeat;
 		background-size: cover;
 		&:active, &:focus, &:hover:active {
@@ -320,14 +321,27 @@
 			left: 157px;
 		}
 		&--no {
-			padding-top: 6px;
-			.font(1rem;
-			1rem;
-			1rem;
+			padding-top: 5px;
+			.font(1.2rem;
+			1.2rem;
 			1.2rem;
 			1.4rem;
+			1.6rem;
 			1);
 			color: @red;
+			
+		@media(min-width: @screen-sm) {
+			padding-top: 4px;
+		}
+		@media(min-width: @screen-md) {
+			padding-top: 4px;
+		}
+		@media(min-width: @screen-lg) {
+			padding-top: 4px;
+		}
+		@media(min-width: @screen-xlg) {
+			padding-top: 8px;
+		}
 		}
 		&--name {
 			display: block;
