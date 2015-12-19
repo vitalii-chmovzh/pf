@@ -274,6 +274,63 @@
 	}
 }
 
+.add-to-wishlist--signed-out{
+	
+	.add-to-wishlist__descr{
+		color: @red;
+	}
+	
+	a{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		background: @blue;
+		color: #fff;
+		justify-content: center;
+		margin-bottom: 0;
+		
+		i{
+			background: url("../img/lock.svg");
+		}
+		
+		span{
+			vertical-align: middle;
+		}
+		
+		&:focus{
+			outline: none;
+		}
+		
+		&:active, &:hover:active{
+			background: #fff;
+			border: 1px solid @blue;
+			color: @blue;
+			
+			i{
+				background: url("../img/lock--blue.svg");
+			}
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+					background: @light-bg;
+					border: 1px solid @blue;
+					color: @blue;
+					i{
+						background: url("../img/lock--blue.svg");
+					}
+				&:active{
+					color: @blue;
+				}				
+			}
+		}
+}
+}
+
 .sizes-popup{
 	padding-left: 0;
 	padding-right: 0;
@@ -294,6 +351,7 @@
 	}
 	
 }
+
 .add-to-cart .item-page__wish-btn-add{
 	position: static!important;
 }
