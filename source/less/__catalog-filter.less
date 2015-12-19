@@ -226,7 +226,7 @@
 			position: absolute;
 			right: 30px;
 			top: 15px;
-			z-index: 10000;
+			z-index: 9;
 			&:after {
 				
 				@media(max-width: @screen-xs){
@@ -351,6 +351,25 @@
 	    @media (max-width: @screen-lg) {
 	    	top: 140px;
 	    }
+		ul.catalog-filter__list {
+
+			@media (max-width: @screen-xlg) {
+				padding-top: 116px;
+				margin-top: -116px;
+			}
+			@media (max-width: @screen-lg) {
+				padding-top: 140px;
+				margin-top: -140px;
+			}
+		}
+	}
+	ul.catalog-filter__list {
+		max-height: 100vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+		padding-top: 133px;
+		margin-top: -133px;
+		box-sizing: border-box;
 	}
 	&.catalog-filter-bottom {
 		position: absolute;
@@ -367,3 +386,7 @@
 	position: relative;
 }
 
+.height-auto{
+	height: auto;
+	overflow: visible;
+}

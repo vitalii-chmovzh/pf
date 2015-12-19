@@ -108,12 +108,13 @@ $(document).ready(function () {
       uselessWrapper.removeClass("catalog__products-wrapper");
       catalogContainer.addClass("products__section-container--expanded");
       products.addClass("item-expanded");
+      catalogFilter.find(".catalog-filter-wrapper").addClass("height-auto");
       
-   if (window.matchMedia("(max-width:991px)").matches) { 
-      $('body').addClass("overflow-hidden");
-   }
+       if (window.matchMedia("(max-width:991px)").matches) {
+          $('body').addClass("overflow-hidden");
+       }
+
       flag = false;
-      console.log(flag);
     }
     
     else if (flag === false) {
@@ -121,13 +122,13 @@ $(document).ready(function () {
       uselessWrapper.addClass("catalog__products-wrapper");
       catalogContainer.removeClass("products__section-container--expanded");
       products.removeClass("item-expanded");
+      catalogFilter.find(".catalog-filter-wrapper").removeClass("height-auto");
       
-      
-   if (window.matchMedia("(max-width:991px)").matches) { 
-      $('body').removeClass("overflow-hidden");
-   }
-      flag = true; 
-      console.log(flag);
+       if (window.matchMedia("(max-width:991px)").matches) {
+          $('body').removeClass("overflow-hidden");
+       }
+
+      flag = true;
     } 
   });
 
