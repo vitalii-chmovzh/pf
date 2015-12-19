@@ -89,6 +89,7 @@
 		display: none;
 		@media (min-width: @screen-md) {
 			display: block;
+			clear: both;
 			text-align: center;
 			margin-bottom: 30px;
 			li {
@@ -109,14 +110,26 @@
 				&:last-child {
 					margin-right: 0;
 				}
-				&:hover {
-					color: #000;
-				}
 			}
 			a {
 				text-decoration: none;
 				display: inline-block;
 				color: @gray;
+				transition: .1s;
+						
+						&:active{
+							color: @blue;
+						}
+				
+				@media(min-width: @screen-md){
+					&:hover {
+						color: #000;
+						
+						&:active{
+							color: @blue;
+						}
+					}
+				}
 			}
 			.active {
 				color: #010101;

@@ -17,11 +17,16 @@
 		height: 36px;
 		transform: skew(-15deg);
 		text-align: center; 
-		z-index: 9998;
-		padding-top: 11px;
+		z-index: 100;
+		padding-top: 13px;
+		
+		@media(min-width: @screen-lg){
+			padding-top: 11px;
+		}
 		
 		@media(min-width: @screen-xlg){
 			width: 65px;
+			padding-top: 13px;
 			height: 40px;
 		}
 		&--new {
@@ -31,12 +36,14 @@
 			background: @red;
 		}
 		span {
-		.heading(1.4rem;
+		.heading(1rem;
+		1rem;
+		1rem;
+		1.2rem;
 		1.4rem;
-		1.4rem;
-		1.4rem;
-		1.6rem;
 		1);
+		text-transform: uppercase;
+		text-decoration: none;
 			transform: skew(15deg);
 		}
 	}
