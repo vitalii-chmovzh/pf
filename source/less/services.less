@@ -610,6 +610,18 @@
 			border-bottom: 5px solid transparent;
 		}
 	}
+	&:hover{
+		border-right-color: #fff;
+		&:after{
+			border-left-color: #000;
+		}
+	}
+	&:active{
+		border-right-color: #fff;
+		&:after{
+			border-left-color: @blue;
+		}
+	}
 	&.disabled {
 		display: none;
 	}
@@ -658,6 +670,18 @@
 			border-top: 5px solid transparent;
 			border-right: 5px solid @gray;
 			border-bottom: 5px solid transparent;
+		}
+	}
+	&:hover{
+		border-left-color: #fff;
+		&:after{
+			border-right-color: #000;
+		}
+	}
+	&:active{
+		border-left-color: #fff;
+		&:after{
+			border-right-color: @blue;
 		}
 	}
 	&.disabled {
