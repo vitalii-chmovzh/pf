@@ -52,6 +52,7 @@ var ModalEffects = (function() {
 			});
 
 			close.addEventListener( 'click', function( ev ) {
+				ev.preventDefault();
 				ev.stopPropagation();
 				removeModalHandler();
 			});

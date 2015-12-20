@@ -698,4 +698,38 @@
 	position: fixed !important;
 	top: 50% !important;
 	transform: translateY(-50%);
+	z-index: 999999;
+}
+.lb-data .lb-close, .lb-details{
+	display: none!important;
+}
+.lb-nav a.lb-prev, .lb-nav a.lb-next{
+	background: none !important;
+	opacity: 1 !important;
+}
+.lb-nav a.lb-prev:after{
+	content: '';
+	display: block;
+	position: absolute;
+	border-top: 5px solid transparent;
+	border-right: 5px solid #f1f1f2;
+	border-bottom: 5px solid transparent;
+	left: -15px;
+	top: 0;
+	bottom: 0;
+	height: 0;
+	margin: auto;
+}
+.lb-nav a.lb-next:after{
+	content: '';
+	display: block;
+	position: absolute;
+	border-top: 5px solid transparent;
+	border-left: 5px solid #f1f1f2;
+	border-bottom: 5px solid transparent;
+	right: -15px;
+	top: 0;
+	bottom: 0;
+	height: 0;
+	margin: auto;
 }
