@@ -32,6 +32,8 @@ perspective effects (not including the modals and the overlay).
 	top: 50%;
 	left: 50%;
 	width: auto;
+	max-height: 55vh;
+	overflow: auto;
 	/*max-width: 630px;
 	min-width: 320px;*/
 	height: auto;
@@ -45,6 +47,18 @@ perspective effects (not including the modals and the overlay).
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
+
+@media (max-width: 992px) {
+	.md-modal{
+		margin-top: 50px;
+	}
+}
+
+/*@media (max-height: 375px) {*/
+	/*.md-modal{*/
+		/*top: 60%;*/
+	/*}*/
+/*}*/
 
 .md-show {
 	visibility: visible;
@@ -110,7 +124,7 @@ perspective effects (not including the modals and the overlay).
 }
 
 .md-content button {
-	display: block;
+	display: none;
 	margin: 0 auto;
 	font-size: 0.8em;
 }
