@@ -46,7 +46,7 @@
 			.font(1.2rem;
 			1.2rem;
 			1.2rem;
-			1.2rem;
+			1.4rem;
 			1.6rem;
 			1.8);
 		font-weight: 300;
@@ -108,7 +108,7 @@
 			.font(1.2rem;
 			1.2rem;
 			1.2rem;
-			1.2rem;
+			1.4rem;
 			1.6rem;
 			1.4);
 		display: inline-block;
@@ -131,6 +131,12 @@
 }
 
 .add-to-cart{
+	
+	&__descr{
+		@media (min-width: @screen-xlg){
+			margin-bottom: 10px;
+		}
+	}
 	&__additional{
 		font-weight: bold;
 	}
@@ -142,9 +148,30 @@
 		@media(max-width: @screen-lg){
 			margin-bottom: 8px;
 		}
+		@media(min-width: @screen-xlg){
+			margin-bottom: 19px;
+		}
 	}
-	span{
-		font-weight: bold;
+	
+	&__btn {
+		span{
+			font-weight: bold;
+				.font(1.2rem;
+				1.2rem;
+				1.2rem;
+				1.4rem;
+				1.6rem;
+				1.4);
+		}
+	}
+	
+	&__heading{
+		.heading(1.4rem;
+		1.4rem;
+		1.4rem;
+		1.6rem;
+		2rem;
+		1);
 	}
 	
 }
