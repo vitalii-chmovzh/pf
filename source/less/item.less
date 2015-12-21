@@ -3,9 +3,6 @@
 	padding-top: 99px;
 	.clearfix;
 	
-	.product__section-container{
-		margin-left: -15px;
-	}
 	
 	@media (max-width: @screen-xs){
 		max-width: 320px;
@@ -23,6 +20,7 @@
 		}
 		@media(min-width: @screen-lg) {
 			width: 1150px;
+    		overflow: hidden;
 		}
 		@media(min-width: @screen-xlg) {
 			width: 1585px;
@@ -95,6 +93,7 @@
 	&__wrapper {
 		@media(min-width: @screen-sm) {
 			.clearfix;
+			clear: both;
 			margin: 0 auto;
 			width: 720px;
 			margin-bottom: 15px;
@@ -124,7 +123,7 @@
 		}
 		@media(min-width: @screen-md) {
 			float: left;
-			width: 253px;
+			width: 260px;
 		}
 		@media(min-width: @screen-lg) {
 			float: left;
@@ -145,7 +144,7 @@
 			}
 			@media(min-width: @screen-sm) {
 				float: left;
-				width: 720px;
+				width: 100%;
 			}
 			@media(min-width: @screen-md) {
 				margin-bottom: 17px;
@@ -261,11 +260,11 @@
 				width: 257px;
 			}
 		@media (min-width: @screen-sm){
-			width: 510px;
+			width: 100px;
 		}
 		
 		@media (min-width: @screen-md){
-			width: 525px;
+			width: 100px;
 		}
 		
 		@media (min-width: @screen-lg){
@@ -355,7 +354,7 @@
 		padding-left: 15px;
 	}
 		@media(min-width: @screen-sm) {
-			padding-left: 30px;
+			padding-left: 15px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 10px;
@@ -372,7 +371,7 @@
 			1.2rem;
 			1.4rem;
 			1.6rem;
-			1.8);
+			1.4);
 	
 			
 	@media(min-width: @screen-xs) and (max-width: 767px){
@@ -392,6 +391,7 @@
 		position: relative;
 		@media(min-width: @screen-sm) {
 			height: 39px;
+			margin-right: 15px;
 		}
 		@media(min-width: @screen-lg) {
 			height: 41px;
@@ -624,7 +624,7 @@
 			1.4rem;
 			1.4rem;
 			1.4rem;
-			1.4rem;
+			1.6rem;
 			1);
 			@media(min-width: @screen-lg) {
 				width: 41px;
@@ -684,7 +684,7 @@
 	}
 	&__wish {
 		@media(min-width: @screen-sm) {
-			padding-left: 30px;
+			padding-left: 15px;
 		}
 		
 		@media(min-width: @screen-xlg) {
@@ -715,9 +715,6 @@
 			@media(min-width: @screen-xs){
 				margin-bottom: 15px;
 			}
-			@media(min-width: @screen-lg) {
-				padding-right: 15px;
-			}
 		}
 		&-btn {
 			text-decoration: none;
@@ -737,6 +734,10 @@
 			color: @gray;
 			background: @light-bg;
 			margin-bottom: 30px;
+			
+			@media (min-width: @screen-xlg){
+				width: 150px;
+			}
 			span {
 				padding-top: 3px;
 				vertical-align: middle;
@@ -850,6 +851,11 @@
 		}
 		li {
 			margin-bottom: 10px;
+			
+			@media(min-width: @screen-xlg) {
+				margin-bottom: 13px;
+			}
+			
 		}
 	}
 	&__description {
@@ -886,7 +892,7 @@
 		1.4rem;
 		1.4rem;
 		1.4rem;
-		1.6rem;
+		2rem;
 		1);
 		margin-bottom: 15px;
 	}
@@ -908,11 +914,11 @@
 	}
 	@media(min-width: @screen-md) {
 		float: left;
-		width: 455px;
+		width: 430px;
 	}
 	@media(min-width: @screen-md) {
 		float: left;
-		width: 455px;
+		width: 430px;
 	}
 	@media(min-width: @screen-lg) {
 		float: left;
@@ -938,8 +944,8 @@
 				height: 210px;
 			}
 		@media(min-width: @screen-md) {
-			height: 455px;
-			width: 455px;
+			height: 430px;
+			width: 430px;
 		}
 		@media(min-width: @screen-lg) {
 			height: 555px;
@@ -989,7 +995,7 @@
 		margin-bottom: 15px;
 	}
 	@media (min-width: @screen-md) {
-		margin-left: 250px;
+		margin-left: 290px;
 	}
 	@media (min-width: @screen-xlg) {
 		margin-left: 405px;
@@ -1212,10 +1218,10 @@
 	}	
 	
 	@media (min-width: @screen-sm) and (max-width: @screen-md){		
-    margin-left: 48%;
+    margin-left: 47.8%;
 	}
 	@media (min-width: @screen-md) and (max-width: @screen-lg){
-		margin-left: 47%;
+		    margin-left: 45.4%;
 	}
 	
 }
@@ -1227,10 +1233,10 @@
 	}	
 	
 	@media (min-width: @screen-sm) and (max-width: @screen-md){		
-    margin-left: 48%;
+    margin-left: 47.8%;
 	}
-	@media (min-width: @screen-md) and (max-width: @screen-lg){
-		margin-left: 47%;
+	@media (min-width: @screen-md) and (max-width: @screen-lg){    
+		margin-left: 45.4%;
 	}
 	
 }
