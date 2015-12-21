@@ -116,7 +116,7 @@
 			position: relative;
 			@media(min-width: @screen-xs) and (max-width: 767px){
 				float: left;
-				width: 205px;
+				width: 220px;
 			}
 		@media(min-width: @screen-sm) {
 			float: left;
@@ -164,6 +164,7 @@
 				overflow: hidden;
 				vertical-align: middle;
 				margin-right: 8px;
+				margin-top: -7px;
 			}
 			
 			.product__label--new{
@@ -183,6 +184,32 @@
 				// @media (min-width: @screen-sm){
 				// 	margin-right: 8px;
 				// }
+				span {
+					color: #fff;
+					.font(1rem;
+					1rem;
+					1rem;
+					1.2rem;
+					1.4rem;
+					1);
+					transform: skew(15deg);
+				}
+			}
+			
+			.product__label--sale{
+				position: relative;
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+				top: 0;
+				left: -5px;
+				width: 54px;
+				height: 36px;
+				transform: skew(-15deg);
+				text-align: center;
+				padding-top: 11px;
+					background: @red;
+				
 				span {
 					color: #fff;
 					.font(1rem;
@@ -228,6 +255,7 @@
 		2.4rem;
 		1);
 		width: 110px;
+    	float: right;
 			
 			@media(min-width: @screen-xs) and (max-width: 767px){
 				width: 257px;
@@ -320,7 +348,6 @@
 		justify-content: flex-start;
 		background: @blue;
 		margin-bottom: 15px;
-		.row;
 	
 			
 	@media(min-width: @screen-xs) and (max-width: 767px){
@@ -398,7 +425,7 @@
 		font-weight: 300;
 	@media(min-width: @screen-xs) and (max-width: 767px){
 		margin-left: 0;
-		padding-left: 15px;
+		padding-left: 30px;
 	}
 		.arrow-bottom {
 			display: none;
@@ -410,7 +437,7 @@
 			border-top: 10px solid #fff;
 			transition: .1s;
 			&:hover {
-				border-top-color: @red;
+				border-top-color: @blue;
 			}
 			&--disabled {
 				opacity: .2;
@@ -469,7 +496,7 @@
 			border: none;
 			margin-right: 5px;
 			transition: .1s ease;
-			border-bottom: 2px dashed @gray;
+			border-bottom: 2px dotted @gray;
 				background: none !important;
 			
 			&:hover, &:active, &:focus{
@@ -477,12 +504,12 @@
 			}
 			&:active, &:hover:active {
 				color: @blue;
-				border-bottom: 2px dashed @blue;
+				border-bottom: 2px dotted @blue;
 			}
 			&:focus {
 				color: @blue;
 				outline: none;
-				border-bottom: 2px dashed @blue;
+				border-bottom: 2px dotted @blue;
 			}
 			@media (min-width: @screen-md) {
 				&:hover {
@@ -525,11 +552,11 @@
 				margin-right: 0;
 			}
 			@media(min-width: @screen-xs) and (max-width: 767px){
-				margin-right: 26px;
+				margin-right: 1px;
 			&:nth-of-type(5n+5) {
-				margin-right: 26px;
+				margin-right: 1px;
 			}
-			&:nth-of-type(3n) {
+			&:nth-of-type(4n + 4) {
 				margin-right: 0;
 			}
 			}
@@ -609,16 +636,21 @@
 		&-btn {
 			padding: 0 1px;
 			cursor: pointer;
-			border-bottom: 2px dashed @gray;
+			border-bottom: 2px dotted @gray;
+			
+			@media (max-width: @screen-xs){
+				display: inline-block;
+				margin-bottom: 5px;
+			}
 			
 			&:active, &:hover:active {
 				color: @blue;
-				border-bottom: 2px dashed @blue;
+				border-bottom: 2px dotted @blue;
 			}
 			&:focus {
 				color: @blue;
 				outline: none;
-				border-bottom: 2px dashed @blue;
+				border-bottom: 2px dotted @blue;
 			}
 			@media (min-width: @screen-md) {
 				&:hover {
@@ -630,10 +662,11 @@
 	}
 	&__sizes-list-wrapper {
 		position: relative;
-		height: 45px;
 		overflow: hidden;
-		@media(min-width: @screen-sm) {
-			margin-bottom: 5px;
+		margin-bottom: 5px;
+		@media(min-width: @screen-xs) {
+			height: 45px;
+			margin-bottom: 0;
 		}
 		@media(min-width: @screen-md) {
 			height: 93px;
@@ -677,10 +710,10 @@
 			1.4rem;
 			1.6rem;
 			1.8);
-			margin-bottom: 15px;
+			margin-bottom: 12px;
 			font-weight: 300;
-			@media(min-width: @screen-xs) and (max-width: 767px){
-				padding-left: 15px;
+			@media(min-width: @screen-xs){
+				margin-bottom: 15px;
 			}
 			@media(min-width: @screen-lg) {
 				padding-right: 15px;
@@ -865,7 +898,7 @@
 	
 			
 	@media(min-width: @screen-xs) and (max-width: 767px){
-		width: 225px;
+		width: 210px;
 		float: left;
 	}
 	
@@ -901,8 +934,8 @@
 			width: 345px;
 		}
 			@media(min-width: @screen-xs) and (max-width: 767px){
-				width: 225px;
-				height: 225px;
+				width: 210px;
+				height: 210px;
 			}
 		@media(min-width: @screen-md) {
 			height: 455px;
@@ -949,10 +982,11 @@
 }
 
 .social-media {
-	margin-bottom: 15px;
+	margin-bottom: 26px;
 	clear: both;
 	@media (min-width: @screen-sm) {
     	margin-left: 250px;
+		margin-bottom: 15px;
 	}
 	@media (min-width: @screen-md) {
 		margin-left: 250px;
@@ -970,7 +1004,11 @@
 		1.4);
 		font-weight: bold;
 		display: block;
-		margin-bottom: 15px;
+		margin-bottom: 12px;
+		
+		@media (min-width: @screen-sm){
+			margin-bottom: 15px;
+		}
 	}
 	ul li {
 		display: inline-block;
@@ -1160,21 +1198,39 @@
 }
 
 .item-page__sizes .arrow-top{
+	display: none !important;
+	@media(min-width: @screen-xs) {
+			display: block!important;
+		}
 	@media(min-width: @screen-lg) {
 			display: none!important;
 		}
-	@media(max-width: 767px) {
+	@media(min-width: @screen-xs) and (max-width: 767px) {
 		display: block!important;
 		margin: 0 auto 5px auto;
+    	margin-left: 46.5%;
 	}	
 	
-	@media (min-width: @screen-md) and (max-width: @screen-lg){
-		margin-left: 45.5%;
+	@media (min-width: @screen-sm) and (max-width: @screen-md){		
+    margin-left: 48%;
 	}
+	@media (min-width: @screen-md) and (max-width: @screen-lg){
+		margin-left: 47%;
+	}
+	
 }
 .item-page__sizes .arrow-bottom {
-	@media(max-width: 767px) {
+	@media(min-width: @screen-xs) and (max-width: 767px) {
 		display: block!important;
 		margin: 0 auto 5px auto;
+    	margin-left: 46.5%;
+	}	
+	
+	@media (min-width: @screen-sm) and (max-width: @screen-md){		
+    margin-left: 48%;
 	}
+	@media (min-width: @screen-md) and (max-width: @screen-lg){
+		margin-left: 47%;
+	}
+	
 }
