@@ -23,23 +23,15 @@
 		align-items: center;
 	}
 	&__heading {
-		display: block;
-		width: 180px;
-		text-align: right;
-		float: left;
+		text-align: center;
 		text-transform: uppercase;
+        width: 100%;
 		.heading(1.4rem;
 		1.4rem;
 		1.4rem;
 		1.4rem;
 		1.6rem;
 		1);
-		@media(min-width: @screen-sm) and (max-width: @screen-lg) {
-			width: 138px;
-		}
-		@media(min-width: @screen-xlg) {
-			width: 220px;
-		}
 	}
 	&__icon {
 		width: 16px;
@@ -47,14 +39,16 @@
 		display: block;
 		background: url("../img/filter.svg") center no-repeat;
 		background-size: cover;
-		margin-left: 90px;
+        position: absolute;
+//		margin-left: 90px;
 		float: left;
-		margin-top: -9px;
+        top: 20px;
+        right: 15px;
 		@media(min-width: @screen-sm) and (max-width: @screen-lg) {
-			margin-left: 65px;
+//			margin-left: 65px;
 		}
 		@media(min-width: @screen-xlg) {
-			margin-left: 135px;
+//			margin-left: 135px;
 		}
 	}
 	.dropcontainer {
@@ -71,7 +65,10 @@
 }
 
 .filter-form {
-	margin-top: 30px;
+//	margin-top: 30px;
+    @media(max-width: @screen-xs) {
+      text-align: center;
+    }
 	input[type="radio"],
 	input[type="checkbox"] {
 		display: none;
@@ -112,6 +109,10 @@
 		margin-bottom: 30px;
 		padding-bottom: 30px;
 		border-bottom: 1px solid @border-color;
+        @media(max-width: @screen-xs) {
+          display: inline-block;
+          text-align: left;
+        }
 	}
 	&__models {
 		margin-bottom: 30px;
@@ -161,6 +162,8 @@
 					background: @border-color;
 					border: 1px solid @border-color;
 					top: 0;
+                    bottom: 0;
+                    margin: auto;
 					left: -30px;
 				}
 				@media(min-width: @screen-md) {
@@ -318,6 +321,10 @@
 		margin-bottom: 30px;
 		padding-bottom: 20px;
 		border-bottom: 1px solid @border-color;
+        @media(max-width: @screen-xs) {
+          display: inline-block;
+          text-align: left;
+        }
 		&-row {
 			margin-left: 45px;
 			height: 15px;
@@ -339,6 +346,8 @@
 					background: @border-color;
 					border: 1px solid @border-color;
 					top: 0;
+                    bottom: 0;
+                    margin: auto;
 					left: -30px;
 				}
 				@media(min-width: @screen-md) {
@@ -478,6 +487,8 @@
 				background: @border-color;
 				border: 1px solid @border-color;
 				top: 0;
+                bottom: 0;
+                margin: auto;
 				left: -30px;
 			}
 			@media(min-width: @screen-md) {
@@ -491,15 +502,16 @@
 #ui-slider {
 	border: none!important;
 	height: 6px;
-	margin-bottom: 20px;
+    margin: 10px 8px 20px 8px;
 	background: @border-color;
+    position: relative;
 	.ui-slider-range {
-		position: relative;
+		position: absolute;
 		vertical-align: middle;
 		display: inline-block;
 		height: 6px;
 		width: 250px;
-		top: -5px;
+		top: 0;
 		background: #2864c7;
 	}
 	.ui-slider-handle {
@@ -510,7 +522,8 @@
 		border-radius: 50%;
 		background: #fff;
 		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
-		top: -0.6em;
+        top: -7px;
+        transition: background .5s;
 		&:focus {
 			outline: none;
 		}
@@ -562,31 +575,25 @@
 	}
 	&__row {
 		display: inline-block;
-		width: 127px;
-		margin-right: 30px;
+        &:first-child {
+          float: left;
+        }
 		&:last-child {
-			margin-right: 0;
-		}
-		@media(min-width: @screen-sm) and (max-width: @screen-lg) {
-			width: 95px;
-			margin-right: 27px;
-		}
-		@media(min-width:@screen-lg) {
-			width: 110px;
-			margin-right: 42px;
-		}
-		@media(min-width: @screen-xlg) {
-			width: 135px;
-			margin-right: 102px;
+          float: right;
 		}
 	}
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
 	.ruble-icon {
-		.font(1.2rem;
-		1.2rem;
-		1.2rem;
+		.font(1.6rem;
 		1.4rem;
+        1.6rem;
+        1.6rem;
 		1.6rem;
-		1);
+        1.6rem);
 	}
 }
 

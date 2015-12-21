@@ -220,7 +220,8 @@ minus.on("click", function(){
 });
 
 // Fixed-filter toggle
-$(".open-filter__btn").on("click", function(){
+$(".open-filter__btn").on("click", function(e){
+  e.stopPropagation();
   if(window.matchMedia("(max-width:480px)").matches){
     $("body").addClass("overflow-hidden-full");
   }
@@ -230,6 +231,17 @@ $(".open-filter__btn").on("click", function(){
 $(".filter__icon").on("click", function(){
   $("body").removeClass("overflow-hidden-full");
   $("section.filter").hide('slide', {direction: 'right'}, 500);
+});
+
+$("form.filter-form").submit(function(e){
+    e.preventDefault();
+    $("body").removeClass("overflow-hidden-full");
+    $("section.filter").hide('slide', {direction: 'right'}, 500);
+    $(".open-filter__btn").addClass("filters-applied");
+});
+
+$("section.filter").on("click", function(e){
+    e.stopPropagation();
 });
 
 // Main slider
@@ -308,6 +320,10 @@ $('body').on('click', function(event) {
       searchField.hide("fast");
       menuBtn.removeClass("display-none");
     }
+
+    //Hide filters
+//    $("body").removeClass("overflow-hidden-full");
+    $("section.filter").hide('slide', {direction: 'right'}, 500);
 });
 
 // Price range
@@ -325,6 +341,7 @@ if($( "#ui-slider" ).length != 0){
   $( "#min-price" ).val($( "#ui-slider" ).slider( "values", 0 ));
   $( "#max-price" ).val($( "#ui-slider" ).slider( "values", 1 ));
 }
+
 
 //Disable light-box on mobile
 function disableLightbox(){
