@@ -39,10 +39,12 @@
 	}
 	.product-properties__buttons{
 		
-		@media(max-width: @screen-xs){
-			margin-top: 0 !important;
+		@media(min-width: @screen-xs){
+			margin-top: 3px !important;
 		}
-		margin-top: 4px !important;
+		@media (min-width: @screen-lg){
+			margin-top: 4px !important;
+		}
 		@media (min-width: @screen-xlg){
 			margin-top: 1px !important;
 		}
@@ -176,6 +178,9 @@
 		padding-bottom: 25px;
 		text-transform: uppercase;
 		@media(min-width: @screen-xs) {
+			padding-bottom: 15px;
+			width: 460px;
+			margin: 0 auto;
 			padding-left: 15px;
 		}
 		
