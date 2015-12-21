@@ -1,10 +1,15 @@
 $(document).ready(function(){
-	$('.text__recomendations a').on("click touchstart", function(){
-		var dataId = $(this).attr('data-id'),
-		 contentId = $('.about-section[data-id=' + dataId + ']'),
-		 allId = $('.about-section');
-		allId.hide();
-		contentId.show("fast");
-		return false;
+	$(".text__toggler").on("click", function(){
+        var dataId = $(this).attr('data-id'),
+            contentId = $('.about-section[data-id=' + dataId + ']'),
+            allId = $('.about-section'),
+            togglers = $(".text__toggler");
+
+        togglers.not($(this)).removeClass("active");
+        allId.not(contentId).hide();
+
+        $(this).toggleClass("active");
+        contentId.toggle();
+
 	});
 });
