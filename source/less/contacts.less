@@ -111,10 +111,10 @@
 			padding-left: 15px;
 		}
 		@media(min-width: @screen-lg) {
-			width: 870px;
+			width: 850px;
 		}
 		@media(min-width: @screen-xlg) {
-			width: 1185px;
+			width: 1185px
 		}
 	}
 	&__heading {
@@ -123,7 +123,7 @@
 		3.6rem;
 		3.6rem;
 		4.8rem;
-		1);
+		1.4);
 		color: #000;
 		line-height: 1;
 		padding-bottom: 30px;
@@ -142,6 +142,9 @@
 		.container-fluid;
 		padding-top: 30px;
 		padding-bottom: 10px;
+		@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+			width: 460px;
+		}
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
 			padding-bottom: 23px;
@@ -169,9 +172,11 @@
 		@media(min-width: @screen-lg) {
 			padding-bottom: 13px;
 			width: 1150px;
+			padding-left: 0;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
+			padding-left: 0;
 			padding-bottom: 8px;
 			width: 1585px;
 		}
@@ -191,10 +196,6 @@
 			text-decoration: none;
 			color: @gray;
 			text-transform: uppercase;
-			padding-bottom: 7px;
-		}
-		@media(min-width: @screen-xlg) {
-			margin-top: 3px;
 		}
 	}
 }
