@@ -432,11 +432,15 @@
 		color: #fff;
 		margin-right: 30px;
 		background: @blue;
-		&:active,
-		&:hover, &:hover:active {
-			background: none;
-			color: @blue;
-			border: 1px solid @blue;
+        &:hover {
+          background: none;
+          color: @blue;
+          border: 1px solid #eaeaea;
+        }
+		&:active {
+          background: none;
+          color: @blue;
+          border: 1px solid @blue;
 		}
 	}
 	&__reset {
