@@ -66,12 +66,8 @@
 	
 	&__main-wrapper{
 		
-	@media (max-width: 767px) {
-		width: 480px;
-		margin: 0 auto;
-	}
 	@media (max-width: @screen-xs) {
-		width: 320px;
+		width: auto;
 		margin: 0 auto;
 	}
 	@media (max-width: @screen-md) {
@@ -164,8 +160,14 @@
 		.container-fluid;
 		padding-top: 30px;
 		padding-bottom: 5px;
+		@media(min-width: @screen-xs) {
+			padding-top: 15px;
+			padding-bottom: 18px;
+			width: 460px;
+		}
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
+			width: auto;
 			padding-bottom: 18px;
 		}
 		@media(min-width: @screen-md) {
