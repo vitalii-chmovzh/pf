@@ -106,11 +106,13 @@
 	}
 	&__main-content-wrapper {
 		@media(min-width: @screen-sm) {
-			width: 725px;
+			width: 720px;
 			margin: 0 auto;
+			overflow: hidden;
 		}
 		@media(min-width: @screen-md) {
-			width: 73%;
+			width: 73.3%;
+			overflow: visible;
 			float: left;
 			padding-left: 15px;
 			margin: 0;
@@ -156,7 +158,6 @@
 			padding-top: 45px;
 			padding-bottom: 0;
 			margin: 0 auto;
-			width: 980px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
@@ -164,7 +165,8 @@
 			padding-bottom: 0;
 		}
 		@media(min-width: @screen-md) {
-			width: 930px;
+			width: 948px;
+			padding-left: 15px;
 			margin: 0 auto;
 		}
 		@media(min-width: @screen-lg) {
