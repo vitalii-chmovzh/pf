@@ -27,7 +27,10 @@ html {
   font-size: 10px;
   height: 100%;
   -ms-text-size-adjust: 100%; 
-  -webkit-text-size-adjust: 100%;  
+  -webkit-text-size-adjust: 100%;
+  @media(min-width: @screen-md){
+    overflow: visible!important;
+  }
 }
 
 a,span, button, i{
@@ -37,6 +40,9 @@ a,span, button, i{
 body {
   background: #FFFFFF;  
   height: 100%;
+  @media(min-width: @screen-md){
+    overflow: visible!important;
+  }
 }
 
 
