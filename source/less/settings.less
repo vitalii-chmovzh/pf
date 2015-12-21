@@ -79,21 +79,25 @@
 	&__return-link {
 		display: none;
 		@media(min-width: @screen-sm) {
-			display: inline-block;
+			display: block;
 			.font(1rem;
 			1rem;
 			1rem;
 			1.2rem;
 			1.4rem;
 			1);
-			padding-bottom: 7px;
 			font-weight: bold;
 			text-decoration: none;
 			color: @gray;
 			text-transform: uppercase;
+			width: 720px;
+			margin: 0 auto;
 		}
 		@media(min-width: @screen-md) {
+			display: inline-block;
 			padding-left: 15px;
+			width: auto;
+			margin: 0;
 		}
 	}
 	&__container {
@@ -130,16 +134,20 @@
 		3.6rem;
 		3.6rem;
 		4.8rem;
-		1);
+		1.4);
 		color: #000;
 		line-height: 1;
 		padding-bottom: 30px;
 		text-transform: uppercase;
 		@media(min-width: @screen-sm) {
 			padding-bottom: 15px;
+			width: 720px;
+			margin: 0 auto;
 		}
 		@media(min-width: @screen-md) {
 			padding-left: 15px;
+			width: auto;
+			margin: 0;
 		}
 		@media(min-width: @screen-lg) {
 			padding-bottom: 22px;
@@ -167,6 +175,14 @@
 	@media(min-width: @screen-xlg) {
 		margin-bottom: 21px;
 	}
+	
+	&__wrapper{
+		@media (min-width: @screen-sm) and (max-width: 991px){
+			width: 755px;
+			margin: 0 auto;
+		}	
+	}
+	
 	&__icon {
 		display: inline-block;
 		vertical-align: middle;

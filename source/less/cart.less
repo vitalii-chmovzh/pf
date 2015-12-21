@@ -28,7 +28,7 @@
 	padding-top: 99px;
 	overflow: hidden;
 	@media(min-width: @screen-xs) {
-		padding-top: 105px;
+		padding-top: 99px;
 		overflow: visible;
 	}
 	@media(min-width: @screen-md) {
@@ -39,6 +39,9 @@
 	}
 	@media(min-width: @screen-lg) {
 		padding-top: 83px;
+	}
+	@media(min-width: @screen-xlg) {
+		padding-top: 103px;
 	}
 	@media (max-width: 767px) {
 		max-width: 390px;
@@ -140,9 +143,6 @@
 			text-transform: uppercase;
 		}
 		
-		@media(min-width: @screen-xlg) {
-			padding-top: 3px;
-		}
 	}
 	&__container {
 		.container-fluid;
