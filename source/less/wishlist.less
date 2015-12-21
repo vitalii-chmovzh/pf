@@ -39,10 +39,12 @@
 	}
 	.product-properties__buttons{
 		
-		@media(max-width: @screen-xs){
-			margin-top: 0 !important;
+		@media(min-width: @screen-xs){
+			margin-top: 3px !important;
 		}
-		margin-top: 4px !important;
+		@media (min-width: @screen-lg){
+			margin-top: 4px !important;
+		}
 		@media (min-width: @screen-xlg){
 			margin-top: 1px !important;
 		}
