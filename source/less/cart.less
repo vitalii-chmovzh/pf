@@ -154,13 +154,14 @@
 	}
 	&__container {
 		.container-fluid;
+		position: relative;
 		padding-top: 15px;
 		padding-bottom: 15px;
 		@media(max-width: 767px) {
 			padding-top: 30px;
 		}
 		@media(min-width: @screen-sm) {
-			padding-bottom: 30px;
+			padding-bottom: 15px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
@@ -357,8 +358,10 @@
 			float: left;
 			padding: 15px;
 			padding-right: 10px;
+			padding-top: 11px;
 			@media(min-width: @screen-sm) {
 				width: 160px;
+				padding-top: 13px;
 				padding-left: 0;
 			}
 			@media(min-width: @screen-md) {
@@ -370,7 +373,7 @@
 			}
 			@media (min-width: @screen-xlg) {
 				width: 240px;
-				padding-top: 20px;
+				padding-top: 18px;
 			}
 		}
 		&__row {
@@ -383,7 +386,7 @@
 				@media (min-width: @screen-sm) {
 					display: block;
 					text-align: right;
-					margin-bottom: 16px;
+					margin-bottom: 10px;
 				}
 				@media (min-width: @screen-xlg) {
 					margin-bottom: 13px;
@@ -504,20 +507,20 @@
 				}
 				@media(min-width: @screen-sm) {
 					bottom: initial;
-					top: 43px;
+					top: 38px;
 					right: 30px;
 				}
 				@media(min-width: @screen-md) {
 					bottom: initial;
-					top: 43px;
+					top: 38px;
 					right: 27px;
 				}
 				@media(min-width: @screen-lg) {
-					right: 48px;
+					right: 81px;
 				}
 				@media(min-width: @screen-xlg) {
 					bottom: initial;
-					top: 52px;
+					top: 47px;
 					right: 119px;
 				}
 			}
@@ -573,9 +576,12 @@
 				}
 			}
 			@media (min-width: @screen-xs) {
-				position: static;
 				width: auto;
 				margin-top: 0;
+			}
+			
+			@media(min-width: @screen-sm){
+				position: static;
 			}
 		}
 		&__properties {
@@ -890,9 +896,13 @@
 		3.6rem;
 		4.8rem;
 		1);
+		@media(min-width: @screen-xs) {    
+			margin-left: 194px;
+		}
 		@media(min-width: @screen-sm) {
 			width: 95px;
 			float: left;
+			margin-left: auto;
 			margin-left: 90px;
 		}
 		@media(min-width: @screen-md) {
@@ -950,6 +960,10 @@
 			color: @blue;
 			background: #fff;
 		}
+		@media (min-width: @screen-xs) and (max-width: @screen-sm) {
+			margin-top: 26px;
+			margin-bottom: 15px;
+		}
 		@media (min-width: @screen-md) {
 			&:hover {
 				color: @blue;
@@ -960,13 +974,18 @@
 			padding: 13px 0;
 			width: 95px;
 		}
+		@media(min-width: @screen-md) {
+			margin-bottom: 30px;
+		}
 		@media(min-width: @screen-lg) {
 			padding: 13px 15px;
+			margin-bottom: 30px;
 			width: 115px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding: 18px 15px;
 			width: 135px;
+			margin-bottom: 45px;
 		}
 	}
 }
@@ -979,7 +998,8 @@
 	margin: 0 auto;
 	@media (min-width: @screen-xs) {
 		float: none;
-		width: 360px;
+		width: 100%;
+		margin-bottom: 0;
 	}
 	@media (min-width: @screen-sm) {
 		float: none;
@@ -1003,7 +1023,7 @@
 	&__info {
 		
 		@media (min-width: @screen-xs) and (max-width: 767px) {
-			width: 63.7%;
+			width: 69.7%;
 			float: left;
 		}
 		@media (min-width: @screen-sm) {
@@ -1047,6 +1067,9 @@
 		.delivery-info {
 			margin-bottom: 0;
 			@media (min-width: @screen-sm) {
+				margin-bottom: 0px;
+			}
+			@media (min-width: @screen-md) {
 				margin-bottom: 30px;
 			}
 		}
@@ -1451,7 +1474,7 @@
 		.clearfix;
 		
 		@media (min-width: @screen-xs) and (max-width: 767px) {
-			width: 30.5%;
+			width: 32.5%;
 			float: left;
 		}
 		@media (min-width: @screen-sm) {

@@ -109,7 +109,7 @@
 				return;
 			}
 
-			ta.style.height = endHeight + 'px';
+			ta.style.height = endHeight + 2 + 'px';
 
 			// used to check if an update is actually necessary on window.resize
 			clientWidth = ta.clientWidth;
