@@ -17,6 +17,19 @@
 	@media(min-width: @screen-xlg) {
 		width: 427px;
 	}
+	
+	.filter-form__sizes{
+		.dropcontainer{
+			top: 48px;			
+		}
+		
+		&--kids{
+			.dropcontainer{
+				top: 58px;
+			}
+		}
+	}
+	
 	&__row {
 		.clearfix;
 		display: flex;
@@ -52,7 +65,7 @@
 		}
 	}
 	.dropcontainer {
-		top: 50px;
+		top: 58px;
 		@media(min-width: @screen-xlg) {
 			width: 240px;
 			top: 54px;
@@ -66,9 +79,7 @@
 
 .filter-form {
 //	margin-top: 30px;
-    @media(max-width: @screen-xs) {
-      text-align: center;
-    }
+	width: 100%;
 	input[type="radio"],
 	input[type="checkbox"] {
 		display: none;
@@ -216,7 +227,7 @@
 			background-size: 8px 4px !important;
 			appearance: none;
 			padding: 5px 15px;
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 			background: none;
 			border: none;
 			box-shadow: 0px 2px 0px 0px #000;
@@ -240,9 +251,18 @@
 				width: 240px;
 			}
 		}
+		
+		ul{
+			
+			@media(max-width: 479px){
+				width: 296px;
+    			margin: 0 auto;
+			}
+		}
+		
 		li {
 			display: inline-block;
-			margin-right: 14px;
+			margin-right: 17px;
 			margin-bottom: 14px;
 			&:nth-of-type(5n+5) {
 				margin-right: 0;
