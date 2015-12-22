@@ -4,35 +4,43 @@ $(document).ready(function () {
     var sidebar = $(".catalog-filter-wrapper"),
         catalogFilter = $('.catalog-filter'),
         sidebarOffset = sidebar.offset().top,
-        footerOffset = $('.page-footer').offset().top;
+        footerOffset = $('.page-footer').offset().top,
+        wHeight = $(window).height();
+        catalogFilterUl = $('.catalog-filter__list'),
+        headerHeight = $('.page-header').height(),
+        catalogFilterUl.css("height", wHeight - headerHeight + "px");
 
     $(window).on("orientationchange",function(){
         sidebarOffset = sidebar.offset().top;
         footerOffset = $('.page-footer').offset().top;
+        wHeight = $(window).height();
+        headerHeight = $('.page-header').height();
+        catalogFilterUl.css("height", wHeight - headerHeight + "px");
     });
 
     $(window).on("scroll", function () {
         var scrollTop = $(this).scrollTop(),
-            headerHeight = $('.page-header').height(),
             footerOffset = $('.page-footer').offset().top,
             sidebarHeight = sidebar.height();
+
+
 
         if (sidebarHeight < (footerOffset - headerHeight)) {
 
             if (window.matchMedia("(min-width:992px)").matches) {
-                if (scrollTop > (sidebarOffset)) {
+                if (scrollTop > (sidebarOffset - headerHeight)) {
 
                     sidebar.addClass('catalog-filter-fixed');
                     $('.catalog-filter').addClass('position-static');
 
-                    if (footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)) {
+                    if (footerOffset <= (sidebarHeight + scrollTop + headerHeight)) {
                         sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
                     } else {
                         sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
                     }
 
                 } else {
-                    sidebar.removeClass('catalog-filter-fixed');
+                    sidebar.removeClass('catalog-filter-fixed catalog-filter-bottom');
                     $('.catalog-filter').removeClass('position-static');
                 }
             }
