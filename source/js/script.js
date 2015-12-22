@@ -391,8 +391,29 @@ function disableLightbox(){
     }
 };
 
-if(window.matchMedia("(max-width:350px)").matches){
+if(window.matchMedia("(max-width:370px)").matches){
     disableLightbox();
 }
 
+//pop-ups centering
+var firstModal =  $("#modal-1"),
+    secondModal =  $("#modal-2"),
+    thirdModal = $("#modal-3"),
+    firstModalMargin = -firstModal.height()/2 + "px 0 0" + (-firstModal.width()/2) + "px",
+    secondModalMargin = -secondModal.height()/2 + "px 0 0" + (-secondModal.width()/2) + "px",
+    thirdModalMargin = -thirdModal.height()/2 + "px 0 0" + (-thirdModal.width()/2) + "px";
+
+    firstModal.css( "margin", firstModalMargin );
+    secondModal.css( "margin", secondModalMargin );
+    thirdModal.css( "margin", thirdModalMargin );
+
+    $(window).on("resize",function(){
+        firstModalMargin = -firstModal.height()/2 + "px 0 0" + (-firstModal.width()/2) + "px";
+        secondModalMargin = -secondModal.height()/2 + "px 0 0" + (-secondModal.width()/2) + "px";
+        thirdModalMargin = -thirdModal.height()/2 + "px 0 0" + (-thirdModal.width()/2) + "px";
+
+        firstModal.css( "margin", firstModalMargin );
+        secondModal.css( "margin", secondModalMargin );
+        thirdModal.css( "margin", thirdModalMargin );
+    });
 });
