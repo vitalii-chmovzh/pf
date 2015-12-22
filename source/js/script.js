@@ -226,24 +226,52 @@ minus.on("click", function(){
        }
 });
 
+function showFilter(){
+    $("section.filter").show('slide', {direction: 'right'}, 500);
+};
+
+function hideFilter(){
+    $("section.filter").hide('slide', {direction: 'right'}, 500);
+};
+
+var timeOut = 0;
+
 // Fixed-filter toggle
 $(".open-filter__btn").on("click", function(e){
+
   e.stopPropagation();
   if(window.matchMedia("(max-width:480px)").matches){
     $("body").addClass("overflow-hidden-full");
   }
-  $("section.filter").show('slide', {direction: 'right'}, 500);
+   if(window.matchMedia("(max-width:768px)").matches) {
+       $(this).addClass("hidden-btn");
+       timeOut = 500;
+   }
+
+  setTimeout(function(){showFilter()}, timeOut)
+
 });
 
-$(".filter__icon").on("click", function(){
-  $("body").removeClass("overflow-hidden-full");
-  $("section.filter").hide('slide', {direction: 'right'}, 500);
+$(".filter__icon").on("click", function() {
+    $("body").removeClass("overflow-hidden-full");
+
+    if (window.matchMedia("(max-width:768px)").matches) {
+        setTimeout(function () {
+            $(".open-filter__btn").removeClass("hidden-btn")
+        }, 500);
+    }
+    hideFilter();
 });
 
 $("form.filter-form").submit(function(e){
     e.preventDefault();
     $("body").removeClass("overflow-hidden-full");
-    $("section.filter").hide('slide', {direction: 'right'}, 500);
+    if (window.matchMedia("(max-width:768px)").matches) {
+        setTimeout(function () {
+            $(".open-filter__btn").removeClass("hidden-btn")
+        }, 500);
+    }
+    hideFilter();
     $(".open-filter__btn").addClass("filters-applied");
 });
 
@@ -329,8 +357,12 @@ $('body').on('click', function(event) {
     }
 
     //Hide filters
-//    $("body").removeClass("overflow-hidden-full");
-    $("section.filter").hide('slide', {direction: 'right'}, 500);
+    if (window.matchMedia("(max-width:768px)").matches) {
+        setTimeout(function () {
+            $(".open-filter__btn").removeClass("hidden-btn")
+        }, 500);
+    }
+    hideFilter();
 });
 
 // Price range
