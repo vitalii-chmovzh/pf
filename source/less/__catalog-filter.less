@@ -18,7 +18,7 @@
 		height: 100%;
 		display: none;
 		font-size: 16px;
-		position: fixed;
+		position: fixed !important;
 		overflow-x: hidden;
 		top: 99px;
 		z-index: 1550000;
@@ -36,8 +36,6 @@
 		background: none;
 		overflow: visible;
 		display: block!important;
-		border-right: 1px solid @border-color;
-		border-bottom: 1px solid @border-color;
 	}
 	@media (min-width: @screen-lg) {
 		width: 278px;
@@ -80,29 +78,29 @@
   }
 }
 
-.arrow-right{
-  cursor: pointer;
-  width: 0;
-  height: 0;  
-  border-top: 5px solid transparent;
-  border-left: 10px solid #fff;
-  border-bottom: 5px solid transparent;
-    transition: .1s;
-  &--gray{
-    border-left-color: @gray;
-  &:active, &:hover:active{
-    border-left-color: @blue !important;
-  }
-  } 
-  
-  &--disabled{
-    opacity: .2;
-    
-    &:hover{
-      border-right-color: #fff;
-    }
-  }
-}
+//.arrow-right{
+//  cursor: pointer;
+//  width: 0;
+//  height: 0;
+//  border-top: 5px solid transparent;
+//  border-left: 10px solid #fff;
+//  border-bottom: 5px solid transparent;
+//    transition: .1s;
+//  &--gray{
+//    border-left-color: @gray;
+//  &:active, &:hover:active{
+//    border-left-color: @blue !important;
+//  }
+//  }
+//
+//  &--disabled{
+//    opacity: .2;
+//
+//    &:hover{
+//      border-right-color: #fff;
+//    }
+//  }
+//}
 
   
 .arrow-bottom{
@@ -222,49 +220,67 @@
 		.last{
 			border-bottom: none;
 		}
-		i {
+		i.arrow-right {
 			position: absolute;
-			right: 30px;
-			top: 15px;
+			right: 0;
+			top: 0;
 			z-index: 9;
-			&:after {
-				
-				@media(max-width: @screen-xs){
-				height: 80px !important;
-				z-index: 10000;
-				width: 100px !important;
-					
-				}
-				
-				@media(min-width: @screen-md){
-					position: absolute;
-					content: '';
-					right: -16px;
-					top: -22px;
-					height: 30px;
-					z-index: 10000;
-					width: 40px;					
-				}
-			}
-			@media (min-width: @screen-sm) {
-				top: 16px;
-				right: 0;
-			}
-			@media (min-width: @screen-md) {
-				top: 12px;
-				right: 15px;
-				&:hover {
-					border-left-color: #000;
-				}
-			}
-			@media (min-width: @screen-lg) {
-				top: 17px;
-				right: 15px;
-			}
-			@media (min-width: @screen-xlg) {
-				top: 23px;
-				right: 15px;
-			}
+            width: 40px;
+            height: 100%;
+            &:after {
+              content: "";
+              position: absolute;
+              top: 15px;
+              right: 30px;
+              cursor: pointer;
+              width: 0;
+              height: 0;
+              border-top: 5px solid transparent;
+              border-left: 10px solid #fff;
+              border-bottom: 5px solid transparent;
+              transition: .1s;
+              @media (min-width: @screen-sm) {
+                    top: 16px;
+                    right: 0;
+                }
+                @media (min-width: @screen-md) {
+                    top: 12px;
+                    right: 15px;
+                    &:hover {
+                        border-left-color: #000;
+                    }
+                }
+                @media (min-width: @screen-lg) {
+                    top: 17px;
+                    right: 15px;
+                }
+                @media (min-width: @screen-xlg) {
+                    top: 23px;
+                    right: 15px;
+                }
+            }
+            &--gray:after{
+              border-left-color: @gray;
+              &:active, &:hover:active{
+                border-left-color: @blue !important;
+              }
+            }
+            &--disabled:after{
+              opacity: .2;
+              &:hover{
+                border-right-color: #fff;
+              }
+            }
+          &.rotated-arrow{
+            transform: none!important;
+            &:after {
+              color: #2864c7;
+              -webkit-transform: rotate(90deg);
+              -ms-transform: rotate(90deg);
+              transform: rotate(90deg);
+              border-left-color: #2864c7 !important;
+            }
+          }
 		}
 	}
 	&__open-btn {
@@ -328,6 +344,8 @@
 	background: #fff;
 	border-right: 1px solid #eaeaea;
 	border-left: 1px solid #eaeaea;
+    margin-bottom: 30px;
+    border-bottom: 1px solid @border-color;
 	@media (min-width: @screen-md) {
 		width: 242px;
 	}
@@ -373,7 +391,7 @@
 	}
 	&.catalog-filter-bottom {
 		position: absolute;
-		bottom: 100px;
+		bottom: 0;
 		border-right: 1px solid #eaeaea;
 	    border-bottom: 1px solid #eaeaea;
 	    border-left: 1px solid #eaeaea;

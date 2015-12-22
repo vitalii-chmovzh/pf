@@ -3,12 +3,20 @@ function initMap() {
     var myLatLng = {lat: 55.73708, lng: 37.65420};
 
     var map = new google.maps.Map(document.getElementById('map'), {
-      center: myLatLng,
-      scrollwheel: false,
-      zoom: 15,
-      mapTypeControl: false,
-      streetViewControl: false
+        center: myLatLng,
+        scrollwheel: false,
+        zoom: 15,
+        mapTypeControl: false,
+        streetViewControl: false,
+        draggable: true,
+        rotateControl: true,
     });
+
+    if (window.matchMedia("(max-width:480px)").matches) {
+        map.draggable = false;
+    } else {
+        map.draggable = true;
+    }
 
     var image = 'img/marker.png';
 
@@ -102,7 +110,6 @@ $(document).ready(function () {
   });
   
   $('.catalog-filter__open-btn').on("click", function(){
-//    var 
     if (flag === true) {
       catalogFilter.addClass("catalog-filter--hidden");
       uselessWrapper.removeClass("catalog__products-wrapper");
