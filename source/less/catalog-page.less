@@ -183,6 +183,8 @@
 		}
 	}
 	&__price {
+        padding-right: 15px;
+        position: relative;
 		cursor: pointer;
 		.heading(1.4rem;
 		1.4rem;
@@ -197,7 +199,10 @@
 			margin-right: 45px;
 		}
 		.arrow-up {
-			margin-left: 3px;
+            position: absolute;
+            bottom: 2px;
+            right: 0;
+//			margin-left: 3px;
 			display: inline-block;
 			cursor: pointer;
 			width: 0;
@@ -205,6 +210,9 @@
 			border: 5px solid transparent;
 			border-bottom: 10px solid @gray;
 			transition: .1s;
+            &.arrow-down {
+              top: 2px !important;
+            }
 			&:hover {
 				border-bottom-color: @red;
 			}

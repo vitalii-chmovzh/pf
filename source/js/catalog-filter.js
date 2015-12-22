@@ -3,7 +3,10 @@ $(document).ready(function () {
 
     var sidebar = $(".catalog-filter-wrapper"),
         catalogFilter = $('.catalog-filter'),
-        sidebarOffset = sidebar.offset().top;
+        sidebarOffset = sidebar.offset().top,
+        footerOffset = $('.page-footer').offset().top;
+
+//    sidebar.find(".catalog-filter__list").css("height", footerOffset + "px");
 
     $(window).on("orientationchange",function(){
         sidebarOffset = sidebar.offset().top;
@@ -15,22 +18,30 @@ $(document).ready(function () {
             footerOffset = $('.page-footer').offset().top,
             sidebarHeight = sidebar.height();
 
-        if (window.matchMedia("(min-width:992px)").matches) {
-            if (scrollTop > (sidebarOffset)) {
+//        sidebar.find(".catalog-filter__list").css("height", footerOffset + "px");
 
-                sidebar.addClass('catalog-filter-fixed');
-                $('.catalog-filter').addClass('position-static');
+        if (sidebarHeight < (footerOffset - headerHeight)) {
 
-                if (footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)) {
-                    sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+            if (window.matchMedia("(min-width:992px)").matches) {
+                if (scrollTop > (sidebarOffset)) {
+
+                    sidebar.addClass('catalog-filter-fixed');
+                    $('.catalog-filter').addClass('position-static');
+
+                    if (footerOffset <= (sidebarHeight + scrollTop + headerHeight + 100)) {
+                        sidebar.removeClass('catalog-filter-fixed').addClass('catalog-filter-bottom');
+                    } else {
+                        sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
+                    }
+
                 } else {
-                    sidebar.removeClass('catalog-filter-bottom').addClass('catalog-filter-fixed');
+                    sidebar.removeClass('catalog-filter-fixed');
+                    $('.catalog-filter').removeClass('position-static');
                 }
-
-            } else {
-                sidebar.removeClass('catalog-filter-fixed');
-                $('.catalog-filter').removeClass('position-static');
             }
+        } else {
+            $('.catalog-filter').removeClass('position-static');
+            sidebar.removeClass('catalog-filter-fixed catalog-filter-bottom');
         }
     });
 });
