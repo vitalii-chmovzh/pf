@@ -6,10 +6,9 @@ $(document).ready(function () {
         sidebarOffset = sidebar.offset().top,
         footerOffset = $('.page-footer').offset().top;
 
-//    sidebar.find(".catalog-filter__list").css("height", footerOffset + "px");
-
     $(window).on("orientationchange",function(){
         sidebarOffset = sidebar.offset().top;
+        footerOffset = $('.page-footer').offset().top;
     });
 
     $(window).on("scroll", function () {
@@ -17,8 +16,6 @@ $(document).ready(function () {
             headerHeight = $('.page-header').height(),
             footerOffset = $('.page-footer').offset().top,
             sidebarHeight = sidebar.height();
-
-//        sidebar.find(".catalog-filter__list").css("height", footerOffset + "px");
 
         if (sidebarHeight < (footerOffset - headerHeight)) {
 
