@@ -360,14 +360,16 @@
 			margin-top: 9px;
 			padding-bottom: 16px;
 		}
-		@media (min-width: @screen-sm) and (max-width: @screen-md) {
+		@media (min-width: @screen-sm) and (max-width: 1199px) {
 			padding-bottom: 17px;
 		}
 		@media (min-width: @screen-md) {
 			padding-bottom: 12px;
+			margin-top: 7px;
 		}
 		@media (min-width: @screen-lg) {
 			padding-bottom: 19px;
+			margin-top: 9px;
 		}
 		@media (min-width: @screen-xlg) {
 			padding-bottom: 32px;
@@ -388,6 +390,12 @@
 			}
 		@media (min-width: @screen-xs) and (max-width: 767px) {
 			margin-bottom: 13px;
+			&:last-of-type {
+				margin-bottom: 1px;
+			}
+		}
+		@media (min-width: @screen-md) and (max-width: 1199px) {
+			margin-bottom: 14px;
 			&:last-of-type {
 				margin-bottom: 1px;
 			}
