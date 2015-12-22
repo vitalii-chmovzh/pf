@@ -2,6 +2,12 @@
 	.main-menu__active {
 		color: @blue;
 	}
+	
+	.wrapper{
+		@media(min-width: @screen-md){
+			overflow: hidden;
+		}
+	}
 }
 
 .contacts {
@@ -86,7 +92,7 @@
 		}
 		@media(min-width: @screen-xlg) {
 			line-height: 1.6;
-			padding-bottom: 15px;
+			padding-bottom: 10px;
 		}
 	}
 	.catalog-filter {
@@ -142,21 +148,24 @@
 		.container-fluid;
 		padding-top: 30px;
 		padding-bottom: 10px;
-		@media(min-width: @screen-xs) and (max-width: @screen-sm) {
+		@media(min-width: @screen-xs) and (max-width: 767px) {
 			width: 460px;
 		}
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
-			padding-bottom: 23px;
+			padding-bottom: 5px;
+			padding-left: 0;
+			padding-right: 0;
+			overflow: hidden;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
+			overflow: visible;
 		padding-left: 0;
 		padding-right: 0;
 			padding-bottom: 20px;
 		}
 		@media(min-width: @screen-lg) {
-			overflow: hidden !important;
 			padding-bottom: 10px;
 		}
 		@media(min-width: @screen-xlg) {
@@ -250,6 +259,10 @@
 			&:hover{
 				color: #000;
 			}
+		}
+		
+		@media (min-width: @screen-xlg){
+			font-size: 2.4rem;
 		}
 	}
 	&__warning {
@@ -397,6 +410,7 @@
 	&__first-article {
 		margin-bottom: 18px;
 		@media(min-width: @screen-sm) {
+			margin-bottom: 0;
 			float: left;
 			width: percentage(345/720);
 			margin-right: percentage(30/720);
@@ -427,10 +441,16 @@
 		margin-bottom: 30px;
 		@media(min-width: @screen-sm) {
 			height: 460px;
+			margin-right: -100%;
+			margin-left: -100%;
+			margin-bottom: 15px;
+			
 		}
 		@media(min-width: @screen-md) {
 			margin-right: -4%;
+			margin-left: -15px;
 			height: 450px;
+			width: 120%;
 		}
 		@media(min-width: @screen-md) {
 			margin-right: -4%;
@@ -438,6 +458,7 @@
 		}
 		@media(min-width: @screen-lg) {
 			margin-right: 0;
+			margin-bottom: 22px;
 		}
 	}
 }
