@@ -209,9 +209,12 @@
 			height: 0;
 			border: 5px solid transparent;
 			border-bottom: 10px solid @gray;
+            transform: rotate(0deg);
 			transition: .1s;
-            &.arrow-down {
-              top: 2px !important;
+            &.arrow-down-active {
+              top: 3px;
+              border-bottom-color: #2864c7;
+              transform: rotate(180deg);
             }
 			&:hover {
 				border-bottom-color: @red;

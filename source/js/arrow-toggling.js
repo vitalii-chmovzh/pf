@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$(".sort-actions__price").on("click touchstart", function(){
-		$(".arrow-up").toggleClass("arrow-down");
+		$(".arrow-up").toggleClass("arrow-down-active");
 		console.log(1);
 	});
 	
@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
 	
 	noveltyBtn.on("click touchstart", function(){		
-		$(".arrow-up").removeClass("arrow-down");
+		$(".arrow-up").removeClass("arrow-down-active");
 	});
 });
 
