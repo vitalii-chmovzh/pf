@@ -189,7 +189,7 @@ searchBtn.on("click", function(e){
 searchCloseBtn.on("click", function(e){
   e.preventDefault();
   e.stopPropagation();
-  menu__nav.removeClass("hidden-block");
+  setTimeout(function(){ menu__nav.removeClass("hidden-block"); }, 100);
   searchCloseBtn.removeClass("inline-block");
   searchField.hide("fast");
   menuBtn.removeClass("display-none");
@@ -350,7 +350,7 @@ $('body').on('click', function(event) {
 
     // Hide search
     if(window.matchMedia("(min-width:970px)").matches){
-      menu__nav.removeClass("hidden-block");
+      setTimeout(function(){ menu__nav.removeClass("hidden-block"); }, 100);
       searchCloseBtn.removeClass("inline-block");
       searchField.hide("fast");
       menuBtn.removeClass("display-none");
