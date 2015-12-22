@@ -1,3 +1,9 @@
+.sizes-page{
+	.wrapper{
+		min-height: 60%;
+	}	
+}
+
 .sizes{
   position: relative;
   padding-top: 99px;
@@ -25,8 +31,9 @@
   
   label{
     display: block;
-    .font(1.2rem;1.2rem;1.4rem;1.6rem;1);
+    .font(1.2rem;1.2rem;1.4rem;1.4rem;1.6rem;1);
     font-weight: bold;
+	  margin-bottom: 4px;
   }
   
   select, .trigger, .activetrigger{
@@ -163,11 +170,6 @@ border-bottom: 2px solid #000;
     width: 290px;
 		margin: 0 auto;
 		
-		label{	    
-			@media(min-width: @screen-lg){
-				font-size: 1.4rem;
-			}
-		}
 		
     *{
       width: 100%;
@@ -229,7 +231,7 @@ border-bottom: 2px solid #000;
   }
   
   .man, .children, .all{
-    margin-top: 30px;
+    margin-top: 26px;
     width: 100%;
     .font(1.2rem;1.2rem;1.4rem;1.4rem;1.6rem;1);
     text-align: center; 
@@ -262,6 +264,10 @@ border-bottom: 2px solid #000;
       width: 20%;
     }  
 }
+	
+	.all{
+		margin-top: 0;	
+	}
 
 .children{
     @media(min-width: @screen-sm){

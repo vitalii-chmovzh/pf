@@ -1,3 +1,8 @@
+.crutch-container{
+	display: inline-block;
+	width: 100%;
+}
+
 .settings-page {
 	.tool-bar {
 		&__actions {
@@ -14,6 +19,17 @@
 					background: url("../img/settings--red.svg");
 					background-size: cover;
 				}
+			}
+		}
+	}
+	
+	.adres-info__street-select{
+		
+		.trigger, .activetrigger{
+			
+			@media (min-width: @screen-sm){
+				position: relative;
+				top: 2px;
 			}
 		}
 	}
@@ -104,15 +120,19 @@
 		.container-fluid;
 		padding-top: 30px;
 		padding-bottom: 15px;
+		@media(min-width: @screen-xs) {
+			padding-bottom: 30px;
+		}
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
+			padding-bottom: 0;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
+			padding-bottom: 15px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-top: 65px;
-			padding-bottom: 0;
 		}
 		@media(min-width: @screen-md) {
 			width: 948px;
@@ -155,10 +175,11 @@
 			margin: 0;
 		}
 		@media(min-width: @screen-lg) {
-			padding-bottom: 22px;
+			padding-bottom: 16px;
 		}
 		@media(min-width: @screen-xlg) {
 			margin-top: 0;
+			padding-bottom: 12px;
 		}
 	}
 }
@@ -195,7 +216,7 @@
 	&__icon {
 		display: inline-block;
 		vertical-align: middle;
-		width: 53px;
+		width: 44px;
 		height: 57px;
 		position: relative;
 		@media(min-width: @screen-sm) {
@@ -221,7 +242,7 @@
 		}
 	}
 	&__description {
-		width: 235px;
+		width: 249px;
 		display: inline-block;
 		vertical-align: middle;
 		font-weight: bold;
@@ -234,6 +255,7 @@
 		1.5);
 		@media(min-width: @screen-xs) {
 			width: auto;
+			padding-top: 2px;
 		}
 	}
 }
@@ -270,7 +292,7 @@
 			padding-bottom: 12px;
 		}
 		@media(min-width: @screen-lg) {
-			padding-bottom: 12px;
+			padding-bottom: 15px;
 		}
 		@media(min-width: @screen-xlg) {
 			padding-bottom: 20px;
@@ -570,7 +592,7 @@
 		padding-top: 30px;
 	}
 	@media(min-width: @screen-md) {
-		padding-top: 60px;
+		padding-top: 30px;
 	}
 	@media(min-width: @screen-xlg) {
 		padding-bottom: 20px;
