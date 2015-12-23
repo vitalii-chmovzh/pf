@@ -9,6 +9,7 @@ $(document).ready(function () {
         catalogFilterUl = $('.catalog-filter__list'),
         headerHeight = $('.page-header').height(),
         catalogFilterUl.css("height", wHeight - headerHeight + "px");
+        catalogFilter.css("height", wHeight - headerHeight + "px");
 
     $(window).on("orientationchange",function(){
         sidebarOffset = sidebar.offset().top;
@@ -22,8 +23,6 @@ $(document).ready(function () {
         var scrollTop = $(this).scrollTop(),
             footerOffset = $('.page-footer').offset().top,
             sidebarHeight = sidebar.height();
-
-
 
         if (sidebarHeight < (footerOffset - headerHeight)) {
 
@@ -45,8 +44,8 @@ $(document).ready(function () {
                 }
             }
         } else {
-            $('.catalog-filter').removeClass('position-static');
-            sidebar.removeClass('catalog-filter-fixed catalog-filter-bottom');
+//            $('.catalog-filter').removeClass('position-static');
+//            sidebar.removeClass('catalog-filter-fixed catalog-filter-bottom');
         }
     });
 });
