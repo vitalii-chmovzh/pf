@@ -15,10 +15,31 @@
 @import "normalize.less";
 
 .ruble-icon{
-	font-family: 'als_rublregular' !important;
-  font-style: normal;
-  font-weight: inherit;
-  line-height: 1;
+	font-family: 'Times New Roman' !important;
+	 font-style: normal;
+	 font-weight: inherit;
+	 line-height: 1;
+	margin-left: 5px;
+	text-indent: -1000em;
+	display: inline-block;
+	height: 1.55ex;
+	width: 1.1ex;
+	background: url("../img/ruble.gif") center no-repeat;
+	background-size: cover;
+	vertical-align: middle;
+	
+	@media (min-width: @screen-xs){
+		margin-top: -0.3ex;
+	}
+}
+
+.wishlist1{
+	color: @red !important;
+	background: #fff !important;
+	
+	i{
+		background: url("../img/star--red.svg") !important;
+	}
 }
 
 html {
