@@ -124,12 +124,14 @@ perspective effects (not including the modals and the overlay).
 	padding: 5px 0;
 }
 
-.md-content button {
-	display: none;
-	margin: 0 auto;
-	font-size: 0.8em;
-}
+/*.md-content button {*/
+	/*margin: 0 auto;*/
+	/*font-size: 0.8em;*/
+/*}*/
 
+button.md-close{
+    display: none;
+}
 /* Individual modal styles with animations/transitions */
 
 /* Effect 1: Fade in and scale up */
