@@ -10647,6 +10647,7 @@ footer .bx-next.disabled {
   text-decoration: none;
   text-transform: uppercase;
   margin-bottom: 33px;
+  height: 33px;
   overflow: hidden;
 }
 @media (min-width: 768px) {
@@ -10681,13 +10682,14 @@ footer .bx-next.disabled {
 @media (min-width: 480px) {
   .cart-product__name {
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: pre-wrap;
     margin-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
   .cart-product__name {
     white-space: pre-wrap;
+    height: 50px;
   }
   .cart-product__name:hover {
     color: #000;
@@ -10697,11 +10699,13 @@ footer .bx-next.disabled {
 @media (min-width: 1200px) {
   .cart-product__name {
     margin-bottom: 8px;
+    height: 75px;
   }
 }
 @media (min-width: 1600px) {
   .cart-product__name {
     margin-bottom: 12px;
+    height: 120px;
     line-height: 1;
   }
 }
@@ -12012,7 +12016,7 @@ footer .bx-next.disabled {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .order-item {
-    height: 122px;
+    height: 124px;
   }
 }
 @media (min-width: 768px) {
@@ -12168,21 +12172,29 @@ footer .bx-next.disabled {
   color: #2864c7;
   text-decoration: none;
 }
+@media (min-width: 480px) {
+  .order-item__name {
+    margin-bottom: 15px;
+    height: 30px;
+    overflow: hidden;
+  }
+}
 @media (min-width: 768px) {
   .order-item__name {
     margin-bottom: 15px;
+    height: auto;
+    overflow: visible;
   }
 }
 @media (min-width: 768px) {
   .order-item__name {
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: pre-wrap;
   }
 }
 @media (min-width: 992px) {
   .order-item__name {
-    white-space: pre-wrap;
-    max-width: 300px;
+    max-width: 210px;
   }
   .order-item__name:hover {
     color: #000;
@@ -12192,6 +12204,7 @@ footer .bx-next.disabled {
 @media (min-width: 1600px) {
   .order-item__name {
     margin-bottom: 15px;
+    max-width: 300px;
     line-height: 1;
   }
 }

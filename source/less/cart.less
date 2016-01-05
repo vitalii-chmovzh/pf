@@ -447,17 +447,20 @@
 			text-transform: uppercase;
 			margin-bottom: 33px;
 			overflow: hidden;
+			height:33px;
+			overflow: hidden;
 			&:active, &:hover:active {
 				color: @blue;
 				text-decoration: none;
 			}
 			@media (min-width: @screen-xs) {
 				text-overflow: ellipsis;
-				white-space: nowrap;
+				white-space: pre-wrap;
 				margin-bottom: 15px;
 			}
 			@media (min-width: @screen-md) {
 				white-space: pre-wrap;
+				height: 50px;
 				
 				&:hover{
 					color: #000;
@@ -466,9 +469,11 @@
 			}
 			@media (min-width: @screen-lg) {
 				margin-bottom: 8px;
+    			height: 75px;
 			}
 			@media (min-width: @screen-xlg) {
 				margin-bottom: 12px;
+				height:120px;
 				line-height: 1;
 			}
 		}
@@ -1184,7 +1189,7 @@
 		margin-bottom: 15px;
 	}
 		@media (min-width: @screen-xs) and (max-width: 767px) {
-			height: 122px;
+			height: 124px;
 		}
 	@media (min-width: @screen-sm) {
 		float: none;
@@ -1267,16 +1272,22 @@
 			color: @blue;
 			text-decoration: none;
 		}
+		@media (min-width: @screen-xs) {
+			margin-bottom: 15px;
+			height:30px;
+			overflow: hidden;
+		}
 		@media (min-width: @screen-sm) {
 			margin-bottom: 15px;
+			height: auto;
+			overflow: visible;
 		}
 		@media (min-width: @screen-sm) {
 			text-overflow: ellipsis;
-			white-space: nowrap;
+			white-space: pre-wrap;
 		}
 		@media (min-width: @screen-md) {
-			white-space: pre-wrap;
-			max-width: 300px;
+			max-width: 210px;
 				
 				&:hover{
 					color: #000;
@@ -1285,6 +1296,7 @@
 		}
 		@media (min-width: @screen-xlg) {
 			margin-bottom: 15px;
+			max-width: 300px;
 			line-height: 1;
 		}
 	}
