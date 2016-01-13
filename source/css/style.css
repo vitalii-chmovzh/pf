@@ -2232,12 +2232,6 @@ input[type=search] {
     border-right-color: #2864c7;
   }
 }
-.catalog__pagination .arrow-left--disabled {
-  opacity: .2;
-}
-.catalog__pagination .arrow-left--disabled:hover {
-  border-right-color: #fff;
-}
 .catalog__pagination .arrow-left--gray {
   border-right-color: #535353;
 }
@@ -2245,6 +2239,9 @@ input[type=search] {
   border-top: 5px solid transparent;
   border-right: 10px solid #f6f6f6;
   border-bottom: 5px solid transparent;
+}
+.catalog__pagination .arrow-left--light-gray:hover {
+  border-right-color: #fff;
 }
 .catalog__pagination .arrow-right {
   cursor: pointer;
@@ -2271,11 +2268,11 @@ input[type=search] {
 .catalog__pagination .arrow-right--gray {
   border-left-color: #535353;
 }
-.catalog__pagination .arrow-right--disabled {
-  opacity: .2;
+.catalog__pagination .arrow-right--light-gray {
+  border-left-color: #f6f6f6;
 }
-.catalog__pagination .arrow-right--disabled:hover {
-  border-right-color: #fff;
+.catalog__pagination .arrow-right--light-gray:hover {
+  border-left-color: #fff;
 }
 .catalog__more-btn {
   display: inline-block;
@@ -12998,7 +12995,7 @@ footer .bx-next.disabled {
 }
 @media (min-width: 992px) {
   .check-out__heading {
-    padding-left: 15px;
+    padding-left: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -13068,35 +13065,30 @@ footer .bx-next.disabled {
     border-bottom: 1px solid #eaeaea;
   }
 }
-.check-out-form #last-name,
-.check-out-form #index {
+.check-out-form input.invalid {
   color: #e93f36;
   border-bottom: 2px solid #e93f36;
 }
-.check-out-form #last-name::-webkit-input-placeholder,
-.check-out-form #index::-webkit-input-placeholder {
+.check-out-form input.invalid::-webkit-input-placeholder {
   color: #e93f36;
   position: relative;
   top: 3px;
   vertical-align: middle;
   padding: 0;
 }
-.check-out-form #last-name::-moz-placeholder,
-.check-out-form #index::-moz-placeholder {
+.check-out-form input.invalid::-moz-placeholder {
   color: #e93f36;
   top: 3px;
   vertical-align: middle;
   padding: 0;
 }
-.check-out-form #last-name:-moz-placeholder,
-.check-out-form #index:-moz-placeholder {
+.check-out-form input.invalid:-moz-placeholder {
   color: #e93f36;
   top: 3px;
   vertical-align: middle;
   padding: 0;
 }
-.check-out-form #last-name:-ms-input-placeholder,
-.check-out-form #index:-ms-input-placeholder {
+.check-out-form input.invalid:-ms-input-placeholder {
   color: #e93f36;
   top: 3px;
   vertical-align: middle;

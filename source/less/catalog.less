@@ -197,15 +197,6 @@
 				border-right-color: @blue;
 			}
 		}
-      
-  &--disabled{
-    opacity: .2;
-
-    &:hover{
-      border-right-color: #fff;
-    }
-    
-  } 
   
   &--gray{
     border-right-color: @gray;
@@ -215,6 +206,10 @@
     border-top: 5px solid transparent;
     border-right: 10px solid @light-bg;
     border-bottom: 5px solid transparent;
+
+    &:hover{
+      border-right-color: #fff;
+    }
   }
 }
 
@@ -243,11 +238,11 @@
     border-left-color: @gray;
   } 
   
-  &--disabled{
-    opacity: .2;
+  &--light-gray{    
+    border-left-color: @light-bg;
     
     &:hover{
-      border-right-color: #fff;
+      border-left-color: #fff;
     }
   }
 }

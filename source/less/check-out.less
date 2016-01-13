@@ -160,7 +160,7 @@
 			padding-bottom: 15px;
 		}
 		@media(min-width: @screen-md) {
-			padding-left: 15px;
+			padding-left: 0;
 		}
 		@media(min-width: @screen-lg) {
 			padding-bottom: 11px;
@@ -210,8 +210,7 @@
 			border-bottom: 1px solid @border-color;
 		}
 	}
-	#last-name,
-	#index  {
+	input.invalid  {
 		color: @red;
 		border-bottom: 2px solid @red;
 		&::-webkit-input-placeholder {
