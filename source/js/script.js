@@ -50,7 +50,25 @@ $(document).ready(function () {
     sliderDescription.removeClass("after-red");     
    }
   });
-
+	
+	var entering = $('.entering');
+	var reg = $('.registration');
+	$(".reg").hide();
+	
+	entering.on('click', function(){
+		entering.addClass("toggler-active");
+		reg.removeClass("toggler-active");
+		$(".log").show();
+		$(".reg").hide();
+	});
+	
+	reg.on('click', function(){
+		reg.addClass("toggler-active");
+		entering.removeClass("toggler-active");
+		$(".reg").show();
+		$(".log").hide();
+	});
+	
   // sliderBtn.on("click", function (e){
   //   if (window.matchMedia("(max-width: 992px)").matches) {
 

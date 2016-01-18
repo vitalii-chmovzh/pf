@@ -179,6 +179,43 @@
 .toggler-active {
 	color: @blue !important;
 	cursor: default !important;
+	
+		.arrow-up {
+            position: absolute;
+            bottom: 2px;
+            right: 0;
+//			margin-left: 3px;
+			display: inline-block;
+			cursor: pointer;
+			width: 0;
+			height: 0;
+			border: 5px solid transparent;
+			border-bottom: 10px solid @blue;
+            transform: rotate(0deg);
+			transition: .1s;
+            &.arrow-down-active {
+              top: 3px;
+              border-bottom-color: #2864c7;
+              transform: rotate(180deg);
+            }
+			&:hover {
+				border-bottom-color: @red;
+			}
+			&--disabled {
+				opacity: .2;
+				&:hover {
+					border-right-color: #fff;
+				}
+			}
+			&--gray {
+				border-right-color: @gray;
+			}
+			&--light-gray {
+				border-top: 5px solid transparent;
+				border-right: 10px solid @light-bg;
+				border-bottom: 5px solid transparent;
+			}
+		}
 }
 
 .button-right {

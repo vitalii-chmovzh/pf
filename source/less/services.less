@@ -33,6 +33,7 @@
 	&__row {
 		@media(min-width: @screen-sm) and (max-width: @screen-md) {
 			.clearfix;
+			margin-bottom: 23px;
 		}
 	}
 	@media(min-width: @screen-lg) {
@@ -526,8 +527,8 @@
 	}
 	
 	@media(min-width: @screen-sm) and (max-width: 991px){
-		padding-left: 15%;
-		padding-right: 6%;
+		padding-left: 10%;
+		padding-right: 10%;
 		margin-bottom: 16px;
 	}
 	@media(min-width: @screen-sm){
@@ -749,5 +750,8 @@
 .services__product-img {
   @media(max-width: @screen-md) {
     display: none;
+  }
+  @media(min-width: @screen-md) {    
+	  margin-left: -15px;
   }
 }

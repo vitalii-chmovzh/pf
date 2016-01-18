@@ -6,6 +6,10 @@
 		text-align: center;
 			background: #fff;
 	
+	input{
+		border-bottom-color: @gray !important;
+	}
+	
 	@media(min-width: @screen-sm){
 		width: 345px;
 	}
@@ -177,7 +181,7 @@
 
 .sign-up-popup{
 	&__actions{
-		text-align: right;
+		text-align: center;
 		span{
 			cursor: pointer;
 			display: inline-block;
@@ -189,7 +193,7 @@
 			1);
 			text-transform: uppercase;
 			margin-bottom: 23px;
-			margin-right: 30px;
+			margin:0 15px;
 			
 		}
 		
@@ -258,7 +262,7 @@
 				height: 15px;
 				background: @border-color;
 				border: 1px solid @border-color;
-				top: -2px;
+				top: 0;
 				left: -25px;
 			}
 		&:after {
@@ -332,6 +336,34 @@
 					i{
 						background: url("../img/lock--blue.svg");
 					}
+				&:active{
+					color: @blue;
+				}				
+			}
+		}
+	}
+	
+	&__additional{
+		font-weight: bold;
+		margin-bottom: 23px;
+		text-decoration: none;
+			.font(1.2rem;
+			1.2rem;
+			1.2rem;
+			1.4rem;
+			1.6rem;
+			1);
+		display: inline-block;
+		color: @gray;
+		transition: .1s;
+		
+		&:active, &:hover:active{
+			color: @blue;
+		}
+		
+		@media (min-width: @screen-md){
+			&:hover{
+				color: #000;
 				&:active{
 					color: @blue;
 				}				
