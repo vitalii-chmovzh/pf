@@ -538,12 +538,17 @@
 
 
 .tailoring__slider-pagination, .printing__slider-pagination, .item-slider-wrapper-pagination {
-	padding: 18px 0 28px 0;
+	padding: 18px 0 18px 0;
+	margin-top: 0 !important;
 	position: static;
 	width: auto;
 	margin: 0;
 	text-align: center;
 	font-size: 0!important;
+	
+	@media(min-width: @screen-sm){
+		margin-top: 10px !important;
+	}
 	div {
 		vertical-align: middle;
 		display: inline-block;

@@ -70,6 +70,7 @@ perspective effects (not including the modals and the overlay).
 	width: 100%;
 	height: 100%;
 	visibility: hidden;
+	overflow: scroll;
 	top: 0;
 	left: 0;
 	z-index: 9999999;

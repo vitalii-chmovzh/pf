@@ -64,3 +64,16 @@ var ModalEffects = (function() {
 	init();
 
 })();
+
+$(document).ready(function(){
+	var triggers = $('.md-trigger');
+	var overlays = $('.md-overlay');
+	
+	triggers.on('click', function(){
+		$('body').addClass('hidden-overflow');
+	});
+	
+	overlays.on('click', function(){
+		$('body').removeClass('hidden-overflow');
+	});
+});

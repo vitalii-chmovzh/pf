@@ -355,8 +355,8 @@ table {
   margin-left: 5px;
   text-indent: -1000em;
   display: inline-block;
-  height: 1.55ex;
-  width: 1.1ex;
+  height: 1.5ex;
+  width: 1.05ex;
   background: url("../img/ruble.gif") center no-repeat;
   background-size: cover;
   vertical-align: middle;
@@ -6336,12 +6336,20 @@ footer .bx-next.disabled {
 .tailoring__slider-pagination,
 .printing__slider-pagination,
 .item-slider-wrapper-pagination {
-  padding: 18px 0 28px 0;
+  padding: 18px 0 18px 0;
+  margin-top: 0 !important;
   position: static;
   width: auto;
   margin: 0;
   text-align: center;
   font-size: 0!important;
+}
+@media (min-width: 768px) {
+  .tailoring__slider-pagination,
+  .printing__slider-pagination,
+  .item-slider-wrapper-pagination {
+    margin-top: 10px !important;
+  }
 }
 .tailoring__slider-pagination div,
 .printing__slider-pagination div,
@@ -6990,6 +6998,7 @@ footer .bx-next.disabled {
   display: block;
   float: left;
   width: 17px;
+  margin-top: -2px;
   height: 17px;
   margin-right: 15px;
   background: url("../img/phone.svg") no-repeat;
@@ -7068,6 +7077,7 @@ footer .bx-next.disabled {
 }
 .work-time__icon {
   display: block;
+  margin-top: -2px;
   float: left;
   width: 17px;
   height: 17px;
@@ -7124,6 +7134,7 @@ footer .bx-next.disabled {
 }
 .email__icon {
   display: block;
+  margin-top: -2px;
   float: left;
   width: 17px;
   height: 17px;
@@ -7192,6 +7203,7 @@ footer .bx-next.disabled {
 .adres__icon {
   display: block;
   float: left;
+  margin-top: -2px;
   width: 17px;
   height: 19px;
   margin-right: 15px;
@@ -11499,6 +11511,7 @@ footer .bx-next.disabled {
   width: 130px;
   display: block;
   margin-left: auto;
+  margin-right: 30px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
   font-size: 1.8rem;
@@ -11531,6 +11544,7 @@ footer .bx-next.disabled {
 @media (min-width: 480px) {
   .cart-actions__price-summary {
     margin-left: 194px;
+    margin-right: 0;
   }
 }
 @media (min-width: 768px) {
@@ -15847,6 +15861,14 @@ footer .bx-next.disabled {
 .item-page:after {
   clear: both;
 }
+.item-page .catalog-page__button-wrapper {
+  margin-top: 15px;
+}
+@media (min-width: 480px) {
+  .item-page .catalog-page__button-wrapper {
+    margin-top: 0;
+  }
+}
 @media (max-width: 480px) {
   .item-page {
     max-width: 320px;
@@ -15957,7 +15979,7 @@ footer .bx-next.disabled {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 30px;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
 }
 .item-page__container:before,
 .item-page__container:after {
@@ -15970,7 +15992,7 @@ footer .bx-next.disabled {
 @media (min-width: 768px) {
   .item-page__container {
     padding-top: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     width: 750px;
   }
 }
@@ -15978,6 +16000,7 @@ footer .bx-next.disabled {
   .item-page__container {
     padding-top: 0;
     width: 73.3%;
+    padding-bottom: 15px;
     float: left;
   }
 }
@@ -16513,13 +16536,14 @@ footer .bx-next.disabled {
 .item-page__cart-icon {
   display: inline-block;
   vertical-align: middle;
-  width: 53px;
+  width: 50px;
   height: 57px;
   position: relative;
 }
 @media (min-width: 768px) {
   .item-page__cart-icon {
     height: 39px;
+    width: 53px;
   }
 }
 @media (min-width: 1200px) {
@@ -17434,7 +17458,7 @@ footer .bx-next.disabled {
 }
 @media (min-width: 992px) {
   .social-media {
-    margin-left: 290px;
+    margin-left: 250px;
   }
 }
 @media (min-width: 1600px) {
@@ -17654,7 +17678,6 @@ footer .bx-next.disabled {
 }
 .same-items {
   clear: both;
-  margin-bottom: 15px;
 }
 .same-items__caption {
   font-weight: normal;
@@ -18342,6 +18365,34 @@ footer .bx-next.disabled {
 @media (min-width: 1200px) {
   .overflow-hidden {
     overflow: auto;
+  }
+}
+.hidden-overflow {
+  overflow: hidden !important;
+}
+@media (min-width: 480px) {
+  .hidden-overflow {
+    overflow: hidden !important;
+  }
+}
+@media (min-width: 768px) {
+  .hidden-overflow {
+    overflow: hidden !important;
+  }
+}
+@media (min-width: 992px) {
+  .hidden-overflow {
+    overflow: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-overflow {
+    overflow: hidden !important;
+  }
+}
+@media (min-width: 1600px) {
+  .hidden-overflow {
+    overflow: hidden !important;
   }
 }
 .product__properties--visible {
@@ -19126,8 +19177,8 @@ footer .bx-next.disabled {
   font-size: 1.4rem;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 23px;
   margin: 0 15px;
+  margin-bottom: 23px;
 }
 @media (min-width: 768px) {
   .sign-up-popup__actions span {

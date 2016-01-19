@@ -3,6 +3,14 @@
 	padding-top: 99px;
 	.clearfix;
 	
+	.catalog-page__button-wrapper{
+		margin-top: 15px;
+		
+		@media(min-width: @screen-xs){
+			margin-top: 0;
+		}
+	}
+	
 	
 	@media (max-width: @screen-xs){
 		max-width: 320px;
@@ -72,15 +80,16 @@
 	&__container {
 		.container-fluid;
 		padding-top: 30px;
-		padding-bottom: 15px;
+		padding-bottom: 30px;
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
-			padding-bottom: 30px;
+			padding-bottom: 5px;
 			width: 750px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 0;
 			width: 73.3%;
+			padding-bottom: 15px;
 			float: left;
 		}
 		@media(min-width:@screen-lg) {
@@ -384,11 +393,12 @@
 	&__cart-icon {
 		display: inline-block;
 		vertical-align: middle;
-		width: 53px;
+		width: 50px;
 		height: 57px;
 		position: relative;
 		@media(min-width: @screen-sm) {
 			height: 39px;
+			width: 53px;
 		}
 		@media(min-width: @screen-lg) {
 			height: 41px;
@@ -995,7 +1005,7 @@
 		margin-bottom: 15px;
 	}
 	@media (min-width: @screen-md) {
-		margin-left: 290px;
+		margin-left: 250px;
 	}
 	@media (min-width: @screen-xlg) {
 		margin-left: 405px;
@@ -1182,7 +1192,6 @@
 
 .same-items {
 	clear: both;
-	margin-bottom: 15px;
 	&__caption {
 		font-weight: normal;
 		text-transform: uppercase;
