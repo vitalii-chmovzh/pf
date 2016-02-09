@@ -290,10 +290,12 @@
 				}
 			}
 		}
-		input[type="checkbox"] {
+		input[type="checkbox"], input[type="radio"] {
 			display: none;
 		}
-		input[type="checkbox"]:checked + label {
+		input[type="checkbox"]:checked + label,
+		input[type="radio"]:checked + label
+		{
 			color: @red;
 			background: @red;
 			border-color: @red;
