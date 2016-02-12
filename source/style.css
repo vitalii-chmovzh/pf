@@ -19349,7 +19349,9 @@ footer .bx-next.disabled {
   margin-top: 0;
 }
 .sizes-popup tr th:nth-of-type(4),
-.sizes-popup tr td:nth-of-type(4) {
+.sizes-popup tr td:nth-of-type(4),
+.sizes-popup tr .active
+{
   background: rgba(233, 63, 54, 0.2);
 }
 .add-to-cart .item-page__wish-btn-add {
