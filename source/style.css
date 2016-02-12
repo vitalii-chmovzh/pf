@@ -19350,7 +19350,6 @@ footer .bx-next.disabled {
 }
 .sizes-popup tr th:nth-of-type(4),
 .sizes-popup tr td:nth-of-type(4),
-.sizes-popup tr .active
 {
   background: rgba(233, 63, 54, 0.2);
 }

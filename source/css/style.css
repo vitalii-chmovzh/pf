@@ -19536,8 +19536,24 @@ footer .bx-next.disabled {
   width: 100%;
   margin-top: 0;
 }
-.sizes-popup tr th:nth-of-type(4),
-.sizes-popup tr td:nth-of-type(4) {
+.sizes-popup table.col1 tr th:nth-of-type(1),
+.sizes-popup table.col1 tr td:nth-of-type(1) {
+  background: rgba(233, 63, 54, 0.2);
+}
+.sizes-popup table.col2 tr th:nth-of-type(1),
+.sizes-popup table.col2 tr td:nth-of-type(2) {
+  background: rgba(233, 63, 54, 0.2);
+}
+.sizes-popup table.col3 tr th:nth-of-type(1),
+.sizes-popup table.col3 tr td:nth-of-type(3) {
+  background: rgba(233, 63, 54, 0.2);
+}
+.sizes-popup table.col4 tr th:nth-of-type(1),
+.sizes-popup table.col4 tr td:nth-of-type(4) {
+  background: rgba(233, 63, 54, 0.2);
+}
+.sizes-popup table.col5 tr th:nth-of-type(1),
+.sizes-popup table.col5 tr td:nth-of-type(5) {
   background: rgba(233, 63, 54, 0.2);
 }
 .add-to-cart .item-page__wish-btn-add {
