@@ -329,7 +329,10 @@
 					<div class="label-wrapper"><span class="product__label product__label--new"><span>NEW</span></span>
 					</div>
 					<span class="item-page__manufacturer">Бутсы Nike</span>
-					<span class="item-page__price">15 490 <i class="ruble-icon"></i></span>
+					<span class="item-page__price">
+						<span class="item-page__price--old">20 990 &#x20bd;</span>
+						15 490 &#x20bd;
+					</span>
 				</div>
 				<h1 class="item-page__name">Mercurial Superfly FG</h1>
 
@@ -351,7 +354,7 @@
 							<p>Выберите размер, чтобы положить товар в корзину.</p>
 						</div>
 
-						<div class="item-page__sizes">
+						<div class="item-page__sizes" data-id="1">
 							<div class="item-page__sizes-row">
 								<select class="turnintodropdown" name="" id="">
 									<option value="">Российские</option>
@@ -360,9 +363,9 @@
 								</select>
 								<span>размеры в наличии:</span>
 							</div>
-							<span class="arrow-top arrow-top--gray disabled"></span>
-							<div class="item-page__sizes-list-wrapper">
-								<ul class="sizes-group">
+							<span class="arrow-top arrow-top--gray disabled" data-id="1"></span>
+							<div class="item-page__sizes-list-wrapper" data-id="1">
+								<ul class="sizes-group" data-id="1">
 									<li class="active">
 										<input name="sizes" id="1" type="radio">
 										<label for="1">40</label>
@@ -417,7 +420,7 @@
 									</li>
 								</ul>
 							</div>
-							<span class="arrow-bottom arrow-bottom--gray"></span>
+							<span class="arrow-bottom arrow-bottom--gray" data-id="1"></span>
 							<span class="item-page__sizes-btn md-trigger" data-modal="modal-3">Таблица размеров</span>
 
 							<a class="item-page__wish-btn item-page__wish-btn-add md-trigger" data-modal="modal-1"><i class="item-page__star-icon"></i><span>В корзину</span></a>
@@ -1073,6 +1076,8 @@
 		<!-- the overlay element -->
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/hammer.min.js"></script>
+		<script src="js/jquery.hammer.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/select.js"></script>
 		<script src="js/add-btn-show.js"></script>

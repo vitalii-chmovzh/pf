@@ -284,3 +284,36 @@ table{
 		}
 	}
 }
+
+//Fields styles
+::-webkit-input-placeholder {color: @gray;}
+::-moz-placeholder          {color: @gray;}
+:-moz-placeholder           {color: @gray;}
+:-ms-input-placeholder      {color: @gray;}
+input,
+select,
+textarea,
+.trigger{
+	border-bottom-color: @gray !important;
+}
+input:focus, .activetrigger {
+	border-bottom-color: #000 !important;
+}
+input.error,
+input.error::-webkit-input-placeholder {
+	border-bottom-color: @red !important;
+	color: @red !important;
+}
+input.error:-moz-placeholder {
+	border-bottom-color: @red !important;
+	color: @red !important;
+}
+input.error:-moz-placeholder {
+	border-bottom-color: @red !important;
+	color: @red !important;
+}
+input.error:-ms-input-placeholder {
+	border-bottom-color: @red !important;
+	color: @red !important;
+}
+

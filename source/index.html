@@ -277,10 +277,10 @@
 										<option value="Французские">Французские</option>
 									</select>размеры в наличии:
 								</div>
-								<span class="arrow-left arrow-left--gray disabled"></span>
-								<span class="arrow-top arrow-top--gray disabled"></span>
+								<span class="arrow-left arrow-left--gray disabled" data-id="1"></span>
+								<span class="arrow-top arrow-top--gray disabled" data-id="1"></span>
 								<div class="product-properties__sizes-wrapper">
-									<ul class="product-properties__sizes-list">
+									<ul class="product-properties__sizes-list" data-id="1">
 										<li>
 											<input id="32" type="checkbox">
 											<label data-modal="modal-1" class="md-trigger" for="32">32</label>
@@ -379,8 +379,8 @@
 										</li>
 									</ul>
 								</div>
-								<span class="arrow-right arrow-right--gray"></span>
-								<span class="arrow-bottom arrow-bottom--gray"></span>
+								<span class="arrow-right arrow-right--gray" data-id="1"></span>
+								<span class="arrow-bottom arrow-bottom--gray" data-id="1"></span>
 								<ul class="product-properties__info">
 									<li>Коллекция: <span>Nike Tiempo</span></li>
 									<li>Материал: <span>Натуральная кожа</span></li>
@@ -4105,6 +4105,8 @@
 	<!-- the overlay element -->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/jquery.hammer.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/product-properties.js"></script>
 	<script src="js/script.js"></script>
