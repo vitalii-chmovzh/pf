@@ -46,6 +46,12 @@
 		1.4rem;
 		1.6rem;
 		1);
+		height: 34px;
+		width: 100%;
+		background: @light-bg;
+		display: block;
+		position: relative;
+		z-index: 10;
 	}
 	&__icon {
 		width: 16px;
@@ -54,6 +60,7 @@
 		background: url("../img/filter.svg") center no-repeat;
 		background-size: cover;
         position: absolute;
+		z-index: 11;
 //		margin-left: 90px;
 		float: left;
         top: 20px;
@@ -81,6 +88,14 @@
 .filter-form {
 //	margin-top: 30px;
 	width: 100%;
+	max-width: 320px;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;			
+	&::-webkit-scrollbar { width: 0 !important}
+	
+	@media(min-width: @screen-xs){
+		max-width: none;
+	}
 	
 	&__actions{
 		 text-align: center;
@@ -261,7 +276,6 @@
 		}
 		
 		ul{
-			
 			@media(max-width: 479px){
 				width: 296px;
     			margin: 0 auto;
@@ -270,29 +284,28 @@
 		
 		li {
 			display: inline-block;
-			margin-right: 17px;
+			margin-left: 8px;
+			margin-right: 8px;
 			margin-bottom: 14px;
-			&:nth-of-type(5n+5) {
-				margin-right: 0;
-			}
 			input[type="checkbox"]:checked + label {
 				color: #fff;
 				background: @red;
 				border-color: @red;
 			}
-			@media(min-width: @screen-lg) {
-				margin-right: 12px;
+			@media(min-width: @screen-sm) {
+				margin-left: 6px;
+				margin-right: 6px;
 				margin-bottom: 12px;
-				&:nth-of-type(5n+5) {
-					margin-right: 0;
-				}
+			}
+			@media(min-width: @screen-lg) {
+				margin-left: 6px;
+				margin-right: 6px;
+				margin-bottom: 12px;
 			}
 			@media(min-width: @screen-xlg) {
-				margin-right: 15px;
+				margin-left: 7px;
+				margin-right: 7px;
 				margin-bottom: 15px;
-				&:nth-of-type(5n+5) {
-					margin-right: 0;
-				}
 			}
 			@media(min-width: @screen-sm) and (max-width: @screen-lg) {
 				margin-right: 11px;
@@ -537,6 +550,7 @@
     margin: 10px 8px 20px 8px;
 	background: @border-color;
     position: relative;
+	margin-left: -(0.588582%/2);
 	.ui-slider-range {
 		position: absolute;
 		vertical-align: middle;

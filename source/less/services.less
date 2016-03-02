@@ -70,7 +70,6 @@
 	}
 	
 	&__main-wrapper{
-		
 	@media (max-width: @screen-xs) {
 		width: auto;
 		margin: 0 auto;
@@ -80,8 +79,17 @@
 		margin: 0 auto;
 	}
 	@media (min-width: @screen-md) {
-		padding-left: 20%;
+		text-align: center;
+		
+		.services__product-text{
+			display: inline-block;
+			width: 75%;
+			ul,p{
+				text-align: left;
+			}
+		}
 	}
+		
 	}
 	
 	p {
@@ -166,14 +174,12 @@
 		padding-top: 30px;
 		padding-bottom: 5px;
 		@media(min-width: @screen-xs) {
-			padding-bottom: 18px;
     		padding-top: 30px;
 			width: 460px;
 		}
 		@media(min-width: @screen-sm) {
 			padding-top: 15px;
 			width: auto;
-			padding-bottom: 18px;
 		}
 		@media(min-width: @screen-md) {
 			padding-top: 45px;
@@ -527,8 +533,8 @@
 	}
 	
 	@media(min-width: @screen-sm) and (max-width: 991px){
-		padding-left: 10%;
-		padding-right: 10%;
+		width: 470px;
+		margin: 0 auto;
 		margin-bottom: 16px;
 	}
 	@media(min-width: @screen-sm){
