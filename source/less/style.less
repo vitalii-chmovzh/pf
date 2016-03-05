@@ -33,6 +33,27 @@
 	}
 }
 
+
+	a:not([class]) {
+		color: @gray;
+		text-decoration: none;
+		.font(1.2rem;
+		1.2rem;
+		1.2rem;
+		1.2rem;
+		1.4rem;
+		);
+		transition: .1s;
+		&:active, &:hover:active {
+			color: @blue;
+		}
+		@media(min-width: @screen-md){
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+
 .wishlist1{
 	color: @red !important;
 	background: #fff !important;
@@ -299,21 +320,32 @@ textarea,
 input:focus, .activetrigger {
 	border-bottom-color: #000 !important;
 }
-input.error,
-input.error::-webkit-input-placeholder {
+input.error, input:invalid,
+input.error::-webkit-input-placeholder,
+input:invalid::-webkit-input-placeholder {
 	border-bottom-color: @red !important;
 	color: @red !important;
+	box-shadow: none !important;
+	outline:none !important;
 }
-input.error:-moz-placeholder {
+input.error:-moz-placeholder,input:invalid:-moz-placeholder {
 	border-bottom-color: @red !important;
 	color: @red !important;
+	box-shadow: none !important;
+	outline:none !important;
 }
-input.error:-moz-placeholder {
+input.error:-moz-placeholder,
+input:invalid:-moz-placeholder {
 	border-bottom-color: @red !important;
 	color: @red !important;
+	box-shadow: none !important;
+	outline:none !important;
 }
-input.error:-ms-input-placeholder {
+input.error:-ms-input-placeholder,
+input:invalid:-ms-input-placeholder {
 	border-bottom-color: @red !important;
 	color: @red !important;
+	box-shadow: none !important;
+	outline:none !important;
 }
 

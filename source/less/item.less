@@ -147,7 +147,12 @@
 		.clearfix;
 		margin-bottom: 23px;
 		&--main {
-			
+			position: relative;
+			line-height: 40px;
+			.label-wrapper{
+				vertical-align: middle;
+				display: inline-block;
+			}
 			@media(min-width: @screen-xs) and (max-width: 767px){
 				max-width: 460px;
 			}
@@ -172,7 +177,6 @@
 				overflow: hidden;
 				vertical-align: middle;
 				margin-right: 8px;
-				margin-top: -7px;
 			}
 			
 			.product__label--new{
@@ -181,11 +185,11 @@
 				vertical-align: middle;
 				top: 0;
 				left: -5px;
-				width: 65px;
-				height: 36px;
+				width: 62px;
+				height: 43px;
 				transform: skew(-15deg);
 				text-align: center;
-				padding-top: 11px;
+				padding-top: 0 !important;
 					background: @blue;
 				
 				
@@ -211,11 +215,11 @@
 				vertical-align: middle;
 				top: 0;
 				left: -5px;
-				width: 65px;
-				height: 36px;
+				width: 62px;
+				height: 43px;
 				transform: skew(-15deg);
 				text-align: center;
-				padding-top: 11px;
+				padding-top: 0 !important;
 					background: @red;
 				
 				span {
@@ -232,7 +236,7 @@
 		}
 	}
 	&__manufacturer {
-		vertical-align: middle;
+		vertical-align: baseline;
 		color: @gray;
 		.font(1rem;
 		1rem;
@@ -260,8 +264,13 @@
 		1.6rem;
 		1.8rem;
 		2.4rem;
-		1);
+		40px);
     	float: right;
+		line-height: 19px !important;
+		@media(min-width: @screen-xlg){
+			line-height: 29px !important;
+		}
+		
 			
 		
 		&--no {
@@ -285,17 +294,31 @@
 		}
 		&--old {
 			position: relative;
+			display: block;
 			font-size: 1.4rem;
 			font-weight: bold;
+			@media(min-width: @screen-xlg){
+				display: inline;
+			}
+			
 			&:after {
 				content: '';
 				position: absolute;
 				z-index: 1;
-				top: 8px;
-				left: 0;
-				width: 54px;
+				top: 8px;				
+				left: 6px;
+				width: 60px;
 				height: 1px;
 				background: @red;
+				
+				@media(min-width: @screen-lg){
+					left: 14px;
+				}
+				
+				@media(min-width: @screen-xlg){
+					left: 0;
+					width: 54px;
+				}
 			}
 			.ruble-icon {
 				font-size: 1rem;
@@ -977,14 +1000,9 @@
 	margin-bottom: 26px;
 	clear: both;
 	@media (min-width: @screen-sm) {
-    	margin-left: 250px;
 		margin-bottom: 15px;
 	}
-	@media (min-width: @screen-md) {
-		margin-left: 250px;
-	}
 	@media (min-width: @screen-xlg) {
-		margin-left: 405px;
 		margin-bottom: 12px;
 	}
 	&__caption {

@@ -202,13 +202,18 @@
     border-right-color: @gray;
   }   
   
-  &--light-gray{    
+  &--light-gray{     
+		cursor: default; 
     border-top: 5px solid transparent;
     border-right: 10px solid @light-bg;
     border-bottom: 5px solid transparent;
 
     &:hover{
-      border-right-color: #fff;
+      border-right-color: @light-bg !important;
+    }
+		
+    &:active{
+      border-right-color: @light-bg !important;
     }
   }
 }
@@ -238,11 +243,15 @@
     border-left-color: @gray;
   } 
   
-  &--light-gray{    
+  &--light-gray{     
+		cursor: default; 
     border-left-color: @light-bg;
     
     &:hover{
-      border-left-color: #fff;
+      border-left-color: @light-bg !important;
+    }
+    &:active{
+      border-left-color: @light-bg !important;
     }
   }
 }
